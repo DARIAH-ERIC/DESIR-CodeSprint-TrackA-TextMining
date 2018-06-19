@@ -19,7 +19,7 @@ Grobid's environment includes a comprehensive web service API, a batch processin
 The library is integrated today in various commercial and public scientific services such as ResearchGate, Mendeley, CERN Inspire and the HAL national publication repository in France. It is used on a daily basis by thousands of researchers and engineers. Since 2011, the library is open source under an Apache 2 license.
 
 # Preparation before the track
-For participating in this track, there are some preparations needed before the code sprint begins:
+For participating in this track, there are some preparations needed :
 1) Participants need to make sure that they have already had some development tools needed whether with Java or with Python on their machine. 
 
 2) For participants who use Java 
@@ -35,9 +35,10 @@ For participating in this track, there are some preparations needed before the c
 # Steps
 The participants for this track will involved themselves in several steps:
 1) Data extraction by using Grobid
+- (50 science articles in 5 languages and in Pdf format are already prepared. They can be found in `/Pdf Source Files/`)
    * Pdf files extraction into XML-TEI data format
    * Connection and data processing through the REST API
-   
+        
 2) Visualisation of data extracted from Grobid 
    * Visualisation of the data extracted from the first step in the Pdf files by using Grobid as a library, for instance by using LayoutToken object in Grobid. 
 
