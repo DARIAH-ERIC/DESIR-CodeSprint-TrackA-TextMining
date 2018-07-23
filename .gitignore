@@ -5,5 +5,5 @@ out*
 *.class
 target
 build
-gradle
 .idea/*
+.gradle
