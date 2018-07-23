@@ -35,7 +35,7 @@ sourceSets.main.resources {
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
 //    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
-    compile("org.codehaus.woodstox:stax2-api:3.14")
+//    compile("org.codehaus.woodstox:stax2-api:3.14")
     compile("org.codehaus.woodstox:woodstox-core-asl:4.4.0")
     compile("org.apache.commons:commons-lang3:3.5")
 
