@@ -6,4 +6,4 @@ out*
 target
 build
 gradle
-.idea
+.idea/*
