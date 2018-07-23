@@ -12,4 +12,12 @@ public class SampleController {
     public String getVersion() {
         return "0.1.0";
     }
+
+
+    @RequestMapping("/process")
+    public String processPdf() {
+        //integration
+
+        return "bao";
+    }
 }
