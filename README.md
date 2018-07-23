@@ -35,7 +35,7 @@ For participating in this track, there are some preparations needed :
 # Steps
 The participants for this track will involved themselves in several steps:
 1) Data extraction by using Grobid
-- (50 science articles in 5 languages and in Pdf format are already prepared. They can be found in `/Pdf Source Files/`)
+- (30 science articles in 5 languages and in Pdf format are already prepared. They can be found in `/Pdf Source Files/`)
    * Pdf files extraction into XML-TEI data format
    * Connection and data processing through the REST API
         

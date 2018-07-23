@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /data/workspace/services/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="fr">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.1-SNAPSHOT" ident="GROBID" when="2018-07-23T08:10+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">Compte rendu d&apos;expériences simples avec le PC tablette</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher/>
+				<availability status="unknown"><licence/></availability>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author role="corresp">
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Sylvie</forename><surname>Ratté</surname></persName>
+							<email>sylvie.ratte@etsmtl.ca</email>
+							<affiliation key="aff0">
+								<orgName type="institution">École de technologie supérieure du Québec</orgName>
+								<address>
+									<country key="CA">CANADA</country>
+								</address>
+							</affiliation>
+						</author>
+						<title level="a" type="main">Compte rendu d&apos;expériences simples avec le PC tablette</title>
+					</analytic>
+					<monogr>
+						<imprint>
+							<date/>
+						</imprint>
+					</monogr>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<abstract>
+				<p>Lors de séances de correction par les pairs en génie logiciel (maîtrise et baccalauréat), nous utilisons, depuis un an, un PC tablette afin d&apos;évaluer dans quelle mesure une utilisa-tion simple de cette technologie suscite une plus grande participation des étudiants, des corrections de meilleure qualité et, par conséquent, une expérience de révision technique plus enrichissante. Les logiciels de présentation spécialisés Smart Notebook et Classroom Presenter ont été utilisés. Globalement, l&apos;utilisation de cette technolo-gie a permis d&apos;augmenter la participation des étudiants et d&apos;améliorer la qualité des commentaires. En effet, l&apos;encre électronique favorise les mises en relief élaborées, ce qui simplifie les retours en arrière, tandis que le logiciel de présentation facilite les interactions en offrant un meilleur accès aux solutions commentées qui peuvent ensuite être enregistrées de manière permanente. Abstract A Tablet PC was used for the past year during peer review sessions in software engineering courses (graduate and undergraduate). Our objective was to find out whether simply using this technology could increase participation and facilitate revision. Two specialized presentation software applications were used: Smart Notebook and Classroom Presenter. Overall, the use of this technology increased participation and improved the quality of students&apos; notes. Digital ink would appear to itself to the creation of longer notes, which simplify the revision process. Presentation software also facilitates interaction by offering better access to each commented solution, which can then be recorded in a more permanent manner .</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="fr">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Introduction</head><p>Dans plusieurs cours de premier et de deuxième cycles en génie logiciel, il est courant de procéder à la correction d'un projet en ayant recours aux pairs, imitant ainsi les séances de révision en groupe auxquelles les étudiants devront participer sur le marché du travail. Dans la pratique, ce type de révision constitue d'ailleurs l'un des facteurs déterminants dans la détection et la prévention des défauts dans les produits logiciels <ref type="bibr" target="#b6">(Diaz et Sligo, 1997</ref>  Étape préparatoire  Cette caractéristique permet au professeur de noter déjà certains éléments qu'il aimerait mettre en relief lors de la séance de correction proprement dite (voir la <ref type="figure" target="#fig_2">Figure 2</ref>).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Logiciels utilisés</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Séance de correction</head><p>La  Comme la durée de la séance a permis à tous de finaliser leur correction, l'enseignante n'a pas jugé bon de rendre accessible, après le cours, le document support. Cette accessibilité asynchrone pourrait être envisagée dans le cas de corrections plus élaborées, mais également pour permettre aux étudiants de réviser leur propre correction.  Technologies for the Emerging Global Economy (p. T2G-13-18). New-</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Discussion des résultats</head></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head></head><label></label><figDesc>Deux logiciels de présentation distincts ont été utilisés à l'été 2006 et à l'hiver 2007 : Smart Notebook, de la compagnie Smart Technologies, et Classroom Presenter (2006), développé à l'Université de Washington (An- derson et al., 2006; Mock, 2004). Dans les deux cas, la séance de correction débute par une pério- de de 10 minutes pour expliquer le fonctionnement et les possibi- lités d'intervention. Notons que le PC tablette n'est pas nouveau pour les étudiants puisque l'en- seignante l'utilise déjà depuis plusieurs semaines pour don- ner ses cours avec les logiciels concernés.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head>Figure 1 .</head><label>1</label><figDesc>Figure 1. Exemple de diapositive présentée avec Classroom Presenter</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>Figure 2 .</head><label>2</label><figDesc>Figure 2. Annotation personnelle en CP : le texte écrit en gris n'est visible que pour l'enseignant</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head></head><label></label><figDesc>Globalement, l'expérience a permis de susciter et d'enrichir la discussion, et d'augmenter la participation des étudiants. De plus, les mises en relief électroniques ont eu pour effet d'amé- liorer la qualité des corrections soumises. Les commentaires des étudiants ont été, comparativement à une correction par les pairs de type standard, beaucoup plus riches et constructifs. En ce qui concerne les deux logiciels utilisés, Classroom Pre- senter s'est avéré nettement plus convivial. L'accès aux diverses solutions ainsi que l'utilisation du mode « tableau noir » y sont plus naturels. De plus, la possibilité d'insérer des notes invisi- bles pour le public constitue une caractéristique précieuse qui contribue à renforcer les interventions de l'enseignant. Il faut cependant noter trois problèmes distincts. D'abord, la préparation de telles séances est un peu longue puisqu'il faut compter entre 4 et 5 heures de préparation pour bâtir le docu- ment de support. Ensuite, la technologie est peu appropriée pour les réponses très longues, car la surface écran et sa pro- jection ne permettent pas d'offrir toute la solution de manière lisible. Finalement, même si le logiciel Classroom Presenter offre un mode d'échanges interactifs avec les étudiants, ceux- ci n'ayant pas à leur disposition de PC tablettes, ils ne peuvent transmettre leurs propres mises en relief et commentaires que par l'intermédiaire du professeur, ce qui ralentit la discussion et inhibe certaines interventions. Perspectives Pour contrer ces problèmes, nous envisageons d'utiliser l'outil Ubi- quitous Presenter (2006) et d'effec- tuer la correction dans un laboratoi- re (Wilkerson, Griswold et Simon, 2005</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="false"><head>suite des expériences répertoriées notamment dans Berque (2005), Berque, Bonebright et Whitesell (2004) et nous avons conçu une séance de correction par les pairs où le professeur utilise un PC tablette afin d'évaluer dans quelle mesure une utilisation simple de cette technologie suscite une plus grande participation des étudiants, des corrections de meilleure qualité</head><label></label><figDesc>). Lors de ces séances, les rapports des équipes sont distribués au hasard, le professeur suggérant ensuite des avenues de réponses qui sont discu- tées par la classe à la lumière des solutions proposées par chaque équipe. L'enseignante révise ensuite chaque travail en vérifiant si chacune des corrections suggérées par le grou- pe a bien été relevée par l'équipe correctrice. D'ailleurs, une note représentant 10 % de la note obtenue pour l'ensemble du travail est attribuée pour la qualité de la correction.</figDesc><table>Ce mode de fonctionnement pose 
+
+trois problèmes distincts. D'abord, 
+
+chaque équipe travaille en isola-
+
+tion à son rythme en fonction de 
+
+ce qu'elle a sous les yeux. Ce pro-
+
+cédé favorise les échanges entre 
+
+les coéquipiers au détriment des 
+
+échanges entre les équipes qui devraient, lors de cette étape, être 
+
+privilégiés. Ensuite, chaque équipe correctrice ne peut trans-
+
+mettre efficacement à l'ensemble du groupe les spécificités de la 
+
+solution qu'elle a sous les yeux. Finalement, il devient difficile 
+
+pour le professeur de mettre en relief les éléments spécifiques 
+
+d'une ou plusieurs solutions afin d'aiguiller efficacement la dis-
+
+cussion. Inévitablement, ces pro-
+
+blèmes se reflètent sur la qualité 
+
+des corrections effectuées. Ainsi, 
+
+sur l'ensemble des 10 travaux re-
+
+mis à l'hiver 2005, seulement 3 ne 
+
+comportaient aucun oubli. 
+
+À la et, par conséquent, une expérience de révision technique plus 
+
+enrichissante. 
+
+Cet article présente des résultats obtenus avec le PC tablette lors 
+
+des séances de correction par les pairs réalisées depuis un an. 
+
+Explicitation de la pratique 
+
+L'expérience pratique a eu lieu à l'été 2006 au niveau de la maî-
+
+trise 1 puis a été répétée à l'hiver 2007 au niveau du baccalauréat. 
+
+Le Tableau 1 résume la composition des groupes et des équipes. 
+
+Dans les deux cas, il s'agit d'un cours portant sur l'utilisation 
+
+des méthodes formelles en génie logiciel. L'enseignante est la 
+
+même dans les deux groupes. Les 23 équipes forment notre 
+
+groupe de référence A, visé par l'expérience. 
+
+Tableau 1 . Composition des groupes visés et des équipes 
+
+Été 2006 
+Hiver 2007 
+
+Niveau maîtrise 
+Niveau baccalauréat 
+
+21 étudiants (21 garçons) 
+33 étudiants (32 garçons et 1 fille) 
+
+11 équipes 
+12 équipes 
+
+Équipes de 1 étudiant 
+1 
+Équipes de 1 étudiant 
+0 
+
+Équipes de 2 étudiants 
+10 
+Équipes de 2 étudiants 
+4 
+
+Équipes de 3 étudiants 
+0 
+Équipes de 3 étudiants 
+8 
+
+Tableau 2 . Composition des groupes de référence et des équipes 
+
+Hiver 2005 
+Hiver 2005 
+
+Niveau maîtrise 
+Niveau baccalauréat 
+
+9 étudiants (7 garçons, 2 filles) 
+10 étudiants (9 garçons et 1 fille) 
+
+5 équipes 
+5 équipes 
+
+Équipes de 1 étudiant 
+1 
+Équipes de 1 étudiant 
+0 
+
+Équipes de 2 étudiants 
+4 
+Équipes de 2 étudiants 
+5 
+
+2007 -International Journal of Technologies in Higher Education, 4(1) 
+
+www.profetic.org/revue Le projet visé par la correction par les pairs a également été 
+
+utilisé dans ces deux cours à l'hiver 2005 (et avec la même 
+
+enseignante -voir le Tableau 2). Les deux types de séance, 
+
+sans ou avec PC tablette, nous permettent ainsi d'effectuer 
+
+certaines comparaisons. Les 10 équipes de l'hiver 2005 for-
+
+ment notre groupe de référence B. 
+
+La réalisation du projet s'étend sur cinq semaines. Le 
+
+projet consiste à réaliser les spécifications formelles 
+
+d'un logiciel dont la description a été rédigée par le 
+
+professeur et de vérifier ces spécifications grâce à un 
+
+logiciel de vérification développé par Richters (2002). 
+
+Le rapport final de chaque équipe, d'une soixantaine 
+
+de pages, comporte 48 questions. Les réponses sont de 
+
+formes diverses (diagrammes, formules logiques, textes 
+
+explicatifs, comptes rendus de simulation); chaque ré-
+
+ponse nécessite en général une page ou moins. Notons 
+
+qu'il est obligatoire de réaliser ce projet en équipe de 
+
+deux étudiants 2 ou plus (sauf exception). 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_1" validated="false"><head>L 'étape préparatoire à chaque séance de correction consiste à sélectionner la réponse d'une équipe pour chaque question. Étant donné le nombre d'équipes et de questions, chaque équipe est assurée de voir sa solution affichée plusieurs fois pendant la séance. Cette tâche est réalisée par l'enseignante la journée précédant la correction.</head><label>L</label><figDesc></figDesc><table>En utilisant le programme Smart Notebook, nous avons 
+
+sélectionné les réponses dans les documents des étudiants 
+
+à raison d'une diapositive par question. Chaque équipe est 
+
+identifiée par un numéro qui apparaît sur la diapositive 
+
+et sur le rapport. Une diapositive est aussi prévue pour 
+
+présenter une liste d'hyperliens permettant d'accéder ra-
+
+pidement au rapport entier de chaque équipe. 
+
+La préparation est légèrement différente avec Classroom Pre-
+
+senter (désormais CP). En effet, le logiciel a été conçu à la base 
+
+pour faciliter les interactions à travers l'utilisation de PC tablettes 
+
+(nous reviendrons sur cette caractéristique de l'outil un peu plus 
+
+loin). L'utilisateur principal doit préalablement construire ses 
+
+diapositives avec le logiciel PowerPoint (désormais PPT); elles 
+
+sont ensuite importées et visualisées dans CP. Conséquemment, 
+
+les possibilités d'édition de type copier/coller y sont limitées. 3 Il a 
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_2" validated="false"><head>, chaque équipe est invitée à commenter la solution affichée. Ces commentaires sont inscrits par l'enseignant sur le document support. L'enseignant demande ensuite s'il y a accord sur la totalité des commentaires. La réponse augmentée des com- mentaires du groupe devient alors la solution officielle.</head><label></label><figDesc></figDesc><table>séance de correction a pour principal objectif d'imiter une 
+
+réunion de révision technique dans le but d'en arriver à une 
+
+spécification du logiciel qui puisse satisfaire l'ensemble des 
+
+contraintes cernées et discutées par le groupe. Lors de cette 
+
+séance, chaque équipe doit corriger et commenter la solution 
+
+qu'elle a sous les yeux. Cette correction doit refléter l'en-
+
+semble des commentaires et des solutions proposées par le 
+
+groupe. Il est donc essentiel que chaque équipe puisse avoir 
+
+accès rapidement aux solutions offertes par les autres. 
+
+L'enseignant utilise le document support décrit à la section précé-
+
+dente pour guider la correction et faciliter la discussion. Question 
+
+par questionDiscussion et perspectives 
+
+Impacts et résultats 
+
+Dès le début des séances consacrées à la correction, l'ensei-
+
+gnant a pu observer que les équipes du groupe A collabo-
+
+raient beaucoup plus que celles du groupe B : pas de moment 
+
+de silence, pas d'équipe corrigeant en isolation. Le simple 
+
+fait de forcer la correction en groupe, question par question, 
+
+permettait de conserver cette dynamique. 
+
+L'affichage d'une réponse permettait aux étudiants de donner 
+
+rapidement une première évaluation de leurs pairs. La discus-
+
+sion était beaucoup plus animée. Les échanges inter-équipes 
+
+étaient plus nombreux alors que dans le groupe B, les échanges 
+
+s'effectuaient en majorité entre le professeur et chaque équipe 
+
+individuellement. Le fait de pouvoir avoir accès aux autres 
+
+solutions et de les mettre côte à côte a permis de conserver le 
+
+rythme et la dynamique de la dis-
+
+cussion. L'enseignante a aussi noté 
+
+que les étudiants sont demeurés 
+
+très actifs jusqu'à la fin de la pério-
+
+de de correction (soit deux heures), 
+
+alors que dans le groupe B, une 
+
+équipe est sortie avant même la fin 
+
+de la séance. 
+
+C'est en tant que support aux dis-
+
+cussions que le PC tablette se dé-
+
+marque par rapport à un ordina-
+
+teur standard (Willis et Miertschin, 
+
+2004). En effet, les solutions étant 
+
+parfois complexes, les mises en re-
+
+lief du professeur (à la suite des 
+
+commentaires ou de son propre 
+
+chef) concentrent les efforts et re-
+
+</table></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_3" validated="false"><head>d'une part du PC tablette et, d'autre part, à celle d'un logiciel de présentation mieux adapté à cette technologie. C'est par cette utilisation conjointe que les impacts positifs se font sen- tir. En effet, l'encre électronique propre au PC tablette favorise la composition de mises en relief permanentes et plus élaborées, ce qui encourage la discussion et les retours en arrière, tandis que</head><label></label><figDesc></figDesc><table>). En effet, ce logiciel, développé à l'Université de Califor-
+
+nie à San Diego et conçu comme une extension de Classroom 
+
+Presenter, permet l'utilisation d'ordinateurs standards par les 
+
+étudiants puisque les envois s'effectuent à travers un serveur 
+
+Web. Cet outil nous permettrait ainsi de récupérer en interactif 
+
+les réponses des étudiants, ce qui éliminerait complètement la 
+
+phase de préparation et de mise en forme des diapositives. De 
+
+plus, l'outil permettrait aux étudiants d'envoyer des sections de 
+
+réponse ou même d'insérer des commentaires dactylographiés. 
+
+Cette solution sera expérimentée à l'automne 2007 dans le cadre 
+
+du cours de maîtrise. 
+
+Conclusion 
+
+Nous avons présenté une expérience d'utilisation du PC tablette 
+
+dans le contexte spécifique d'une correction par les pairs. Globa-
+
+lement, les résultats sont positifs, mais ils doivent être attribués à 
+
+Tableau 3 . Qualité des corrections 
+
+Commentaire oublié 
+H2005 
+É2006/H2007 
+
+Aucun oubli 
+3 
+30 % 
+10 
+43 % 
+
+1 à 4 oublis 
+1 
+10 % 
+9 
+39 % 
+
+5 oublis et plus 
+6 
+60 % 
+4 
+17 % 
+
+2007 -Revue internationale des technologies en pédagogie universitaire, 4(1) 
+
+www.profetic.org/revue l'utilisation le logiciel de présentation facilite les interactions en offrant un 
+
+accès rapide et efficace aux diverses solutions commentées qui 
+
+peuvent ensuite être enregistrées de manière permanente. 
+
+Notons pour finir que ce type de séances interactives ne se 
+
+limite pas nécessairement aux séances de correction par les 
+
+pairs, les technologies présentées pouvant très bien être uti-
+
+lisées de manière très efficace (Denning, Griswold, Simon et 
+
+Wilkerson, 2006) dans le cadre d'un cours standard. 
+
+Références 
+
+Anderson, Richard, Anderson, Ruth, Chung, O., Davis, K. M., Davis, 
+
+P., Prince, C. et al. (2006, avril). Classroom Presenter -A classroom 
+
+interaction system for active and collaborative learning. Communication 
+
+présentée au Workshop on the Impact of Pen-based Technology on 
+
+Education, West Lafayette, IN. Récupéré du site de l'Université de 
+
+Washington, Computer Science and Engineering, section Classroom 
+
+Presenter Publications and Talks : http://classroompresenter. 
+
+cs.washington.edu/papers.html 
+
+Anderson, Richard, Anderson, Ruth, McDowell, L. et Simon, B. (2005). 
+
+Use of Classroom Presenter in engineering courses. Dans Proceedings 
+
+of Frontiers in Education 35 th Annual Conference. Pedagogies and 
+
+</table></figure>
+		</body>
+		<back>
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><surname>York</surname></persName>
+		</author>
+		<imprint>
+			<publisher>IEEE Press</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<analytic>
+		<title level="a" type="main">Promoting classroom interactivity in computer science courses using laptops, pen-based computers, Tablet PC&apos;s, and Dyknow software</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Berque</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computing Sciences in Colleges</title>
+		<imprint>
+			<biblScope unit="volume">21</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="45" to="48" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Using pen-based computers across the computer science curriculum</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Dave</forename><surname>Berque</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Terri</forename><surname>Bonebright</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Michael</forename><surname>Whitesell</surname></persName>
+		</author>
+		<idno type="doi">10.1145/1028174.971324</idno>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 35 th SIGCSE Technical Symposium on Computer Science Education</title>
+		<editor>D. Joyce, D. Knox, W. Dann et T. L. Naps</editor>
+		<meeting>the 35 th SIGCSE Technical Symposium on Computer Science Education<address><addrLine>NewYork</addrLine></address></meeting>
+		<imprint>
+			<publisher>Association for Computing Machinery (ACM)</publisher>
+			<date type="published" when="2004-01-01" />
+			<biblScope unit="volume">36</biblScope>
+			<biblScope unit="page">61</biblScope>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title/>
+		<ptr target="http://classroompresenter.cs.washington.edu/" />
+	</analytic>
+	<monogr>
+		<title level="j">Computer Science and Engineering</title>
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+		<respStmt>
+			<orgName>Disponible sur le site de l&apos;Université de Washington</orgName>
+		</respStmt>
+	</monogr>
+	<note>Classroom Presenter (3.0 Beta) [logiciel</note>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Denning</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">G</forename><surname>Griswold</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Simon</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Et Wilkerson</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><surname>Baldwin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><forename type="middle">T</forename><surname>Tymann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">M</forename><surname>Haller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">I</forename><surname>Russell</surname></persName>
+		</author>
+		<title level="m">Proceedings of the 39 th SIGCSE Technical Symposium on Computer Science Education</title>
+		<meeting>the 39 th SIGCSE Technical Symposium on Computer Science Education<address><addrLine>New-York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<biblScope unit="page" from="219" to="223" />
+		</imprint>
+	</monogr>
+	<note>Multimodal communication in the classroom: What does</note>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">How software process improvement helped Motorola</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Diaz</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Sligo</surname></persName>
+		</author>
+		<idno type="doi">10.1109/52.605934</idno>
+	</analytic>
+	<monogr>
+		<title level="j">IEEE Software</title>
+		<title level="j" type="abbrev">IEEE Softw.</title>
+		<idno type="ISSN">0740-7459</idno>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="issue">5</biblScope>
+			<biblScope unit="page" from="75" to="81" />
+			<date type="published" when="1997" />
+			<publisher>Institute of Electrical and Electronics Engineers (IEEE)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<monogr>
+		<title level="m" type="main">Evaluation of tablet PCs for engineering content development and instruction. Communication présentée à la American Society for Engineering Education Annual Conference and Exposition</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Frolik</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">B</forename><surname>Et Zurn</surname></persName>
+		</author>
+		<ptr target="http://www.asee.org/acPapers/2004-163_Final.pdf" />
+		<imprint>
+			<date type="published" when="2004" />
+			<pubPlace>Salt Lake City, UT. Récupéré de</pubPlace>
+		</imprint>
+	</monogr>
+	<note>juin)</note>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Teaching with tablet PC&apos;s</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Mock</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Computing Sciences in Colleges</title>
+		<imprint>
+			<biblScope unit="volume">20</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="17" to="27" />
+			<date type="published" when="2004" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title level="a" type="main">A precise approach to validating UML models and OCL constraints</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Richters</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">BISS Monographs</title>
+		<imprint>
+			<biblScope unit="issue">14</biblScope>
+			<date type="published" when="2002" />
+			<publisher>Logos Verlag</publisher>
+		</imprint>
+		<respStmt>
+			<orgName>Université de Bremen</orgName>
+		</respStmt>
+	</monogr>
+<note type="report_type">Thèse de doctorat</note>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<monogr>
+		<title level="m" type="main">Disponible sur le site de l</title>
+		<ptr target="http://up.ucsd.edu/" />
+		<imprint>
+			<date type="published" when="2006" />
+		</imprint>
+		<respStmt>
+			<orgName>Université de Californie à San Diego</orgName>
+		</respStmt>
+	</monogr>
+	<note>Ubiquitous Presenter (1.0) [logiciel</note>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Ubiquitous Presenter: Increasing student access and control in a digital lecturing environment</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Wilkerson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><forename type="middle">G</forename><surname>Griswold</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">B</forename><surname>Simon</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="m">Proceedings of the 36 th SIGCSE Technical Symposium on Computer Science Education</title>
+		<editor>W. Dann, T. L. Naps, P. T. Tymann et D. Baldwin</editor>
+		<meeting>the 36 th SIGCSE Technical Symposium on Computer Science Education<address><addrLine>New-York</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2005" />
+			<biblScope unit="page" from="116" to="120" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<monogr>
+				<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">L</forename><surname>Willis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">L</forename><surname>Et Miertschin</surname></persName>
+		</author>
+		<title level="m">Tablet PC&apos;s as instructional tools or the pen is mightier than the board! Dans Proceedings of the 5 th Conference on Information Technology Education</title>
+		<meeting><address><addrLine>NewYork</addrLine></address></meeting>
+		<imprint>
+			<publisher>ACM Press</publisher>
+			<date type="published" when="2004" />
+			<biblScope unit="page" from="153" to="159" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<monogr>
+		<title level="m" type="main">Il s&apos;agit d&apos;une maîtrise professionnelle en génie logiciel</title>
+		<imprint/>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<monogr>
+		<title level="m" type="main">Les étudiants du baccalauréat ont plus d&apos;expérience dans la réalisation de travaux en équipe que les étudiants de la maîtrise professionnelle, ce qui explique sans doute la différence entre le nombre d&apos;équipes de deux et de trois étudiants</title>
+		<imprint/>
+	</monogr>
+	<note>En ce qui concerne les groupes de la session d&apos;hiver 2005 (Tableau 2), l&apos;enseignante a explicitement exigé que les étudiants soient en équipes de deux</note>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title/>
+		<ptr target="www.profetic.org/revue" />
+	</analytic>
+	<monogr>
+		<title level="j">International Journal of Technologies in Higher Education</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<date type="published" when="2007" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
