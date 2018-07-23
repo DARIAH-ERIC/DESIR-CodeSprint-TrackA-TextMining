@@ -1,0 +1,53 @@
+<div class="row">
+    [{{entity.label}}] <strong>{{entity.metadata.name}}</strong>
+    <span ng-if="entity.label == 'organisation'">
+            <span ng-if="entity.metadata.type">{{entity.metadata.type}}</span>
+    <span ng-if="entity.metadata.settlement">, {{entity.metadata.settlement}}</span>
+    <span ng-if="entity.metadata.region">, {{entity.metadata.region}}</span>
+    <span ng-if="entity.metadata.country">, {{entity.metadata.country}}</span>
+    </span>
+    <span ng-if="entity.label == 'author'">
+            <span ng-if="entity.metadata.forename">{{entity.metadata.forename}}</span>
+    <span ng-if="entity.metadata.surname"> {{entity.metadata.surname}}</span>
+    </span>
+    <div class="col-xs-12">
+        <div class="row" ng-repeat="match in entity.matching track by $index" ng-if="$index%4==0 && $index<quantity">
+            <div class="col-md-3" ng-repeat="i in [$index,$index+1,$index+2,$index+3]" ng-if="entity.matching[i]!=null">
+                <div class="list-item" ng-if="entity.matching[0].score * 0.1 < entity.matching[i].score">
+
+                    <div ng-if="entity.matching[i].label == 'organisation'">
+                        {{entity.matching[i].score.toFixed(3)}}
+                        <strong>{{entity.matching[i].metadata.name}}</strong>
+                        <span ng-if="entity.matching[i].metadata.blockID">
+                                <a target="_blank"
+                                   href="https://aurehal.archives-ouvertes.fr/structure/read/id/{{entity.matching[i].metadata.blockID}}">
+                                    {{entity.matching[i].metadata.blockID}}
+                                </a>
+                            </span>
+                        <div>
+                            <span ng-if="entity.matching[i].metadata.type">{{entity.matching[i].metadata.type}}</span>
+                            <span ng-if="entity.matching[i].metadata.addressLine">, {{entity.matching[i].metadata.addressLine}}</span>
+                            <span ng-if="entity.matching[i].metadata.settlement">, {{entity.matching[i].metadata.settlement}}</span>
+                            <span ng-if="entity.matching[i].metadata.region">, {{entity.matching[i].metadata.region}}</span>
+                            <span ng-if="entity.matching[i].metadata.country">, {{entity.matching[i].metadata.country}}</span>
+                        </div>
+                    </div>
+                    <div ng-if="entity.matching[i].label == 'author'"> {{entity.matching[i].score.toFixed(3)}}
+                        <strong>
+                            <span ng-if="entity.matching[i].metadata.forename">{{entity.matching[i].metadata.forename}}</span>
+                            <span ng-if="entity.matching[i].metadata.surname"> {{entity.matching[i].metadata.surname}}</span>
+                        </strong>
+                        <span ng-if="entity.matching[i].metadata.blockID">
+                                
+                                <!--<a target="_blank"
+                                   href="https://aurehal.archives-ouvertes.fr/author/read/id/{{match.metadata.blockID}}">-->
+                                <a target="_blank" ng-click="rewrite(entity.matching[i].metadata.blockID)">{{entity.matching[i].metadata.blockID}}</a>
+                            <!--</a>-->
+                            </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

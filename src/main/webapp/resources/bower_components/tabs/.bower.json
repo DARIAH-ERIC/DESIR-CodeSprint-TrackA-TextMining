@@ -1,0 +1,33 @@
+{
+  "name": "tabs",
+  "main": "tabs.js",
+  "version": "2.0.2",
+  "homepage": "https://github.com/markusfalk/tabs",
+  "authors": [
+    "Markus Falk <mail@markus-falk.com>"
+  ],
+  "description": "Simple Tab Script",
+  "keywords": [
+    "tabs"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*.md"
+  ],
+  "dependencies": {
+    "jquery": ">1.7.0"
+  },
+  "_release": "2.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.0.2",
+    "commit": "b71b636c464f260271e6f2cfb6e47bbb49e16f00"
+  },
+  "_source": "https://github.com/markusfalk/tabs.git",
+  "_target": "^2.0.2",
+  "_originalSource": "tabs",
+  "_direct": true
+}

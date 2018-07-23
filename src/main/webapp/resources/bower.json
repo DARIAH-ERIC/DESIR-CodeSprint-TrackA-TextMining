@@ -1,0 +1,30 @@
+{
+  "name": "desir-trackA",
+  "homepage": "https://github.com/kermitt2/entity-cooking",
+  "authors": [
+    "Luca Foppiano <luca@foppiano.org>"
+  ],
+  "description": "A magic oven to reduce entities at low heat",
+  "main": "",
+  "keywords": [
+    "entity-matching",
+    "entity-cooking"
+  ],
+  "license": "APACHE",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.6.3",
+    "angular-bootstrap": "^2.5.0",
+    "jquery-form": "^4.2.1",
+    "bootstrap": "^3.3.7",
+    "tabs": "^2.0.2",
+    "pdfjs-bower": "^1.0.233"
+  }
+}
