@@ -4,6 +4,6 @@ out*
 *.tmp
 *.class
 target
-build
+/build
 .idea/*
 .gradle

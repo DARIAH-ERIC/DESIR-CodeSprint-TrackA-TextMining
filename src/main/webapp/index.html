@@ -56,25 +56,28 @@
                                         <input class="form-inline" file-model="myFile" name="input" type="file"/>
                                     </div>
                                 </div>
-                                <div class="col-xs-6" ng-if="jsonResponse">
-                                    <div class="pull-right">
-                                        Total runtime: <strong>{{ jsonResponse.totalRuntime }}</strong> ms |
-                                        Grobid runtime:<strong> {{ jsonResponse.grobidRuntime }}</strong> ms
-                                        Entity runtime:<strong> {{ jsonResponse.efRuntime }}</strong> ms
-                                        Author resolution runtime:<strong> {{ jsonResponse.ecRuntime }}</strong> ms
-                                    </div>
+                            </div>
+                            <div class="col-xs-12" ng-if="jsonResponse">
+                                <div class="pull-right">
+                                    Total runtime: <strong>{{ jsonResponse.totalRuntime }}</strong> ms |
+                                    Grobid runtime:<strong> {{ jsonResponse.grobidRuntime }}</strong> ms |
+                                    Entity runtime:<strong> {{ jsonResponse.efRuntime }}</strong> ms |
+                                    Author resolution runtime:<strong> {{ jsonResponse.ecRuntime }}</strong> ms
                                 </div>
                             </div>
+
                             <div class="col-xs-12" id="requestResult" ng-if="jsonResponse">
                                 <hr/>
                                 <div class="row">
-                                    <div class="col-xs-12" ng-controller="linkController">
-                                        <div class="jumbotron" ng-repeat="entity in jsonResponse.entities">
-                                            <!--<div class="row" ng-repeat="entity in jsonResponse.entities track by $index" ng-if="$index%4==0">-->
-                                            <!--track by entity.id-->
-                                            <entity class="col-xs-height"></entity>
-                                        </div>
-                                    </div>
+                                    {{jsonResponse}}
+                                    <canvas id="the-canvas"></canvas>
+                                    <!--<div class="col-xs-12" ng-controller="linkController">-->
+                                        <!--<div class="jumbotron" ng-repeat="entity in jsonResponse.entities">-->
+                                            <!--&lt;!&ndash;<div class="row" ng-repeat="entity in jsonResponse.entities track by $index" ng-if="$index%4==0">&ndash;&gt;-->
+                                            <!--&lt;!&ndash;track by entity.id&ndash;&gt;-->
+                                            <!--<entity class="col-xs-height"></entity>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
                                 </div>
                             </div>
                             <div id="errorResponse" ng-if="errorMessage">

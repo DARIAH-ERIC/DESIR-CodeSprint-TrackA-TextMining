@@ -1,6 +1,5 @@
 package org.dariah.desir.service;
 
-import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -22,6 +21,6 @@ public class SampleController {
     public String processPdf(@RequestParam(value = "file") MultipartFile pdf) {
         //integration
 
-        return "{'result': 'bao'}";
+        return "{\"result\": \"bao\"}";
     }
 }
