@@ -9,7 +9,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
         var request = {
             method: 'POST',
-            url: window.location.href + '/disambiguate',
+            url: window.location.href + '/process',
             data: formData,
             headers: {
                 'Content-Type': undefined

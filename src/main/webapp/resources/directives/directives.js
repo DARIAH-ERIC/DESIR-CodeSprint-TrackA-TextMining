@@ -1,4 +1,4 @@
-angular.module('org.entitycooking.ui')
+angular.module('org.dariah.desir.ui')
     .directive('entity', function () {
             return {
                 restrict: 'E',
@@ -7,7 +7,7 @@ angular.module('org.entitycooking.ui')
         }
     );
 
-angular.module('org.entitycooking.ui')
+angular.module('org.dariah.desir.ui')
     .directive('fileModel', ['$parse', function ($parse) {
             return {
                 restrict: 'A',
@@ -24,3 +24,6 @@ angular.module('org.entitycooking.ui')
             };
         }]
     );
+
+// angular.module("org.dariah.desir.ui")
+//     .directive('pdfFile', )
