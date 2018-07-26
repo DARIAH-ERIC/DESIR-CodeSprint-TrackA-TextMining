@@ -159,5 +159,31 @@ public class EntityFishingService {
         }
     }
 
+    public static void main(String[] args) throws Exception{
+        String result, text = null;
+        String lang = "en";
+        String fileInput = "11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf.tei.xml";
+        Map<String, Double> keywordList = new HashMap<>();
+        GrobidParsers grobidParsers = new GrobidParsers();
+        try {
+            EntityFishingService entityFishingService = new EntityFishingService("cloud.science-miner.com/nerd/service");
+            ClassPathResource resource = new ClassPathResource(fileInput);
+            InputStream inputStream =resource.getInputStream();
 
+            // processing text disambiguation
+            //text = grobidParsers.processAbstract(inputStream);
+            //result = entityFishingService.textDisambiguate(text, lang);
+
+            // processing term disambiguation
+            keywordList = grobidParsers.processKeyword(inputStream);
+            result = entityFishingService.termDisambiguate(keywordList, lang);
+
+            // saving the result
+            String resultInJson = entityFishingService.toJson(result);
+            entityFishingService.saveToFile(resultInJson);
+            System.out.println(resultInJson);
+        } catch (IOException e){
+            e.printStackTrace();
+        }
+    }
 }
