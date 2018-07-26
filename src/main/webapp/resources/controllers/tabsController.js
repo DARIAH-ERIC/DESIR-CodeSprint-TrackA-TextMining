@@ -10,6 +10,7 @@ angular.module('org.dariah.desir.ui')
             $scope.model = {
                 name: 'Tabs'
             };
+            $scope.pdfjsLib = window['pdfjs-dist/build/pdf'];
         }
     );
 

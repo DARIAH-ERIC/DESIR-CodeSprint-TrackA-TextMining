@@ -1,4 +1,5 @@
 angular.module('org.dariah.desir.ui').controller('uploadController', function ($scope, $http) {
+    console.log($scope.myFile)
     $scope.uploadFile = function () {
         $scope.jsonResponse = "";
         $scope.quantity = 4;

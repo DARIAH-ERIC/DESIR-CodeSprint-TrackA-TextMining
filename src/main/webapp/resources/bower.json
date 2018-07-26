@@ -25,6 +25,7 @@
     "jquery-form": "^4.2.1",
     "bootstrap": "^3.3.7",
     "tabs": "^2.0.2",
-    "pdfjs-bower": "^1.0.233"
+    "pdfjs-bower": "^1.0.233",
+    "angular-pdf": "^2.0.0"
   }
 }
