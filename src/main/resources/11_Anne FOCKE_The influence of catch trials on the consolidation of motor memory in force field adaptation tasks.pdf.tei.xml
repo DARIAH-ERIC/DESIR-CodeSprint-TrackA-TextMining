@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.tei-c.org/ns/1.0 /data/workspace/services/grobid/grobid-home/schemas/xsd/Grobid.xsd"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+	<teiHeader xml:lang="en">
+		<encodingDesc>
+			<appInfo>
+				<application version="0.5.1-SNAPSHOT" ident="GROBID" when="2018-07-23T09:34+0000">
+					<ref target="https://github.com/kermitt2/grobid">GROBID - A machine learning software for extracting information from scholarly documents</ref>
+				</application>
+			</appInfo>
+		</encodingDesc>
+		<fileDesc>
+			<titleStmt>
+				<title level="a" type="main">The influence of catch trials on the consolidation of motor memory in force field adaptation tasks</title>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Frontiers Media SA</publisher>
+				<availability status="unknown"><p>Copyright Frontiers Media SA</p>
+				</availability>
+				<date type="published" when="2013-07-25">published: 25 July 2013</date>
+			</publicationStmt>
+			<sourceDesc>
+				<biblStruct>
+					<analytic>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Anne</forename><surname>Focke</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Christian</forename><surname>Stockinger</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Christina</forename><surname>Diepold</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Marco</forename><surname>Taubert</surname></persName>
+						</author>
+						<author>
+							<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Thorsten</forename><surname>Stein</surname></persName>
+						</author>
+						<title level="a" type="main">The influence of catch trials on the consolidation of motor memory in force field adaptation tasks</title>
+					</analytic>
+					<monogr>
+						<title level="j" type="main">Frontiers in Psychology</title>
+						<title level="j" type="abbrev">Front. Psychol.</title>
+						<idno type="eISSN">1664-1078</idno>
+						<imprint>
+							<publisher>Frontiers Media SA</publisher>
+							<biblScope unit="volume">4</biblScope>
+							<date type="published" when="2013-07-25">published: 25 July 2013</date>
+						</imprint>
+					</monogr>
+					<idno type="DOI">10.3389/fpsyg.2013.00479</idno>
+					<note>ORIGINAL RESEARCH ARTICLE Edited by: Ernst-Joachim Hossner, University of Bern, Switzerland Reviewed by: *Correspondence: Anne Focke, YIG &quot;Computational Motor Control and Learning&quot; , BioMotion Center, Institute of Sports and Sports Science,</note>
+				</biblStruct>
+			</sourceDesc>
+		</fileDesc>
+		<profileDesc>
+			<textClass>
+				<keywords>
+					<term>motor learning</term>
+					<term>manipulandum</term>
+					<term>reaching movements</term>
+					<term>interference</term>
+					<term>after-effects</term>
+					<term>complex task</term>
+				</keywords>
+			</textClass>
+			<abstract>
+				<p>In computational neuroscience it is generally accepted that human motor memory contains neural representations of the physics of the musculoskeletal system and the objects in the environment. These representations are called &quot;internal models&quot;. Force field studies, in which subjects have to adapt to dynamic perturbations induced by a robotic manipulandum, are an established tool to analyze the characteristics of such internal models. The aim of the current study was to investigate whether catch trials during force field learning could influence the consolidation of motor memory in more complex tasks. Thereby, the force field was more than double the force field of previous studies (35 N·s/m). Moreover, the arm of the subjects was not supported. A total of 46 subjects participated in this study and performed center-out movements at a robotic manipulandum in two different force fields. Two control groups learned force field A on day 1 and were retested in the same force field on day 3 (AA). Two test groups additionally learned an interfering force field B (= −A) on day 2 (ABA). The difference between the two test and control groups, respectively, was the absence (0%) or presence (19%) of catch trials, in which the force field was turned-off suddenly. The results showed consolidation of force field A on day 3 for both control groups. Test groups showed no consolidation of force field A (19% catch trials) and even poorer performance on day 3 (0% catch trials). In conclusion, it can be stated that catch trials seem to have a positive effect on the performance on day 3 but do not trigger a consolidation process as shown in previous studies that used a lower force field viscosity with supported arm. These findings indicate that the results of previous studies in which less complex tasks were analyzed, cannot be fully transferred to more complex tasks. Moreover, the effects of catch trials in these situations are insufficiently understood and further research is needed.</p>
+			</abstract>
+		</profileDesc>
+	</teiHeader>
+	<text xml:lang="en">
+		<body>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>INTRODUCTION</head><p>Humans are able to learn a variety of motor skills. During practice, a neural representation of the task is formed that contains information about the physics of the musculoskeletal system and the objects in the environment. Such representations are called "internal models" (e.g., <ref type="bibr" target="#b11">Kawato, 1999</ref>). Based on the work of <ref type="bibr" target="#b27">Shadmehr and Mussa-Ivaldi (1994)</ref>, force field studies in which subjects have to adapt to a dynamic perturbation induced by a robotic manipulandum became an established tool to study the characteristics of internal models (e.g., <ref type="bibr" target="#b16">Malfait et al., 2002;</ref><ref type="bibr" target="#b5">Criscimagna-Hemminger and Shadmehr, 2008)</ref>. Following acquisition, internal models undergo changes over time. This time-dependent change denotes the consolidation of a motor memory ( <ref type="bibr" target="#b23">Robertson et al., 2004;</ref><ref type="bibr" target="#b13">Krakauer and Shadmehr, 2006</ref>). Consolidation falls under the concept of "memory" which consists of a "bridging mechanism that retains the condensed past and present information for future use" ( <ref type="bibr" target="#b32">Tetzlaff et al., 2012)</ref>. Thereby a memory can be divided in three categories: working memory, short-term memory (fragile) and long-term memory (stable) ( <ref type="bibr" target="#b32">Tetzlaff et al., 2012)</ref>. Motor memory consolidation is defined as a transformation "that progresses over time from a fragile state, which is susceptible to interference by a lesion or a conflicting motor task, to a stabilized state, which is resistant to such interference" ( <ref type="bibr" target="#b13">Krakauer and Shadmehr, 2006</ref>). In contrast, learning "consists of an extraction mechanism that condenses information from past experiences and performs refinement processing of the condensed information so that behaviorally useful predictions of the future can be made" ( <ref type="bibr" target="#b32">Tetzlaff et al., 2012</ref>). Thus, motor memory consolidation denotes a specific memory process (i.e., encoding, consolidation, and retrieval) that seems to be implemented by adaptive changes in the central nervous system <ref type="bibr" target="#b26">(Shadmehr and Holcomb, 1997;</ref><ref type="bibr" target="#b19">Müllbacher et al., 2001</ref>), while motor learning is a latent behavioral variable that must be inferred by changes in performance over extensive periods of time ( <ref type="bibr" target="#b24">Schmidt and Lee, 2011;</ref><ref type="bibr" target="#b10">Kantak and Winstein, 2012)</ref>.</p><p>Evidence for consolidation of motor memories was first presented by Shadmehr and co-workers <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997</ref>). In these experiments, subjects were instructed to control a robotic manipulandum and to perform point-to-point reaching movements to predefined target locations. The robotic manipulandum is able to generate forces during arm movements (dynamic perturbations). When no forces were active (null field), subjects produced straight hand trajectories <ref type="bibr" target="#b25">(Shadmehr and Brashers-Krug, 1997</ref>). If a clockwise velocity-dependent force field (force field A) was activated, subjects produced distorted trajectories with a characteristic "hooking" pattern. With practice, the hooks diminished and the hand trajectories in force field A became similar to those observed in the null field (adaptation). When retested after 24 h, subjects showed retention of performance in force field A indicating consolidation of the motor memory. In contrast, if subjects learned a second opposing force field B (= −A) at different time intervals after force field A, retest performance in force field A is sometimes diminished because force field B interferes with the consolidation of force field A. If the time interval between learning of field A and B was less than 5 h consolidation of force field A was absent <ref type="bibr" target="#b25">(Shadmehr and Brashers-Krug, 1997</ref>). Only with time intervals more than 5 h a consolidation of force field A could be observed.</p><p>Impaired retest performance in force field A for the groups with less than 5 h time interval between learning force field A and B indicates that task A was affected by either retrograde or anterograde interference. Retrograde interference would be a disruption of the memory of task A from learning a new task B and is directed backward from learning B (day 2) onto learning A (day 1). In contrast, anterograde interference is directed forward and describes disruption of retest performance in force field A (day 3) due to performance in task B (day 2). Given the fact that in the above described studies interference decreased if the time between force field A and B increased, it seems likely that the interference is mostly of retrograde source <ref type="bibr" target="#b23">(Robertson et al., 2004</ref>). <ref type="bibr" target="#b3">Caithness et al. (2004)</ref> failed to confirm the results of these previous studies and showed consolidation only for control groups which did not perform in force field B between test and retest in force field A (AA). Neither the test group with a 5 min nor the test group with a 24 h time interval between force field A and B (ABA) showed consolidation. Although the time interval between learning the two force fields was more than the critical 5 h, it can be assumed that the interference for the 24 h group is still of retrograde source as the time interval between learning B and retesting A was 1 week making anterograde interference improbable.</p><p>The conflicting results of <ref type="bibr" target="#b3">Caithness et al. (2004)</ref> and Shadmehr and co-workers <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997</ref>) could be based on randomly presented catch trials, during which no forces were applied. While consolidation was found for studies including catch trails <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997)</ref>, no consolidation was observed without using catch trials ( <ref type="bibr" target="#b3">Caithness et al., 2004</ref>). <ref type="bibr" target="#b20">Overduin et al. (2006)</ref> confirmed these findings and showed that learning with catch trials leads to retention and consolidation of the initial task when two opposing force fields where learned 6 h apart, while learning without catch trials leads to interference and therefore no consolidation. They explained their results based on the assumption that random practice degrades performance in acquisition but facilitates the performance in the retention test <ref type="bibr" target="#b24">(Schmidt and Lee, 2011)</ref>. In literature, different hypotheses on these contextual interference effects are discussed. Two common theoretical explanations are the elaborative-processing hypothesis and the forgetting-reconstruction hypothesis. The elaborative-processing hypothesis suggests that random practice promotes more comparative and contrastive analyses of the actions required to learn the task. Thus, the learner can encode critical task-related information which leads to a stronger and more elaborate memory representation ( <ref type="bibr" target="#b24">Schmidt and Lee, 2011;</ref><ref type="bibr" target="#b10">Kantak and Winstein, 2012)</ref>. The forgetting-reconstruction hypothesis is based on the assumption that the action planning prior to a trial is influenced by what has been done in the previous trial. Thereby, random practice forces the learner to forget the previously constructed action plan because the subsequent trial is different, and to reconstruct the plan again when the initial task is presented again later. This added cognitive processing might be responsible for the poorer performance during adaptation but the stronger motor memory at retention ( <ref type="bibr" target="#b24">Schmidt and Lee, 2011;</ref><ref type="bibr" target="#b10">Kantak and Winstein, 2012)</ref>. From a more computational view the benefit of variable randomized learning is based on the assumption that motor learning is an iterative control process driven by motor error. This motor error arises by comparing the predicted sensory state provided by an (forward) internal model with the actual sensory feedback of a movement. Based on this motor error, the control mechanism is changed on the subsequent trial <ref type="bibr" target="#b4">(Cisek, 2005;</ref><ref type="bibr" target="#b28">Shadmehr et al., 2010</ref>). Thus, random practice or more specifically randomized catch trials within the acquisition might enlarge the motor error and thereby improve the control mechanisms as adaptation is thought to be an iterative process that minimizes movement error from trial to trial. Several state-space models of motor adaptation act on the assumption that the prediction error on one trial is correlated to the change in motor output in the next trial <ref type="bibr" target="#b33">(Thoroughman and Shadmehr, 2000;</ref><ref type="bibr" target="#b29">Smith et al., 2006;</ref><ref type="bibr" target="#b14">Lee and Schweighofer, 2009</ref>). Such models can account for most phenomena of motor learning as savings, anterograde, and retrograde interference as well as spontaneous recovery. This strengthens the assumption that the motor error plays a critical role in the adaptation and consolidation process.</p><p>Other authors also referred to the results of <ref type="bibr" target="#b20">Overduin et al. (2006)</ref> and assigned catch trials a significant role in the process of consolidation <ref type="bibr" target="#b5">(Criscimagna-Hemminger and Shadmehr, 2008)</ref>. However, we found only one study with a very specific measurement setup ( <ref type="bibr" target="#b20">Overduin et al., 2006</ref>) that could confirm the theory that unpredictable interruptions in force field learning result in increased stabilization of motor memory <ref type="bibr" target="#b20">(Overduin et al., 2006</ref>). The viscosity of the force field in previous studies that found consolidation with catch trials was set at 10-13 N·s/m ( <ref type="bibr" target="#b2">Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>) and the upper-arm of the subjects was supported in the horizontal plane by a rope attached to the ceiling while performing the point-to-point reaching movements. Thereby, the redundant degrees of freedom <ref type="bibr" target="#b1">(Bernstein, 1967)</ref> of the subjects' arms were partly constraint simplifying the movement task to be learned. In natural reaching movements the humans' arms are free to move denoting a higher number of degrees of freedom to be coordinated during task execution. In addition, in the above cited studies dynamic environments were simulated in which the effective endpoint mass was about 0.26 kg. However, one of the defining characteristics of human life is the ability to use different tools with diverse dynamic properties <ref type="bibr" target="#b5">(Criscimagna-Hemminger and Shadmehr, 2008)</ref>. To the best of our knowledge, the combination of unconstrained arm movements with higher simulated endpoint masses have not yet been studied in the context of consolidation experiments. We are of the opinion that it is essential to unravel whether the current findings <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>) are also valid for more complex movement tasks and therefore can be generalized.</p><p>Thus, the aim of this study was to investigate whether the presence or absence of catch trials during force field adaptation also influences consolidation in more complex tasks. In order to relate the present findings to previous force field setups, we used force fields of higher viscosity as well as an unsupported arm configuration during force field adaptation. We hypothesized that, despite a higher viscosity of the force field and an unsupported arm, catch trials lead to consolidation of motor memory when learning two opposing force fields one day apart.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>MATERIALS AND METHODS</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>SUBJECTS</head><p>A total of forty-six adults (age: 24.1 ± 2.6 yrs, male: 30, female: 16) participated in this study. They all gave written informed consent and the test-protocol was reviewed and approved by the Institutional Review Board. All subjects were naive to the experimental procedure and had no obvious motor deficits. The 46 participants were randomly assigned to four groups of 11-13 subjects each, whereas two control groups (C1, C2) and two test groups (T1, T2) were defined. All subjects learned to make reaching movements while interacting with a force produced by a robotic manipulandum. While the control groups learned force field A and were retested under the same force field condition A without an interfering task between learning and retest (AA), the test groups had to learn a second interfering force field B between learning and retest of force field A (ABA). The difference of group 1 and 2 was defined by the absence (0%) or presence (∼19%) of catch trials, respectively.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>APPARATUS</head><p>Subjects held the handle of a robotic manipulandum ("BioMotionBot", <ref type="figure" target="#fig_0">Figure 1A</ref>) that could exert forces ( <ref type="bibr" target="#b0">Bartenbach et al., 2013)</ref>. The arm of the participants was not supported and all movements were restricted to the horizontal plane. Subjects were seated on a chair that was locked into an individual position enabling the subjects to grasp the handle with their dominant hand ( <ref type="figure" target="#fig_0">Figure 1B)</ref>. Visual feedback of hand position and targets was provided on a screen mounted above the manipulandum ( <ref type="figure" target="#fig_0">Figure 1B)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>PROCEDURE</head></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Task</head><p>Subjects used the handle of the manipulandum to make visually guided reaching movements. During these movements, the arm was not supported. Subjects had to perform center-out tasks to eight targets around the center <ref type="figure" target="#fig_2">(Figure 2A)</ref>. Each target was visualized as a 1 cm wide red circle on a black background while the cursor had a diameter of 0.3 cm. Distance from the center to each of the eight targets was 10 cm in real space. Starting from the center subjects had to reach for each of the eight circumjacent targets in pseudo-randomized order and then move back to the center. When the current target was reached, the next target flashed up. Targets that should be reached next changed its color from red to yellow. One block was defined by 16 trials (eight inwards and outwards movements, respectively) and each of the eight targets was presented once per block. Participants were given 500 ± 50 ms to complete each movement, starting from the moment the current target was left and lasting until the cursor entered the next target. Reaction time was excluded from this time interval. If the subjects reached the target within the allotted time, a green circle around the target appeared. If they moved too slowly, a red circle appeared and when moving too fast an orange circle turned up. This visual feedback was provided throughout the entire experiment.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Design</head><p>On day 1, all subjects performed a familiarization block under null field condition (no forces) for 25 blocks (400 trials) in which all eight targets were presented. Generally, after these 400 trials subjects were able to move at the required pace. No further analysis was made of this data. After a 5 min rest, subjects performed again six blocks (96 trials) in a null field. Based on these trials, so-called baseline trajectories were calculated. These are commonly used as reference to movements conducted under force field conditions. After another 5 min rest, subjects completed a learning block of 16 blocks (256 movements, according to <ref type="bibr" target="#b3">Caithness et al., 2004 and</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>) in a velocitydependent clockwise force field A. On day 2, the test groups performed an interference block of 16 blocks (256 trials) in a velocity-dependent counterclockwise force field B. All groups returned on day 3 and experienced the same force field A of day 1 in a retest block ( <ref type="table" target="#tab_0">Table 1)</ref>. Control and test group 1 (C1, T1) performed all 256 trials in the force field while the catch trial groups (C2, T2) performed only 208 trials in the force field and 48 (∼19%) catch trials without forces (null field). Visual feedback was only provided to help the subjects making their movements in the required time but not to evaluate any success. After the baseline block, subjects were told that they now would experience "forces" generated by the robotic manipulandum. They also were instructed to sleep at least 6 h between the sessions.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Forces</head><p>All subjects started the experiment with a familiarization block to learn to move at the required pace followed by a baseline block. In both cases, all subjects experienced a null field. Afterwards, two velocity-dependent force fields were generated by the BioMotionBot that were proportional to the reaching speed and always pushed the handle perpendicular to its current movement direction in a clockwise (A) or counterclockwise (B) direction <ref type="figure" target="#fig_2">(Figures 2B,C)</ref>. It was generated using the following equation:</p><formula xml:id="formula_0">Fx Fz = k cos(θ) − sin(θ) sin(θ) cos(θ) ˙ x ˙ z</formula><p>where </p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Catch trials</head><p>While control and test group 1 performed all trials under force field conditions, for the control and test group 2, 48 catch trials (∼19%, according to <ref type="bibr" target="#b25">Brashers-Krug, 1997 and</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>) were embedded within the 16 blocks. On these trials the force field was turned off suddenly without announcement. Catch trials were programmed pseudo-randomly and occurred on the same trials for both catch trial groups (C2, T2) and both force fields (A, B). The trajectories that result during catch trials when the robot is producing a null field unexpectedly are called "after-effects".</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ANALYSIS</head><p>All parameters were calculated using the custom made software "ManipAnalysis" <ref type="bibr" target="#b30">(Stockinger et al., 2012)</ref>. Therewith, raw data of the hand trajectories were filtered using a fourth-order Butterworth low-pass filter with a cut-off frequency of 10 Hz. Based on the filtered data movement velocities were calculated. All time derivatives were numerically computed by central difference method. Afterwards, the data sets were segmented. Our segmentation algorithm is based on the idea that the movement starts if the cursor leaves the starting point and ends if the cursor reaches the target point. In the last preprocessing step, the segmented data sets were time normalized in order to make them comparable. Time normalization was executed via cubic spline interpolation of recorded data points and subsequent rescaling the sampling rate as a percentage of the duration <ref type="bibr" target="#b30">(Stockinger et al., 2012)</ref>.</p><p>To quantify performance, for each trial in the force field the enclosed area between the hand trajectory and the straight line joining start and target point was calculated according to <ref type="bibr" target="#b3">Caithness et al. (2004)</ref>. To analyze after-effects indicated by the performance of the catch trials we used a directed distance measure according to <ref type="bibr" target="#b25">Shadmehr and Brashers-Krug (1997)</ref> that quantified the maximum perpendicular distance of the hand path from a straight line to the target. The direction was positive for  clockwise deviations (after-effect appropriate to force field B) and negative for counterclockwise deviations (after-effect appropriate to force field A).</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>STATISTICS</head><p>Mean scores of the first and last block were calculated and compared, whereat catch trials were excluded from the calculation of these mean scores ( <ref type="bibr" target="#b3">Caithness et al., 2004</ref>). Single factor ANOVAs were assessed to compare the initial as well as the end performance in force field A on day 1 between the four groups, respectively. T-Tests were conducted to analyze differences between the initial and the end performance for each group separately. The consolidation of force field A was estimated by comparing the initial performance on the learning session on day 1 and the retest session on day 3. Main and interaction effects of the withinsubject-factor time (initial performance on day 1 and day 3) and the between-subject-factor group (with or without catch trials) were assessed for the control and test groups separately using repeated-measures ANOVAs (2 × 2). The level of significance for all tests was set a priori to 0.05.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RESULTS</head><p>To analyze the effect of catch trials on the consolidation of motor memory, subjects learned to make reaching movements at a robotic manipulandum in two different dynamic environments (force field A and B) with and without catch trials, respectively. The task was more complex than in previous studies as the viscosity of the force fields was increased and the upper arm was not supported during the movements. We tested for the stability of the adapted field A as a function of presence or absence of catch trials.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ADAPTATION TO A NOVEL DYNAMIC ENVIRONMENT</head><p>Subjects started to make reaching movements in the null field without disturbing forces. A typical hand trajectory of one subject is shown in <ref type="figure">Figure 3A</ref>. The movements are approximately in a straight line. After introducing a velocity-dependent force field, the hand trajectories became highly distorted ( <ref type="figure">Figure 3B)</ref>. The force field pushed the hand of the subjects in a direction perpendicular to the movement direction resulting in a characteristic "hooking" pattern. However, with practice the hand trajectories converged toward a straight line <ref type="figure">(Figure 3C)</ref>, typically produced by subjects under null field conditions ( <ref type="bibr" target="#b7">Flash and Hogan, 1985)</ref>. Accordingly, the enclosed area decreased with practice <ref type="figure">(Figure 4)</ref>. <ref type="figure">Figure 4A</ref> shows the performance (enclosed area) during learning block (day 1) and retest block (day 3) of force field A for the control groups (with and without catch trials) which experienced no interfering force field on day 2. The performance of the test groups which experienced an interfering force field B on day 2 is shown in <ref type="figure">Figure 4B</ref>. As expected the enclosed area decreased with practice for all four groups.</p><p>No significant differences in the initial performance of force field A on day 1 (mean score of the first block) were found between the four groups. Additionally, performance was for all four groups significantly different between the first block (mean score) and the last block (mean score) indicating that all four groups were able to adapt to force field A within 256 trials (p &lt; 0.001 for all four groups). Comparing the end performance of force field A on day 1 between the four groups the test group without catch trials (T1) showed significantly lower values than the test group with catch trials (T2) (p &lt; 0.001) indicating a putative better adaptation to the force field for the test group without catch trials. However, a repeated-measures ANOVA (2 × 2) showed no significant interaction between group and time when comparing the initial and end performance of day 1 for the two test groups. This detects a similar adaptation of force field A on day 1 for both test groups. For the control groups, no significant difference between the values at the end of force field A was revealed and comparing the corresponding two catch trial and no catch trial groups significant differences were neither found between C1 and T1 nor between C2 and T2. Thus, we act on the assumption that the base level of the four groups after day 1 was similar.</p><p>The progressions of the catch trial performance indicating the after-effects are shown in <ref type="figure">Figure 6</ref> for both catch trial groups (C2, T2). Catch trial performance developed in the opposite direction than the force field trial performance starting with a perturbation close to zero increasing during the 48 catch trials and showing a performance plateau after the first 20 catch trials. Thereby, the direction of the deviation depends on the force field that was learned (clockwise or counterclockwise). While the force field FIGURE 3 | Hand trajectories of one subject (group T1) under null field condition (A), at the beginning of learning force field A (B), and at the end of learning force field A (C). The subject showed straight trajectories in the null field, highly distorted trajectories at the beginning of force field training, and again almost straight hand trajectories at the end.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>www.frontiersin.org</head><p>July 2013 | Volume 4 | Article 479 | 5 trial performance improved during dynamic learning the catch trial performance worsened during the adaptation favoring the idea that improvement in force field trial performance was due to formation of an internal model rather than a simple increase in stiffness of the arm <ref type="bibr" target="#b27">(Shadmehr and Mussa-Ivaldi, 1994)</ref>.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>CONSOLIDATION</head><p>To investigate the influence of catch trials on the consolidation we compared the initial performance in field A of day 1 and day 3 for the two control groups and the two test groups, respectively, including time as within-subject-factor (initial performance on day 1 and day 3) and group as between-subject-factor (with or without catch trials).</p><p>For the control groups a significant time effect (p &lt; 0.001, η 2 = 0.874) was revealed ( <ref type="figure">Figure 5A)</ref>. No significant group effect and no significant interaction between time and group were found, indicating a comparable improvement of performance from day 1 to day 3 for both control groups (with and without catch trials).</p><p>In contrast, different results were revealed for the test groups, which experienced an interfering force field B between learning and retest of field A. Besides a significant time effect (p &lt; 0.001, η 2 = 0.530) and no significant group effect the ANOVA showed a significant interaction between time and group (p = 0.006, η 2 = 0.316). While the test group T2 with catch trials did not change its initial performance in force field A from day 1 to day 3, the test group T1 without catch trials even degraded the initial performance in field A from day 1 to day 3 ( <ref type="figure">Figure 5B</ref>). Thus, interference effects were shown for both test groups and further analysis must expose if these interferences are of retrograde or anterograde source.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>RETROGRADE AND ANTEROGRADE INTERFERENCE</head><p>As we found no consolidation of force field A for both test groups, either retrograde interference, anterograde interference, or both types of interference in combination must be detectable. To test for retrograde interference from task B (day 2) onto learning of task A (day 1), previous studies altered the temporal distance between learning force field A and force field B. By analyzing after-effects of the catch trials they showed that up to a temporal distance of 5.5 h learning of B starts in an internal model appropriate for A which might result in an unlearning of A (Shadmehr and Brashers-Krug, 1997).</p><p>The results of the present study showed that learning of B for the test group with catch trials (T2) started in an internal model appropriate for A (indicated by the negative values for the first catch trials in force field B; <ref type="figure">Figure 6B</ref>, mid). This might lead to an unlearning of task A and would therefore be interpreted as retrograde interference. However, as we did not change the time interval between learning A and B we cannot be sure that retrograde interference influenced the consolidation process of A. In contrast, anterograde interference can be determined by analyzing the after-effects of retest A on day 3. Data showed that the after-effects in force field A on day 3 started in direction of force field B <ref type="figure">(Figure 6B, right)</ref> indicating anterograde interference from force field B (day 2) onto retest of force field A (day 3). This anterograde interference could also have disrupted the consolidation of A.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>DISCUSSION</head><p>The purpose of this study was to test whether the presence or absence of catch trials during force field adaptation in more complex tasks could influence the process of consolidation similarly to the study of <ref type="bibr" target="#b20">Overduin et al. (2006)</ref>. In contrast to previous experiments <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers- Krug, 1997;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>), this study was the first study in which subjects performed point-to-point reaching movements at a robotic manipulandum with an unsupported arm in a velocitydependent force field of 35 N·s/m. Our results for the control groups showed that both groups exhibited a consolidation from day 1 to day 3 and no performance differences on day 3 between the two groups were observed. Therefore, in our study catch trials had no effect on the consolidation of motor memory in the absence of an interfering condition on day 2. In contrast to the control groups, the test groups experienced an interfering condition on day 2. The results exhibited no consolidation for group T2 (with catch trials) from day 1 to day 3 and even a decrease of performance on day 3 compared to day 1 for group T1 (without catch trials). Thus, our hypothesis that the presence of catch trials during adaptation in force fields with higher viscosity and an unsupported arm leads to consolidation of motor memory, cannot be confirmed.</p><p>Our results are partly in line but also in contrast to previous studies that investigated the influence of catch trials on the consolidation of motor memory. Similar to all previous studies <ref type="bibr" target="#b27">(Shadmehr and Mussa-Ivaldi, 1994;</ref><ref type="bibr" target="#b2">Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997;</ref><ref type="bibr" target="#b3">Caithness et al., 2004;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>), our subjects were able to adapt to different force fields as the enclosed area decreased significantly during the 256 trials in each session on day 1 and day 3. Moreover, the time courses of the adaptation profiles <ref type="figure">(Figure 4)</ref> revealed that the subjects' performance expose only fluctuations of small magnitudes during the last quarter of the training sessions indicating almost a steady state behavior. We also found retention of force field A for both control groups that experienced only one force field. These findings support the idea that an internal model can be consolidated and become available for "recall" even for a movement task in a force field with higher viscosity and with an unsupported arm. Comparable to <ref type="bibr" target="#b3">Caithness et al. (2004)</ref> and <ref type="bibr" target="#b20">Overduin et al. (2006)</ref>, our test group without catch trials did not show consolidation of force field A. They even decreased in performance on day 3 compared to day 1. But in contrast to <ref type="bibr" target="#b2">Brashers-Krug et al. (1996)</ref>, <ref type="bibr" target="#b25">Shadmehr and Brashers-Krug (1997)</ref>, and <ref type="bibr" target="#b20">Overduin et al. (2006)</ref> we did not find consolidation of force field A for the test group that learned with catch trials. However, catch trials had a positive effect in the ABA paradigm if we take into account that the test group that learned with catch trials (T2) showed a significant better initial performance on day 3 than the test group that learned without catch trials (T1). In combination with the fact that the test group with catch trials showed a slightly worse performance at the end of day 1 a contextual interference effect could be shown for the test groups. Therefore, catch trials positively influenced the performance of day 3 even in more complex tasks which is in line with the idea of variable learning.</p><p>Possible explanations that could account for the fact that we did not find consolidation when both force fields (A, B) were experienced with catch trials and one day apart, even though there was a tendency toward a positive catch trial effect, are considered in the following discussion: (1) the higher viscosity of the force field, (2) the unsupported arm, (3) the effect of anterograde interference, and (4) the chosen parameter and the definition of consolidation.</p><p>First, in our study the viscosity of the force field was more than double the viscosity in studies that found consolidation when learning with catch trials. This higher viscosity might have influenced the consolidation process of force field A. However, as the control groups where able to consolidate force field A despite the higher viscosity it cannot be concluded that the higher viscosity per se leads to a failure of consolidation. Additionally, all groups were able to adapt to the force fields within 256 trials to a performance plateau. This indicates that the viscosity was not too high to enable the subjects adjusting their performance within the given task to a sufficient level. Nevertheless, when subjects learned an interfering force field B no consolidation was found for both groups, with and without catch trials. It was just shown that the test group with catch trials performed better on day 3 than the test group without catch trials. <ref type="bibr" target="#b20">Overduin et al. (2006)</ref> concluded based on the forgetting-reconstruction hypothesis that catch trials are unpredictable interruptions causing active unlearning and relearning of the novel condition and thus lead to a greater stabilization in memory. Our results do not entirely confirm this assumption as we also implemented pseudo-randomized catch trials in terms of unpredictable interruptions but did not find consolidation of force field A.</p><p>Second, in all previous studies that found consolidation when learning with catch trials, subjects' arms were supported in the horizontal plane by a rope attached to the ceiling while performing the point-to-point reaching movements <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>). <ref type="bibr" target="#b3">Caithness et al. (2004)</ref> tested for the effect of arm support and showed no consolidation for both conditions, with and without supported arm. However, in both experiments subjects learned without catch trials. Thus, only the combination of supported arm and catch trials seems to lead to consolidation of force field A. If the support of the arm is a critical issue this might be an explanation of our results. The reduction of the degrees of freedom of the arm leads to a restricted movement and thus to a lower complexity of the task. The complexity of the task, in turn, might play an important role in the consolidation process of motor memory. In combination with the higher viscosity of the force field the unsupported arm in the present study might have inhibited a consolidation of force field A for the test groups as the complexity of the task was too high. Maybe an increase of trial number would enhance the performance at retention test, since previous studies showed positive effects of overlearning on the consolidation process ( <ref type="bibr" target="#b6">Driskell et al., 1992;</ref><ref type="bibr" target="#b36">Yin and Kitazawa, 2001</ref>). Besides the amount of practice the variability of practice ( <ref type="bibr" target="#b24">Schmidt and Lee, 2011</ref>) in terms of a higher rate of catch trials might have a more positive effect on motor memory consolidation as discussed above. Although the relationship between dynamic learning and motor skill learning (e.g., learning to tie shoe laces, playing golf) is not fully understood <ref type="bibr" target="#b8">(Huang and Krakauer, 2009;</ref><ref type="bibr" target="#b34">Yarrow et al., 2009</ref>), a higher rate of catch trials could trigger similar positive effects as reported in motor skill learning in connection with variable practice ( <ref type="bibr" target="#b24">Schmidt and Lee, 2011)</ref>.</p><p>Third, it has also been suggested that poor initial performance on the retest of A may rather be explained by anterograde interference of B on the second experience of A than by retrograde interference ( <ref type="bibr" target="#b18">Miall et al., 2004;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>). Previous studies that analyzed consolidation processes using the ABA paradigm changed the time interval between learning A and B to check for retrograde interference <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997;</ref><ref type="bibr" target="#b3">Caithness et al., 2004</ref>). As they found consolidation of A only when the time interval between learning A and B was higher than 5 h they concluded that this consolidation of A was achieved due to a decrease of retrograde interference. <ref type="bibr" target="#b25">Shadmehr and Brashers-Krug (1997)</ref> additionally analyzed after-effects of the included catch trials and found that the learning of force field B on day 2 started in an internal model appropriate to A for all groups with time intervals less than 5 h between learning A and B. Thus, they concluded that the internal model of A is used to learn B, leading to an unlearning of A and thereby to a catastrophic interference. Only for the groups with time intervals higher than 5 h learning of B started in an internal model that was close to a "tabula rasa". However, later studies <ref type="bibr" target="#b21">(Pekny et al., 2011)</ref> showed that training in two opposing force fields with no temporal difference between the two training episodes produces two competing memories and not destruction or overwriting of one memory. In the present study, the test group with catch trials also started learning B in an internal model appropriate to A. According to <ref type="bibr" target="#b21">Pekny et al. (2011)</ref> who found that two opposing force fields do not destroy each other this should rather be interpreted as anterograde interference from learning A onto learning B than retrograde interference from learning B back onto learning A. This is also supported by the fact that learning of B started with significant higher perturbations than learning A for both test groups, with and without catch trials (data not shown in the results section: time effect: p = 0.002, η 2 = 0.384, group effect: n.s., interaction: n.s.). If anterograde interference can be found from day 1 onto day 2 it is probable that anterograde interference can also be found from day 2 onto retest on day 3. We found that retest of A on day 3 started in an internal model appropriate to B for the test group with catch trails. This could explain the fact that no consolidation of A was observed. However, we cannot be sure that this was also the case for the test group without catch trials as we were not able to analyze aftereffects for this group. In the present study, subjects had a rest of 24 h between learning B on day 2 and retesting A on day 3. <ref type="bibr" target="#b20">Overduin et al. (2006)</ref> showed consolidation of A with a similar rest between learning B and retesting A but used a force field with lower viscosity and supported the arms of the subjects. For such simpler tasks a rest of 24 h seems to be enough to prevent anterograde interference. However, for a more complex task this period might be too short and must be extended or so called wash out trials must be embedded ( <ref type="bibr" target="#b12">Krakauer et al., 2005</ref>).</p><p>Fourth, the parameter to describe adaptation and consolidation in force field tasks varies among studies. All studies that found consolidation in the ABA paradigm used velocity vector correlation to describe the performance of the subjects <ref type="bibr" target="#b2">(Brashers- Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>). Velocity vector correlation quantifies the similarity between subjects' velocity profiles in the force field with corresponding velocity profiles in the baseline. Thereby, Shadmehr and co-workers selected individual baseline speed vectors that were optimally correlated to subsequent vectors while <ref type="bibr" target="#b20">Overduin et al. (2006)</ref> calculated baseline vectors as the average of the last four baseline trials. In contrast, we used the same parameter as <ref type="bibr" target="#b3">Caithness et al. (2004)</ref> that is based on the hand trajectories. Here, the enclosed area between the hand trajectory and the straight line joining start and target is calculated. Neither <ref type="bibr" target="#b3">Caithness et al. (2004)</ref> nor we found consolidation of force field A with an interfering force field B using this trajectory based parameter. Moreover, the statistical calculation of consolidation is different in previous studies. While some compared the mean performance of the entire learning block (day 1, force field A) with the entire retest block (day 3, force field A) <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997</ref>) others compared the initial performance of the learning and retest block ( <ref type="bibr" target="#b3">Caithness et al., 2004</ref>). <ref type="bibr" target="#b20">Overduin et al. (2006)</ref> compared the final performance of learning with the initial performance of retest. Thus, the combination of adaptation parameter and statistical calculation leads to three different methods to determine consolidation. Maybe, not the catch trials are responsible for the differences of previous studies but the calculation methods to determine consolidation is critical. Further studies should check on differences in the results when using different calculation methods to rule out methodical effects on the results.</p><p>To our knowledge, this is the first study that investigated consolidation of motor memory in force field studies with the ABA paradigm using a velocity-dependent force field with a high viscosity of 35 N·s/m and an unsupported arm. Such an increase of task complexity seems to lead to different consolidation patterns. Although we cannot support the results of previous studies <ref type="bibr" target="#b2">(Brashers-Krug et al., 1996;</ref><ref type="bibr" target="#b25">Shadmehr and Brashers-Krug, 1997;</ref><ref type="bibr" target="#b20">Overduin et al., 2006</ref>), we also found different performance on day 3 for the group that learned with catch trials compared to the group without catch trials. Thus, catch trials seem to have a positive effect on the performance on day 3 even for more complex movement tasks (higher viscosity, unsupported arm). However, there might also be other factors like methodical aspects that affect the results of the present and previous studies.</p><p>Further studies should continue concentrating on tasks of different complexity as the consolidation of motor memories needs to be investigated in various settings to be understood sufficiently. For more complex motor tasks, a higher number of trials or catch trials might be necessary to find similar consolidation effects as in previous studies. The effect of methodical differences on the results should be investigated and to prevent from anterograde interference time intervals between learning B and retesting A could be prolonged or washout trials should be included at the start of each session ( <ref type="bibr" target="#b3">Caithness et al., 2004;</ref><ref type="bibr" target="#b12">Krakauer et al., 2005</ref>).</p></div><figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_0"><head>FIGURE 1 | Robotic manipulandum "BioMotionBot" (A), setting of the experiment (</head><label>1</label><figDesc>FIGURE 1 | Robotic manipulandum "BioMotionBot" (A), setting of the experiment (B).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_1"><head></head><label></label><figDesc>Fx and Fz are robot-generated forces, k = 35 N·s/m indi- cates the force field viscosity, θ = −90 • (clockwise) or 90 • (coun- terclockwise), ˙ x and ˙ z are the components of the hand velocities in the horizontal plane.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_2"><head>FIGURE 2 | Center-out task (A), velocity-dependent clockwise force field (B), and velocity-dependent counterclockwise force field (C).</head><label>2</label><figDesc>FIGURE 2 | Center-out task (A), velocity-dependent clockwise force field (B), and velocity-dependent counterclockwise force field (C).</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" xml:id="fig_3"><head>FIGURE 4 |FIGURE 5 | Initial performance (mean score of the first block) in force field A of day 1 and day 3 for the control groups with and without catch trials (A) and the test groups with and without catch trials (B).FIGURE 6 | Performance (maximum perpendicular distance) during 48 catch trials in force field A on day 1 (learning), force field B on day 2, and force field A on day 3 (retest) for control (A) and test groups (B) separately.</head><label>456</label><figDesc>FIGURE 4 | Performance (enclosed area) during the 256 trials (without catch trials) or 208 trials (with catch trials) in force field A on day 1 (learning), force field B on day 2 (interference), and force field A on day 3 (retest) for control (A) and test groups (B) separately.</figDesc></figure>
+<figure xmlns="http://www.tei-c.org/ns/1.0" type="table" xml:id="tab_0" validated="true"><head>Table 1 | Description of the experiment.</head><label>1</label><figDesc></figDesc><table>Group 
+Subjects 
+Catch trials 
+Paradigm 
+
+Day 1 
+Day 2 
+Day 3 
+
+Control 1 
+n = 13 
+No 
+F N A 
+A 
+
+Control 2 
+n = 11 
+Yes (19%) 
+F N A 
+A 
+
+Test 1 
+n = 11 
+No 
+F N A 
+B 
+A 
+
+Test 2 
+n = 11 
+Yes (19%) 
+F N A 
+B 
+A 
+
+F, familiarization in null field; N, baseline in null field; A, velocity-dependent 
+
+clockwise field; B, velocity-dependent counterclockwise field. 
+
+</table></figure>
+
+			<note place="foot">www.frontiersin.org July 2013 | Volume 4 | Article 479 | 7</note>
+
+			<note place="foot">Frontiers in Psychology | Movement Science and Sport Psychology July 2013 | Volume 4 | Article 479 | 8</note>
+		</body>
+		<back>
+
+			<div type="acknowledgement">
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>ACKNOWLEDGMENTS</head><p>The Young Investigator Group (YIG) "Computational Motor Control and Learning" received financial support by the "Concept for the Future" of Karlsruhe Institute of Technology within the framework of the German Excellence Initiative. We acknowledge support by Deutsche Forschungsgemeinschaft and Open Access Publishing Fund of Karlsruhe Institute of Technology.</p></div>
+<div xmlns="http://www.tei-c.org/ns/1.0"><head>Conflict of Interest Statement:</head><p>The authors declare that the research was conducted in the absence of any commercial or financial relationships that could be construed as a potential conflict of interest.</p></div>
+			</div>
+
+			<div type="references">
+
+				<listBibl>
+
+<biblStruct xml:id="b0">
+	<analytic>
+		<title level="a" type="main">The BioMotionBot: A robotic device for applications in human motor learning and rehabilitation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">V</forename><surname>Bartenbach</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Sander</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pöschl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><surname>Wilging</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Nelius</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Doll</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">W</forename><surname>Burger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Stockinger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Focke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Stein</surname></persName>
+		</author>
+		<idno type="doi">10.1016/j.jneumeth.2012.12.006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience Methods</title>
+		<title level="j" type="abbrev">Journal of Neuroscience Methods</title>
+		<idno type="ISSN">0165-0270</idno>
+		<imprint>
+			<biblScope unit="volume">213</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="282" to="297" />
+			<date type="published" when="2013-03" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b1">
+	<monogr>
+		<title level="m" type="main">The Coordination and Regulation of Movements</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Bernstein</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="1967" />
+			<publisher>Pergamon</publisher>
+			<pubPlace>London</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b2">
+	<analytic>
+		<title level="a" type="main">Consolidation in human motor memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Thomas</forename><surname>Brashers-Krug</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Reza</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Emilio</forename><surname>Bizzi</surname></persName>
+		</author>
+		<idno type="doi">10.1038/382252a0</idno>
+		<idno>doi: 10.1038/ 382252a0</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">382</biblScope>
+			<biblScope unit="issue">6588</biblScope>
+			<biblScope unit="page" from="252" to="255" />
+			<date type="published" when="1996-07" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b3">
+	<analytic>
+		<title level="a" type="main">Failure to Consolidate the Consolidation Theory of Learning for Sensorimotor Adaptation Tasks</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">G</forename><surname>Caithness</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Osu</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Bays</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><surname>Chase</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><surname>Klassen</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kawato</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.2214-04.2004</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">24</biblScope>
+			<biblScope unit="issue">40</biblScope>
+			<biblScope unit="page" from="8662" to="8671" />
+			<date type="published" when="2004-06-06" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b4">
+	<analytic>
+		<title level="a" type="main">Neural representations of motor plans, desired trajectories, and controlled objects</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">P</forename><surname>Cisek</surname></persName>
+		</author>
+		<idno type="doi">10.1007/s10339-004-0046-7</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Cognitive Processing</title>
+		<title level="j" type="abbrev">Cogn Process</title>
+		<idno type="ISSN">1612-4782</idno>
+		<idno type="ISSNe">1612-4790</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="15" to="24" />
+			<date type="published" when="2005-03" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b5">
+	<analytic>
+		<title level="a" type="main">Consolidation Patterns of Human Motor Memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Criscimagna-Hemminger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.3071-08.2008</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">28</biblScope>
+			<biblScope unit="issue">39</biblScope>
+			<biblScope unit="page" from="9610" to="9618" />
+			<date type="published" when="2008-24-24" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b6">
+	<analytic>
+		<title level="a" type="main">Effect of overlearning on retention</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">E</forename><surname>Driskell</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">P</forename><surname>Willis</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Copper</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Appl. Physiol</title>
+		<imprint>
+			<biblScope unit="volume">77</biblScope>
+			<biblScope unit="page" from="615" to="622" />
+			<date type="published" when="1992" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b7">
+	<analytic>
+		<title level="a" type="main">The coordination of arm movements: an experimentally confirmed mathematical model</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Flash</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Hogan</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="page" from="1688" to="1703" />
+			<date type="published" when="1985" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b8">
+	<analytic>
+		<title level="a" type="main">Robotic neurorehabilitation: a computational motor learning perspective</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Vincent</forename><forename type="middle">S</forename><surname>Huang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">John</forename><forename type="middle">W</forename><surname>Krakauer</surname></persName>
+		</author>
+		<idno type="doi">10.1186/1743-0003-6-5</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of NeuroEngineering and Rehabilitation</title>
+		<title level="j" type="abbrev">Journal of NeuroEngineering and Rehabilitation</title>
+		<idno type="ISSN">1743-0003</idno>
+		<imprint>
+			<biblScope unit="volume">6</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page">5</biblScope>
+			<date type="published" when="2009" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b9">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">Article</title>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">9</biblScope>
+			<date type="published" when="2013-07" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b10">
+	<analytic>
+		<title level="a" type="main">Learning–performance distinction and memory processes for motor skills: A focused review and perspective</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Shailesh</forename><forename type="middle">S</forename><surname>Kantak</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Carolee</forename><forename type="middle">J</forename><surname>Winstein</surname></persName>
+		</author>
+		<idno type="doi">10.1016/j.bbr.2011.11.028</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Behavioural Brain Research</title>
+		<title level="j" type="abbrev">Behavioural Brain Research</title>
+		<idno type="ISSN">0166-4328</idno>
+		<imprint>
+			<biblScope unit="volume">228</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="219" to="231" />
+			<date type="published" when="2012-03" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b11">
+	<analytic>
+		<title level="a" type="main">Internal models for motor control and trajectory planning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Kawato</surname></persName>
+		</author>
+		<idno type="doi">doi:10.1016/S0959-4388(99</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Curr. Opin. Neurobiol</title>
+		<imprint>
+			<biblScope unit="volume">9</biblScope>
+			<biblScope unit="page" from="28" to="36" />
+			<date type="published" when="1999" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b12">
+	<analytic>
+		<title level="a" type="main">Adaptation to visuomotor transformations: consolidation, interference, and forgetting</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Krakauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Ghez</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">F</forename><surname>Ghilardi</surname></persName>
+		</author>
+		<idno type="doi">doi:10.1523/JNEUROSCI.4218-</idno>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">25</biblScope>
+			<biblScope unit="page" from="473" to="478" />
+			<date type="published" when="2005" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b13">
+	<analytic>
+		<title level="a" type="main">Consolidation of motor memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">John</forename><forename type="middle">W</forename><surname>Krakauer</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Reza</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="doi">10.1016/j.tins.2005.10.003</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Trends in Neurosciences</title>
+		<title level="j" type="abbrev">Trends in Neurosciences</title>
+		<idno type="ISSN">0166-2236</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">1</biblScope>
+			<biblScope unit="page" from="58" to="64" />
+			<date type="published" when="2006-01" />
+			<publisher>Elsevier BV</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b14">
+	<analytic>
+		<title level="a" type="main">Dual Adaptation Supports a Parallel Architecture of Motor Memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J-Y</forename><forename type="middle">Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Schweighofer</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.1294-09.2009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">33</biblScope>
+			<biblScope unit="page" from="10396" to="10404" />
+			<date type="published" when="2009-19-19" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b15">
+	<analytic>
+		<title level="a" type="main">Dual Adaptation Supports a Parallel Architecture of Motor Memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J-Y</forename><surname>Lee</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">N</forename><surname>Schweighofer</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.1294-09.2009</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">29</biblScope>
+			<biblScope unit="issue">33</biblScope>
+			<biblScope unit="page" from="10396" to="10404" />
+			<date type="published" when="2009-19-19" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b16">
+	<analytic>
+		<title level="a" type="main">Transfer of Motor Learning across Arm Configurations</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nicole</forename><surname>Malfait</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Douglas</forename><forename type="middle">M</forename><surname>Shiller</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">David</forename><forename type="middle">J</forename><surname>Ostry</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.22-22-09656.2002</idno>
+	</analytic>
+	<monogr>
+		<title level="j">The Journal of Neuroscience</title>
+		<title level="j" type="abbrev">J. Neurosci.</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="issue">22</biblScope>
+			<biblScope unit="page" from="9656" to="9660" />
+			<date type="published" when="2002-15-15" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b17">
+	<analytic>
+		<title/>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">22</biblScope>
+			<biblScope unit="page" from="9656" to="9660" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b18">
+	<analytic>
+		<title level="a" type="main">Adaptation to rotated visual feedback: a re-examination of motor interference</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">Christopher</forename><surname>Miall</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ned</forename><surname>Jenkinson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kunal</forename><surname>Kulkarni</surname></persName>
+		</author>
+		<idno type="doi">10.1007/s00221-003-1630-2</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Brain Research</title>
+		<title level="j" type="abbrev">Experimental Brain Research</title>
+		<idno type="ISSN">0014-4819</idno>
+		<idno type="ISSNe">1432-1106</idno>
+		<imprint>
+			<biblScope unit="volume">154</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="201" to="210" />
+			<date type="published" when="2004-01-01" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b19">
+	<analytic>
+		<title level="a" type="main">Early consolidation in human primary motor cortex</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Wolf</forename><surname>Muellbacher</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ulf</forename><surname>Ziemann</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Joerg</forename><surname>Wissel</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Nguyet</forename><surname>Dang</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Markus</forename><surname>Kofler</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Stefano</forename><surname>Facchini</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Babak</forename><surname>Boroojerdi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Werner</forename><surname>Poewe</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Mark</forename><surname>Hallett</surname></persName>
+		</author>
+		<idno type="doi">10.1038/nature712</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature</title>
+		<title level="j" type="abbrev">Nature</title>
+		<idno type="ISSN">0028-0836</idno>
+		<idno type="ISSNe">1476-4687</idno>
+		<imprint>
+			<biblScope unit="volume">415</biblScope>
+			<biblScope unit="issue">6872</biblScope>
+			<biblScope unit="page" from="640" to="644" />
+			<date type="published" when="2002-02" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b20">
+	<analytic>
+		<title level="a" type="main">Intermittent Practice Facilitates Stable Motor Memories</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">A</forename><surname>Overduin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><forename type="middle">G</forename><surname>Richardson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><forename type="middle">E</forename><surname>Lane</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">E</forename><surname>Bizzi</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">D</forename><forename type="middle">Z</forename><surname>Press</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.1320-06.2006</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">26</biblScope>
+			<biblScope unit="issue">46</biblScope>
+			<biblScope unit="page" from="11888" to="11892" />
+			<date type="published" when="2006-15-15" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b21">
+	<analytic>
+		<title level="a" type="main">Protection and Expression of Human Motor Memories</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Pekny</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Criscimagna-Hemminger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.1704-11.2011</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">39</biblScope>
+			<biblScope unit="page" from="13829" to="13839" />
+			<date type="published" when="2011-28-28" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b22">
+	<analytic>
+		<title level="a" type="main">Protection and Expression of Human Motor Memories</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Pekny</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">S</forename><forename type="middle">E</forename><surname>Criscimagna-Hemminger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="doi">10.1523/jneurosci.1704-11.2011</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Journal of Neuroscience</title>
+		<title level="j" type="abbrev">Journal of Neuroscience</title>
+		<idno type="ISSN">0270-6474</idno>
+		<idno type="ISSNe">1529-2401</idno>
+		<imprint>
+			<biblScope unit="volume">31</biblScope>
+			<biblScope unit="issue">39</biblScope>
+			<biblScope unit="page" from="13829" to="13839" />
+			<date type="published" when="2011-28-28" />
+			<publisher>Society for Neuroscience</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b23">
+	<analytic>
+		<title level="a" type="main">Current concepts in procedural consolidation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Edwin</forename><forename type="middle">M</forename><surname>Robertson</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Alvaro</forename><surname>Pascual-Leone</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">Chris</forename><surname>Miall</surname></persName>
+		</author>
+		<idno type="doi">10.1038/nrn1426</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Neuroscience</title>
+		<title level="j" type="abbrev">Nat Rev Neurosci</title>
+		<idno type="ISSN">1471-003X</idno>
+		<idno type="ISSNe">1471-0048</idno>
+		<imprint>
+			<biblScope unit="volume">5</biblScope>
+			<biblScope unit="issue">7</biblScope>
+			<biblScope unit="page" from="576" to="582" />
+			<date type="published" when="2004-07" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b24">
+	<monogr>
+		<title level="m" type="main">Motor Control and Learning: A Behavioral Emphasis, 5th Edn</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><forename type="middle">A</forename><surname>Schmidt</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Lee</forename></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2011" />
+			<publisher>Human Kinetics</publisher>
+			<pubPlace>Champaign, IL</pubPlace>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b25">
+	<analytic>
+		<title level="a" type="main">Functional stages in the formation of human long-term motor memory</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Brashers-Krug</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">17</biblScope>
+			<biblScope unit="page" from="409" to="419" />
+			<date type="published" when="1997" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b26">
+	<analytic>
+		<title level="a" type="main">Neural Correlates of Motor Memory Consolidation</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">H</forename><forename type="middle">H</forename><surname>Holcomb</surname></persName>
+		</author>
+		<idno type="doi">10.1126/science.277.5327.821</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Science</title>
+		<idno type="ISSN">0036-8075</idno>
+		<idno type="ISSNe">1095-9203</idno>
+		<imprint>
+			<biblScope unit="volume">277</biblScope>
+			<biblScope unit="issue">5327</biblScope>
+			<biblScope unit="page" from="821" to="825" />
+			<date type="published" when="1997-08-08" />
+			<publisher>American Association for the Advancement of Science (AAAS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b27">
+	<analytic>
+		<title level="a" type="main">Adaptive representation of dynamics during learning of a motor task</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">F</forename><surname>Mussa-Ivaldi</surname></persName>
+		</author>
+	</analytic>
+	<monogr>
+		<title level="j">J. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">14</biblScope>
+			<biblScope unit="page" from="3208" to="3224" />
+			<date type="published" when="1994" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b28">
+	<analytic>
+		<title level="a" type="main">Error correction, sensory prediction, and adaptation in motor control</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><forename type="middle">A</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">J</forename><forename type="middle">W</forename><surname>Krakauer</surname></persName>
+		</author>
+		<idno>doi: 10.1146/ annurev-neuro-060909-153135</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Annu. Rev. Neurosci</title>
+		<imprint>
+			<biblScope unit="volume">33</biblScope>
+			<biblScope unit="page" from="89" to="108" />
+			<date type="published" when="2010" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b29">
+	<analytic>
+		<title level="a" type="main">Interacting Adaptive Processes with Different Timescales Underlie Short-Term Motor Learning</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Maurice</forename><forename type="middle">A</forename><surname>Smith</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ali</forename><surname>Ghazizadeh</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Reza</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="doi">10.1371/journal.pbio.0040179</idno>
+	</analytic>
+	<monogr>
+		<title level="j">PLoS Biology</title>
+		<title level="j" type="abbrev">PLoS Biol</title>
+		<idno type="ISSNe">1545-7885</idno>
+		<imprint>
+			<biblScope unit="volume">4</biblScope>
+			<biblScope unit="issue">6</biblScope>
+			<biblScope unit="page">e179</biblScope>
+			<date type="published" when="2006" />
+			<publisher>Public Library of Science (PLoS)</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b30">
+	<monogr>
+		<title/>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">C</forename><surname>Stockinger</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">M</forename><surname>Pöschl</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">A</forename><surname>Focke</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">T</forename><surname>Stein</surname></persName>
+		</author>
+		<imprint>
+			<date type="published" when="2012" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b31">
+	<analytic>
+		<title level="a" type="main">ManipAnalysis -a software application for the analysis of force field experiments</title>
+	</analytic>
+	<monogr>
+		<title level="j">Int. J. Comput. Sci. Sport</title>
+		<imprint>
+			<biblScope unit="volume">11</biblScope>
+			<biblScope unit="page" from="52" to="57" />
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b32">
+	<analytic>
+		<title level="a" type="main">Time scales of memory, learning, and plasticity</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Christian</forename><surname>Tetzlaff</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Christoph</forename><surname>Kolodziejski</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Irene</forename><surname>Markelic</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Florentin</forename><surname>Wörgötter</surname></persName>
+		</author>
+		<idno type="doi">10.1007/s00422-012-0529-z</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biological Cybernetics</title>
+		<title level="j" type="abbrev">Biol Cybern</title>
+		<idno type="ISSN">0340-1200</idno>
+		<idno type="ISSNe">1432-0770</idno>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="issue">11-12</biblScope>
+			<biblScope unit="page" from="715" to="726" />
+			<date type="published" when="2012-12" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b33">
+	<analytic>
+		<title level="a" type="main">Learning of action through adaptive combination of motor primitives</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">K</forename><forename type="middle">A</forename><surname>Thoroughman</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">R</forename><surname>Shadmehr</surname></persName>
+		</author>
+		<idno type="doi">doi:10.1007/s00422-012-0529</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Biol. Cybern</title>
+		<imprint>
+			<biblScope unit="volume">106</biblScope>
+			<biblScope unit="page" from="742" to="747" />
+			<date type="published" when="2000" />
+		</imprint>
+	</monogr>
+	<note>Nature</note>
+</biblStruct>
+
+<biblStruct xml:id="b34">
+	<analytic>
+		<title level="a" type="main">Inside the brain of an elite athlete: the neural processes that support high achievement in sports</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kielan</forename><surname>Yarrow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Peter</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">John</forename><forename type="middle">W</forename><surname>Krakauer</surname></persName>
+		</author>
+		<idno type="doi">10.1038/nrn2672</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Neuroscience</title>
+		<title level="j" type="abbrev">Nat Rev Neurosci</title>
+		<idno type="ISSN">1471-003X</idno>
+		<idno type="ISSNe">1471-0048</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="585" to="596" />
+			<date type="published" when="2009-08" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b35">
+	<analytic>
+		<title level="a" type="main">Inside the brain of an elite athlete: the neural processes that support high achievement in sports</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Kielan</forename><surname>Yarrow</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Peter</forename><surname>Brown</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">John</forename><forename type="middle">W</forename><surname>Krakauer</surname></persName>
+		</author>
+		<idno type="doi">10.1038/nrn2672</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Nature Reviews Neuroscience</title>
+		<title level="j" type="abbrev">Nat Rev Neurosci</title>
+		<idno type="ISSN">1471-003X</idno>
+		<idno type="ISSNe">1471-0048</idno>
+		<imprint>
+			<biblScope unit="volume">10</biblScope>
+			<biblScope unit="issue">8</biblScope>
+			<biblScope unit="page" from="585" to="596" />
+			<date type="published" when="2009-08" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+<biblStruct xml:id="b36">
+	<analytic>
+		<title level="a" type="main">Long-lasting aftereffects of prism adaptation in the monkey</title>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Ping-Bo</forename><forename type="middle">B</forename><surname>Yin</surname></persName>
+		</author>
+		<author>
+			<persName xmlns="http://www.tei-c.org/ns/1.0"><forename type="first">Shigeru</forename><surname>Kitazawa</surname></persName>
+		</author>
+		<idno type="doi">10.1007/s002210100892</idno>
+	</analytic>
+	<monogr>
+		<title level="j">Experimental Brain Research</title>
+		<idno type="ISSN">0014-4819</idno>
+		<imprint>
+			<biblScope unit="volume">141</biblScope>
+			<biblScope unit="issue">2</biblScope>
+			<biblScope unit="page" from="250" to="253" />
+			<date type="published" when="2001-01-01" />
+			<publisher>Springer Nature</publisher>
+		</imprint>
+	</monogr>
+</biblStruct>
+
+				</listBibl>
+			</div>
+		</back>
+	</text>
+</TEI>
