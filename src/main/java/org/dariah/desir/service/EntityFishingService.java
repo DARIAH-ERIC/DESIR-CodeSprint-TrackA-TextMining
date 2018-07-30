@@ -3,6 +3,7 @@ package org.dariah.desir.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -11,6 +12,8 @@ import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -21,9 +24,10 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.FileBody;
-import org.apache.http.impl.client.CloseableHttpClient;
-import org.apache.http.impl.client.HttpClientBuilder;
-import org.apache.http.impl.client.HttpClients;
+import org.apache.http.entity.mime.content.InputStreamBody;
+import org.apache.http.impl.client.*;
+import org.apache.http.params.BasicHttpParams;
+import org.apache.http.util.EntityUtils;
 import org.dariah.desir.grobid.GrobidParsers;
 import org.springframework.core.io.ClassPathResource;
 
@@ -31,6 +35,8 @@ import javax.print.URIException;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.client.Client;
+import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.core.MediaType;
 import java.awt.*;
 import java.io.*;
@@ -41,6 +47,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
@@ -158,12 +165,14 @@ public class EntityFishingService {
         return result;
     }
 
-    public String pdfProcessing(String language) throws Exception {
+    public String pdfProcessing(String fileToBeUploaded, String language) throws Exception {
         // need to be checked
         String result = null;
-        String fileToBeUploaded = "src/main/resources/11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf";
+        File file = new File(fileToBeUploaded);
+        FileInputStream fis = null;
 
         try {
+            fis = new FileInputStream(file);
             final URI uri = new URIBuilder()
                     .setScheme("http")
                     .setHost(this.HOST + DISAMBIGUATE_SERVICE)
@@ -178,12 +187,11 @@ public class EntityFishingService {
                 node.set("language", dataNode);
             }
 
-            File file = new File(fileToBeUploaded);
-            FileBody fileBody = new FileBody(file, ContentType.DEFAULT_BINARY);
+            //FileBody fileBody = new FileBody(file, ContentType.DEFAULT_BINARY);
             MultipartEntityBuilder builder = MultipartEntityBuilder.create();
 
             builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
-            builder.addPart("file", fileBody);
+            builder.addPart("file", new InputStreamBody(fis, file.getName()));
             HttpEntity entity = builder.build();
 
             HttpPost httpPost = new HttpPost(uri);
@@ -221,6 +229,8 @@ public class EntityFishingService {
                 if (responseId == HttpStatus.SC_OK) {
                     response = IOUtils.toString(entity.getContent(), StandardCharsets.UTF_8);
                     return response;
+                }else {
+                    return response;
                 }
             }catch (IOException e){
                 e.printStackTrace();
@@ -257,7 +267,7 @@ public class EntityFishingService {
         String result, text = null;
         String lang = "en";
         String fileInputXML = "11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf.tei.xml";
-        Map<String, Double> keywordList = new HashMap<>();
+        String fileInputPdf = "src/main/resources/11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf";
         GrobidParsers grobidParsers = new GrobidParsers();
         try {
             EntityFishingService entityFishingService = new EntityFishingService("cloud.science-miner.com/nerd/service");
@@ -273,14 +283,14 @@ public class EntityFishingService {
             //result = entityFishingService.termDisambiguate(keywordList, lang);
 
             //pdf processing
-            result = entityFishingService.pdfProcessing(lang);
+            //result = entityFishingService.pdfProcessing(fileInputPdf,lang);
 
             //kb concept
-            //result = entityFishingService.getConcept("00");
+            result = entityFishingService.getConcept("Q1");
 
             // saving the result
-            //String resultInJson = entityFishingService.toJson(result);
-            //entityFishingService.saveToFile(resultInJson);
+            String resultInJson = entityFishingService.toJson(result);
+            entityFishingService.saveToFile(resultInJson);
 
             System.out.println(result);
         } catch (IOException e){

@@ -50,7 +50,6 @@ dependencies {
     compile ("com.google.code.gson:gson:2.8.5")
 
     // Multipart Entity
-    compile ("group: 'org.apache.httpcomponents' , name: 'httpclient-android' , version: '4.3.5.1'")
     compile ("org.apache.httpcomponents:httpmime:4.3") {
         exclude module: "httpclient"
     }
@@ -62,7 +61,6 @@ dependencies {
     // ObjectMapper for LocalDateTime class
     compile ("com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.7.3")
 
-    testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("junit:junit:4.12")
     testCompile("org.hamcrest:hamcrest-all:1.3")
 }
