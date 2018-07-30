@@ -1,222 +1,163 @@
 {
-  "runtime": 3,
-  "nbest": false,
-  "termVector": [
+  "rawName": "Black Beauty: Miles Davis at Fillmore West",
+  "preferredTerm": "Black Beauty: Miles Davis at Fillmore West",
+  "nerd_score": 0,
+  "nerd_selection_score": 0,
+  "wikipediaExternalRef": 11732624,
+  "wikidataId": "Q880071",
+  "definitions": [
     {
-      "term": "complex task",
-      "score": 0.0
-    },
-    {
-      "term": "motor learning",
-      "score": 0.0,
-      "entities": [
-        {
-          "rawName": "motor learning",
-          "preferredTerm": "Motor learning",
-          "nerd_score": 1,
-          "nerd_selection_score": 0,
-          "wikipediaExternalRef": 487908,
-          "wikidataId": "Q852461",
-          "definitions": [
-            {
-              "definition": "\u0027\u0027\u0027Motor learning\u0027\u0027\u0027 is a change, resulting from practice or a novel experience, in the capability for responding. It often involves improving the smoothness and accuracy of movements and is obviously necessary for complicated movements such as [[speech communication|speaking]], playing the [[piano]], and [[climbing]] trees; but it is also important for calibrating simple movements like [[reflex]], as parameters of the body and environment change over time. Motor learning research often considers variables that contribute to [[motor program]] formation (i.e., underlying skilled motor behaviour), sensitivity of error-detection processes, and strength of movement schemas (see [[motor program]]). Motor learning is \"relatively permanent\", as the capability to respond appropriately is acquired and retained. As a result, the temporary processes that affect behaviour during practice or experience should not be considered learning, but rather transient performance effects. As such, the main components underlying the behavioural approach to motor learning are structure of practice and feedback given. The former pertains to the manipulation of timing and organization of practice (potentially for different subtasks or variations of the task) for optimal information retention (also see [[varied practice]]), while the latter pertains to the influence of feedback on the preparation, anticipation, and guidance of movement.",
-              "source": "wikipedia-en",
-              "lang": "en"
-            }
-          ],
-          "categories": [
-            {
-              "source": "wikipedia-en",
-              "category": "Nervous system",
-              "page_id": 698571
-            },
-            {
-              "source": "wikipedia-en",
-              "category": "Motor skills",
-              "page_id": 1490530
-            },
-            {
-              "source": "wikipedia-en",
-              "category": "Memory processes",
-              "page_id": 16136695
-            },
-            {
-              "source": "wikipedia-en",
-              "category": "Motor control",
-              "page_id": 22728692
-            }
-          ],
-          "statements": [
-            {
-              "conceptId": "Q852461",
-              "propertyId": "P279",
-              "propertyName": "subclass of",
-              "valueType": "wikibase-item",
-              "value": "Q133500",
-              "valueName": "Learning"
-            },
-            {
-              "conceptId": "Q852461",
-              "propertyId": "P646",
-              "propertyName": "Freebase ID",
-              "valueType": "external-id",
-              "value": "/m/02ggwc"
-            },
-            {
-              "conceptId": "Q852461",
-              "propertyId": "P686",
-              "propertyName": "Gene Ontology ID",
-              "valueType": "external-id",
-              "value": "GO:0061743"
-            },
-            {
-              "conceptId": "Q852461",
-              "propertyId": "P2888",
-              "propertyName": "exact match",
-              "valueType": "url",
-              "value": "http://purl.obolibrary.org/obo/GO_0061743"
-            },
-            {
-              "conceptId": "Q852461",
-              "propertyId": "P3417",
-              "propertyName": "Quora topic ID",
-              "valueType": "external-id",
-              "value": "Motor-Learning"
-            },
-            {
-              "conceptId": "Q852461",
-              "propertyId": "P31",
-              "propertyName": "instance of",
-              "valueType": "wikibase-item",
-              "value": "Q2996394",
-              "valueName": "Biological process"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "term": "reaching movements",
-      "score": 0.0
-    },
-    {
-      "term": "after-effects",
-      "score": 0.0
-    },
-    {
-      "term": "manipulandum",
-      "score": 0.0
-    },
-    {
-      "term": "interference",
-      "score": 0.0,
-      "entities": [
-        {
-          "rawName": "interference",
-          "preferredTerm": "Interference (wave propagation)",
-          "nerd_score": 0.7748,
-          "nerd_selection_score": 0,
-          "wikipediaExternalRef": 15112,
-          "wikidataId": "Q136980",
-          "definitions": [
-            {
-              "definition": "In [[physics]], \u0027\u0027\u0027interference\u0027\u0027\u0027 is a phenomenon in which two [[wave]] [[Superposition principle|superpose]] to form a resultant wave of greater, lower, or the same [[amplitude]]. Interference usually refers to the interaction of waves that are correlated or [[coherence (physics)|coherent]] with each other, either because they come from the same source or because they have the same or nearly the same [[frequency]]. Interference effects can be observed with all types of waves, for example, [[Light wave|light]], [[Radio wave|radio]], [[sound wave|acoustic]], [[surface wave|surface water wave]] or [[matter wave]].",
-              "source": "wikipedia-en",
-              "lang": "en"
-            }
-          ],
-          "categories": [
-            {
-              "source": "wikipedia-en",
-              "category": "Wave mechanics",
-              "page_id": 991325
-            },
-            {
-              "source": "wikipedia-en",
-              "category": "Interference",
-              "page_id": 2919942
-            }
-          ],
-          "statements": [
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P373",
-              "propertyName": "Commons category",
-              "valueType": "string",
-              "value": "Interference"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P646",
-              "propertyName": "Freebase ID",
-              "valueType": "external-id",
-              "value": "/m/03x5t"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P361",
-              "propertyName": "part of",
-              "valueType": "wikibase-item",
-              "value": "Q413",
-              "valueName": "Physics"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P1051",
-              "propertyName": "PSH ID",
-              "valueType": "external-id",
-              "value": "3143"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P1051",
-              "propertyName": "PSH ID",
-              "valueType": "external-id",
-              "value": "3143"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P508",
-              "propertyName": "BNCF Thesaurus",
-              "valueType": "external-id",
-              "value": "30806"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P935",
-              "propertyName": "Commons gallery",
-              "valueType": "string",
-              "value": "Interference"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P3417",
-              "propertyName": "Quora topic ID",
-              "valueType": "external-id",
-              "value": "Interference"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P3827",
-              "propertyName": "JSTOR topic ID",
-              "valueType": "external-id",
-              "value": "destructive-interference"
-            },
-            {
-              "conceptId": "Q136980",
-              "propertyId": "P910",
-              "propertyName": "topic\u0027s main category",
-              "valueType": "wikibase-item",
-              "value": "Q8550205",
-              "valueName": "Interference"
-            }
-          ]
-        }
-      ]
+      "definition": "\u0027\u0027\u0027\u0027\u0027Black Beauty: Miles Davis at Fillmore West\u0027\u0027\u0027\u0027\u0027 is a live [[double album]] by American [[jazz]] trumpeter, composer, and bandleader [[Miles Davis]]. It was recorded on April 10, 1970, at the [[Fillmore West]] in [[San Francisco]], shortly after the release of the trumpeter\u0027s \u0027\u0027[[Bitches Brew]]\u0027\u0027 album and the recording of \u0027\u0027[[Jack Johnson (album)|Jack Johnson]]\u0027\u0027 (1971). \u0027\u0027Black Beauty\u0027\u0027 was produced by [[Teo Macero]], Davis\u0027 longtime record producer.",
+      "source": "wikipedia-en",
+      "lang": "en"
     }
   ],
-  "language": {
-    "lang": "en",
-    "conf": 0.0
-  }
+  "domains": [
+    "Commerce",
+    "Enterprise",
+    "Applied_Science"
+  ],
+  "categories": [
+    {
+      "source": "wikipedia-en",
+      "category": "Grateful Dead",
+      "page_id": 711328
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Columbia Records albums",
+      "page_id": 879665
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Albums produced by Teo Macero",
+      "page_id": 11821092
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Miles Davis live albums",
+      "page_id": 26573926
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Live at The Fillmore albums",
+      "page_id": 26841002
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "1973 live albums",
+      "page_id": 27295058
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Live jazz fusion albums",
+      "page_id": 27310067
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Sony Music Entertainment Japan albums",
+      "page_id": 39984838
+    }
+  ],
+  "multilingual": [
+    {
+      "lang": "de",
+      "term": "Black Beauty: Miles Davis at Fillmore West",
+      "page_id": 4110735
+    },
+    {
+      "lang": "fr",
+      "term": "Black Beauty: Live at the Fillmore West",
+      "page_id": 3835847
+    },
+    {
+      "lang": "it",
+      "term": "Black Beauty: Miles Davis at Fillmore West",
+      "page_id": 869974
+    }
+  ],
+  "statements": [
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P175",
+      "propertyName": "performer",
+      "valueType": "wikibase-item",
+      "value": "Q93341",
+      "valueName": "Miles Davis"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P436",
+      "propertyName": "MusicBrainz release group ID",
+      "valueType": "external-id",
+      "value": "fdc36195-6677-3f29-aab3-22f847d207ed"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P646",
+      "propertyName": "Freebase ID",
+      "valueType": "external-id",
+      "value": "/m/02rqhhf"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P31",
+      "propertyName": "instance of",
+      "valueType": "wikibase-item",
+      "value": "Q209939"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P1954",
+      "propertyName": "Discogs master ID",
+      "valueType": "external-id",
+      "value": "62310"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P156",
+      "propertyName": "followed by",
+      "valueType": "wikibase-item",
+      "value": "Q1107082",
+      "valueName": "We Want Miles"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P155",
+      "propertyName": "follows",
+      "valueType": "wikibase-item",
+      "value": "Q1166192",
+      "valueName": "Dark Magus"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P856",
+      "propertyName": "official website",
+      "valueType": "url",
+      "value": "https://www.milesdavis.com/albums/black-beauty-miles-davis-at-fillmore-west/"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P136",
+      "propertyName": "genre",
+      "valueType": "wikibase-item",
+      "value": "Q105527",
+      "valueName": "Jazz fusion"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P264",
+      "propertyName": "record label",
+      "valueType": "wikibase-item",
+      "value": "Q183387",
+      "valueName": "Columbia Records"
+    },
+    {
+      "conceptId": "Q880071",
+      "propertyId": "P1729",
+      "propertyName": "AllMusic album ID",
+      "valueType": "external-id",
+      "value": "mw0000193170"
+    }
+  ]
 }

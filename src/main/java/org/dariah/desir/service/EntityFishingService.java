@@ -274,14 +274,14 @@ public class EntityFishingService {
             //result = entityFishingService.termDisambiguate(keywordList, lang);
 
             //pdf processing
-            result = entityFishingService.pdfProcessing(lang);
+            //result = entityFishingService.pdfProcessing(lang);
 
             //kb concept
             result = entityFishingService.getConcept("Q880071");
 
             // saving the result
-            //String resultInJson = entityFishingService.toJson(result);
-            //entityFishingService.saveToFile(resultInJson);
+            String resultInJson = entityFishingService.toJson(result);
+            entityFishingService.saveToFile(resultInJson);
 
             System.out.println(result);
         } catch (IOException e){
