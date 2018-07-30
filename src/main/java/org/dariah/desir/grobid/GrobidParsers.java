@@ -148,7 +148,7 @@ public class GrobidParsers {
         return abstractContent;
     }
 
-    public  Map<String, Double> processKeyword(InputStream is){
+    public Map<String, Double> processKeyword(InputStream is){
 
         Map<String, Double> listOfKeywords = new HashMap<>();
 
