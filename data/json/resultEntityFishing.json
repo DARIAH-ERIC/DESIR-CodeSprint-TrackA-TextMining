@@ -1,163 +1,115 @@
 {
-  "rawName": "Black Beauty: Miles Davis at Fillmore West",
-  "preferredTerm": "Black Beauty: Miles Davis at Fillmore West",
+  "rawName": "",
   "nerd_score": 0,
   "nerd_selection_score": 0,
-  "wikipediaExternalRef": 11732624,
-  "wikidataId": "Q880071",
-  "definitions": [
-    {
-      "definition": "\u0027\u0027\u0027\u0027\u0027Black Beauty: Miles Davis at Fillmore West\u0027\u0027\u0027\u0027\u0027 is a live [[double album]] by American [[jazz]] trumpeter, composer, and bandleader [[Miles Davis]]. It was recorded on April 10, 1970, at the [[Fillmore West]] in [[San Francisco]], shortly after the release of the trumpeter\u0027s \u0027\u0027[[Bitches Brew]]\u0027\u0027 album and the recording of \u0027\u0027[[Jack Johnson (album)|Jack Johnson]]\u0027\u0027 (1971). \u0027\u0027Black Beauty\u0027\u0027 was produced by [[Teo Macero]], Davis\u0027 longtime record producer.",
-      "source": "wikipedia-en",
-      "lang": "en"
-    }
-  ],
-  "domains": [
-    "Commerce",
-    "Enterprise",
-    "Applied_Science"
-  ],
-  "categories": [
-    {
-      "source": "wikipedia-en",
-      "category": "Grateful Dead",
-      "page_id": 711328
-    },
-    {
-      "source": "wikipedia-en",
-      "category": "Columbia Records albums",
-      "page_id": 879665
-    },
-    {
-      "source": "wikipedia-en",
-      "category": "Albums produced by Teo Macero",
-      "page_id": 11821092
-    },
-    {
-      "source": "wikipedia-en",
-      "category": "Miles Davis live albums",
-      "page_id": 26573926
-    },
-    {
-      "source": "wikipedia-en",
-      "category": "Live at The Fillmore albums",
-      "page_id": 26841002
-    },
-    {
-      "source": "wikipedia-en",
-      "category": "1973 live albums",
-      "page_id": 27295058
-    },
-    {
-      "source": "wikipedia-en",
-      "category": "Live jazz fusion albums",
-      "page_id": 27310067
-    },
-    {
-      "source": "wikipedia-en",
-      "category": "Sony Music Entertainment Japan albums",
-      "page_id": 39984838
-    }
-  ],
-  "multilingual": [
-    {
-      "lang": "de",
-      "term": "Black Beauty: Miles Davis at Fillmore West",
-      "page_id": 4110735
-    },
-    {
-      "lang": "fr",
-      "term": "Black Beauty: Live at the Fillmore West",
-      "page_id": 3835847
-    },
-    {
-      "lang": "it",
-      "term": "Black Beauty: Miles Davis at Fillmore West",
-      "page_id": 869974
-    }
-  ],
+  "wikidataId": "Q281285",
   "statements": [
     {
-      "conceptId": "Q880071",
-      "propertyId": "P175",
-      "propertyName": "performer",
+      "conceptId": "Q281285",
+      "propertyId": "P17",
+      "propertyName": "country",
       "valueType": "wikibase-item",
-      "value": "Q93341",
-      "valueName": "Miles Davis"
+      "value": "Q142",
+      "valueName": "France"
     },
     {
-      "conceptId": "Q880071",
-      "propertyId": "P436",
-      "propertyName": "MusicBrainz release group ID",
+      "conceptId": "Q281285",
+      "propertyId": "P131",
+      "propertyName": "located in the administrative territorial entity",
+      "valueType": "wikibase-item",
+      "value": "Q1350427",
+      "valueName": "Saint-Christophe-le-Jajolet"
+    },
+    {
+      "conceptId": "Q281285",
+      "propertyId": "P131",
+      "propertyName": "located in the administrative territorial entity",
+      "valueType": "wikibase-item",
+      "value": "Q18785483",
+      "valueName": "Boischampré"
+    },
+    {
+      "conceptId": "Q281285",
+      "propertyId": "P380",
+      "propertyName": "Mérimée ID",
       "valueType": "external-id",
-      "value": "fdc36195-6677-3f29-aab3-22f847d207ed"
+      "value": "PA00110913"
     },
     {
-      "conceptId": "Q880071",
-      "propertyId": "P646",
-      "propertyName": "Freebase ID",
-      "valueType": "external-id",
-      "value": "/m/02rqhhf"
+      "conceptId": "Q281285",
+      "propertyId": "P18",
+      "propertyName": "image",
+      "valueType": "commonsMedia",
+      "value": "Chateau de Sassy (Orne).jpg"
     },
     {
-      "conceptId": "Q880071",
+      "conceptId": "Q281285",
+      "propertyId": "P1435",
+      "propertyName": "heritage designation",
+      "valueType": "wikibase-item",
+      "value": "Q10387575"
+    },
+    {
+      "conceptId": "Q281285",
+      "propertyId": "P1435",
+      "propertyName": "heritage designation",
+      "valueType": "wikibase-item",
+      "value": "Q10387684"
+    },
+    {
+      "conceptId": "Q281285",
+      "propertyId": "P1435",
+      "propertyName": "heritage designation",
+      "valueType": "wikibase-item",
+      "value": "Q10387575"
+    },
+    {
+      "conceptId": "Q281285",
+      "propertyId": "P1435",
+      "propertyName": "heritage designation",
+      "valueType": "wikibase-item",
+      "value": "Q10387684"
+    },
+    {
+      "conceptId": "Q281285",
+      "propertyId": "P1435",
+      "propertyName": "heritage designation",
+      "valueType": "wikibase-item",
+      "value": "Q10387575"
+    },
+    {
+      "conceptId": "Q281285",
       "propertyId": "P31",
       "propertyName": "instance of",
       "valueType": "wikibase-item",
-      "value": "Q209939"
+      "value": "Q23413",
+      "valueName": "Castle"
     },
     {
-      "conceptId": "Q880071",
-      "propertyId": "P1954",
-      "propertyName": "Discogs master ID",
-      "valueType": "external-id",
-      "value": "62310"
+      "conceptId": "Q281285",
+      "propertyId": "P625",
+      "propertyName": "coordinate location",
+      "valueType": "globe-coordinate",
+      "value": {
+        "latitude": 48.6556,
+        "longitude": 8.3E-4,
+        "precision": 2.7777777777778E-5,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
     },
     {
-      "conceptId": "Q880071",
-      "propertyId": "P156",
-      "propertyName": "followed by",
-      "valueType": "wikibase-item",
-      "value": "Q1107082",
-      "valueName": "We Want Miles"
+      "conceptId": "Q281285",
+      "propertyId": "P373",
+      "propertyName": "Commons category",
+      "valueType": "string",
+      "value": "Château de Sassy"
     },
     {
-      "conceptId": "Q880071",
-      "propertyId": "P155",
-      "propertyName": "follows",
-      "valueType": "wikibase-item",
-      "value": "Q1166192",
-      "valueName": "Dark Magus"
-    },
-    {
-      "conceptId": "Q880071",
-      "propertyId": "P856",
-      "propertyName": "official website",
-      "valueType": "url",
-      "value": "https://www.milesdavis.com/albums/black-beauty-miles-davis-at-fillmore-west/"
-    },
-    {
-      "conceptId": "Q880071",
-      "propertyId": "P136",
-      "propertyName": "genre",
-      "valueType": "wikibase-item",
-      "value": "Q105527",
-      "valueName": "Jazz fusion"
-    },
-    {
-      "conceptId": "Q880071",
-      "propertyId": "P264",
-      "propertyName": "record label",
-      "valueType": "wikibase-item",
-      "value": "Q183387",
-      "valueName": "Columbia Records"
-    },
-    {
-      "conceptId": "Q880071",
-      "propertyId": "P1729",
-      "propertyName": "AllMusic album ID",
-      "valueType": "external-id",
-      "value": "mw0000193170"
+      "conceptId": "Q281285",
+      "propertyId": "P969",
+      "propertyName": "located at street address",
+      "valueType": "string",
+      "value": "Sacy"
     }
   ]
 }

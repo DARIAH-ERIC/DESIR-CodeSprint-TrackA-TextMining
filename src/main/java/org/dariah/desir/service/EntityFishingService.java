@@ -9,8 +9,11 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
+import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
+import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.http.entity.ContentType;
@@ -19,10 +22,12 @@ import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
 import org.dariah.desir.grobid.GrobidParsers;
 import org.springframework.core.io.ClassPathResource;
 
+import javax.print.URIException;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -38,6 +43,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.HashMap;
 import java.util.Map;
 
+import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.http.entity.ContentType.APPLICATION_JSON;
 import static org.apache.http.entity.ContentType.MULTIPART_FORM_DATA;
 
@@ -152,7 +158,6 @@ public class EntityFishingService {
         return result;
     }
 
-
     public String pdfProcessing(String language) throws Exception {
         // need to be checked
         String result = null;
@@ -181,7 +186,6 @@ public class EntityFishingService {
             builder.addPart("file", fileBody);
             HttpEntity entity = builder.build();
 
-
             HttpPost httpPost = new HttpPost(uri);
             CloseableHttpClient httpResponse = HttpClients.createDefault();
 
@@ -203,32 +207,27 @@ public class EntityFishingService {
     }
 
     public String getConcept(String id) throws Exception {
-        String result = null;
-        try {
+        String response = null;
+        String urlNerd =  "http://"+ this.HOST + CONCEPT_SERVICE + "/" + id;
+        if ((id != null) || (id.startsWith("Q") || (id.startsWith("P")))){
+            try {
+                HttpClient client = HttpClientBuilder.create().build();
 
-            URL url = new URL("http://"+ this.HOST + CONCEPT_SERVICE + "/" + id);
+                HttpGet request = new HttpGet(urlNerd);
+                HttpResponse httpResponse = client.execute(request);
+                HttpEntity entity = httpResponse.getEntity();
 
-            //make connection
-            URLConnection urlc = url.openConnection();
-
-            //use post mode
-            urlc.setDoOutput(true);
-            urlc.setAllowUserInteraction(false);
-
-            //get the result
-            BufferedReader br = new BufferedReader(new InputStreamReader(urlc
-                    .getInputStream()));
-            String l = null;
-            while ((l = br.readLine()) != null) {
-                result = l;
+                int responseId = httpResponse.getStatusLine().getStatusCode();
+                if (responseId == HttpStatus.SC_OK) {
+                    response = IOUtils.toString(entity.getContent(), StandardCharsets.UTF_8);
+                    return response;
+                }
+            }catch (IOException e){
+                e.printStackTrace();
             }
-
-            br.close();
-            return result;
-        }catch (IOException e){
-            e.printStackTrace();
         }
-        return result;
+
+        return response;
     }
 
     public String toJson(String jsonString){
@@ -274,14 +273,14 @@ public class EntityFishingService {
             //result = entityFishingService.termDisambiguate(keywordList, lang);
 
             //pdf processing
-            //result = entityFishingService.pdfProcessing(lang);
+            result = entityFishingService.pdfProcessing(lang);
 
             //kb concept
-            result = entityFishingService.getConcept("Q880071");
+            //result = entityFishingService.getConcept("00");
 
             // saving the result
-            String resultInJson = entityFishingService.toJson(result);
-            entityFishingService.saveToFile(resultInJson);
+            //String resultInJson = entityFishingService.toJson(result);
+            //entityFishingService.saveToFile(resultInJson);
 
             System.out.println(result);
         } catch (IOException e){
