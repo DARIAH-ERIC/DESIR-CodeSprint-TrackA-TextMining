@@ -1,5 +1,6 @@
 package org.dariah.desir.grobid;
 
+import org.springframework.core.io.ClassPathResource;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -15,6 +16,8 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.HashMap;
+import java.util.Map;
 
 public class GrobidParsers {
 
@@ -40,12 +43,15 @@ public class GrobidParsers {
 
 
         String title = "no title";
+        String author = "";
 
         try {
 
             Element teiHeader = (Element) xPath.compile(TeiPaths.MetadataElement).evaluate(teiDoc, XPathConstants.NODE);
             NodeList authorsFromfulltextTeiHeader = (NodeList) xPath.compile(TeiPaths.FulltextTeiHeaderAuthors).evaluate(teiDoc, XPathConstants.NODESET);
 
+
+            // get the title
             Element titleElement = null;
             if (teiHeader.getElementsByTagName("title") != null) {
                 titleElement = (Element) teiHeader.getElementsByTagName("title").item(0);
@@ -53,6 +59,7 @@ public class GrobidParsers {
                     title = titleElement.getTextContent().trim();
                 }
             }
+
             Node language = (Node) xPath.compile(TeiPaths.LanguageElement).evaluate(teiDoc, XPathConstants.NODE);
             Node type = (Node) xPath.compile(TeiPaths.TypologyElement).evaluate(teiDoc, XPathConstants.NODE);
             Node submission_date = (Node) xPath.compile(TeiPaths.SubmissionDateElement).evaluate(teiDoc, XPathConstants.NODE);
@@ -63,8 +70,21 @@ public class GrobidParsers {
             Element monogr = (Element) xPath.compile(TeiPaths.MonogrElement).evaluate(teiDoc, XPathConstants.NODE);
             NodeList ids = (NodeList) xPath.compile(TeiPaths.IdnoElement).evaluate(teiDoc, XPathConstants.NODESET);
 
-
             System.out.println(title);
+
+            // get the authors
+            for (int i =0; i< authors.getLength(); i++) {
+                Element authorElement = null;
+                if (teiHeader.getElementsByTagName("persName") != null) {
+                    authorElement = (Element) teiHeader.getElementsByTagName("persName").item(0);
+                    if (authorElement != null) {
+                        author = authorElement.getTextContent().trim();
+                        //System.out.println(author);
+                    }
+                }
+
+            }
+
             // for some pub types we just keep the submission date.
             if (submission_date != null) {
                 System.out.println("Submission date: " + submission_date.getTextContent());
@@ -82,11 +102,104 @@ public class GrobidParsers {
 //        processPersons(authors, "author", pub, teiDoc, authorsFromfulltextTeiHeader);
 //        processPersons(editors, "editor", pub, teiDoc, authorsFromfulltextTeiHeader);
 
-
         } catch (XPathExpressionException e) {
             e.printStackTrace();
         }
 
+    }
+
+    public String processAbstract(InputStream is){
+        String abstractContent = null;
+        XPath xPath = XPathFactory.newInstance().newXPath();
+
+        Document teiDoc = null;
+
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        docFactory.setValidating(false);
+        DocumentBuilder docBuilder = null;
+        try {
+            docBuilder = docFactory.newDocumentBuilder();
+            teiDoc = docBuilder.parse(is);
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            Element teiHeader = (Element) xPath.compile(TeiPaths.MetadataElement).evaluate(teiDoc, XPathConstants.NODE);
+
+            // get the abstract content
+            Element abstractElement = null;
+            if (teiHeader.getElementsByTagName("abstract") != null) {
+                abstractElement = (Element) teiHeader.getElementsByTagName("abstract").item(0);
+                if (abstractElement != null) {
+                    abstractContent = abstractElement.getTextContent().trim();
+                }
+            }
+
+            return abstractContent;
+
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        return abstractContent;
+    }
+
+    public Map<String, Double> processKeyword(InputStream is){
+
+        Map<String, Double> listOfKeywords = new HashMap<>();
+
+        XPath xPath = XPathFactory.newInstance().newXPath();
+
+        Document teiDoc = null;
+
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        docFactory.setValidating(false);
+        DocumentBuilder docBuilder = null;
+        try {
+            docBuilder = docFactory.newDocumentBuilder();
+            teiDoc = docBuilder.parse(is);
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+
+        try {
+
+            Element teiHeader = (Element) xPath.compile(TeiPaths.MetadataElement).evaluate(teiDoc, XPathConstants.NODE);
+
+            // get the abstract content
+            Element keywordKeyElement = null;
+            if (teiHeader.getElementsByTagName("keywords") != null) {
+                keywordKeyElement = (Element) teiHeader.getElementsByTagName("keywords").item(0);
+                NodeList nodeListOfKeyword = keywordKeyElement.getElementsByTagName("term");
+                for (int i=0;i<nodeListOfKeyword.getLength();i++){
+                    Node nodeOfKeyword = nodeListOfKeyword.item(i);
+                    if (nodeOfKeyword.getNodeType()==Node.ELEMENT_NODE){
+                        String keyword = nodeOfKeyword.getTextContent();
+                        listOfKeywords.put(keyword,0.0); // the score of the term can be changed later on
+                    }
+                }
+            }
+            return listOfKeywords;
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+        return listOfKeywords;
+    }
+
+    public static void main(String[] args) throws Exception{
+        String fileInput = "11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf.tei.xml";
+        GrobidParsers grobidParsers = new GrobidParsers();
+        ClassPathResource resource = new ClassPathResource(fileInput);
+        InputStream inputStream =resource.getInputStream();
+        grobidParsers.processKeyword(inputStream);
     }
 
 }

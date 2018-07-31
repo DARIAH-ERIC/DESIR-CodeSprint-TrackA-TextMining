@@ -1,0 +1,507 @@
+{
+  "rawName": "Universe",
+  "preferredTerm": "Universe",
+  "nerd_score": 0,
+  "nerd_selection_score": 0,
+  "wikipediaExternalRef": 31880,
+  "wikidataId": "Q1",
+  "definitions": [
+    {
+      "definition": "The \u0027\u0027\u0027Universe\u0027\u0027\u0027 is all of [[space]] and [[time]] ([[spacetime]]) and its contents, which includes [[planet|planets]], [[natural satellite|moons]], [[minor planet|minor planets]], [[star|stars]], [[galaxy|galaxies]], the contents of [[Outer space#Intergalactic space|intergalactic space]] and all [[matter]] and [[energy]]. The size of the entire Universe is still unknown.",
+      "source": "wikipedia-en",
+      "lang": "en"
+    }
+  ],
+  "domains": [
+    "Astronomy"
+  ],
+  "categories": [
+    {
+      "source": "wikipedia-en",
+      "category": "Physical universe",
+      "page_id": 2217510
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Environments",
+      "page_id": 2690886
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Physical cosmology",
+      "page_id": 5114206
+    },
+    {
+      "source": "wikipedia-en",
+      "category": "Astronomical dynamical systems",
+      "page_id": 10864423
+    }
+  ],
+  "multilingual": [
+    {
+      "lang": "de",
+      "term": "Universum",
+      "page_id": 2267257
+    },
+    {
+      "lang": "es",
+      "term": "Universo",
+      "page_id": 6604
+    },
+    {
+      "lang": "fr",
+      "term": "Univers",
+      "page_id": 24535
+    },
+    {
+      "lang": "it",
+      "term": "Universo",
+      "page_id": 103867
+    }
+  ],
+  "statements": [
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1036",
+      "propertyName": "Dewey Decimal Classification",
+      "valueType": "string",
+      "value": "113"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1036",
+      "propertyName": "Dewey Decimal Classification",
+      "valueType": "string",
+      "value": "113"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1245",
+      "propertyName": "OmegaWiki Defined Meaning",
+      "valueType": "external-id",
+      "value": "8506"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P793",
+      "propertyName": "significant event",
+      "valueType": "wikibase-item",
+      "value": "Q323",
+      "valueName": "Big Bang"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P793",
+      "propertyName": "significant event",
+      "valueType": "wikibase-item",
+      "value": "Q837317",
+      "valueName": "Big Bang nucleosynthesis"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P793",
+      "propertyName": "significant event",
+      "valueType": "wikibase-item",
+      "value": "Q1208634",
+      "valueName": "Quark epoch"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P793",
+      "propertyName": "significant event",
+      "valueType": "wikibase-item",
+      "value": "Q1079826",
+      "valueName": "Lepton epoch"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P793",
+      "propertyName": "significant event",
+      "valueType": "wikibase-item",
+      "value": "Q273508",
+      "valueName": "Inflation (cosmology)"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P793",
+      "propertyName": "significant event",
+      "valueType": "wikibase-item",
+      "value": "Q1079806",
+      "valueName": "Photon epoch"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P793",
+      "propertyName": "significant event",
+      "valueType": "wikibase-item",
+      "value": "Q3491753",
+      "valueName": "Hadron epoch"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P31",
+      "propertyName": "instance of",
+      "valueType": "wikibase-item",
+      "value": "Q36906466"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P227",
+      "propertyName": "GND ID",
+      "valueType": "external-id",
+      "value": "4079154-3"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P227",
+      "propertyName": "GND ID",
+      "valueType": "external-id",
+      "value": "4079154-3"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P373",
+      "propertyName": "Commons category",
+      "valueType": "string",
+      "value": "Universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P508",
+      "propertyName": "BNCF Thesaurus",
+      "valueType": "external-id",
+      "value": "7239"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P910",
+      "propertyName": "topic\u0027s main category",
+      "valueType": "wikibase-item",
+      "value": "Q5551050",
+      "valueName": "Physical universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P349",
+      "propertyName": "NDL Auth ID",
+      "valueType": "external-id",
+      "value": "00574074"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P580",
+      "propertyName": "start time",
+      "valueType": "time",
+      "value": {
+        "time": "-13798000000-00-00T00:00:00Z",
+        "timezone": 0,
+        "before": 0,
+        "after": 0,
+        "precision": 3,
+        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
+      }
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1051",
+      "propertyName": "PSH ID",
+      "valueType": "external-id",
+      "value": "517"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P527",
+      "propertyName": "has part",
+      "valueType": "wikibase-item",
+      "value": "Q28732711"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P527",
+      "propertyName": "has part",
+      "valueType": "wikibase-item",
+      "value": "Q185674",
+      "valueName": "Field (physics)"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P527",
+      "propertyName": "has part",
+      "valueType": "wikibase-item",
+      "value": "Q133327",
+      "valueName": "Spacetime"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P527",
+      "propertyName": "has part",
+      "valueType": "wikibase-item",
+      "value": "Q4169",
+      "valueName": "Outer space"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P646",
+      "propertyName": "Freebase ID",
+      "valueType": "external-id",
+      "value": "/m/07v7c"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2612",
+      "propertyName": "TED topic ID",
+      "valueType": "external-id",
+      "value": "universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2670",
+      "propertyName": "has parts of the class",
+      "valueType": "wikibase-item",
+      "value": "Q6999",
+      "valueName": "Astronomical object"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2670",
+      "propertyName": "has parts of the class",
+      "valueType": "wikibase-item",
+      "value": "Q18343",
+      "valueName": "Dark energy"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2670",
+      "propertyName": "has parts of the class",
+      "valueType": "wikibase-item",
+      "value": "Q79925",
+      "valueName": "Dark matter"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2670",
+      "propertyName": "has parts of the class",
+      "valueType": "wikibase-item",
+      "value": "Q28530079"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1417",
+      "propertyName": "Encyclopædia Britannica Online ID",
+      "valueType": "external-id",
+      "value": "topic/universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1417",
+      "propertyName": "Encyclopædia Britannica Online ID",
+      "valueType": "external-id",
+      "value": "topic/universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2959",
+      "propertyName": "permanent duplicated item",
+      "valueType": "wikibase-item",
+      "value": "Q22924128"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P18",
+      "propertyName": "image",
+      "valueType": "commonsMedia",
+      "value": "Hubble ultra deep field.jpg"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P18",
+      "propertyName": "image",
+      "valueType": "commonsMedia",
+      "value": "Hubble ultra deep field.jpg"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P361",
+      "propertyName": "part of",
+      "valueType": "wikibase-item",
+      "value": "Q3327819",
+      "valueName": "Multiverse"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1419",
+      "propertyName": "shape",
+      "valueType": "wikibase-item",
+      "value": "Q1647152",
+      "valueName": "Shape of the universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2184",
+      "propertyName": "history of topic",
+      "valueType": "wikibase-item",
+      "value": "Q136407",
+      "valueName": "Chronology of the universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2184",
+      "propertyName": "history of topic",
+      "valueType": "wikibase-item",
+      "value": "Q21653100"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P3222",
+      "propertyName": "NE.se ID",
+      "valueType": "external-id",
+      "value": "universum"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P3219",
+      "propertyName": "Encyclopædia Universalis Online ID",
+      "valueType": "external-id",
+      "value": "univers"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1552",
+      "propertyName": "has quality",
+      "valueType": "wikibase-item",
+      "value": "Q11412",
+      "valueName": "Gravity"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P3417",
+      "propertyName": "Quora topic ID",
+      "valueType": "external-id",
+      "value": "The-Universe"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1296",
+      "propertyName": "Gran Enciclopèdia Catalana ID",
+      "valueType": "external-id",
+      "value": "0216407"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2386",
+      "propertyName": "diameter",
+      "valueType": "quantity",
+      "value": {
+        "amount": "+880000000000000000000000",
+        "unit": "http://www.wikidata.org/entity/Q828224"
+      }
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P3569",
+      "propertyName": "Cultureel Woordenboek identifier",
+      "valueType": "external-id",
+      "value": "natuurkunde-scheikunde-en-sterrenkunde/heelal"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P398",
+      "propertyName": "child astronomical body",
+      "valueType": "wikibase-item",
+      "value": "Q1133705",
+      "valueName": "Galaxy filament"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P398",
+      "propertyName": "child astronomical body",
+      "valueType": "wikibase-item",
+      "value": "Q497745",
+      "valueName": "Sloan Great Wall"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P398",
+      "propertyName": "child astronomical body",
+      "valueType": "wikibase-item",
+      "value": "Q1139177",
+      "valueName": "CfA2 Great Wall"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P398",
+      "propertyName": "child astronomical body",
+      "valueType": "wikibase-item",
+      "value": "Q7439451",
+      "valueName": "Sculptor Wall"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P398",
+      "propertyName": "child astronomical body",
+      "valueType": "wikibase-item",
+      "value": "Q15241043",
+      "valueName": "Hercules–Corona Borealis Great Wall"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P398",
+      "propertyName": "child astronomical body",
+      "valueType": "wikibase-item",
+      "value": "Q23054687",
+      "valueName": "BOSS Great Wall"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P972",
+      "propertyName": "catalog",
+      "valueType": "wikibase-item",
+      "value": "Q5460604",
+      "valueName": "Invalid id or excluded via caching"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2924",
+      "propertyName": "Great Russian Encyclopedia Online ID",
+      "valueType": "external-id",
+      "value": "2334183"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P1343",
+      "propertyName": "described by source",
+      "valueType": "wikibase-item",
+      "value": "Q602358",
+      "valueName": "Brockhaus and Efron Encyclopedic Dictionary"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P397",
+      "propertyName": "parent astronomical body",
+      "valueType": "wikibase-item",
+      "value": "Q3327819",
+      "valueName": "Multiverse"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P461",
+      "propertyName": "opposite of",
+      "valueType": "wikibase-item",
+      "value": "Q2051667"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P2581",
+      "propertyName": "BabelNet id",
+      "valueType": "external-id",
+      "value": "00022991n"
+    },
+    {
+      "conceptId": "Q1",
+      "propertyId": "P3916",
+      "propertyName": "UNESCO Thesaurus ID",
+      "valueType": "external-id",
+      "value": "concept3230"
+    }
+  ]
+}
