@@ -1,4 +1,5 @@
-#  Track A -- Processing of bibliographical data and citations from PDF using GROBID and external DARIAH services -- :notebook_with_decorative_cover:
+#  Track A 
+## Processing of bibliographical data and citations from PDF using GROBID and external DARIAH services -- :notebook_with_decorative_cover:
 
 In order to promote [DARIAH](https://www.dariah.eu/activities/projects-and-affiliations/desir/) tools, services, and initiative collaborations, DESIR organises a series dissemination events, one of them is the [code sprint](https://desircodesprint.sciencesconf.org/) event which will be held on 31th July - 2nd August 2018 in Berlin. As one of events that is organised by the DESIR project, the code sprint this year take *Bibliographical metadata: Citations and References* as the main subject. To support this theme, **track A** focuses on the use and the exploration of [Grobid](https://github.com/kermitt2/grobid) as a tool for extracting the bibliographical and citations data of the Pdf scientific files. 
 
