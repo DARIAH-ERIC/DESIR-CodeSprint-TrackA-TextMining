@@ -1,5 +1,5 @@
 #  Track A 
-## Processing of bibliographical data and citations from PDF using GROBID and external DARIAH services -- :notebook_with_decorative_cover:
+## Processing of bibliographical data and citations from PDF using GROBID and external DARIAH services :notebook_with_decorative_cover:
 
 In order to promote [DARIAH](https://www.dariah.eu/activities/projects-and-affiliations/desir/) tools, services, and initiative collaborations, DESIR organises a series dissemination events, one of them is the [code sprint](https://desircodesprint.sciencesconf.org/) event which will be held on 31th July - 2nd August 2018 in Berlin. As one of events that is organised by the DESIR project, the code sprint this year take *Bibliographical metadata: Citations and References* as the main subject. To support this theme, **track A** focuses on the use and the exploration of [Grobid](https://github.com/kermitt2/grobid) as a tool for extracting the bibliographical and citations data of the Pdf scientific files. 
 
@@ -44,22 +44,13 @@ For participating in this track, there are some preparations needed :
 
 # Steps
 The participants for this track will involved themselves in several steps:
-1) Data extraction by using Grobid
-- (30 science articles in 5 languages and in Pdf format are already prepared. They can be found in `/Pdf Source Files/`)
+1) Data extraction by using Grobid (the data contains about 30 science articles in 5 languages and in Pdf format are already prepared. They can be found in `/Pdf Source Files/`)
    * Pdf files extraction into XML-TEI data format
    * Connection and data processing through the REST API
         
 2) Visualisation of data extracted from Grobid 
-   * Visualisation of the data extracted from the first step in the Pdf files by using Grobid as a library, for instance by using LayoutToken object in Grobid. 
-
-3) Data enrichment  
-   *  Data enrichment with some other data extracted from other services, for instance from HAL or Geonames.
-
-4) (Bonus) Visualisation of concept and entities
-   
-   ```This is a bonus step if participants can finish all the 3 previous steps before the workshop ends. Visualization results may vary depending on the data collected.```
-   * Data extraction by using [Entity-Fishing](https://github.com/kermitt2/nerd)   
-   * Data visualisation based on the extracted data from several services in Pdf files
+   * Visualisation of the data extracted from the first step in the Pdf  
+   * Data enrichment of affiliation, abstract and title data using other services
    
 
 ## Contact
