@@ -1,6 +1,8 @@
 angular.module('org.dariah.desir.ui').controller('uploadController', function ($scope, $http) {
-    console.log($scope.myFile)
+
     $scope.uploadFile = function () {
+        $scope.pdfLoaded = true;
+        console.log($scope.pdfLoaded)
         $scope.jsonResponse = "";
         $scope.quantity = 4;
         

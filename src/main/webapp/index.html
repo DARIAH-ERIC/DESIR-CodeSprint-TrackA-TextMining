@@ -18,6 +18,8 @@
 
     <!-- PDF.js -->
     <script src="resources/js/pdfjs-1.9.426-dist/build/pdf.js"></script>
+    <script src="resources/js/pdfjs-1.9.426-dist/build/pdf.worker.js"></script>
+
 
 
     <!-- my custom stuff -->
@@ -65,6 +67,12 @@
                                     Entity runtime:<strong> {{ jsonResponse.efRuntime }}</strong> ms |
                                     Author resolution runtime:<strong> {{ jsonResponse.ecRuntime }}</strong> ms
                                 </div>
+                            </div>
+                            <div >
+                                <button id="prev">Previous</button>
+                                <button id="next">Next</button>
+                                &nbsp; &nbsp;
+                                <span>Page: <span id="page_num"></span>  /  <span id="page_count"></span></span>
                             </div>
                             <canvas id="the-canvas"></canvas>
                             <div class="col-xs-12" id="requestResult" ng-if="jsonResponse">
