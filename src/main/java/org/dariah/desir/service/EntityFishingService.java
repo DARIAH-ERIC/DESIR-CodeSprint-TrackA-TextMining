@@ -46,6 +46,7 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -79,7 +80,7 @@ public class EntityFishingService {
         PORT = PORT;
     }
 
-    public String termDisambiguate(Map<String, Double> listOfTerm, String language) throws Exception {
+    public String termDisambiguate(Map<String, Double> listOfTerm, String language){
 
         String result = null, term = null;
         double score = 0.0;
@@ -126,11 +127,15 @@ public class EntityFishingService {
 
         } catch (URISyntaxException e) {
             e.printStackTrace();
+        }catch (UnsupportedEncodingException e){
+            e.printStackTrace();
+        }catch (IOException e) {
+            e.printStackTrace();
         }
         return result;
     }
 
-    public String textDisambiguate(String text, String language) throws Exception {
+    public String textDisambiguate(String text, String language)  {
         String result = null;
         try {
             final URI uri = new URIBuilder()
@@ -161,7 +166,14 @@ public class EntityFishingService {
 
         } catch (URISyntaxException e) {
             e.printStackTrace();
+        }catch (UnsupportedEncodingException e){
+            e.printStackTrace();
+        }catch (ClientProtocolException e){
+            e.printStackTrace();
+        }catch (IOException e){
+            e.printStackTrace();
         }
+
         return result;
     }
 
@@ -214,7 +226,56 @@ public class EntityFishingService {
         return result;
     }
 
-    public String getConcept(String id) throws Exception {
+//    public String pdfProcessing (String fileToBeuploaded, String language, String outputFile) {
+//        String result = null;
+//        String url = "http://" + this.HOST + DISAMBIGUATE_SERVICE;
+//        String query = "{\'language\': {\'lang\':\'"+ language +"\'}}, \'entities\': [], \'nbest\': false, \'sentence\': false, \'customisation\': \'generic\'}";
+//        File file = new File(fileToBeuploaded);
+//        //curl 'http://cloud.science-miner.com/nerd/service/disambiguate' -X POST -F "query={'language': {'lang':'en'}}, 'entities': [], 'nbest': false, 'sentence': false, 'customisation': 'generic'}" -F"file=@11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf"
+//        try{
+//            // adding new elements of command in array list of string
+//            ArrayList<String> element = new ArrayList<String>();
+//
+//            element.add("curl");
+//            element.add(url);
+//            element.add("-XPOST");
+//            element.add("-F");
+//            element.add("\"query=" + query + "\"");
+//            element.add("-F");
+//            element.add("file=@" + file.getName() + "\"");
+//
+//            //element.add("query={ \"termVector\": [ { \"term\" : \"computer science\", \"score\" : 0.3 }, { \"term\" : \"engine\", \"score\" : 0.1 } ], \"language\": { \"lang\": \"en\" }, \"resultLanguages\": [\"de\"], \"nbest\": 0, \"customisation\": \"generic\" }");
+//            System.out.println(element);
+//
+//            // converting array list of string to string array
+//            String[] command = element.toArray(new String[element.size()]);
+//
+//            // executing the command
+//            Process process = Runtime.getRuntime().exec(command);
+//
+//            // getting the result of execution
+//            StringBuilder processOutput = new StringBuilder();
+//            try (BufferedReader processOutputReader = new BufferedReader(
+//                    new InputStreamReader(process.getInputStream()));) {
+//                String readLine;
+//                while ((readLine = processOutputReader.readLine()) != null) {
+//                    processOutput.append(readLine + System.lineSeparator());
+//                }
+//                process.waitFor();
+//            }
+//
+//            System.out.println(processOutput);
+//            result = processOutput.toString();
+//
+//        }catch (IOException e){
+//            e.printStackTrace();
+//        }catch (InterruptedException e){
+//            e.printStackTrace();
+//        }
+//        return result;
+//    }
+
+    public String getConcept(String id)  {
         String response = null;
         String urlNerd =  "http://"+ this.HOST + CONCEPT_SERVICE + "/" + id;
         if ((id != null) || (id.startsWith("Q") || (id.startsWith("P")))){
