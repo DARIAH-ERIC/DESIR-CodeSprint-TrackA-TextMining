@@ -29,12 +29,9 @@ def get_grobid_output(filepath):
 	c = pycurl.Curl()
 	buffer = io.BytesIO()
 	c.setopt(c.VERBOSE, True)
-	c.setopt(c.URL, 'http://localhost:8070/api/processFulltextDocument')
-	c.setopt(c.HTTPPOST, [
-	    ('input', (
-		c.FORM_FILE, filepath,
-	    )),
-	])
+	c.setopt(c.URL, 'http://localhost:8070/api/processReferences')
+	c.setopt(c.HTTPPOST, [('input', (c.FORM_FILE, filepath)),('consolidateCitations',"1")])
+	#c.setopt(c.HTTPPOST, [('consolidateCitations', 1)])
 	c.setopt(c.WRITEFUNCTION, buffer.write)
 	c.perform()
 	c.close()
