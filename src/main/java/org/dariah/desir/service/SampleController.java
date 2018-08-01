@@ -50,13 +50,16 @@ public class SampleController {
 
             FileUtils.copyToFile(input, tempFile);
 
+            System.out.println("entity-fishing");
             resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
 
+            System.out.println("Grobid");
             String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
             System.out.println(resultGrobid);
 
-//            String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
-//            System.out.println(resultDisambiguation);
+            System.out.println("Author disambiguation");
+            String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
+            System.out.println(resultDisambiguation);
 
         } catch (Exception e) {
             e.printStackTrace();
