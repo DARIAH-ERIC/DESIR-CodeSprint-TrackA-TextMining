@@ -3,6 +3,8 @@ package org.dariah.desir.service;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.dariah.desir.data.DisambiguatedAuthor;
+import org.dariah.desir.data.OverlayResponse;
+import org.dariah.desir.data.ResolvedCitation;
 import org.dariah.desir.grobid.AuthorDisambiguationClient;
 import org.dariah.desir.grobid.GrobidClient;
 import org.dariah.desir.grobid.GrobidParsers;
@@ -41,8 +43,9 @@ public class SampleController {
 
 
     @RequestMapping(value = "/process", method = RequestMethod.POST, produces = "application/json")
-    public String processPdf(@RequestParam(value = "file") MultipartFile pdf) {
+    public OverlayResponse processPdf(@RequestParam(value = "file") MultipartFile pdf) {
 
+        OverlayResponse response = null;
         String resultEntityFishing = null;
         try {
             InputStream input = pdf.getInputStream();
@@ -63,14 +66,14 @@ public class SampleController {
             String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
 
             final List<DisambiguatedAuthor> disambiguatedAuthors = grobidParsers.processAffiliations(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
-
-
+            final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
+            response = new OverlayResponse(disambiguatedAuthors, resolvedCitations);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return resultEntityFishing;
+        return response;
     }
 
     @RequestMapping(value = "/entity_fishing", method = RequestMethod.POST, produces = "application/json")

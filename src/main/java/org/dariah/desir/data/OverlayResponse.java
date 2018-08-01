@@ -7,6 +7,11 @@ public class OverlayResponse {
     private List<DisambiguatedAuthor> authors = new ArrayList<>();
     private List<ResolvedCitation> citations = new ArrayList<>();
 
+    public OverlayResponse(List<DisambiguatedAuthor> disambiguatedAuthors, List<ResolvedCitation> resolvedCitations) {
+        this.authors = disambiguatedAuthors;
+        this.citations = resolvedCitations;
+    }
+
     public List<DisambiguatedAuthor> getAuthors() {
         return authors;
     }

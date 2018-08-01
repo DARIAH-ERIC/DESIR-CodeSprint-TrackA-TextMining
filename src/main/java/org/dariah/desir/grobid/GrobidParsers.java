@@ -1,6 +1,8 @@
 package org.dariah.desir.grobid;
 
+import com.sun.tools.javac.comp.Resolve;
 import org.dariah.desir.data.DisambiguatedAuthor;
+import org.dariah.desir.data.ResolvedCitation;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
@@ -147,10 +149,10 @@ public class GrobidParsers {
 
                 Node idno = (Node) xPath.compile("idno").evaluate(persName, XPathConstants.NODE);
 
-                if(idno != null) {
+                if (idno != null) {
                     String id = String.valueOf(idno.getTextContent());
                     authorOutput.setId(id);
-                    String type= idno.getAttributes().getNamedItem("type").getTextContent();
+                    String type = idno.getAttributes().getNamedItem("type").getTextContent();
                     authorOutput.setIdType(type);
                     String cert = idno.getAttributes().getNamedItem("cert").getTextContent();
                     authorOutput.setConfidence(cert);
@@ -166,6 +168,36 @@ public class GrobidParsers {
         }
 
         return output;
+
+    }
+
+    public List<ResolvedCitation> processCitations(InputStream is) {
+        XPath xPath = XPathFactory.newInstance().newXPath();
+
+        List<ResolvedCitation> resolvedCitations = new ArrayList<>();
+
+        Document teiDoc = null;
+
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        docFactory.setValidating(false);
+        //docFactory.setNamespaceAware(true);
+        DocumentBuilder docBuilder = null;
+        try {
+            docBuilder = docFactory.newDocumentBuilder();
+            teiDoc = docBuilder.parse(is);
+        } catch (SAXException | IOException | ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            Element teiHeader = (Element) xPath.compile(TeiPaths.MetadataElement).evaluate(teiDoc, XPathConstants.NODE);
+
+
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+
+        return resolvedCitations;
 
     }
 
