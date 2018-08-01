@@ -22,8 +22,8 @@ public class AuthorDisambiguationClientTest {
     @Test
     public void test1() throws Exception {
         final InputStream resourceAsStream = this.getClass().getResourceAsStream("/lopez2010experiments.pdf");
-        final String disambiguate = target.disambiguate(IOUtils.toByteArray(resourceAsStream));
+        //final String disambiguate = target.disambiguate(IOUtils.toByteArray(resourceAsStream));
 
-        System.out.println(disambiguate);
+        //System.out.println(disambiguate);
     }
 }
