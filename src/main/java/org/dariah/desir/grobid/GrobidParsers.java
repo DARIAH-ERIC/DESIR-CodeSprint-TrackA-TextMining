@@ -1,8 +1,8 @@
 package org.dariah.desir.grobid;
 
-import com.sun.tools.javac.comp.Resolve;
 import org.dariah.desir.data.DisambiguatedAuthor;
 import org.dariah.desir.data.ResolvedCitation;
+import org.dariah.desir.service.EntityFishingService;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
@@ -190,7 +190,24 @@ public class GrobidParsers {
         }
 
         try {
-            Element teiHeader = (Element) xPath.compile(TeiPaths.MetadataElement).evaluate(teiDoc, XPathConstants.NODE);
+            NodeList references = (NodeList) xPath.compile("/TEI/text/back/div/listBibl/biblStruct").evaluate(teiDoc, XPathConstants.NODESET);
+
+            for (int i = 0; i < references.getLength(); i++) {
+                Node reference = references.item(i);
+
+                ResolvedCitation citation = new ResolvedCitation();
+                String coordinates = reference.getAttributes().getNamedItem("coords").getTextContent();
+                citation.setCoordinates(coordinates);
+
+                Node doiNode = ((Node) xPath.compile("analytic/idno[@type=\"doi\"]").evaluate(reference,XPathConstants.NODE));
+                if(doiNode != null) {
+                    String doi = doiNode.getTextContent();
+                    citation.setDoi(doi);
+                    citation.setWikidataID(new EntityFishingService().lookupWikidataByDoi(doi));
+                }
+                resolvedCitations.add(citation);
+
+            }
 
 
         } catch (XPathExpressionException e) {
