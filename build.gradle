@@ -63,4 +63,7 @@ dependencies {
 
     testCompile("junit:junit:4.12")
     testCompile("org.hamcrest:hamcrest-all:1.3")
+    // https://mvnrepository.com/artifact/org.springframework/spring-mock
+    compile group: 'org.springframework', name: 'spring-mock', version: '2.0.8'
+
 }

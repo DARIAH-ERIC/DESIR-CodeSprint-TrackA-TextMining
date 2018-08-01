@@ -3,7 +3,6 @@ package org.dariah.desir.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
@@ -13,55 +12,37 @@ import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
 import org.apache.http.HttpStatus;
 import org.apache.http.client.ClientProtocolException;
-import org.apache.http.client.CredentialsProvider;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.client.utils.URIBuilder;
-import org.apache.http.entity.ContentType;
 import org.apache.http.entity.StringEntity;
-import org.apache.http.entity.mime.HttpMultipartMode;
-import org.apache.http.entity.mime.MultipartEntityBuilder;
-import org.apache.http.entity.mime.content.FileBody;
-import org.apache.http.entity.mime.content.InputStreamBody;
-import org.apache.http.entity.mime.content.StringBody;
-import org.apache.http.impl.client.*;
-import org.apache.http.params.BasicHttpParams;
-import org.apache.http.util.EntityUtils;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+import org.apache.http.impl.client.HttpClients;
 import org.dariah.desir.grobid.GrobidParsers;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.core.io.FileSystemResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
+import org.springframework.mock.web.MockMultipartFile;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.multipart.MultipartFile;
 
-import javax.print.URIException;
-import javax.ws.rs.Consumes;
-import javax.ws.rs.POST;
-import javax.ws.rs.Path;
-import javax.ws.rs.client.Client;
-import javax.ws.rs.client.ClientBuilder;
-import javax.ws.rs.core.MediaType;
-import java.awt.*;
 import java.io.*;
-import java.lang.reflect.Field;
-import java.net.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Map;
 
-
-import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.http.entity.ContentType.APPLICATION_JSON;
-import static org.apache.http.entity.ContentType.MULTIPART_FORM_DATA;
 
 
 /**
@@ -83,11 +64,6 @@ public class EntityFishingService {
     public EntityFishingService() {
 
     }
-
-    /*http://cloud.science-miner.com/nerd/service/disambiguate' -X POST -F "query={'language': {'lang':'en'}}, 'entities': [],
-    'nbest': false, 'sentence': false, 'customisation': 'generic'}"
-    -F"file=@11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf"
-     */
 
     public EntityFishingService(String host) {
         HOST = host;
@@ -250,7 +226,6 @@ public class EntityFishingService {
 
         return result;
 
-
     }
 
 
@@ -303,14 +278,14 @@ public class EntityFishingService {
         }
     }
 
-    /*public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception{
         String result, text = null;
         String lang = "en";
         String fileInputXML = "11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf.tei.xml";
         String fileInputPdf = "src/main/resources/11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf";
         GrobidParsers grobidParsers = new GrobidParsers();
         try {
-            EntityFishingService entityFishingService = new EntityFishingService("cloud.science-miner.com/nerd/service");
+            EntityFishingService entityFishingService = new EntityFishingService("http://cloud.science-miner.com/nerd/service");
             ClassPathResource resource = new ClassPathResource(fileInputXML);
             InputStream inputStream =resource.getInputStream();
 
@@ -323,18 +298,26 @@ public class EntityFishingService {
             //result = entityFishingService.termDisambiguate(keywordList, lang);
 
             //pdf processing
-            //result = entityFishingService.pdfProcessing(fileInputPdf,lang);
+            File file = new File(fileInputPdf);
+            Path path = Paths.get(file.getAbsolutePath());
+            String name = file.getName();
+            String originalFileName = file.getName();
+            String contentType = "text/plain";
+            byte[] content = Files.readAllBytes(path);
+
+            MultipartFile multipartFile = new MockMultipartFile(name, originalFileName, contentType, content);
+            result = entityFishingService.pdfProcessing(multipartFile);
 
             //kb concept
             //result = entityFishingService.getConcept("Q1");
 
             // saving the result
-            //String resultInJson = entityFishingService.toJson(result);
+            String resultInJson = entityFishingService.toJson(result);
             entityFishingService.saveToFile(resultInJson);
 
             System.out.println(result);
         } catch (IOException e){
             e.printStackTrace();
         }
-    }*/
+    }
 }

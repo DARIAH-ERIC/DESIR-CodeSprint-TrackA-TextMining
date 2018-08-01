@@ -1,67 +1,74 @@
 {
-  "runtime": 508,
+  "runtime": 11112,
   "nbest": false,
-  "text": "In computational neuroscience it is generally accepted that human motor memory contains neural representations of the physics of the musculoskeletal system and the objects in the environment. These representations are called \"internal models\". Force field studies, in which subjects have to adapt to dynamic perturbations induced by a robotic manipulandum, are an established tool to analyze the characteristics of such internal models. The aim of the current study was to investigate whether catch trials during force field learning could influence the consolidation of motor memory in more complex tasks. Thereby, the force field was more than double the force field of previous studies (35 N�s/m). Moreover, the arm of the subjects was not supported. A total of 46 subjects participated in this study and performed center-out movements at a robotic manipulandum in two different force fields. Two control groups learned force field A on day 1 and were retested in the same force field on day 3 (AA). Two test groups additionally learned an interfering force field B (\u003d ?A) on day 2 (ABA). The difference between the two test and control groups, respectively, was the absence (0%) or presence (19%) of catch trials, in which the force field was turned-off suddenly. The results showed consolidation of force field A on day 3 for both control groups. Test groups showed no consolidation of force field A (19% catch trials) and even poorer performance on day 3 (0% catch trials). In conclusion, it can be stated that catch trials seem to have a positive effect on the performance on day 3 but do not trigger a consolidation process as shown in previous studies that used a lower force field viscosity with supported arm. These findings indicate that the results of previous studies in which less complex tasks were analyzed, cannot be fully transferred to more complex tasks. Moreover, the effects of catch trials in these situations are insufficiently understood and further research is needed.",
   "language": {
     "lang": "en",
-    "conf": 0.0
+    "conf": 0.999996830784404
   },
-  "global_categories": [
-    {
-      "weight": 0.022097257344557725,
-      "source": "wikipedia-en",
-      "category": "Nervous system",
-      "page_id": 698571
-    },
-    {
-      "weight": 0.022097257344557725,
-      "source": "wikipedia-en",
-      "category": "Memory processes",
-      "page_id": 16136695
-    },
-    {
-      "weight": 0.10983175824049494,
-      "source": "wikipedia-en",
-      "category": "Fictional armour",
-      "page_id": 11665558
-    },
-    {
-      "weight": 0.10983175824049494,
-      "source": "wikipedia-en",
-      "category": "Fictional superhuman features or abilities",
-      "page_id": 19022280
-    },
-    {
-      "weight": 0.10983175824049494,
-      "source": "wikipedia-en",
-      "category": "Physics in fiction",
-      "page_id": 1903794
-    },
-    {
-      "weight": 0.10983175824049494,
-      "source": "wikipedia-en",
-      "category": "Science fiction themes",
-      "page_id": 786868
-    },
-    {
-      "weight": 0.10983175824049494,
-      "source": "wikipedia-en",
-      "category": "Fictional technology",
-      "page_id": 1891719
-    },
-    {
-      "weight": 0.10983175824049494,
-      "source": "wikipedia-en",
-      "category": "Space technology",
-      "page_id": 7406479
-    }
-  ],
   "entities": [
     {
+      "rawName": "motor memory",
+      "offsetStart": 139,
+      "offsetEnd": 152,
+      "pos": [
+        {
+          "p": 1,
+          "x": 484.43,
+          "y": 61.832,
+          "w": 52.0884,
+          "h": 16.47
+        },
+        {
+          "p": 1,
+          "x": 45.18,
+          "y": 82.712,
+          "w": 72.09,
+          "h": 16.47
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8337,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 156,
+      "offsetEnd": 167,
+      "pos": [
+        {
+          "p": 1,
+          "x": 143.226,
+          "y": 82.712,
+          "w": 85.03199999999998,
+          "h": 16.47
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
       "rawName": "computational neuroscience",
-      "offsetStart": 3,
-      "offsetEnd": 29,
-      "nerd_score": 1,
+      "offsetStart": 1003,
+      "offsetEnd": 1029,
+      "pos": [
+        {
+          "p": 1,
+          "x": 187.755,
+          "y": 166.729,
+          "w": 121.9332,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
       "nerd_selection_score": 0.9822,
       "wikipediaExternalRef": 271430,
       "wikidataId": "Q8037925",
@@ -71,10 +78,19 @@
     },
     {
       "rawName": "motor memory",
-      "offsetStart": 66,
-      "offsetEnd": 78,
-      "nerd_score": 1.0009,
-      "nerd_selection_score": 0.9264,
+      "offsetStart": 1066,
+      "offsetEnd": 1078,
+      "pos": [
+        {
+          "p": 1,
+          "x": 482.953,
+          "y": 166.729,
+          "w": 66.59500000000003,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9227,
       "wikipediaExternalRef": 487908,
       "wikidataId": "Q852461",
       "domains": [
@@ -83,9 +99,18 @@
     },
     {
       "rawName": "musculoskeletal",
-      "offsetStart": 133,
-      "offsetEnd": 148,
-      "nerd_score": 1,
+      "offsetStart": 1134,
+      "offsetEnd": 1149,
+      "pos": [
+        {
+          "p": 1,
+          "x": 409.687,
+          "y": 178.604,
+          "w": 68.3316,
+          "h": 8.702
+        }
+      ],
+      "nerd_score": 0,
       "nerd_selection_score": 0.4358,
       "wikipediaExternalRef": 653348,
       "wikidataId": "Q726543",
@@ -95,10 +120,19 @@
     },
     {
       "rawName": "internal models",
-      "offsetStart": 226,
-      "offsetEnd": 241,
-      "nerd_score": 0.9765,
-      "nerd_selection_score": 0.4834,
+      "offsetStart": 1228,
+      "offsetEnd": 1243,
+      "pos": [
+        {
+          "p": 1,
+          "x": 434.02985555555557,
+          "y": 190.603,
+          "w": 65.7180587301587,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.7544,
       "wikipediaExternalRef": 22732293,
       "wikidataId": "Q13580300",
       "domains": [
@@ -107,10 +141,26 @@
     },
     {
       "rawName": "field studies",
-      "offsetStart": 250,
-      "offsetEnd": 263,
-      "nerd_score": 1.2493,
-      "nerd_selection_score": 0.4073,
+      "offsetStart": 1253,
+      "offsetEnd": 1267,
+      "pos": [
+        {
+          "p": 1,
+          "x": 531.792,
+          "y": 190.603,
+          "w": 17.9807,
+          "h": 8.702
+        },
+        {
+          "p": 1,
+          "x": 174.18,
+          "y": 202.601,
+          "w": 28.946575000000003,
+          "h": 8.702
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4183,
       "wikipediaExternalRef": 5669923,
       "wikidataId": "Q1402508",
       "domains": [
@@ -122,10 +172,26 @@
     },
     {
       "rawName": "internal models",
-      "offsetStart": 420,
-      "offsetEnd": 435,
-      "nerd_score": 0.9765,
-      "nerd_selection_score": 0.4834,
+      "offsetStart": 1425,
+      "offsetEnd": 1441,
+      "pos": [
+        {
+          "p": 1,
+          "x": 518.652,
+          "y": 214.476,
+          "w": 31.1733,
+          "h": 8.702
+        },
+        {
+          "p": 1,
+          "x": 174.18,
+          "y": 226.475,
+          "w": 29.00485714285714,
+          "h": 8.702
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.7499,
       "wikipediaExternalRef": 22732293,
       "wikidataId": "Q13580300",
       "domains": [
@@ -134,10 +200,19 @@
     },
     {
       "rawName": "force field",
-      "offsetStart": 513,
-      "offsetEnd": 524,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 1520,
+      "offsetEnd": 1531,
+      "pos": [
+        {
+          "p": 1,
+          "x": 174.18,
+          "y": 238.473,
+          "w": 42.60559999999998,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
@@ -146,10 +221,19 @@
     },
     {
       "rawName": "motor memory",
-      "offsetStart": 571,
-      "offsetEnd": 583,
-      "nerd_score": 1.0009,
-      "nerd_selection_score": 0.9264,
+      "offsetStart": 1578,
+      "offsetEnd": 1590,
+      "pos": [
+        {
+          "p": 1,
+          "x": 410.738,
+          "y": 238.473,
+          "w": 64.20049999999998,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9227,
       "wikipediaExternalRef": 487908,
       "wikidataId": "Q852461",
       "domains": [
@@ -158,10 +242,19 @@
     },
     {
       "rawName": "force field",
-      "offsetStart": 620,
-      "offsetEnd": 631,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 1628,
+      "offsetEnd": 1639,
+      "pos": [
+        {
+          "p": 1,
+          "x": 258.962,
+          "y": 250.348,
+          "w": 42.85070000000002,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
@@ -170,99 +263,99 @@
     },
     {
       "rawName": "force field",
-      "offsetStart": 657,
-      "offsetEnd": 668,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 1665,
+      "offsetEnd": 1676,
+      "pos": [
+        {
+          "p": 1,
+          "x": 422.179,
+          "y": 250.348,
+          "w": 42.86070000000001,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
         "Physics"
-      ]
-    },
-    {
-      "rawName": "35",
-      "type": "MEASURE",
-      "offsetStart": 690,
-      "offsetEnd": 692,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "46",
-      "type": "MEASURE",
-      "offsetStart": 765,
-      "offsetEnd": 767,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "control groups",
-      "offsetStart": 900,
-      "offsetEnd": 914,
-      "nerd_score": 1.0007,
-      "nerd_selection_score": 0.4133,
-      "wikipediaExternalRef": 1640288,
-      "wikidataId": "Q367359",
-      "domains": [
-        "Computer_Science",
-        "Pedagogy"
       ]
     },
     {
       "rawName": "force field",
-      "offsetStart": 923,
-      "offsetEnd": 934,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 1934,
+      "offsetEnd": 1945,
+      "pos": [
+        {
+          "p": 1,
+          "x": 414.65,
+          "y": 286.22,
+          "w": 42.726500000000044,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
         "Physics"
       ]
-    },
-    {
-      "rawName": "1",
-      "type": "MEASURE",
-      "offsetStart": 944,
-      "offsetEnd": 945,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
     },
     {
       "rawName": "force field",
-      "offsetStart": 976,
-      "offsetEnd": 987,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 1988,
+      "offsetEnd": 1999,
+      "pos": [
+        {
+          "p": 1,
+          "x": 268.537,
+          "y": 298.219,
+          "w": 43.074599999999975,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
         "Physics"
       ]
-    },
-    {
-      "rawName": "3",
-      "type": "MEASURE",
-      "offsetStart": 995,
-      "offsetEnd": 996,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
     },
     {
       "rawName": "AA",
       "type": "ORGANISATION",
-      "offsetStart": 998,
-      "offsetEnd": 1000,
+      "offsetStart": 2010,
+      "offsetEnd": 2012,
+      "pos": [
+        {
+          "p": 1,
+          "x": 360.71974,
+          "y": 298.219,
+          "w": 8.225480000000001,
+          "h": 8.702
+        }
+      ],
       "nerd_score": 0.8,
       "nerd_selection_score": 0
     },
     {
       "rawName": "force field",
-      "offsetStart": 1055,
-      "offsetEnd": 1066,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 2068,
+      "offsetEnd": 2079,
+      "pos": [
+        {
+          "p": 1,
+          "x": 220.063,
+          "y": 310.094,
+          "w": 42.3263,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
@@ -270,88 +363,44 @@
       ]
     },
     {
-      "rawName": "2",
-      "type": "MEASURE",
-      "offsetStart": 1083,
-      "offsetEnd": 1084,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
       "rawName": "ABA",
       "type": "ORGANISATION",
-      "offsetStart": 1086,
-      "offsetEnd": 1089,
+      "offsetStart": 2099,
+      "offsetEnd": 2102,
+      "pos": [
+        {
+          "p": 1,
+          "x": 350.18449999999996,
+          "y": 310.094,
+          "w": 13.3665,
+          "h": 8.702
+        }
+      ],
       "nerd_score": 0.8,
       "nerd_selection_score": 0
     },
     {
       "rawName": "test and control groups",
-      "offsetStart": 1123,
-      "offsetEnd": 1146,
-      "nerd_score": 1,
-      "nerd_selection_score": 0.9386,
-      "wikipediaExternalRef": 1640288,
-      "wikidataId": "Q367359",
-      "domains": [
-        "Computer_Science",
-        "Pedagogy"
-      ]
-    },
-    {
-      "rawName": "0%",
-      "type": "MEASURE",
-      "offsetStart": 1179,
-      "offsetEnd": 1181,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "19%",
-      "type": "MEASURE",
-      "offsetStart": 1196,
-      "offsetEnd": 1199,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "force field",
-      "offsetStart": 1231,
-      "offsetEnd": 1242,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
-      "wikipediaExternalRef": 286106,
-      "wikidataId": "Q1341441",
-      "domains": [
-        "Physics"
-      ]
-    },
-    {
-      "rawName": "force field",
-      "offsetStart": 1304,
-      "offsetEnd": 1315,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
-      "wikipediaExternalRef": 286106,
-      "wikidataId": "Q1341441",
-      "domains": [
-        "Physics"
-      ]
-    },
-    {
-      "rawName": "3",
-      "type": "MEASURE",
-      "offsetStart": 1325,
-      "offsetEnd": 1326,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "control groups",
-      "offsetStart": 1336,
-      "offsetEnd": 1350,
-      "nerd_score": 1.0007,
-      "nerd_selection_score": 0.4133,
+      "offsetStart": 2136,
+      "offsetEnd": 2160,
+      "pos": [
+        {
+          "p": 1,
+          "x": 515.202,
+          "y": 310.094,
+          "w": 34.60439999999994,
+          "h": 8.701999999999998
+        },
+        {
+          "p": 1,
+          "x": 174.171,
+          "y": 322.092,
+          "w": 60.41228571428573,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8235,
       "wikipediaExternalRef": 1640288,
       "wikidataId": "Q367359",
       "domains": [
@@ -361,10 +410,19 @@
     },
     {
       "rawName": "force field",
-      "offsetStart": 1391,
-      "offsetEnd": 1402,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 2246,
+      "offsetEnd": 2257,
+      "pos": [
+        {
+          "p": 1,
+          "x": 232.814,
+          "y": 334.091,
+          "w": 43.59219999999996,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
@@ -372,43 +430,62 @@
       ]
     },
     {
-      "rawName": "19%",
-      "type": "MEASURE",
-      "offsetStart": 1406,
-      "offsetEnd": 1409,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "3",
-      "type": "MEASURE",
-      "offsetStart": 1459,
-      "offsetEnd": 1460,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "0%",
-      "type": "MEASURE",
-      "offsetStart": 1462,
-      "offsetEnd": 1464,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
-    },
-    {
-      "rawName": "3",
-      "type": "MEASURE",
-      "offsetStart": 1587,
-      "offsetEnd": 1588,
-      "nerd_score": 0.8,
-      "nerd_selection_score": 0
+      "rawName": "force field",
+      "offsetStart": 2320,
+      "offsetEnd": 2331,
+      "pos": [
+        {
+          "p": 1,
+          "x": 174.171,
+          "y": 345.966,
+          "w": 43.091499999999996,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
       "rawName": "force field",
-      "offsetStart": 1679,
-      "offsetEnd": 1690,
-      "nerd_score": 0.995,
-      "nerd_selection_score": 0.533,
+      "offsetStart": 2408,
+      "offsetEnd": 2419,
+      "pos": [
+        {
+          "p": 1,
+          "x": 174.171,
+          "y": 357.964,
+          "w": 42.841200000000015,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 2699,
+      "offsetEnd": 2710,
+      "pos": [
+        {
+          "p": 1,
+          "x": 281.995,
+          "y": 393.836,
+          "w": 41.88659999999999,
+          "h": 8.701999999999998
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5283,
       "wikipediaExternalRef": 286106,
       "wikidataId": "Q1341441",
       "domains": [
@@ -417,16 +494,7769 @@
     },
     {
       "rawName": "viscosity",
-      "offsetStart": 1691,
-      "offsetEnd": 1700,
-      "nerd_score": 1.0265,
-      "nerd_selection_score": 0.6758,
+      "offsetStart": 2711,
+      "offsetEnd": 2720,
+      "pos": [
+        {
+          "p": 1,
+          "x": 326.398,
+          "y": 393.836,
+          "w": 36.8904,
+          "h": 8.702
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6764,
       "wikipediaExternalRef": 18963754,
       "wikidataId": "Q128709",
       "domains": [
         "Physics",
         "Engineering"
       ]
+    },
+    {
+      "rawName": "motor learning",
+      "offsetStart": 3031,
+      "offsetEnd": 3045,
+      "pos": [
+        {
+          "p": 1,
+          "x": 211.014,
+          "y": 451.614,
+          "w": 48.16388888888889,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9242,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "motor skills",
+      "offsetStart": 3178,
+      "offsetEnd": 3190,
+      "pos": [
+        {
+          "p": 1,
+          "x": 209.131,
+          "y": 487.483,
+          "w": 46.92488571428569,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5865,
+      "wikipediaExternalRef": 232386,
+      "wikidataId": "Q13208902",
+      "domains": [
+        "Pedagogy",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "con-tains",
+      "type": "BUSINESS",
+      "offsetStart": 3261,
+      "offsetEnd": 3271,
+      "pos": [
+        {
+          "p": 1,
+          "x": 274.434,
+          "y": 498.883,
+          "w": 17.38499999999999,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 1,
+          "x": 45.18,
+          "y": 510.406,
+          "w": 18.164,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.5417,
+      "wikipediaExternalRef": 204420,
+      "wikidataId": "Q155925",
+      "domains": [
+        "Biology",
+        "Animal_Husbandry",
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "musculoskeletal system",
+      "offsetStart": 3309,
+      "offsetEnd": 3333,
+      "pos": [
+        {
+          "p": 1,
+          "x": 213.691,
+          "y": 510.406,
+          "w": 78.0617,
+          "h": 9.015500000000031
+        },
+        {
+          "p": 1,
+          "x": 45.18,
+          "y": 521.807,
+          "w": 14.5483,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8699,
+      "wikipediaExternalRef": 653348,
+      "wikidataId": "Q726543",
+      "domains": [
+        "Animal_Husbandry"
+      ]
+    },
+    {
+      "rawName": "internal models",
+      "offsetStart": 3404,
+      "offsetEnd": 3419,
+      "pos": [
+        {
+          "p": 1,
+          "x": 89.11206666666666,
+          "y": 533.33,
+          "w": 60.54639047619048,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.7558,
+      "wikipediaExternalRef": 22732293,
+      "wikidataId": "Q13580300",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 3499,
+      "offsetEnd": 3510,
+      "pos": [
+        {
+          "p": 1,
+          "x": 227.959,
+          "y": 544.73,
+          "w": 39.55989999999997,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "internal models",
+      "offsetStart": 3674,
+      "offsetEnd": 3689,
+      "pos": [
+        {
+          "p": 1,
+          "x": 158.85,
+          "y": 579.177,
+          "w": 59.6293,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5097,
+      "wikipediaExternalRef": 994704,
+      "wikidataId": "Q1851867",
+      "domains": [
+        "Computer_Science"
+      ]
+    },
+    {
+      "rawName": "internal models",
+      "offsetStart": 3787,
+      "offsetEnd": 3802,
+      "pos": [
+        {
+          "p": 1,
+          "x": 93.7364,
+          "y": 602.101,
+          "w": 61.63409999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5097,
+      "wikipediaExternalRef": 994704,
+      "wikidataId": "Q1851867",
+      "domains": [
+        "Computer_Science"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 3889,
+      "offsetEnd": 3902,
+      "pos": [
+        {
+          "p": 1,
+          "x": 267.892,
+          "y": 613.5,
+          "w": 23.8697,
+          "h": 9.0155
+        },
+        {
+          "p": 1,
+          "x": 45.18,
+          "y": 625.024,
+          "w": 32.4472,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8337,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "working memory",
+      "offsetStart": 4203,
+      "offsetEnd": 4218,
+      "pos": [
+        {
+          "p": 1,
+          "x": 260.357,
+          "y": 670.747,
+          "w": 31.4431,
+          "h": 9.0155
+        },
+        {
+          "p": 1,
+          "x": 45.18,
+          "y": 682.271,
+          "w": 29.219828571428568,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8855,
+      "wikipediaExternalRef": 33912,
+      "wikidataId": "Q11337567",
+      "domains": [
+        "Psychiatry",
+        "Health",
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "short-term memory",
+      "offsetStart": 4220,
+      "offsetEnd": 4237,
+      "pos": [
+        {
+          "p": 1,
+          "x": 83.1116,
+          "y": 682.271,
+          "w": 77.65339999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9089,
+      "wikipediaExternalRef": 28944,
+      "wikidataId": "Q18599",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "long-term memory",
+      "offsetStart": 4252,
+      "offsetEnd": 4268,
+      "pos": [
+        {
+          "p": 1,
+          "x": 217.13,
+          "y": 682.271,
+          "w": 74.64749999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9324,
+      "wikipediaExternalRef": 17995,
+      "wikidataId": "Q18601",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "memory consolidation",
+      "offsetStart": 4310,
+      "offsetEnd": 4330,
+      "pos": [
+        {
+          "p": 1,
+          "x": 194.126,
+          "y": 693.671,
+          "w": 88.10299999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9616,
+      "wikipediaExternalRef": 21312297,
+      "wikidataId": "Q2892593",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "lesion",
+      "offsetStart": 4456,
+      "offsetEnd": 4462,
+      "pos": [
+        {
+          "p": 1,
+          "x": 509.113,
+          "y": 476.111,
+          "w": 22.3107,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5477,
+      "wikipediaExternalRef": 324927,
+      "wikidataId": "Q827023",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "motor task",
+      "offsetStart": 4481,
+      "offsetEnd": 4491,
+      "pos": [
+        {
+          "p": 1,
+          "x": 346.739,
+          "y": 487.511,
+          "w": 40.78863999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.402,
+      "wikipediaExternalRef": 232386,
+      "wikidataId": "Q13208902",
+      "domains": [
+        "Pedagogy",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "memory consolidation",
+      "offsetStart": 4871,
+      "offsetEnd": 4891,
+      "pos": [
+        {
+          "p": 1,
+          "x": 355.174,
+          "y": 556.282,
+          "w": 87.476,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9616,
+      "wikipediaExternalRef": 21312297,
+      "wikidataId": "Q2892593",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "central nervous system",
+      "offsetStart": 5031,
+      "offsetEnd": 5054,
+      "pos": [
+        {
+          "p": 1,
+          "x": 489.619,
+          "y": 579.205,
+          "w": 60.267600000000016,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 1,
+          "x": 303.171,
+          "y": 590.605,
+          "w": 25.4742,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8938,
+      "wikipediaExternalRef": 7251,
+      "wikidataId": "Q47273",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "motor learning",
+      "offsetStart": 5117,
+      "offsetEnd": 5131,
+      "pos": [
+        {
+          "p": 1,
+          "x": 326.214,
+          "y": 602.129,
+          "w": 57.93449999999996,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9242,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "motor memories",
+      "offsetStart": 5328,
+      "offsetEnd": 5342,
+      "pos": [
+        {
+          "p": 1,
+          "x": 431.174,
+          "y": 636.452,
+          "w": 64.87570000000005,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8183,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "Shadmehr",
+      "type": "PERSON",
+      "offsetStart": 5368,
+      "offsetEnd": 5376,
+      "pos": [
+        {
+          "p": 1,
+          "x": 341.679,
+          "y": 647.976,
+          "w": 39.1457,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 5973,
+      "offsetEnd": 5981,
+      "pos": [
+        {
+          "p": 2,
+          "x": 45.18,
+          "y": 85.0027,
+          "w": 32.371377777777774,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 5992,
+      "offsetEnd": 6003,
+      "pos": [
+        {
+          "p": 2,
+          "x": 120.96,
+          "y": 85.0027,
+          "w": 38.24420000000002,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6005,
+      "offsetEnd": 6016,
+      "pos": [
+        {
+          "p": 2,
+          "x": 165.71295,
+          "y": 85.0027,
+          "w": 38.000249999999994,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ing",
+      "type": "BUSINESS",
+      "offsetStart": 6107,
+      "offsetEnd": 6110,
+      "pos": [
+        {
+          "p": 2,
+          "x": 45.18,
+          "y": 107.922,
+          "w": 11.994975,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6187,
+      "offsetEnd": 6198,
+      "pos": [
+        {
+          "p": 2,
+          "x": 103.66,
+          "y": 119.322,
+          "w": 39.56809999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6338,
+      "offsetEnd": 6349,
+      "pos": [
+        {
+          "p": 2,
+          "x": 184.851,
+          "y": 142.242,
+          "w": 37.75749999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 6386,
+      "offsetEnd": 6398,
+      "pos": [
+        {
+          "p": 2,
+          "x": 109.202,
+          "y": 153.642,
+          "w": 55.28491428571428,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9217,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6452,
+      "offsetEnd": 6463,
+      "pos": [
+        {
+          "p": 2,
+          "x": 111.966,
+          "y": 165.162,
+          "w": 38.15050000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "time intervals",
+      "offsetStart": 6486,
+      "offsetEnd": 6500,
+      "pos": [
+        {
+          "p": 2,
+          "x": 239.327,
+          "y": 165.162,
+          "w": 52.331500000000005,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3776,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6508,
+      "offsetEnd": 6519,
+      "pos": [
+        {
+          "p": 2,
+          "x": 64.2588,
+          "y": 176.562,
+          "w": 37.178200000000004,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6545,
+      "offsetEnd": 6556,
+      "pos": [
+        {
+          "p": 2,
+          "x": 196.119,
+          "y": 176.562,
+          "w": 37.29740000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6592,
+      "offsetEnd": 6603,
+      "pos": [
+        {
+          "p": 2,
+          "x": 121.874,
+          "y": 188.081,
+          "w": 37.52689999999998,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6644,
+      "offsetEnd": 6655,
+      "pos": [
+        {
+          "p": 2,
+          "x": 55.952,
+          "y": 199.481,
+          "w": 38.477000000000004,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 6666,
+      "offsetEnd": 6679,
+      "pos": [
+        {
+          "p": 2,
+          "x": 133.336,
+          "y": 199.481,
+          "w": 49.5822,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3972,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6750,
+      "offsetEnd": 6761,
+      "pos": [
+        {
+          "p": 2,
+          "x": 201.21,
+          "y": 211.001,
+          "w": 38.04219999999998,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8057,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "time intervals",
+      "offsetStart": 6822,
+      "offsetEnd": 6836,
+      "pos": [
+        {
+          "p": 2,
+          "x": 238.74,
+          "y": 222.401,
+          "w": 52.926199999999994,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3776,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6871,
+      "offsetEnd": 6882,
+      "pos": [
+        {
+          "p": 2,
+          "x": 170.599,
+          "y": 233.921,
+          "w": 37.563199999999995,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 6936,
+      "offsetEnd": 6947,
+      "pos": [
+        {
+          "p": 2,
+          "x": 182.974,
+          "y": 245.321,
+          "w": 39.00830000000002,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 6985,
+      "offsetEnd": 6998,
+      "pos": [
+        {
+          "p": 2,
+          "x": 118.733,
+          "y": 256.841,
+          "w": 50.03800000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4122,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 7016,
+      "offsetEnd": 7027,
+      "pos": [
+        {
+          "p": 2,
+          "x": 242.718,
+          "y": 256.841,
+          "w": 39.21119999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "disruption",
+      "offsetStart": 7158,
+      "offsetEnd": 7170,
+      "pos": [
+        {
+          "p": 2,
+          "x": 277.386,
+          "y": 279.76,
+          "w": 14.375399999999956,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 2,
+          "x": 45.18,
+          "y": 291.16,
+          "w": 29.2638,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3732,
+      "wikipediaExternalRef": 47886,
+      "wikidataId": "Q1192297",
+      "domains": [
+        "Economy",
+        "Artisanship"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 7408,
+      "offsetEnd": 7419,
+      "pos": [
+        {
+          "p": 2,
+          "x": 254.165,
+          "y": 325.6,
+          "w": 37.57590000000002,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 7565,
+      "offsetEnd": 7576,
+      "pos": [
+        {
+          "p": 2,
+          "x": 100.333,
+          "y": 359.919,
+          "w": 38.70570000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "B increased",
+      "type": "CONCEPT",
+      "offsetStart": 7583,
+      "offsetEnd": 7594,
+      "pos": [
+        {
+          "p": 2,
+          "x": 169.182,
+          "y": 359.919,
+          "w": 42.759120000000024,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 7810,
+      "offsetEnd": 7824,
+      "pos": [
+        {
+          "p": 2,
+          "x": 235.048,
+          "y": 405.759,
+          "w": 56.730200000000025,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 7851,
+      "offsetEnd": 7862,
+      "pos": [
+        {
+          "p": 2,
+          "x": 145.677,
+          "y": 417.159,
+          "w": 37.9965,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8139,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 7893,
+      "offsetEnd": 7904,
+      "pos": [
+        {
+          "p": 2,
+          "x": 45.18,
+          "y": 428.678,
+          "w": 37.25430000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8139,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "AA",
+      "type": "CONCEPT",
+      "offsetStart": 7908,
+      "offsetEnd": 7910,
+      "pos": [
+        {
+          "p": 2,
+          "x": 96.83073999999999,
+          "y": 428.678,
+          "w": 8.58648,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 7981,
+      "offsetEnd": 7994,
+      "pos": [
+        {
+          "p": 2,
+          "x": 112.588,
+          "y": 440.078,
+          "w": 48.24210000000002,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.407,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 8003,
+      "offsetEnd": 8014,
+      "pos": [
+        {
+          "p": 2,
+          "x": 196.057,
+          "y": 440.078,
+          "w": 37.2696,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8139,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ABA",
+      "type": "ORGANISATION",
+      "offsetStart": 8024,
+      "offsetEnd": 8027,
+      "pos": [
+        {
+          "p": 2,
+          "x": 271.99708,
+          "y": 440.078,
+          "w": 14.78124,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 8065,
+      "offsetEnd": 8078,
+      "pos": [
+        {
+          "p": 2,
+          "x": 184.532,
+          "y": 451.598,
+          "w": 48.606899999999996,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.407,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "learning",
+      "offsetStart": 8087,
+      "offsetEnd": 8097,
+      "pos": [
+        {
+          "p": 2,
+          "x": 269.09,
+          "y": 451.598,
+          "w": 22.778099999999995,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 2,
+          "x": 45.18,
+          "y": 462.998,
+          "w": 12.0118,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4161,
+      "wikipediaExternalRef": 183403,
+      "wikidataId": "Q133500",
+      "domains": [
+        "Pedagogy",
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 8106,
+      "offsetEnd": 8118,
+      "pos": [
+        {
+          "p": 2,
+          "x": 92.3817,
+          "y": 462.998,
+          "w": 41.87989999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6179,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 8250,
+      "offsetEnd": 8263,
+      "pos": [
+        {
+          "p": 2,
+          "x": 118.269,
+          "y": 485.918,
+          "w": 48.33959999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.407,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "Shadmehr",
+      "type": "PERSON",
+      "offsetStart": 8412,
+      "offsetEnd": 8420,
+      "pos": [
+        {
+          "p": 2,
+          "x": 45.18,
+          "y": 520.357,
+          "w": 39.1419,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 8975,
+      "offsetEnd": 8987,
+      "pos": [
+        {
+          "p": 2,
+          "x": 45.1791,
+          "y": 623.436,
+          "w": 43.89470000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6179,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "consolida",
+      "offsetStart": 9089,
+      "offsetEnd": 9098,
+      "pos": [
+        {
+          "p": 2,
+          "x": 252.047,
+          "y": 634.836,
+          "w": 35.843309999999995,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4252,
+      "wikipediaExternalRef": 738487,
+      "wikidataId": "Q157591",
+      "domains": [
+        "Plants"
+      ]
+    },
+    {
+      "rawName": "interference effects",
+      "offsetStart": 9355,
+      "offsetEnd": 9375,
+      "pos": [
+        {
+          "p": 2,
+          "x": 45.1791,
+          "y": 692.195,
+          "w": 75.11170000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3985,
+      "wikipediaExternalRef": 533281,
+      "wikidataId": "Q3480151",
+      "domains": [
+        "Biology",
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "infor",
+      "offsetStart": 9735,
+      "offsetEnd": 9740,
+      "pos": [
+        {
+          "p": 2,
+          "x": 527.562,
+          "y": 96.3942,
+          "w": 18.388,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4024,
+      "wikipediaExternalRef": 7760098,
+      "wikidataId": "Q266087",
+      "domains": [
+        "Economy",
+        "Commerce",
+        "Enterprise",
+        "Computer_Science"
+      ]
+    },
+    {
+      "rawName": "constructed action",
+      "offsetStart": 10111,
+      "offsetEnd": 10130,
+      "pos": [
+        {
+          "p": 2,
+          "x": 504.903,
+          "y": 165.153,
+          "w": 44.6015,
+          "h": 9.0155
+        },
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 176.553,
+          "w": 23.6493,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5596,
+      "wikipediaExternalRef": 48652201,
+      "wikidataId": "Q25100273",
+      "domains": [
+        "Sociology"
+      ]
+    },
+    {
+      "rawName": "cognitive processing",
+      "offsetStart": 10274,
+      "offsetEnd": 10294,
+      "pos": [
+        {
+          "p": 2,
+          "x": 391.214,
+          "y": 199.473,
+          "w": 76.76490000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5712,
+      "wikipediaExternalRef": 106238,
+      "wikidataId": "Q2200417",
+      "domains": [
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "responsible for",
+      "offsetStart": 10304,
+      "offsetEnd": 10320,
+      "pos": [
+        {
+          "p": 2,
+          "x": 506.723,
+          "y": 199.473,
+          "w": 43.0017,
+          "h": 9.0155
+        },
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 210.993,
+          "w": 11.1663,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4144,
+      "wikipediaExternalRef": 1460525,
+      "wikidataId": "Q604261",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 10380,
+      "offsetEnd": 10392,
+      "pos": [
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 222.393,
+          "w": 58.835199999999986,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9217,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "benefit of",
+      "offsetStart": 10494,
+      "offsetEnd": 10505,
+      "pos": [
+        {
+          "p": 2,
+          "x": 523.414,
+          "y": 233.912,
+          "w": 26.1735,
+          "h": 9.0155
+        },
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 245.312,
+          "w": 7.72255,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4176,
+      "wikipediaExternalRef": 18976,
+      "wikidataId": "Q162925",
+      "domains": [
+        "Engineering",
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "motor learning",
+      "offsetStart": 10568,
+      "offsetEnd": 10582,
+      "pos": [
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 256.832,
+          "w": 58.93809999999996,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9242,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 10730,
+      "offsetEnd": 10744,
+      "pos": [
+        {
+          "p": 2,
+          "x": 428.93,
+          "y": 279.752,
+          "w": 57.61039999999997,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4473,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "sensory feedback",
+      "offsetStart": 10762,
+      "offsetEnd": 10778,
+      "pos": [
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 291.152,
+          "w": 64.87020000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6184,
+      "wikipediaExternalRef": 11545,
+      "wikidataId": "Q183635",
+      "domains": [
+        "Electronics"
+      ]
+    },
+    {
+      "rawName": "control mechanisms",
+      "offsetStart": 11064,
+      "offsetEnd": 11084,
+      "pos": [
+        {
+          "p": 2,
+          "x": 495.019,
+          "y": 337.003,
+          "w": 54.54200000000003,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 2,
+          "x": 303.06,
+          "y": 348.522,
+          "w": 26.3986,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.413,
+      "wikipediaExternalRef": 275473,
+      "wikidataId": "Q959968",
+      "domains": [
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "state-space models",
+      "offsetStart": 11197,
+      "offsetEnd": 11216,
+      "pos": [
+        {
+          "p": 2,
+          "x": 508.651,
+          "y": 359.922,
+          "w": 41.057999999999936,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 2,
+          "x": 303.06,
+          "y": 371.442,
+          "w": 27.4864,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.77,
+      "wikipediaExternalRef": 548156,
+      "wikidataId": "Q230945",
+      "domains": [
+        "Mathematics"
+      ]
+    },
+    {
+      "rawName": "motor learning",
+      "offsetStart": 11492,
+      "offsetEnd": 11506,
+      "pos": [
+        {
+          "p": 2,
+          "x": 448.63,
+          "y": 417.162,
+          "w": 58.21199999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9242,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "spontaneous recovery",
+      "offsetStart": 11572,
+      "offsetEnd": 11593,
+      "pos": [
+        {
+          "p": 2,
+          "x": 501.513,
+          "y": 428.681,
+          "w": 48.1498,
+          "h": 9.0155
+        },
+        {
+          "p": 2,
+          "x": 303.06,
+          "y": 440.082,
+          "w": 29.971911111111112,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3546,
+      "wikipediaExternalRef": 35075711,
+      "wikidataId": "Q4138732",
+      "domains": [
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "critical role",
+      "offsetStart": 11657,
+      "offsetEnd": 11670,
+      "pos": [
+        {
+          "p": 2,
+          "x": 330.657,
+          "y": 451.601,
+          "w": 42.90740000000005,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6304,
+      "wikipediaExternalRef": 49082473,
+      "wikidataId": "Q22079668",
+      "domains": [
+        "Computer_Science",
+        "Telecommunication"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 12074,
+      "offsetEnd": 12085,
+      "pos": [
+        {
+          "p": 2,
+          "x": 478.679,
+          "y": 520.36,
+          "w": 37.55930000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.818,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 12133,
+      "offsetEnd": 12145,
+      "pos": [
+        {
+          "p": 2,
+          "x": 444.28,
+          "y": 531.76,
+          "w": 60.94980000000004,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9217,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 12176,
+      "offsetEnd": 12185,
+      "pos": [
+        {
+          "p": 2,
+          "x": 372.947,
+          "y": 543.28,
+          "w": 32.2373,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6895,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 12193,
+      "offsetEnd": 12204,
+      "pos": [
+        {
+          "p": 2,
+          "x": 434.527,
+          "y": 543.28,
+          "w": 38.660799999999995,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ceil-ing",
+      "type": "PERSON",
+      "offsetStart": 12479,
+      "offsetEnd": 12488,
+      "pos": [
+        {
+          "p": 2,
+          "x": 533.454,
+          "y": 589.119,
+          "w": 16.17470000000003,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 600.519,
+          "w": 12.0251,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "degrees of freedom",
+      "offsetStart": 12569,
+      "offsetEnd": 12587,
+      "pos": [
+        {
+          "p": 2,
+          "x": 401.003,
+          "y": 612.039,
+          "w": 76.32490000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6413,
+      "wikipediaExternalRef": 2321587,
+      "wikidataId": "Q2480745",
+      "domains": [
+        "Mechanics"
+      ]
+    },
+    {
+      "rawName": "degrees of freedom",
+      "offsetStart": 12792,
+      "offsetEnd": 12810,
+      "pos": [
+        {
+          "p": 2,
+          "x": 313.97,
+          "y": 657.759,
+          "w": 74.27339999999992,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6413,
+      "wikipediaExternalRef": 2321587,
+      "wikidataId": "Q2480745",
+      "domains": [
+        "Mechanics"
+      ]
+    },
+    {
+      "rawName": "human life",
+      "offsetStart": 13035,
+      "offsetEnd": 13046,
+      "pos": [
+        {
+          "p": 2,
+          "x": 522.425,
+          "y": 692.198,
+          "w": 27.3638,
+          "h": 9.0155
+        },
+        {
+          "p": 2,
+          "x": 303.059,
+          "y": 703.598,
+          "w": 11.6869,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4007,
+      "wikipediaExternalRef": 6258,
+      "wikidataId": "Q8432",
+      "domains": [
+        "Sociology",
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "ence",
+      "offsetStart": 13825,
+      "offsetEnd": 13829,
+      "pos": [
+        {
+          "p": 3,
+          "x": 45.179,
+          "y": 165.162,
+          "w": 16.949,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.388,
+      "wikipediaExternalRef": 7013603,
+      "wikidataId": "Q125003",
+      "domains": [
+        "Vehicles",
+        "Transport"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 13864,
+      "offsetEnd": 13875,
+      "pos": [
+        {
+          "p": 3,
+          "x": 192.03,
+          "y": 165.162,
+          "w": 38.254699999999985,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 13994,
+      "offsetEnd": 14005,
+      "pos": [
+        {
+          "p": 3,
+          "x": 170.024,
+          "y": 188.081,
+          "w": 38.1413,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 14046,
+      "offsetEnd": 14055,
+      "pos": [
+        {
+          "p": 3,
+          "x": 102.896,
+          "y": 199.481,
+          "w": 32.1889,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6789,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 14109,
+      "offsetEnd": 14120,
+      "pos": [
+        {
+          "p": 3,
+          "x": 90.1853,
+          "y": 211.001,
+          "w": 37.17450000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 14173,
+      "offsetEnd": 14182,
+      "pos": [
+        {
+          "p": 3,
+          "x": 72.1875,
+          "y": 222.401,
+          "w": 32.1613,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6789,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 14190,
+      "offsetEnd": 14201,
+      "pos": [
+        {
+          "p": 3,
+          "x": 131.307,
+          "y": 222.401,
+          "w": 37.76520000000002,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 14265,
+      "offsetEnd": 14277,
+      "pos": [
+        {
+          "p": 3,
+          "x": 159.357,
+          "y": 233.921,
+          "w": 58.86079999999998,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9217,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "MATERIALS AND METHODS",
+      "type": "ARTIFACT",
+      "offsetStart": 14336,
+      "offsetEnd": 14357,
+      "pos": [
+        {
+          "p": 3,
+          "x": 45.18,
+          "y": 268.248,
+          "w": 113.90099999999998,
+          "h": 9.389999999999986
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "informed consent",
+      "offsetStart": 14494,
+      "offsetEnd": 14511,
+      "pos": [
+        {
+          "p": 3,
+          "x": 255.945,
+          "y": 304.123,
+          "w": 35.7951,
+          "h": 9.0155
+        },
+        {
+          "p": 3,
+          "x": 45.1809,
+          "y": 315.643,
+          "w": 29.4167,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8757,
+      "wikipediaExternalRef": 50355,
+      "wikidataId": "Q764527",
+      "domains": [
+        "Medicine",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "Institutional Review Board",
+      "type": "ORGANISATION",
+      "offsetStart": 14568,
+      "offsetEnd": 14594,
+      "pos": [
+        {
+          "p": 3,
+          "x": 45.1809,
+          "y": 327.043,
+          "w": 101.01068333333333,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.9912,
+      "wikipediaExternalRef": 1983847,
+      "wikidataId": "Q362104",
+      "domains": [
+        "Medicine",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "exper-imental",
+      "type": "BUSINESS",
+      "offsetStart": 14627,
+      "offsetEnd": 14641,
+      "pos": [
+        {
+          "p": 3,
+          "x": 267.646,
+          "y": 327.043,
+          "w": 23.980799999999988,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 3,
+          "x": 45.1809,
+          "y": 338.562,
+          "w": 28.9864,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "randomly assigned",
+      "offsetStart": 14713,
+      "offsetEnd": 14730,
+      "pos": [
+        {
+          "p": 3,
+          "x": 112.018,
+          "y": 349.962,
+          "w": 71.1523,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4035,
+      "wikipediaExternalRef": 65462,
+      "wikidataId": "Q1363085",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 14784,
+      "offsetEnd": 14798,
+      "pos": [
+        {
+          "p": 3,
+          "x": 141.811,
+          "y": 361.362,
+          "w": 57.76820000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4144,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "ing",
+      "type": "BUSINESS",
+      "offsetStart": 14888,
+      "offsetEnd": 14891,
+      "pos": [
+        {
+          "p": 3,
+          "x": 45.1809,
+          "y": 384.282,
+          "w": 11.9966,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 14980,
+      "offsetEnd": 14994,
+      "pos": [
+        {
+          "p": 3,
+          "x": 181.613,
+          "y": 395.802,
+          "w": 56.88820000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4144,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 15003,
+      "offsetEnd": 15015,
+      "pos": [
+        {
+          "p": 3,
+          "x": 272.926,
+          "y": 395.802,
+          "w": 18.867,
+          "h": 9.0155
+        },
+        {
+          "p": 3,
+          "x": 45.1809,
+          "y": 407.202,
+          "w": 16.5347,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.524,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 15051,
+      "offsetEnd": 15062,
+      "pos": [
+        {
+          "p": 3,
+          "x": 205.12,
+          "y": 407.202,
+          "w": 38.15179999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "AA",
+      "type": "ORGANISATION",
+      "offsetStart": 15133,
+      "offsetEnd": 15135,
+      "pos": [
+        {
+          "p": 3,
+          "x": 260.31458,
+          "y": 418.721,
+          "w": 8.58116,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 15189,
+      "offsetEnd": 15200,
+      "pos": [
+        {
+          "p": 3,
+          "x": 213.133,
+          "y": 430.121,
+          "w": 37.498999999999995,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 15235,
+      "offsetEnd": 15246,
+      "pos": [
+        {
+          "p": 3,
+          "x": 126.776,
+          "y": 441.641,
+          "w": 37.38859999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ABA",
+      "type": "ORGANISATION",
+      "offsetStart": 15250,
+      "offsetEnd": 15253,
+      "pos": [
+        {
+          "p": 3,
+          "x": 178.7463,
+          "y": 441.641,
+          "w": 13.4349,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "BioMotionBot",
+      "type": "CREATION",
+      "offsetStart": 15440,
+      "offsetEnd": 15452,
+      "pos": [
+        {
+          "p": 3,
+          "x": 53.5824,
+          "y": 509.803,
+          "w": 50.4144,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "visu",
+      "offsetStart": 16169,
+      "offsetEnd": 16173,
+      "pos": [
+        {
+          "p": 3,
+          "x": 530.847,
+          "y": 176.563,
+          "w": 15.14904,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4375,
+      "wikipediaExternalRef": 25553444,
+      "wikidataId": "Q7936508",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "cen-ter",
+      "type": "PERSON",
+      "offsetStart": 16372,
+      "offsetEnd": 16380,
+      "pos": [
+        {
+          "p": 3,
+          "x": 533.331,
+          "y": 211.002,
+          "w": 16.426399999999944,
+          "h": 9.015500000000003
+        },
+        {
+          "p": 3,
+          "x": 303.18,
+          "y": 222.402,
+          "w": 10.2058,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "Reaction time",
+      "offsetStart": 16974,
+      "offsetEnd": 16987,
+      "pos": [
+        {
+          "p": 3,
+          "x": 303.18,
+          "y": 325.601,
+          "w": 53.80809999999997,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3621,
+      "wikipediaExternalRef": 568306,
+      "wikidataId": "Q32984862",
+      "domains": [
+        "Medicine",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 17842,
+      "offsetEnd": 17853,
+      "pos": [
+        {
+          "p": 3,
+          "x": 303.18,
+          "y": 509.802,
+          "w": 39.34230000000002,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 18028,
+      "offsetEnd": 18036,
+      "pos": [
+        {
+          "p": 3,
+          "x": 517.018,
+          "y": 532.722,
+          "w": 29.000799999999998,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 18058,
+      "offsetEnd": 18069,
+      "pos": [
+        {
+          "p": 3,
+          "x": 388.2,
+          "y": 544.241,
+          "w": 39.55360000000002,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.818,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "www.frontiersin.org",
+      "type": "UNKNOWN",
+      "offsetStart": 18186,
+      "offsetEnd": 18205,
+      "pos": [
+        {
+          "p": 3,
+          "x": 45.18,
+          "y": 745.973,
+          "w": 72.0015,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 18359,
+      "offsetEnd": 18367,
+      "pos": [
+        {
+          "p": 4,
+          "x": 45.18,
+          "y": 73.483,
+          "w": 32.40937777777778,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "counterclockwise",
+      "offsetStart": 18378,
+      "offsetEnd": 18394,
+      "pos": [
+        {
+          "p": 4,
+          "x": 122.845,
+          "y": 73.483,
+          "w": 65.5158,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3731,
+      "wikipediaExternalRef": 26569682,
+      "wikidataId": "Q16726164",
+      "domains": [
+        "Geometry",
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 18395,
+      "offsetEnd": 18406,
+      "pos": [
+        {
+          "p": 4,
+          "x": 193.011,
+          "y": 73.483,
+          "w": 39.963300000000004,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8158,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 18465,
+      "offsetEnd": 18476,
+      "pos": [
+        {
+          "p": 4,
+          "x": 230.269,
+          "y": 85.0027,
+          "w": 39.42089999999996,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8158,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 18585,
+      "offsetEnd": 18596,
+      "pos": [
+        {
+          "p": 4,
+          "x": 188.375,
+          "y": 107.922,
+          "w": 39.3356,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 18669,
+      "offsetEnd": 18680,
+      "pos": [
+        {
+          "p": 4,
+          "x": 253.626,
+          "y": 119.322,
+          "w": 38.16829999999996,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "cess",
+      "type": "PERSON",
+      "offsetStart": 18868,
+      "offsetEnd": 18872,
+      "pos": [
+        {
+          "p": 4,
+          "x": 45.1791,
+          "y": 165.162,
+          "w": 13.44288,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.5971,
+      "wikipediaExternalRef": 3177273,
+      "wikidataId": "Q5065550",
+      "domains": [
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 19290,
+      "offsetEnd": 19298,
+      "pos": [
+        {
+          "p": 4,
+          "x": 110.576,
+          "y": 267.763,
+          "w": 32.37893333333333,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 19309,
+      "offsetEnd": 19321,
+      "pos": [
+        {
+          "p": 4,
+          "x": 187.214,
+          "y": 267.763,
+          "w": 42.48829999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6161,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "BioMotionBot",
+      "type": "ARTIFACT",
+      "offsetStart": 19345,
+      "offsetEnd": 19357,
+      "pos": [
+        {
+          "p": 4,
+          "x": 75.3425,
+          "y": 279.282,
+          "w": 54.9879,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "perpendicular",
+      "offsetStart": 19433,
+      "offsetEnd": 19446,
+      "pos": [
+        {
+          "p": 4,
+          "x": 194.273,
+          "y": 290.682,
+          "w": 53.4451,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.36,
+      "wikipediaExternalRef": 76944,
+      "wikidataId": "Q205034",
+      "domains": [
+        "Geometry"
+      ]
+    },
+    {
+      "rawName": "current",
+      "offsetStart": 19454,
+      "offsetEnd": 19463,
+      "pos": [
+        {
+          "p": 4,
+          "x": 275.951,
+          "y": 290.682,
+          "w": 15.812700000000007,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 4,
+          "x": 45.18,
+          "y": 302.202,
+          "w": 15.4375,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.374,
+      "wikipediaExternalRef": 6207,
+      "wikidataId": "Q11651",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "counterclockwise",
+      "offsetStart": 19505,
+      "offsetEnd": 19521,
+      "pos": [
+        {
+          "p": 4,
+          "x": 226.27,
+          "y": 302.202,
+          "w": 65.4863,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3731,
+      "wikipediaExternalRef": 26569682,
+      "wikidataId": "Q16726164",
+      "domains": [
+        "Geometry",
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "Fz",
+      "type": "PERSON",
+      "offsetStart": 19681,
+      "offsetEnd": 19683,
+      "pos": [
+        {
+          "p": 4,
+          "x": 100.015,
+          "y": 384.282,
+          "w": 8.66305,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "robot",
+      "offsetStart": 19688,
+      "offsetEnd": 19693,
+      "pos": [
+        {
+          "p": 4,
+          "x": 125.935,
+          "y": 384.282,
+          "w": 20.46933333333333,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.439,
+      "wikipediaExternalRef": 25781,
+      "wikidataId": "Q11012",
+      "domains": [
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 19741,
+      "offsetEnd": 19752,
+      "pos": [
+        {
+          "p": 4,
+          "x": 79.4959,
+          "y": 395.682,
+          "w": 37.4239,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8173,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 19753,
+      "offsetEnd": 19762,
+      "pos": [
+        {
+          "p": 4,
+          "x": 118.984,
+          "y": 395.682,
+          "w": 30.44574,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6895,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "counterclockwise",
+      "offsetStart": 19795,
+      "offsetEnd": 19813,
+      "pos": [
+        {
+          "p": 4,
+          "x": 270.0777,
+          "y": 395.683,
+          "w": 21.688499999999976,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 4,
+          "x": 45.1794,
+          "y": 407.203,
+          "w": 44.740114285714284,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5193,
+      "wikipediaExternalRef": 26569682,
+      "wikidataId": "Q16726164",
+      "domains": [
+        "Geometry",
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "horizontal plane",
+      "offsetStart": 19880,
+      "offsetEnd": 19896,
+      "pos": [
+        {
+          "p": 4,
+          "x": 69.1783,
+          "y": 418.603,
+          "w": 60.85428333333333,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.478,
+      "wikipediaExternalRef": 273002,
+      "wikidataId": "Q5567717",
+      "domains": [
+        "Geology",
+        "Oceanography",
+        "Earth"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 19973,
+      "offsetEnd": 19985,
+      "pos": [
+        {
+          "p": 4,
+          "x": 272.899,
+          "y": 452.563,
+          "w": 18.8641,
+          "h": 9.0155
+        },
+        {
+          "p": 4,
+          "x": 45.18,
+          "y": 463.963,
+          "w": 16.5879,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5483,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 20188,
+      "offsetEnd": 20199,
+      "pos": [
+        {
+          "p": 4,
+          "x": 121.388,
+          "y": 498.402,
+          "w": 38.70579999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 20373,
+      "offsetEnd": 20385,
+      "pos": [
+        {
+          "p": 4,
+          "x": 376.028,
+          "y": 62.0817,
+          "w": 41.397599999999954,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6283,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "robot",
+      "offsetStart": 20453,
+      "offsetEnd": 20458,
+      "pos": [
+        {
+          "p": 4,
+          "x": 424.013,
+          "y": 73.4817,
+          "w": 21.0558,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.439,
+      "wikipediaExternalRef": 25781,
+      "wikidataId": "Q11012",
+      "domains": [
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "software",
+      "offsetStart": 20593,
+      "offsetEnd": 20603,
+      "pos": [
+        {
+          "p": 4,
+          "x": 532.254,
+          "y": 120.163,
+          "w": 17.386900000000082,
+          "h": 9.015499999999989
+        },
+        {
+          "p": 4,
+          "x": 303.06,
+          "y": 131.563,
+          "w": 18.0434,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4563,
+      "wikipediaExternalRef": 5309,
+      "wikidataId": "Q7397",
+      "domains": [
+        "Computer_Science"
+      ]
+    },
+    {
+      "rawName": "ManipAnalysis",
+      "type": "CREATION",
+      "offsetStart": 20605,
+      "offsetEnd": 20618,
+      "pos": [
+        {
+          "p": 4,
+          "x": 328.6186533333333,
+          "y": 131.563,
+          "w": 55.97349333333334,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "Butterworth low-pass filter",
+      "offsetStart": 20729,
+      "offsetEnd": 20756,
+      "pos": [
+        {
+          "p": 4,
+          "x": 303.06,
+          "y": 154.483,
+          "w": 105.70549999999997,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9098,
+      "wikipediaExternalRef": 562353,
+      "wikidataId": "Q1018162",
+      "domains": [
+        "Electronics"
+      ]
+    },
+    {
+      "rawName": "cut-off frequency",
+      "offsetStart": 20764,
+      "offsetEnd": 20781,
+      "pos": [
+        {
+          "p": 4,
+          "x": 442.266,
+          "y": 154.483,
+          "w": 67.4214,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8561,
+      "wikipediaExternalRef": 40986,
+      "wikidataId": "Q1455881",
+      "domains": [
+        "Electrotechnology",
+        "Telecommunication",
+        "Electronics"
+      ]
+    },
+    {
+      "rawName": "Hz",
+      "offsetStart": 20788,
+      "offsetEnd": 20790,
+      "pos": [
+        {
+          "p": 4,
+          "x": 536.161,
+          "y": 154.483,
+          "w": 9.039533333333333,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4331,
+      "wikipediaExternalRef": 14121,
+      "wikidataId": "Q39369",
+      "domains": [
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "central difference",
+      "offsetStart": 20908,
+      "offsetEnd": 20928,
+      "pos": [
+        {
+          "p": 4,
+          "x": 506.316,
+          "y": 177.402,
+          "w": 43.36770000000007,
+          "h": 9.015500000000003
+        },
+        {
+          "p": 4,
+          "x": 303.06,
+          "y": 188.802,
+          "w": 27.0284,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5558,
+      "wikipediaExternalRef": 39147,
+      "wikidataId": "Q2068418",
+      "domains": [
+        "Mathematics"
+      ]
+    },
+    {
+      "rawName": "algorithm",
+      "offsetStart": 20997,
+      "offsetEnd": 21006,
+      "pos": [
+        {
+          "p": 4,
+          "x": 357.315,
+          "y": 200.322,
+          "w": 37.7017,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5248,
+      "wikipediaExternalRef": 775,
+      "wikidataId": "Q8366",
+      "domains": [
+        "Computer_Science",
+        "Mathematics"
+      ]
+    },
+    {
+      "rawName": "seg",
+      "type": "ORGANISATION",
+      "offsetStart": 21180,
+      "offsetEnd": 21183,
+      "pos": [
+        {
+          "p": 4,
+          "x": 534.495,
+          "y": 223.242,
+          "w": 11.326575,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "cubic spline",
+      "offsetStart": 21294,
+      "offsetEnd": 21306,
+      "pos": [
+        {
+          "p": 4,
+          "x": 503.278,
+          "y": 246.162,
+          "w": 46.38239999999996,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.7477,
+      "wikipediaExternalRef": 656586,
+      "wikidataId": "Q1537263",
+      "domains": [
+        "Geometry",
+        "Optics",
+        "Electrotechnology"
+      ]
+    },
+    {
+      "rawName": "interpolation",
+      "offsetStart": 21308,
+      "offsetEnd": 21321,
+      "pos": [
+        {
+          "p": 4,
+          "x": 303.06,
+          "y": 257.562,
+          "w": 50.0432,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4501,
+      "wikipediaExternalRef": 14569,
+      "wikidataId": "Q187631",
+      "domains": [
+        "Electronics",
+        "Computer_Science"
+      ]
+    },
+    {
+      "rawName": "sampling rate",
+      "offsetStart": 21376,
+      "offsetEnd": 21389,
+      "pos": [
+        {
+          "p": 4,
+          "x": 319.148,
+          "y": 269.081,
+          "w": 53.30819999999994,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9226,
+      "wikipediaExternalRef": 201605,
+      "wikidataId": "Q210868",
+      "domains": [
+        "Electrotechnology"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 21498,
+      "offsetEnd": 21509,
+      "pos": [
+        {
+          "p": 4,
+          "x": 509.338,
+          "y": 292.001,
+          "w": 40.29479999999995,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8195,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "directed distance",
+      "offsetStart": 21750,
+      "offsetEnd": 21767,
+      "pos": [
+        {
+          "p": 4,
+          "x": 482.789,
+          "y": 337.84,
+          "w": 66.85630000000003,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8928,
+      "wikipediaExternalRef": 39378,
+      "wikidataId": "Q126017",
+      "domains": [
+        "Geometry",
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "perpendicular",
+      "offsetStart": 21853,
+      "offsetEnd": 21866,
+      "pos": [
+        {
+          "p": 4,
+          "x": 399.527,
+          "y": 360.76,
+          "w": 53.5486,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.36,
+      "wikipediaExternalRef": 76944,
+      "wikidataId": "Q205034",
+      "domains": [
+        "Geometry"
+      ]
+    },
+    {
+      "rawName": "F N A B A F",
+      "type": "ARTIFACT",
+      "offsetStart": 22206,
+      "offsetEnd": 22217,
+      "pos": [
+        {
+          "p": 4,
+          "x": 456.18,
+          "y": 493.493,
+          "w": 18.80250000000001,
+          "h": 6.8700000000000045
+        },
+        {
+          "p": 4,
+          "x": 493.14,
+          "y": 493.493,
+          "w": 5.0025,
+          "h": 6.87
+        },
+        {
+          "p": 4,
+          "x": 530.1,
+          "y": 493.493,
+          "w": 5.0025,
+          "h": 6.87
+        },
+        {
+          "p": 4,
+          "x": 303.06,
+          "y": 511.614,
+          "w": 2.11295,
+          "h": 6.412
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "N, baseline",
+      "type": "PERSON",
+      "offsetStart": 22254,
+      "offsetEnd": 22265,
+      "pos": [
+        {
+          "p": 4,
+          "x": 398.762,
+          "y": 511.614,
+          "w": 36.06569999999999,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 22284,
+      "offsetEnd": 22292,
+      "pos": [
+        {
+          "p": 4,
+          "x": 490.721,
+          "y": 511.614,
+          "w": 25.952888888888886,
+          "h": 6.412
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3661,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 22325,
+      "offsetEnd": 22333,
+      "pos": [
+        {
+          "p": 4,
+          "x": 360.893,
+          "y": 522.654,
+          "w": 25.958799999999997,
+          "h": 6.412
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3661,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "counterclockwise",
+      "offsetStart": 22344,
+      "offsetEnd": 22360,
+      "pos": [
+        {
+          "p": 4,
+          "x": 421.889,
+          "y": 522.654,
+          "w": 53.6879,
+          "h": 6.412
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3731,
+      "wikipediaExternalRef": 26569682,
+      "wikidataId": "Q16726164",
+      "domains": [
+        "Geometry",
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 22402,
+      "offsetEnd": 22410,
+      "pos": [
+        {
+          "p": 4,
+          "x": 155.106,
+          "y": 699.894,
+          "w": 28.306755555555554,
+          "h": 6.412
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3661,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 22431,
+      "offsetEnd": 22442,
+      "pos": [
+        {
+          "p": 4,
+          "x": 255.314,
+          "y": 699.894,
+          "w": 32.83699999999996,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 22452,
+      "offsetEnd": 22460,
+      "pos": [
+        {
+          "p": 4,
+          "x": 317.714,
+          "y": 699.894,
+          "w": 28.30333333333333,
+          "h": 6.412
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3661,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 22488,
+      "offsetEnd": 22499,
+      "pos": [
+        {
+          "p": 4,
+          "x": 443.354,
+          "y": 699.894,
+          "w": 32.71800000000002,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "Frontiers in Psychology",
+      "offsetStart": 22507,
+      "offsetEnd": 22530,
+      "pos": [
+        {
+          "p": 4,
+          "x": 45.18,
+          "y": 745.973,
+          "w": 82.869,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6791,
+      "wikipediaExternalRef": 29572416,
+      "wikidataId": "Q2794477",
+      "domains": [
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "Sport Psychology",
+      "offsetStart": 22554,
+      "offsetEnd": 22570,
+      "pos": [
+        {
+          "p": 4,
+          "x": 214.967,
+          "y": 745.973,
+          "w": 57.40629999999996,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.885,
+      "wikipediaExternalRef": 25688228,
+      "wikidataId": "Q632190",
+      "domains": [
+        "Medicine",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 22710,
+      "offsetEnd": 22721,
+      "pos": [
+        {
+          "p": 5,
+          "x": 227.082,
+          "y": 62.083,
+          "w": 37.355200000000025,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8158,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "counterclockwise",
+      "offsetStart": 22743,
+      "offsetEnd": 22759,
+      "pos": [
+        {
+          "p": 5,
+          "x": 91.919,
+          "y": 73.483,
+          "w": 65.5196,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3731,
+      "wikipediaExternalRef": 26569682,
+      "wikidataId": "Q16726164",
+      "domains": [
+        "Geometry",
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 22801,
+      "offsetEnd": 22812,
+      "pos": [
+        {
+          "p": 5,
+          "x": 55.1398,
+          "y": 85.0027,
+          "w": 37.6543,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8158,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ANOVAs",
+      "offsetStart": 23022,
+      "offsetEnd": 23028,
+      "pos": [
+        {
+          "p": 5,
+          "x": 257.225,
+          "y": 141.763,
+          "w": 34.5639,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.7314,
+      "wikipediaExternalRef": 634,
+      "wikidataId": "Q42297",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 23103,
+      "offsetEnd": 23114,
+      "pos": [
+        {
+          "p": 5,
+          "x": 82.7506,
+          "y": 164.682,
+          "w": 37.860399999999984,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.541,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "T-Tests",
+      "offsetStart": 23167,
+      "offsetEnd": 23174,
+      "pos": [
+        {
+          "p": 5,
+          "x": 69.5389,
+          "y": 176.082,
+          "w": 28.04400000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.856,
+      "wikipediaExternalRef": 536080,
+      "wikidataId": "Q309479",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 23307,
+      "offsetEnd": 23318,
+      "pos": [
+        {
+          "p": 5,
+          "x": 137.071,
+          "y": 199.002,
+          "w": 37.43379999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.541,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "interaction effects",
+      "offsetStart": 23449,
+      "offsetEnd": 23468,
+      "pos": [
+        {
+          "p": 5,
+          "x": 170.499,
+          "y": 221.922,
+          "w": 67.42509999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4146,
+      "wikipediaExternalRef": 443083,
+      "wikidataId": "Q1665869",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "factor group",
+      "offsetStart": 23570,
+      "offsetEnd": 23582,
+      "pos": [
+        {
+          "p": 5,
+          "x": 123.71183636363637,
+          "y": 244.841,
+          "w": 50.16206363636363,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.7048,
+      "wikipediaExternalRef": 11526,
+      "wikidataId": "Q1138961",
+      "domains": [
+        "Geometry"
+      ]
+    },
+    {
+      "rawName": "ANOVAs",
+      "type": "ARTIFACT",
+      "offsetStart": 23697,
+      "offsetEnd": 23703,
+      "pos": [
+        {
+          "p": 5,
+          "x": 118.486,
+          "y": 267.761,
+          "w": 34.5705,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.8283,
+      "wikipediaExternalRef": 634,
+      "wikidataId": "Q42297",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "level of significance",
+      "offsetStart": 23717,
+      "offsetEnd": 23738,
+      "pos": [
+        {
+          "p": 5,
+          "x": 204.79,
+          "y": 267.761,
+          "w": 73.57560000000004,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3746,
+      "wikipediaExternalRef": 5657877,
+      "wikidataId": "Q989120",
+      "domains": [
+        "Mechanics",
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 23854,
+      "offsetEnd": 23867,
+      "pos": [
+        {
+          "p": 5,
+          "x": 267.889,
+          "y": 314.563,
+          "w": 23.8858,
+          "h": 9.0155
+        },
+        {
+          "p": 5,
+          "x": 45.18,
+          "y": 326.083,
+          "w": 29.18322857142857,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8337,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 23980,
+      "offsetEnd": 23991,
+      "pos": [
+        {
+          "p": 5,
+          "x": 48.90495,
+          "y": 349.002,
+          "w": 38.24895000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 24105,
+      "offsetEnd": 24116,
+      "pos": [
+        {
+          "p": 5,
+          "x": 277.968,
+          "y": 360.402,
+          "w": 13.786400000000015,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 5,
+          "x": 45.18,
+          "y": 371.922,
+          "w": 21.8984,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8424,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 24124,
+      "offsetEnd": 24136,
+      "pos": [
+        {
+          "p": 5,
+          "x": 93.1778,
+          "y": 371.922,
+          "w": 40.82100000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6181,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ADAPTATION TO A NOVEL DYNAMIC ENVIRONMENT",
+      "type": "ARTIFACT",
+      "offsetStart": 24319,
+      "offsetEnd": 24360,
+      "pos": [
+        {
+          "p": 5,
+          "x": 45.18,
+          "y": 428.811,
+          "w": 182.4321,
+          "h": 7.981499999999983
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 24592,
+      "offsetEnd": 24600,
+      "pos": [
+        {
+          "p": 5,
+          "x": 176.583,
+          "y": 474.523,
+          "w": 32.38444444444444,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 24611,
+      "offsetEnd": 24622,
+      "pos": [
+        {
+          "p": 5,
+          "x": 251.793,
+          "y": 474.523,
+          "w": 36.82299999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.818,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 24689,
+      "offsetEnd": 24700,
+      "pos": [
+        {
+          "p": 5,
+          "x": 45.18,
+          "y": 497.442,
+          "w": 37.75780000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "perpendicular",
+      "offsetStart": 24748,
+      "offsetEnd": 24763,
+      "pos": [
+        {
+          "p": 5,
+          "x": 261.523,
+          "y": 497.442,
+          "w": 30.213799999999992,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 5,
+          "x": 45.18,
+          "y": 508.842,
+          "w": 26.6627,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5027,
+      "wikipediaExternalRef": 76944,
+      "wikidataId": "Q205034",
+      "domains": [
+        "Geometry"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 25194,
+      "offsetEnd": 25205,
+      "pos": [
+        {
+          "p": 5,
+          "x": 490.359,
+          "y": 119.322,
+          "w": 37.703599999999994,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 25217,
+      "offsetEnd": 25231,
+      "pos": [
+        {
+          "p": 5,
+          "x": 317.699,
+          "y": 130.841,
+          "w": 56.46100000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "experienced",
+      "offsetStart": 25270,
+      "offsetEnd": 25283,
+      "pos": [
+        {
+          "p": 5,
+          "x": 522.747,
+          "y": 130.841,
+          "w": 26.867000000000075,
+          "h": 9.015500000000003
+        },
+        {
+          "p": 5,
+          "x": 303.18,
+          "y": 142.241,
+          "w": 21.9488,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3642,
+      "wikipediaExternalRef": 25140,
+      "wikidataId": "Q160402",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 25299,
+      "offsetEnd": 25310,
+      "pos": [
+        {
+          "p": 5,
+          "x": 382.663,
+          "y": 142.241,
+          "w": 37.625699999999995,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 25390,
+      "offsetEnd": 25401,
+      "pos": [
+        {
+          "p": 5,
+          "x": 471.768,
+          "y": 153.641,
+          "w": 37.1515,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "significant differences",
+      "offsetStart": 25517,
+      "offsetEnd": 25540,
+      "pos": [
+        {
+          "p": 5,
+          "x": 329.58,
+          "y": 188.081,
+          "w": 83.44380000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3981,
+      "wikipediaExternalRef": 82359,
+      "wikidataId": "Q74304",
+      "domains": [
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 25571,
+      "offsetEnd": 25583,
+      "pos": [
+        {
+          "p": 5,
+          "x": 530.998,
+          "y": 188.081,
+          "w": 18.8404,
+          "h": 9.0155
+        },
+        {
+          "p": 5,
+          "x": 303.18,
+          "y": 199.481,
+          "w": 16.5338,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5224,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 25864,
+      "offsetEnd": 25875,
+      "pos": [
+        {
+          "p": 5,
+          "x": 415.841,
+          "y": 245.32,
+          "w": 38.25479999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5329,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 25964,
+      "offsetEnd": 25975,
+      "pos": [
+        {
+          "p": 5,
+          "x": 303.18,
+          "y": 268.24,
+          "w": 37.19369999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5329,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 26192,
+      "offsetEnd": 26203,
+      "pos": [
+        {
+          "p": 5,
+          "x": 393.111,
+          "y": 302.679,
+          "w": 37.16809999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5329,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ANOVA",
+      "type": "ORGANISATION",
+      "offsetStart": 26275,
+      "offsetEnd": 26280,
+      "pos": [
+        {
+          "p": 5,
+          "x": 444.844,
+          "y": 314.079,
+          "w": 31.3262,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.8821,
+      "wikipediaExternalRef": 634,
+      "wikidataId": "Q42297",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "significant interaction",
+      "offsetStart": 26300,
+      "offsetEnd": 26323,
+      "pos": [
+        {
+          "p": 5,
+          "x": 303.18,
+          "y": 325.599,
+          "w": 83.594,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3984,
+      "wikipediaExternalRef": 443083,
+      "wikidataId": "Q1665869",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 26467,
+      "offsetEnd": 26478,
+      "pos": [
+        {
+          "p": 5,
+          "x": 447.17,
+          "y": 348.519,
+          "w": 39.10639999999995,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5329,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 26521,
+      "offsetEnd": 26535,
+      "pos": [
+        {
+          "p": 5,
+          "x": 398.126,
+          "y": 359.918,
+          "w": 54.19945714285717,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "significant difference",
+      "offsetStart": 26540,
+      "offsetEnd": 26562,
+      "pos": [
+        {
+          "p": 5,
+          "x": 470.676,
+          "y": 359.918,
+          "w": 78.97359999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3788,
+      "wikipediaExternalRef": 160995,
+      "wikidataId": "Q425265",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 26597,
+      "offsetEnd": 26608,
+      "pos": [
+        {
+          "p": 5,
+          "x": 432.923,
+          "y": 371.438,
+          "w": 38.6148,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5329,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "significant differences",
+      "offsetStart": 26700,
+      "offsetEnd": 26723,
+      "pos": [
+        {
+          "p": 5,
+          "x": 331.347,
+          "y": 394.238,
+          "w": 82.09250000000003,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3981,
+      "wikipediaExternalRef": 82359,
+      "wikidataId": "Q74304",
+      "domains": [
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 27091,
+      "offsetEnd": 27102,
+      "pos": [
+        {
+          "p": 5,
+          "x": 336.531,
+          "y": 462.997,
+          "w": 37.39859999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 27327,
+      "offsetEnd": 27338,
+      "pos": [
+        {
+          "p": 5,
+          "x": 473.79,
+          "y": 497.437,
+          "w": 39.23309999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 27400,
+      "offsetEnd": 27411,
+      "pos": [
+        {
+          "p": 5,
+          "x": 510.177,
+          "y": 508.837,
+          "w": 39.60539999999992,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 27531,
+      "offsetEnd": 27542,
+      "pos": [
+        {
+          "p": 5,
+          "x": 222.911,
+          "y": 692.214,
+          "w": 34.51769999999999,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 27578,
+      "offsetEnd": 27589,
+      "pos": [
+        {
+          "p": 5,
+          "x": 149.473,
+          "y": 701.694,
+          "w": 34.379999999999995,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 27710,
+      "offsetEnd": 27721,
+      "pos": [
+        {
+          "p": 5,
+          "x": 347.646,
+          "y": 692.214,
+          "w": 32.576899999999966,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "www.frontiersin.org",
+      "type": "UNKNOWN",
+      "offsetStart": 27791,
+      "offsetEnd": 27810,
+      "pos": [
+        {
+          "p": 5,
+          "x": 45.18,
+          "y": 745.973,
+          "w": 72.0015,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 28050,
+      "offsetEnd": 28061,
+      "pos": [
+        {
+          "p": 6,
+          "x": 143.634,
+          "y": 85.0027,
+          "w": 37.38480000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.818,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 28108,
+      "offsetEnd": 28122,
+      "pos": [
+        {
+          "p": 6,
+          "x": 109.563,
+          "y": 96.4027,
+          "w": 56.74900000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4473,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "stiffness",
+      "offsetStart": 28157,
+      "offsetEnd": 28166,
+      "pos": [
+        {
+          "p": 6,
+          "x": 45.18,
+          "y": 107.922,
+          "w": 30.1416,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3568,
+      "wikipediaExternalRef": 475008,
+      "wikidataId": "Q569057",
+      "domains": [
+        "Mechanics",
+        "Engineering",
+        "Physics",
+        "Astronautics",
+        "Materials"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 28377,
+      "offsetEnd": 28391,
+      "pos": [
+        {
+          "p": 6,
+          "x": 90.8294,
+          "y": 165.523,
+          "w": 56.668899999999994,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 28593,
+      "offsetEnd": 28607,
+      "pos": [
+        {
+          "p": 6,
+          "x": 347.315,
+          "y": 62.0819,
+          "w": 57.754700000000014,
+          "h": 9.015499999999996
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "significant interaction",
+      "offsetStart": 28722,
+      "offsetEnd": 28745,
+      "pos": [
+        {
+          "p": 6,
+          "x": 336.889,
+          "y": 85.0027,
+          "w": 85.80369999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3984,
+      "wikipediaExternalRef": 443083,
+      "wikidataId": "Q1665869",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 28863,
+      "offsetEnd": 28877,
+      "pos": [
+        {
+          "p": 6,
+          "x": 418.692,
+          "y": 107.922,
+          "w": 56.86669999999998,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 29013,
+      "offsetEnd": 29024,
+      "pos": [
+        {
+          "p": 6,
+          "x": 433.739,
+          "y": 142.242,
+          "w": 38.46379999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8176,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ANOVA",
+      "type": "ORGANISATION",
+      "offsetStart": 29164,
+      "offsetEnd": 29169,
+      "pos": [
+        {
+          "p": 6,
+          "x": 487.211,
+          "y": 165.163,
+          "w": 31.2778,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.8821,
+      "wikipediaExternalRef": 634,
+      "wikidataId": "Q42297",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "significant interaction",
+      "offsetStart": 29180,
+      "offsetEnd": 29203,
+      "pos": [
+        {
+          "p": 6,
+          "x": 311.701,
+          "y": 176.563,
+          "w": 85.68239999999997,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3903,
+      "wikipediaExternalRef": 443083,
+      "wikidataId": "Q1665869",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 29339,
+      "offsetEnd": 29350,
+      "pos": [
+        {
+          "p": 6,
+          "x": 427.374,
+          "y": 199.483,
+          "w": 37.41469999999998,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8176,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 29497,
+      "offsetEnd": 29508,
+      "pos": [
+        {
+          "p": 6,
+          "x": 433.032,
+          "y": 502.974,
+          "w": 32.715599999999995,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 29533,
+      "offsetEnd": 29544,
+      "pos": [
+        {
+          "p": 6,
+          "x": 51.3,
+          "y": 512.454,
+          "w": 32.71939999999999,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 29576,
+      "offsetEnd": 29587,
+      "pos": [
+        {
+          "p": 6,
+          "x": 185.222,
+          "y": 512.454,
+          "w": 32.71969999999999,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 29724,
+      "offsetEnd": 29735,
+      "pos": [
+        {
+          "p": 6,
+          "x": 262.505,
+          "y": 690.894,
+          "w": 32.71389999999997,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 29765,
+      "offsetEnd": 29779,
+      "pos": [
+        {
+          "p": 6,
+          "x": 390.537,
+          "y": 690.894,
+          "w": 48.97289999999998,
+          "h": 6.412000000000035
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "Frontiers in Psychology",
+      "offsetStart": 29872,
+      "offsetEnd": 29895,
+      "pos": [
+        {
+          "p": 6,
+          "x": 45.18,
+          "y": 745.973,
+          "w": 82.869,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6791,
+      "wikipediaExternalRef": 29572416,
+      "wikidataId": "Q2794477",
+      "domains": [
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "Sport Psychology",
+      "offsetStart": 29919,
+      "offsetEnd": 29935,
+      "pos": [
+        {
+          "p": 6,
+          "x": 214.967,
+          "y": 745.973,
+          "w": 57.40629999999996,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.885,
+      "wikipediaExternalRef": 25688228,
+      "wikidataId": "Q632190",
+      "domains": [
+        "Medicine",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 30108,
+      "offsetEnd": 30119,
+      "pos": [
+        {
+          "p": 7,
+          "x": 103.747,
+          "y": 339.654,
+          "w": 34.757999999999996,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 30143,
+      "offsetEnd": 30154,
+      "pos": [
+        {
+          "p": 7,
+          "x": 225.428,
+          "y": 339.654,
+          "w": 34.75800000000004,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 30172,
+      "offsetEnd": 30183,
+      "pos": [
+        {
+          "p": 7,
+          "x": 93.5436,
+          "y": 349.134,
+          "w": 34.76519999999999,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 30309,
+      "offsetEnd": 30320,
+      "pos": [
+        {
+          "p": 7,
+          "x": 313.866,
+          "y": 339.654,
+          "w": 32.92870000000005,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "positive values",
+      "offsetStart": 30328,
+      "offsetEnd": 30343,
+      "pos": [
+        {
+          "p": 7,
+          "x": 376.75,
+          "y": 339.654,
+          "w": 47.51990000000001,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3953,
+      "wikipediaExternalRef": 4095924,
+      "wikidataId": "Q194112",
+      "domains": [
+        "Biology",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 30383,
+      "offsetEnd": 30394,
+      "pos": [
+        {
+          "p": 7,
+          "x": 303.66,
+          "y": 349.134,
+          "w": 32.92529999999999,
+          "h": 6.411999999999978
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5255,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "interference effects",
+      "offsetStart": 30529,
+      "offsetEnd": 30549,
+      "pos": [
+        {
+          "p": 7,
+          "x": 45.18,
+          "y": 406.363,
+          "w": 71.6651,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3896,
+      "wikipediaExternalRef": 533281,
+      "wikidataId": "Q3480151",
+      "domains": [
+        "Biology",
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 30757,
+      "offsetEnd": 30768,
+      "pos": [
+        {
+          "p": 7,
+          "x": 168.656,
+          "y": 465.523,
+          "w": 37.20319999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 31074,
+      "offsetEnd": 31085,
+      "pos": [
+        {
+          "p": 7,
+          "x": 115.753,
+          "y": 522.762,
+          "w": 39.334699999999984,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 31092,
+      "offsetEnd": 31103,
+      "pos": [
+        {
+          "p": 7,
+          "x": 187.264,
+          "y": 522.762,
+          "w": 39.3347,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 31235,
+      "offsetEnd": 31249,
+      "pos": [
+        {
+          "p": 7,
+          "x": 206.903,
+          "y": 545.682,
+          "w": 56.51290000000003,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4473,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "Shadmehr",
+      "type": "PERSON",
+      "offsetStart": 31312,
+      "offsetEnd": 31320,
+      "pos": [
+        {
+          "p": 7,
+          "x": 253.9050111111111,
+          "y": 557.202,
+          "w": 37.880088888888885,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "Brashers-Krug",
+      "type": "PERSON",
+      "offsetStart": 31326,
+      "offsetEnd": 31339,
+      "pos": [
+        {
+          "p": 7,
+          "x": 61.7395,
+          "y": 568.602,
+          "w": 53.38821428571428,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 31465,
+      "offsetEnd": 31480,
+      "pos": [
+        {
+          "p": 7,
+          "x": 261.938,
+          "y": 591.521,
+          "w": 29.8025,
+          "h": 9.0155
+        },
+        {
+          "p": 7,
+          "x": 45.18,
+          "y": 603.041,
+          "w": 24.1053,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4736,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 31564,
+      "offsetEnd": 31575,
+      "pos": [
+        {
+          "p": 7,
+          "x": 131.942,
+          "y": 614.441,
+          "w": 38.00139999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 31740,
+      "offsetEnd": 31753,
+      "pos": [
+        {
+          "p": 7,
+          "x": 60.6878,
+          "y": 648.881,
+          "w": 49.7781,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4135,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 32020,
+      "offsetEnd": 32031,
+      "pos": [
+        {
+          "p": 7,
+          "x": 138.266,
+          "y": 694.72,
+          "w": 38.95859999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "direc",
+      "type": "LOCATION",
+      "offsetStart": 32054,
+      "offsetEnd": 32059,
+      "pos": [
+        {
+          "p": 7,
+          "x": 269.428,
+          "y": 694.72,
+          "w": 18.588333333333335,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 32069,
+      "offsetEnd": 32080,
+      "pos": [
+        {
+          "p": 7,
+          "x": 76.606,
+          "y": 706.12,
+          "w": 39.483000000000004,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 32145,
+      "offsetEnd": 32156,
+      "pos": [
+        {
+          "p": 7,
+          "x": 372.092,
+          "y": 383.44,
+          "w": 37.75749999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 32182,
+      "offsetEnd": 32193,
+      "pos": [
+        {
+          "p": 7,
+          "x": 503.338,
+          "y": 383.44,
+          "w": 37.758399999999995,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 32396,
+      "offsetEnd": 32407,
+      "pos": [
+        {
+          "p": 7,
+          "x": 415.228,
+          "y": 454.123,
+          "w": 37.414800000000014,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8195,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 32814,
+      "offsetEnd": 32822,
+      "pos": [
+        {
+          "p": 7,
+          "x": 517.026,
+          "y": 522.762,
+          "w": 29.048888888888886,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 32834,
+      "offsetEnd": 32845,
+      "pos": [
+        {
+          "p": 7,
+          "x": 347.312,
+          "y": 534.282,
+          "w": 39.343399999999974,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8176,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 32879,
+      "offsetEnd": 32894,
+      "pos": [
+        {
+          "p": 7,
+          "x": 522.169,
+          "y": 534.282,
+          "w": 27.4731,
+          "h": 9.0155
+        },
+        {
+          "p": 7,
+          "x": 303.18,
+          "y": 545.682,
+          "w": 26.2409,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4081,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 33122,
+      "offsetEnd": 33134,
+      "pos": [
+        {
+          "p": 7,
+          "x": 464.306,
+          "y": 580.121,
+          "w": 59.490399999999966,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9227,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 33209,
+      "offsetEnd": 33223,
+      "pos": [
+        {
+          "p": 7,
+          "x": 303.18,
+          "y": 603.041,
+          "w": 54.385285714285715,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "condition",
+      "offsetStart": 33268,
+      "offsetEnd": 33279,
+      "pos": [
+        {
+          "p": 7,
+          "x": 524.844,
+          "y": 603.041,
+          "w": 24.917599999999993,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 7,
+          "x": 303.18,
+          "y": 614.441,
+          "w": 15.4974,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3662,
+      "wikipediaExternalRef": 188540,
+      "wikidataId": "Q212737",
+      "domains": [
+        "Pedagogy",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 33562,
+      "offsetEnd": 33574,
+      "pos": [
+        {
+          "p": 7,
+          "x": 408.219,
+          "y": 660.28,
+          "w": 41.647400000000005,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6179,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 33587,
+      "offsetEnd": 33596,
+      "pos": [
+        {
+          "p": 7,
+          "x": 500.249,
+          "y": 660.28,
+          "w": 32.1803,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6895,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 33647,
+      "offsetEnd": 33659,
+      "pos": [
+        {
+          "p": 7,
+          "x": 488.102,
+          "y": 671.8,
+          "w": 56.68905714285722,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9227,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "www.frontiersin.org",
+      "type": "UNKNOWN",
+      "offsetStart": 33815,
+      "offsetEnd": 33834,
+      "pos": [
+        {
+          "p": 7,
+          "x": 45.18,
+          "y": 745.973,
+          "w": 72.0015,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 33941,
+      "offsetEnd": 33953,
+      "pos": [
+        {
+          "p": 8,
+          "x": 112.746,
+          "y": 62.083,
+          "w": 57.21968571428572,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9217,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 34181,
+      "offsetEnd": 34193,
+      "pos": [
+        {
+          "p": 8,
+          "x": 45.18,
+          "y": 107.922,
+          "w": 40.9279,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6179,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "steady state",
+      "offsetStart": 34522,
+      "offsetEnd": 34534,
+      "pos": [
+        {
+          "p": 8,
+          "x": 45.18,
+          "y": 165.162,
+          "w": 43.13949999999999,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4917,
+      "wikipediaExternalRef": 1326107,
+      "wikidataId": "Q5788637",
+      "domains": [
+        "Sociology",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 34572,
+      "offsetEnd": 34583,
+      "pos": [
+        {
+          "p": 8,
+          "x": 232.041,
+          "y": 165.162,
+          "w": 37.75460000000004,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "control groups",
+      "offsetStart": 34596,
+      "offsetEnd": 34610,
+      "pos": [
+        {
+          "p": 8,
+          "x": 65.5223,
+          "y": 176.562,
+          "w": 56.47290000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4172,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 34637,
+      "offsetEnd": 34648,
+      "pos": [
+        {
+          "p": 8,
+          "x": 226.414,
+          "y": 176.562,
+          "w": 37.27658333333335,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 34691,
+      "offsetEnd": 34705,
+      "pos": [
+        {
+          "p": 8,
+          "x": 174.261,
+          "y": 188.081,
+          "w": 56.5061,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4473,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "consoli",
+      "offsetStart": 34713,
+      "offsetEnd": 34720,
+      "pos": [
+        {
+          "p": 8,
+          "x": 261.104,
+          "y": 188.081,
+          "w": 26.822775,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4418,
+      "wikipediaExternalRef": 6047,
+      "wikidataId": "Q4489757",
+      "domains": [
+        "Administration"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 34793,
+      "offsetEnd": 34804,
+      "pos": [
+        {
+          "p": 8,
+          "x": 64.0195,
+          "y": 211.001,
+          "w": 38.99740000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8121,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 34817,
+      "offsetEnd": 34826,
+      "pos": [
+        {
+          "p": 8,
+          "x": 155.394,
+          "y": 211.001,
+          "w": 32.1983,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6895,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 34992,
+      "offsetEnd": 35003,
+      "pos": [
+        {
+          "p": 8,
+          "x": 85.5901,
+          "y": 245.321,
+          "w": 38.26220000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.818,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 35216,
+      "offsetEnd": 35227,
+      "pos": [
+        {
+          "p": 8,
+          "x": 200.316,
+          "y": 279.76,
+          "w": 38.152799999999985,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8195,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ABA",
+      "type": "ORGANISATION",
+      "offsetStart": 35334,
+      "offsetEnd": 35337,
+      "pos": [
+        {
+          "p": 8,
+          "x": 125.996,
+          "y": 302.68,
+          "w": 17.6472,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "significant",
+      "offsetStart": 35437,
+      "offsetEnd": 35450,
+      "pos": [
+        {
+          "p": 8,
+          "x": 278.092,
+          "y": 314.08,
+          "w": 13.666699999999992,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 8,
+          "x": 45.18,
+          "y": 325.6,
+          "w": 29.0757,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3772,
+      "wikipediaExternalRef": 160995,
+      "wikidataId": "Q425265",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "positively",
+      "offsetStart": 35767,
+      "offsetEnd": 35779,
+      "pos": [
+        {
+          "p": 8,
+          "x": 272.485,
+          "y": 371.439,
+          "w": 19.24509999999998,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 8,
+          "x": 45.18,
+          "y": 382.839,
+          "w": 20.0707,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3727,
+      "wikipediaExternalRef": 157057,
+      "wikidataId": "Q186290",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 35998,
+      "offsetEnd": 36010,
+      "pos": [
+        {
+          "p": 8,
+          "x": 199.092,
+          "y": 417.159,
+          "w": 42.60339999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6181,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 36206,
+      "offsetEnd": 36215,
+      "pos": [
+        {
+          "p": 8,
+          "x": 233.194,
+          "y": 451.598,
+          "w": 32.1917,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6895,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 36224,
+      "offsetEnd": 36235,
+      "pos": [
+        {
+          "p": 8,
+          "x": 45.18,
+          "y": 462.998,
+          "w": 36.710366666666665,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5279,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 36399,
+      "offsetEnd": 36408,
+      "pos": [
+        {
+          "p": 8,
+          "x": 139.56,
+          "y": 497.438,
+          "w": 32.1737,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6891,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 36416,
+      "offsetEnd": 36427,
+      "pos": [
+        {
+          "p": 8,
+          "x": 197.236,
+          "y": 497.438,
+          "w": 37.392900000000026,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 36454,
+      "offsetEnd": 36463,
+      "pos": [
+        {
+          "p": 8,
+          "x": 91.1486,
+          "y": 508.838,
+          "w": 32.2335,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6891,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 36546,
+      "offsetEnd": 36555,
+      "pos": [
+        {
+          "p": 8,
+          "x": 190.592,
+          "y": 520.357,
+          "w": 32.1537,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6891,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "influenced",
+      "offsetStart": 36567,
+      "offsetEnd": 36579,
+      "pos": [
+        {
+          "p": 8,
+          "x": 270.258,
+          "y": 520.357,
+          "w": 21.480399999999975,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 8,
+          "x": 45.18,
+          "y": 531.757,
+          "w": 21.9374,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 1948637,
+      "wikidataId": "Q849491",
+      "domains": [
+        "Medicine",
+        "Computer_Science",
+        "Telecommunication"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 36609,
+      "offsetEnd": 36620,
+      "pos": [
+        {
+          "p": 8,
+          "x": 179.591,
+          "y": 531.757,
+          "w": 38.14379999999997,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 36682,
+      "offsetEnd": 36693,
+      "pos": [
+        {
+          "p": 8,
+          "x": 202.136,
+          "y": 543.277,
+          "w": 37.65179999999998,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 36716,
+      "offsetEnd": 36725,
+      "pos": [
+        {
+          "p": 8,
+          "x": 72.5391,
+          "y": 554.677,
+          "w": 32.206,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6891,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 36765,
+      "offsetEnd": 36774,
+      "pos": [
+        {
+          "p": 8,
+          "x": 259.369,
+          "y": 554.677,
+          "w": 32.205,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6891,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 36955,
+      "offsetEnd": 36964,
+      "pos": [
+        {
+          "p": 8,
+          "x": 209.505,
+          "y": 589.116,
+          "w": 32.1566,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6891,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 37132,
+      "offsetEnd": 37143,
+      "pos": [
+        {
+          "p": 8,
+          "x": 100.592,
+          "y": 623.436,
+          "w": 38.29979999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 37786,
+      "offsetEnd": 37797,
+      "pos": [
+        {
+          "p": 8,
+          "x": 366.995,
+          "y": 73.4745,
+          "w": 37.57310000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ing",
+      "type": "BUSINESS",
+      "offsetStart": 37997,
+      "offsetEnd": 38000,
+      "pos": [
+        {
+          "p": 8,
+          "x": 303.06,
+          "y": 119.314,
+          "w": 12.008,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 38437,
+      "offsetEnd": 38448,
+      "pos": [
+        {
+          "p": 8,
+          "x": 502.392,
+          "y": 188.073,
+          "w": 37.183800000000076,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5429,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 38774,
+      "offsetEnd": 38788,
+      "pos": [
+        {
+          "p": 8,
+          "x": 499.373,
+          "y": 245.312,
+          "w": 50.26510000000002,
+          "h": 9.015500000000003
+        },
+        {
+          "p": 8,
+          "x": 303.06,
+          "y": 256.832,
+          "w": 10.871325,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8338,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 38821,
+      "offsetEnd": 38830,
+      "pos": [
+        {
+          "p": 8,
+          "x": 440.34,
+          "y": 256.832,
+          "w": 32.1642,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6764,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 38838,
+      "offsetEnd": 38849,
+      "pos": [
+        {
+          "p": 8,
+          "x": 498.264,
+          "y": 256.832,
+          "w": 37.40909999999997,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5429,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 38934,
+      "offsetEnd": 38945,
+      "pos": [
+        {
+          "p": 8,
+          "x": 353.317,
+          "y": 279.752,
+          "w": 37.6832,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5429,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "overlearning",
+      "offsetStart": 39149,
+      "offsetEnd": 39161,
+      "pos": [
+        {
+          "p": 8,
+          "x": 418.552,
+          "y": 314.071,
+          "w": 47.7679,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4768,
+      "wikipediaExternalRef": 1597540,
+      "wikidataId": "Q7113797",
+      "domains": [
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "memory consolidation",
+      "offsetStart": 39412,
+      "offsetEnd": 39432,
+      "pos": [
+        {
+          "p": 8,
+          "x": 416.549,
+          "y": 359.923,
+          "w": 86.29780000000005,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9616,
+      "wikipediaExternalRef": 21312297,
+      "wikidataId": "Q2892593",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "motor skill",
+      "offsetStart": 39510,
+      "offsetEnd": 39521,
+      "pos": [
+        {
+          "p": 8,
+          "x": 303.059,
+          "y": 382.842,
+          "w": 41.84499999999997,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9341,
+      "wikipediaExternalRef": 232386,
+      "wikidataId": "Q13208902",
+      "domains": [
+        "Pedagogy",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "motor skill",
+      "offsetStart": 39740,
+      "offsetEnd": 39751,
+      "pos": [
+        {
+          "p": 8,
+          "x": 391.256,
+          "y": 417.162,
+          "w": 43.25070000000005,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9341,
+      "wikipediaExternalRef": 232386,
+      "wikidataId": "Q13208902",
+      "domains": [
+        "Pedagogy",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "ABA",
+      "type": "ORGANISATION",
+      "offsetStart": 40144,
+      "offsetEnd": 40147,
+      "pos": [
+        {
+          "p": 8,
+          "x": 303.059,
+          "y": 497.441,
+          "w": 17.6311,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 40169,
+      "offsetEnd": 40182,
+      "pos": [
+        {
+          "p": 8,
+          "x": 417.772,
+          "y": 497.441,
+          "w": 50.50749999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4122,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "time interval",
+      "offsetStart": 40383,
+      "offsetEnd": 40396,
+      "pos": [
+        {
+          "p": 8,
+          "x": 499.586,
+          "y": 531.761,
+          "w": 50.07489999999996,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4122,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 40680,
+      "offsetEnd": 40691,
+      "pos": [
+        {
+          "p": 8,
+          "x": 400.854,
+          "y": 589.12,
+          "w": 37.17480000000006,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8195,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 40717,
+      "offsetEnd": 40733,
+      "pos": [
+        {
+          "p": 8,
+          "x": 528.409,
+          "y": 589.12,
+          "w": 21.105199999999968,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 8,
+          "x": 303.059,
+          "y": 600.52,
+          "w": 38.295099999999934,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4439,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "time intervals",
+      "offsetStart": 40771,
+      "offsetEnd": 40785,
+      "pos": [
+        {
+          "p": 8,
+          "x": 481.959,
+          "y": 600.52,
+          "w": 52.14940000000007,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3753,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 40858,
+      "offsetEnd": 40872,
+      "pos": [
+        {
+          "p": 8,
+          "x": 317.498,
+          "y": 623.439,
+          "w": 56.2799,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4437,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "ing",
+      "type": "BUSINESS",
+      "offsetStart": 40921,
+      "offsetEnd": 40924,
+      "pos": [
+        {
+          "p": 8,
+          "x": 303.059,
+          "y": 634.839,
+          "w": 12.0118,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "catastrophic interference",
+      "offsetStart": 40947,
+      "offsetEnd": 40972,
+      "pos": [
+        {
+          "p": 8,
+          "x": 402.894,
+          "y": 634.839,
+          "w": 92.60763076923075,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6806,
+      "wikipediaExternalRef": 39182554,
+      "wikidataId": "Q16251345",
+      "domains": [
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "time intervals",
+      "offsetStart": 41000,
+      "offsetEnd": 41014,
+      "pos": [
+        {
+          "p": 8,
+          "x": 350.358,
+          "y": 646.359,
+          "w": 51.754700000000014,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3753,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 41060,
+      "offsetEnd": 41074,
+      "pos": [
+        {
+          "p": 8,
+          "x": 314.574,
+          "y": 657.759,
+          "w": 56.175400000000025,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4437,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "tabula rasa",
+      "offsetStart": 41096,
+      "offsetEnd": 41107,
+      "pos": [
+        {
+          "p": 8,
+          "x": 447.4258285714286,
+          "y": 657.759,
+          "w": 38.961504761904735,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4298,
+      "wikipediaExternalRef": 31212,
+      "wikidataId": "Q223802",
+      "domains": [
+        "Sociology",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 41438,
+      "offsetEnd": 41452,
+      "pos": [
+        {
+          "p": 8,
+          "x": 491.545,
+          "y": 715.118,
+          "w": 58.059300000000064,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4473,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "Frontiers in Psychology",
+      "offsetStart": 41455,
+      "offsetEnd": 41478,
+      "pos": [
+        {
+          "p": 8,
+          "x": 45.18,
+          "y": 745.973,
+          "w": 82.869,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6791,
+      "wikipediaExternalRef": 29572416,
+      "wikidataId": "Q2794477",
+      "domains": [
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "Sport Psychology",
+      "offsetStart": 41502,
+      "offsetEnd": 41518,
+      "pos": [
+        {
+          "p": 8,
+          "x": 214.967,
+          "y": 745.973,
+          "w": 57.40629999999996,
+          "h": 6.8700000000000045
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.885,
+      "wikipediaExternalRef": 25688228,
+      "wikidataId": "Q632190",
+      "domains": [
+        "Medicine",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "force fields",
+      "offsetStart": 41688,
+      "offsetEnd": 41700,
+      "pos": [
+        {
+          "p": 9,
+          "x": 100.725,
+          "y": 73.483,
+          "w": 41.87100000000001,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6179,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "antero",
+      "type": "PERSON",
+      "offsetStart": 42264,
+      "offsetEnd": 42270,
+      "pos": [
+        {
+          "p": 9,
+          "x": 263.921,
+          "y": 165.163,
+          "w": 23.851285714285712,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.519,
+      "wikipediaExternalRef": 168041,
+      "wikidataId": "Q488415",
+      "domains": [
+        "Geometry",
+        "Animal_Husbandry",
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "internal model",
+      "offsetStart": 42392,
+      "offsetEnd": 42407,
+      "pos": [
+        {
+          "p": 9,
+          "x": 262.019,
+          "y": 188.082,
+          "w": 29.7426,
+          "h": 9.0155
+        },
+        {
+          "p": 9,
+          "x": 45.1798,
+          "y": 199.482,
+          "w": 24.1319,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4736,
+      "wikipediaExternalRef": 2381958,
+      "wikidataId": "Q2623243",
+      "domains": [
+        "Biology",
+        "Engineering",
+        "Sociology",
+        "Commerce",
+        "Enterprise"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 42914,
+      "offsetEnd": 42925,
+      "pos": [
+        {
+          "p": 9,
+          "x": 235.123,
+          "y": 279.761,
+          "w": 37.37510000000003,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.818,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 42938,
+      "offsetEnd": 42947,
+      "pos": [
+        {
+          "p": 9,
+          "x": 68.8054,
+          "y": 291.161,
+          "w": 32.2183,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6895,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "antero",
+      "type": "PERSON",
+      "offsetStart": 43057,
+      "offsetEnd": 43063,
+      "pos": [
+        {
+          "p": 9,
+          "x": 263.915,
+          "y": 302.681,
+          "w": 23.8512,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.5268,
+      "wikipediaExternalRef": 168041,
+      "wikidataId": "Q488415",
+      "domains": [
+        "Geometry",
+        "Animal_Husbandry",
+        "Medicine"
+      ]
+    },
+    {
+      "rawName": "consolida",
+      "offsetStart": 43293,
+      "offsetEnd": 43302,
+      "pos": [
+        {
+          "p": 9,
+          "x": 252.051,
+          "y": 348.52,
+          "w": 35.8578,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4252,
+      "wikipediaExternalRef": 738487,
+      "wikidataId": "Q157591",
+      "domains": [
+        "Plants"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 43312,
+      "offsetEnd": 43323,
+      "pos": [
+        {
+          "p": 9,
+          "x": 76.4852,
+          "y": 359.92,
+          "w": 39.4374,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.818,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ABA",
+      "type": "ORGANISATION",
+      "offsetStart": 43397,
+      "offsetEnd": 43400,
+      "pos": [
+        {
+          "p": 9,
+          "x": 153.441,
+          "y": 371.44,
+          "w": 17.6472,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "velocity vector",
+      "offsetStart": 43415,
+      "offsetEnd": 43430,
+      "pos": [
+        {
+          "p": 9,
+          "x": 235.607,
+          "y": 371.44,
+          "w": 56.06730000000002,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4625,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "correlation",
+      "offsetStart": 43432,
+      "offsetEnd": 43443,
+      "pos": [
+        {
+          "p": 9,
+          "x": 45.1808,
+          "y": 382.84,
+          "w": 41.7363,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3591,
+      "wikipediaExternalRef": 157057,
+      "wikidataId": "Q186290",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "Velocity vector",
+      "offsetStart": 43577,
+      "offsetEnd": 43592,
+      "pos": [
+        {
+          "p": 9,
+          "x": 96.0875,
+          "y": 405.76,
+          "w": 56.581199999999995,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4242,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "correlation",
+      "offsetStart": 43593,
+      "offsetEnd": 43604,
+      "pos": [
+        {
+          "p": 9,
+          "x": 155.662,
+          "y": 405.76,
+          "w": 41.7743,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3591,
+      "wikipediaExternalRef": 157057,
+      "wikidataId": "Q186290",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 43650,
+      "offsetEnd": 43658,
+      "pos": [
+        {
+          "p": 9,
+          "x": 115.674,
+          "y": 417.16,
+          "w": 29.1166,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3671,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 43675,
+      "offsetEnd": 43686,
+      "pos": [
+        {
+          "p": 9,
+          "x": 206.072,
+          "y": 417.16,
+          "w": 38.6961,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5298,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 43708,
+      "offsetEnd": 43716,
+      "pos": [
+        {
+          "p": 9,
+          "x": 84.8575,
+          "y": 428.679,
+          "w": 29.166,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3671,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "Shadmehr",
+      "type": "PERSON",
+      "offsetStart": 43752,
+      "offsetEnd": 43760,
+      "pos": [
+        {
+          "p": 9,
+          "x": 252.624,
+          "y": 428.679,
+          "w": 39.1647,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "trajectories",
+      "offsetStart": 44076,
+      "offsetEnd": 44090,
+      "pos": [
+        {
+          "p": 9,
+          "x": 259.488,
+          "y": 485.919,
+          "w": 32.153700000000015,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 9,
+          "x": 45.1817,
+          "y": 497.439,
+          "w": 12.57344,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.439,
+      "wikipediaExternalRef": 200115,
+      "wikidataId": "Q193139",
+      "domains": [
+        "Mechanics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 44270,
+      "offsetEnd": 44281,
+      "pos": [
+        {
+          "p": 9,
+          "x": 253.612,
+          "y": 520.358,
+          "w": 38.16050000000004,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 44305,
+      "offsetEnd": 44316,
+      "pos": [
+        {
+          "p": 9,
+          "x": 134.164,
+          "y": 531.758,
+          "w": 39.43350000000001,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "statistical calculation",
+      "offsetStart": 44373,
+      "offsetEnd": 44396,
+      "pos": [
+        {
+          "p": 9,
+          "x": 142.207,
+          "y": 543.278,
+          "w": 78.8229,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4136,
+      "wikipediaExternalRef": 26685,
+      "wikidataId": "Q12483",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 44529,
+      "offsetEnd": 44540,
+      "pos": [
+        {
+          "p": 9,
+          "x": 221.203,
+          "y": 566.198,
+          "w": 38.15549999999999,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 44583,
+      "offsetEnd": 44594,
+      "pos": [
+        {
+          "p": 9,
+          "x": 416.239,
+          "y": 62.0773,
+          "w": 37.74670000000003,
+          "h": 9.015499999999996
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.5256,
+      "wikipediaExternalRef": 2916607,
+      "wikidataId": "Q991239",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "statistical calculation",
+      "offsetStart": 44922,
+      "offsetEnd": 44947,
+      "pos": [
+        {
+          "p": 9,
+          "x": 482.189,
+          "y": 119.317,
+          "w": 67.65949999999992,
+          "h": 9.015499999999989
+        },
+        {
+          "p": 9,
+          "x": 303.182,
+          "y": 130.836,
+          "w": 15.5011,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4124,
+      "wikipediaExternalRef": 26685,
+      "wikidataId": "Q12483",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "motor memory",
+      "offsetStart": 45394,
+      "offsetEnd": 45406,
+      "pos": [
+        {
+          "p": 9,
+          "x": 354.366,
+          "y": 210.995,
+          "w": 59.26120000000003,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.9217,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 45410,
+      "offsetEnd": 45421,
+      "pos": [
+        {
+          "p": 9,
+          "x": 427.02,
+          "y": 210.995,
+          "w": 38.29590000000002,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8176,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ABA",
+      "type": "ORGANISATION",
+      "offsetStart": 45439,
+      "offsetEnd": 45442,
+      "pos": [
+        {
+          "p": 9,
+          "x": 532.064,
+          "y": 210.995,
+          "w": 17.652,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "velocity",
+      "offsetStart": 45461,
+      "offsetEnd": 45469,
+      "pos": [
+        {
+          "p": 9,
+          "x": 372.623,
+          "y": 222.395,
+          "w": 32.3756,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3675,
+      "wikipediaExternalRef": 20491903,
+      "wikidataId": "Q11465",
+      "domains": [
+        "Astronomy"
+      ]
+    },
+    {
+      "rawName": "force field",
+      "offsetStart": 45480,
+      "offsetEnd": 45491,
+      "pos": [
+        {
+          "p": 9,
+          "x": 448.412,
+          "y": 222.395,
+          "w": 38.133800000000065,
+          "h": 9.015500000000003
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8176,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 45504,
+      "offsetEnd": 45515,
+      "pos": [
+        {
+          "p": 9,
+          "x": 535.956,
+          "y": 222.395,
+          "w": 13.809200000000033,
+          "h": 9.015500000000003
+        },
+        {
+          "p": 9,
+          "x": 303.182,
+          "y": 233.915,
+          "w": 21.906,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8424,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "viscosity",
+      "offsetStart": 46051,
+      "offsetEnd": 46060,
+      "pos": [
+        {
+          "p": 9,
+          "x": 462.566,
+          "y": 325.594,
+          "w": 30.421710000000004,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.6895,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
+    },
+    {
+      "rawName": "different",
+      "offsetStart": 46270,
+      "offsetEnd": 46281,
+      "pos": [
+        {
+          "p": 9,
+          "x": 535.97,
+          "y": 371.433,
+          "w": 13.78729999999996,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 9,
+          "x": 303.182,
+          "y": 382.833,
+          "w": 22.1569,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.366,
+      "wikipediaExternalRef": 160995,
+      "wikidataId": "Q425265",
+      "domains": [
+        "Statistics"
+      ]
+    },
+    {
+      "rawName": "motor memories",
+      "offsetStart": 46317,
+      "offsetEnd": 46331,
+      "pos": [
+        {
+          "p": 9,
+          "x": 461.298,
+          "y": 382.833,
+          "w": 64.40430000000003,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.8183,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
+    },
+    {
+      "rawName": "motor tasks",
+      "offsetStart": 46427,
+      "offsetEnd": 46438,
+      "pos": [
+        {
+          "p": 9,
+          "x": 374.663,
+          "y": 405.753,
+          "w": 43.3338333333333,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.4066,
+      "wikipediaExternalRef": 232386,
+      "wikidataId": "Q13208902",
+      "domains": [
+        "Pedagogy",
+        "Psychiatry",
+        "Health"
+      ]
+    },
+    {
+      "rawName": "time intervals",
+      "offsetStart": 46687,
+      "offsetEnd": 46701,
+      "pos": [
+        {
+          "p": 9,
+          "x": 352.131,
+          "y": 451.592,
+          "w": 53.528099999999995,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3776,
+      "wikipediaExternalRef": 30012,
+      "wikidataId": "Q11471",
+      "domains": [
+        "Physics"
+      ]
+    },
+    {
+      "rawName": "ACKNOWLEDGMENTS The Young Investigator Group",
+      "type": "ORGANISATION",
+      "offsetStart": 46875,
+      "offsetEnd": 46919,
+      "pos": [
+        {
+          "p": 9,
+          "x": 303.18,
+          "y": 496.488,
+          "w": 91.264,
+          "h": 9.39
+        },
+        {
+          "p": 9,
+          "x": 303.18,
+          "y": 508.843,
+          "w": 123.13879999999995,
+          "h": 9.015500000000031
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "Computational Motor Control",
+      "type": "ARTIFACT",
+      "offsetStart": 46929,
+      "offsetEnd": 46956,
+      "pos": [
+        {
+          "p": 9,
+          "x": 462.8703642857143,
+          "y": 508.843,
+          "w": 86.89623571428564,
+          "h": 9.015500000000031
+        },
+        {
+          "p": 9,
+          "x": 303.18,
+          "y": 520.363,
+          "w": 29.7835,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
+    },
+    {
+      "rawName": "Karlsruhe Institute of Technology",
+      "type": "INSTITUTION",
+      "offsetStart": 47035,
+      "offsetEnd": 47068,
+      "pos": [
+        {
+          "p": 9,
+          "x": 376.163,
+          "y": 531.763,
+          "w": 130.17650000000003,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.9427,
+      "wikipediaExternalRef": 5977314,
+      "wikidataId": "Q309988",
+      "domains": [
+        "Architecture"
+      ]
+    },
+    {
+      "rawName": "German Excellence Initiative",
+      "type": "ORGANISATION",
+      "offsetStart": 47098,
+      "offsetEnd": 47126,
+      "pos": [
+        {
+          "p": 9,
+          "x": 372.042,
+          "y": 543.282,
+          "w": 108.3017272727273,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.9425,
+      "wikipediaExternalRef": 15972703,
+      "wikidataId": "Q705657",
+      "domains": [
+        "Administration",
+        "Geology",
+        "Geography",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "Deutsche Forschungsgemeinschaft",
+      "type": "ORGANISATION",
+      "offsetStart": 47155,
+      "offsetEnd": 47186,
+      "pos": [
+        {
+          "p": 9,
+          "x": 348.408,
+          "y": 554.682,
+          "w": 131.7645,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.9958,
+      "wikipediaExternalRef": 950069,
+      "wikidataId": "Q707283",
+      "domains": [
+        "Administration"
+      ]
+    },
+    {
+      "rawName": "Open Access Publishing",
+      "offsetStart": 47191,
+      "offsetEnd": 47214,
+      "pos": [
+        {
+          "p": 9,
+          "x": 500.996,
+          "y": 554.682,
+          "w": 48.71460000000002,
+          "h": 9.015499999999975
+        },
+        {
+          "p": 9,
+          "x": 303.18,
+          "y": 566.202,
+          "w": 40.5764,
+          "h": 9.0155
+        }
+      ],
+      "nerd_score": 0,
+      "nerd_selection_score": 0.3606,
+      "wikipediaExternalRef": 381219,
+      "wikidataId": "Q232932",
+      "domains": [
+        "Electronics",
+        "Computer_Science",
+        "Pedagogy"
+      ]
+    },
+    {
+      "rawName": "Karlsruhe Institute of Technology",
+      "type": "INSTITUTION",
+      "offsetStart": 47223,
+      "offsetEnd": 47256,
+      "pos": [
+        {
+          "p": 9,
+          "x": 378.053,
+          "y": 566.202,
+          "w": 124.61781818181817,
+          "h": 9.015499999999975
+        }
+      ],
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0.9427,
+      "wikipediaExternalRef": 5977314,
+      "wikidataId": "Q309988",
+      "domains": [
+        "Architecture"
+      ]
+    }
+  ],
+  "pages": [
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
+    },
+    {
+      "page_height": 779.528,
+      "page_width": 595.276
     }
   ]
 }
