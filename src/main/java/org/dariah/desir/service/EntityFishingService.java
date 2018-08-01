@@ -25,11 +25,21 @@ import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.entity.mime.content.InputStreamBody;
+import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.*;
 import org.apache.http.params.BasicHttpParams;
 import org.apache.http.util.EntityUtils;
 import org.dariah.desir.grobid.GrobidParsers;
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.FileSystemResource;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpMethod;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Service;
+import org.springframework.util.LinkedMultiValueMap;
+import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.RestTemplate;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.print.URIException;
 import javax.ws.rs.Consumes;
@@ -41,15 +51,13 @@ import javax.ws.rs.core.MediaType;
 import java.awt.*;
 import java.io.*;
 import java.lang.reflect.Field;
-import java.net.URI;
-import java.net.URISyntaxException;
-import java.net.URL;
-import java.net.URLConnection;
+import java.net.*;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 import static org.apache.http.entity.ContentType.APPLICATION_JSON;
@@ -59,17 +67,27 @@ import static org.apache.http.entity.ContentType.MULTIPART_FORM_DATA;
 /**
  * Examples of accessing entity-fishing's rest API
  */
-
+@Service
 public class EntityFishingService {
-    private String HOST = null;
+    private String HOST = "http://cloud.science-miner.com/nerd/service";
     private String DISAMBIGUATE_SERVICE = "/disambiguate";
     private String CONCEPT_SERVICE = "/kb/concept";
+    private JsonParser jsonParser = new JsonParser();
 
     private int PORT = -1;
+
+    private RestTemplate restTemplate = new RestTemplate();
+
+    private  static org.springframework.http.HttpEntity<String> entity;
 
     public EntityFishingService() {
 
     }
+
+    /*http://cloud.science-miner.com/nerd/service/disambiguate' -X POST -F "query={'language': {'lang':'en'}}, 'entities': [],
+    'nbest': false, 'sentence': false, 'customisation': 'generic'}"
+    -F"file=@11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf"
+     */
 
     public EntityFishingService(String host) {
         HOST = host;
@@ -177,103 +195,64 @@ public class EntityFishingService {
         return result;
     }
 
-    public String pdfProcessing(String fileToBeUploaded, String language) throws Exception {
-        // need to be checked
+    public String rawAbstractProcessing(String text)  {
+
+        /*
+        curl 'http://cloud.science-miner.com/nerd/service/disambiguate'
+        -X POST -F
+        "query={ 'text': 'The text is here .', 'processSentence': [  ], 'sentences': [ ], 'entities': [  ]'language': {'lang':'en'} }"
+        * */
         String result = null;
-        File file = new File(fileToBeUploaded);
-        FileInputStream fis = null;
-
-        try {
-            fis = new FileInputStream(file);
-            final URI uri = new URIBuilder()
-                    .setScheme("http")
-                    .setHost(this.HOST + DISAMBIGUATE_SERVICE)
-                    .build();
-
-            ObjectMapper mapper = new ObjectMapper();
-            ObjectNode node = mapper.createObjectNode();
-
-            if (language != null) {
-                ObjectNode dataNode = mapper.createObjectNode();
-                dataNode.put("lang", language);
-                node.set("language", dataNode);
-            }
-
-            //FileBody fileBody = new FileBody(file, ContentType.DEFAULT_BINARY);
-            MultipartEntityBuilder builder = MultipartEntityBuilder.create();
-
-            builder.setMode(HttpMultipartMode.BROWSER_COMPATIBLE);
-            builder.addPart("file", new InputStreamBody(fis, file.getName()));
-            HttpEntity entity = builder.build();
-
-            HttpPost httpPost = new HttpPost(uri);
-            CloseableHttpClient httpResponse = HttpClients.createDefault();
-
-            httpPost.setHeader("Content-Type", APPLICATION_JSON.toString());
-            httpPost.setEntity(new StringEntity(node.toString()));
-            httpPost.setEntity(entity);
-            CloseableHttpResponse closeableHttpResponse = httpResponse.execute(httpPost);
-
-            if (closeableHttpResponse.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-                return IOUtils.toString(closeableHttpResponse.getEntity().getContent(), StandardCharsets.UTF_8);
-            } else {
-                return result;
-            }
-
-        } catch (URISyntaxException e) {
-            e.printStackTrace();
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(org.springframework.http.MediaType.APPLICATION_JSON_UTF8);
+        JsonObject requestBody =new JsonObject();
+        requestBody.addProperty("text", text);
+        entity = new org.springframework.http.HttpEntity<String>(requestBody.toString(),  headers);
+        ResponseEntity<String> response = this.restTemplate.exchange( this.HOST+ DISAMBIGUATE_SERVICE,  HttpMethod.POST, entity, String.class);
+        if (response.getStatusCode().is2xxSuccessful()) {
+            result = response.getBody().toString();
         }
+
         return result;
     }
 
-//    public String pdfProcessing (String fileToBeuploaded, String language, String outputFile) {
-//        String result = null;
-//        String url = "http://" + this.HOST + DISAMBIGUATE_SERVICE;
-//        String query = "{\'language\': {\'lang\':\'"+ language +"\'}}, \'entities\': [], \'nbest\': false, \'sentence\': false, \'customisation\': \'generic\'}";
-//        File file = new File(fileToBeuploaded);
-//        //curl 'http://cloud.science-miner.com/nerd/service/disambiguate' -X POST -F "query={'language': {'lang':'en'}}, 'entities': [], 'nbest': false, 'sentence': false, 'customisation': 'generic'}" -F"file=@11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf"
-//        try{
-//            // adding new elements of command in array list of string
-//            ArrayList<String> element = new ArrayList<String>();
-//
-//            element.add("curl");
-//            element.add(url);
-//            element.add("-XPOST");
-//            element.add("-F");
-//            element.add("\"query=" + query + "\"");
-//            element.add("-F");
-//            element.add("file=@" + file.getName() + "\"");
-//
-//            //element.add("query={ \"termVector\": [ { \"term\" : \"computer science\", \"score\" : 0.3 }, { \"term\" : \"engine\", \"score\" : 0.1 } ], \"language\": { \"lang\": \"en\" }, \"resultLanguages\": [\"de\"], \"nbest\": 0, \"customisation\": \"generic\" }");
-//            System.out.println(element);
-//
-//            // converting array list of string to string array
-//            String[] command = element.toArray(new String[element.size()]);
-//
-//            // executing the command
-//            Process process = Runtime.getRuntime().exec(command);
-//
-//            // getting the result of execution
-//            StringBuilder processOutput = new StringBuilder();
-//            try (BufferedReader processOutputReader = new BufferedReader(
-//                    new InputStreamReader(process.getInputStream()));) {
-//                String readLine;
-//                while ((readLine = processOutputReader.readLine()) != null) {
-//                    processOutput.append(readLine + System.lineSeparator());
-//                }
-//                process.waitFor();
-//            }
-//
-//            System.out.println(processOutput);
-//            result = processOutput.toString();
-//
-//        }catch (IOException e){
-//            e.printStackTrace();
-//        }catch (InterruptedException e){
-//            e.printStackTrace();
-//        }
-//        return result;
-//    }
+
+
+    public String pdfProcessing( MultipartFile pdf){
+        /*
+        * curl 'http://cloud.science-miner.com/nerd/service/disambiguate'
+        * -X POST
+        * -F
+        * "query={ 'entities': [], 'nbest': false, 'sentence': false, 'customisation': 'generic'}"
+        * -F"file=@11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf"
+        *
+        * */
+        String result = null;
+
+        MultiValueMap<String, Object > bodyMap = new LinkedMultiValueMap<>();
+
+        try {
+            bodyMap.add("file", pdf.getBytes());
+            bodyMap.add("query", this.jsonParser.parse("{ 'entities': [], 'nbest': false, 'sentence': false, 'customisation': 'generic'}").getAsJsonObject().toString());
+
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(org.springframework.http.MediaType.MULTIPART_FORM_DATA);
+        org.springframework.http.HttpEntity<MultiValueMap<String, Object >> entity = new org.springframework.http.HttpEntity<>(bodyMap,  headers);
+        ResponseEntity<String> response = this.restTemplate.exchange( this.HOST+ DISAMBIGUATE_SERVICE,  HttpMethod.POST, entity, String.class);
+        if (response.getStatusCode().is2xxSuccessful()) {
+            result = response.getBody().toString();
+        }
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return result;
+
+
+    }
+
 
     public String getConcept(String id)  {
         String response = null;
@@ -324,7 +303,7 @@ public class EntityFishingService {
         }
     }
 
-    public static void main(String[] args) throws Exception{
+    /*public static void main(String[] args) throws Exception{
         String result, text = null;
         String lang = "en";
         String fileInputXML = "11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf.tei.xml";
@@ -336,8 +315,8 @@ public class EntityFishingService {
             InputStream inputStream =resource.getInputStream();
 
             // text disambiguation
-            //text = grobidParsers.processAbstract(inputStream);
-            //result = entityFishingService.textDisambiguate(text, lang);
+            text = grobidParsers.processAbstract(inputStream);
+           //result = entityFishingService.textDisambiguate(text, lang);
 
             // term disambiguation
             //keywordList = grobidParsers.processKeyword(inputStream);
@@ -347,15 +326,15 @@ public class EntityFishingService {
             //result = entityFishingService.pdfProcessing(fileInputPdf,lang);
 
             //kb concept
-            result = entityFishingService.getConcept("Q1");
+            //result = entityFishingService.getConcept("Q1");
 
             // saving the result
-            String resultInJson = entityFishingService.toJson(result);
+            //String resultInJson = entityFishingService.toJson(result);
             entityFishingService.saveToFile(resultInJson);
 
             System.out.println(result);
         } catch (IOException e){
             e.printStackTrace();
         }
-    }
+    }*/
 }

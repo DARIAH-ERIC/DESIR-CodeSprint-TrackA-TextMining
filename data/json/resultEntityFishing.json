@@ -1,507 +1,432 @@
 {
-  "rawName": "Universe",
-  "preferredTerm": "Universe",
-  "nerd_score": 0,
-  "nerd_selection_score": 0,
-  "wikipediaExternalRef": 31880,
-  "wikidataId": "Q1",
-  "definitions": [
+  "runtime": 508,
+  "nbest": false,
+  "text": "In computational neuroscience it is generally accepted that human motor memory contains neural representations of the physics of the musculoskeletal system and the objects in the environment. These representations are called \"internal models\". Force field studies, in which subjects have to adapt to dynamic perturbations induced by a robotic manipulandum, are an established tool to analyze the characteristics of such internal models. The aim of the current study was to investigate whether catch trials during force field learning could influence the consolidation of motor memory in more complex tasks. Thereby, the force field was more than double the force field of previous studies (35 N�s/m). Moreover, the arm of the subjects was not supported. A total of 46 subjects participated in this study and performed center-out movements at a robotic manipulandum in two different force fields. Two control groups learned force field A on day 1 and were retested in the same force field on day 3 (AA). Two test groups additionally learned an interfering force field B (\u003d ?A) on day 2 (ABA). The difference between the two test and control groups, respectively, was the absence (0%) or presence (19%) of catch trials, in which the force field was turned-off suddenly. The results showed consolidation of force field A on day 3 for both control groups. Test groups showed no consolidation of force field A (19% catch trials) and even poorer performance on day 3 (0% catch trials). In conclusion, it can be stated that catch trials seem to have a positive effect on the performance on day 3 but do not trigger a consolidation process as shown in previous studies that used a lower force field viscosity with supported arm. These findings indicate that the results of previous studies in which less complex tasks were analyzed, cannot be fully transferred to more complex tasks. Moreover, the effects of catch trials in these situations are insufficiently understood and further research is needed.",
+  "language": {
+    "lang": "en",
+    "conf": 0.0
+  },
+  "global_categories": [
     {
-      "definition": "The \u0027\u0027\u0027Universe\u0027\u0027\u0027 is all of [[space]] and [[time]] ([[spacetime]]) and its contents, which includes [[planet|planets]], [[natural satellite|moons]], [[minor planet|minor planets]], [[star|stars]], [[galaxy|galaxies]], the contents of [[Outer space#Intergalactic space|intergalactic space]] and all [[matter]] and [[energy]]. The size of the entire Universe is still unknown.",
+      "weight": 0.022097257344557725,
       "source": "wikipedia-en",
-      "lang": "en"
+      "category": "Nervous system",
+      "page_id": 698571
+    },
+    {
+      "weight": 0.022097257344557725,
+      "source": "wikipedia-en",
+      "category": "Memory processes",
+      "page_id": 16136695
+    },
+    {
+      "weight": 0.10983175824049494,
+      "source": "wikipedia-en",
+      "category": "Fictional armour",
+      "page_id": 11665558
+    },
+    {
+      "weight": 0.10983175824049494,
+      "source": "wikipedia-en",
+      "category": "Fictional superhuman features or abilities",
+      "page_id": 19022280
+    },
+    {
+      "weight": 0.10983175824049494,
+      "source": "wikipedia-en",
+      "category": "Physics in fiction",
+      "page_id": 1903794
+    },
+    {
+      "weight": 0.10983175824049494,
+      "source": "wikipedia-en",
+      "category": "Science fiction themes",
+      "page_id": 786868
+    },
+    {
+      "weight": 0.10983175824049494,
+      "source": "wikipedia-en",
+      "category": "Fictional technology",
+      "page_id": 1891719
+    },
+    {
+      "weight": 0.10983175824049494,
+      "source": "wikipedia-en",
+      "category": "Space technology",
+      "page_id": 7406479
     }
   ],
-  "domains": [
-    "Astronomy"
-  ],
-  "categories": [
+  "entities": [
     {
-      "source": "wikipedia-en",
-      "category": "Physical universe",
-      "page_id": 2217510
+      "rawName": "computational neuroscience",
+      "offsetStart": 3,
+      "offsetEnd": 29,
+      "nerd_score": 1,
+      "nerd_selection_score": 0.9822,
+      "wikipediaExternalRef": 271430,
+      "wikidataId": "Q8037925",
+      "domains": [
+        "Medicine"
+      ]
     },
     {
-      "source": "wikipedia-en",
-      "category": "Environments",
-      "page_id": 2690886
+      "rawName": "motor memory",
+      "offsetStart": 66,
+      "offsetEnd": 78,
+      "nerd_score": 1.0009,
+      "nerd_selection_score": 0.9264,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
     },
     {
-      "source": "wikipedia-en",
-      "category": "Physical cosmology",
-      "page_id": 5114206
+      "rawName": "musculoskeletal",
+      "offsetStart": 133,
+      "offsetEnd": 148,
+      "nerd_score": 1,
+      "nerd_selection_score": 0.4358,
+      "wikipediaExternalRef": 653348,
+      "wikidataId": "Q726543",
+      "domains": [
+        "Animal_Husbandry"
+      ]
     },
     {
-      "source": "wikipedia-en",
-      "category": "Astronomical dynamical systems",
-      "page_id": 10864423
-    }
-  ],
-  "multilingual": [
-    {
-      "lang": "de",
-      "term": "Universum",
-      "page_id": 2267257
+      "rawName": "internal models",
+      "offsetStart": 226,
+      "offsetEnd": 241,
+      "nerd_score": 0.9765,
+      "nerd_selection_score": 0.4834,
+      "wikipediaExternalRef": 22732293,
+      "wikidataId": "Q13580300",
+      "domains": [
+        "Medicine"
+      ]
     },
     {
-      "lang": "es",
-      "term": "Universo",
-      "page_id": 6604
+      "rawName": "field studies",
+      "offsetStart": 250,
+      "offsetEnd": 263,
+      "nerd_score": 1.2493,
+      "nerd_selection_score": 0.4073,
+      "wikipediaExternalRef": 5669923,
+      "wikidataId": "Q1402508",
+      "domains": [
+        "Economy",
+        "Applied_Science",
+        "Artisanship",
+        "Furniture"
+      ]
     },
     {
-      "lang": "fr",
-      "term": "Univers",
-      "page_id": 24535
+      "rawName": "internal models",
+      "offsetStart": 420,
+      "offsetEnd": 435,
+      "nerd_score": 0.9765,
+      "nerd_selection_score": 0.4834,
+      "wikipediaExternalRef": 22732293,
+      "wikidataId": "Q13580300",
+      "domains": [
+        "Medicine"
+      ]
     },
     {
-      "lang": "it",
-      "term": "Universo",
-      "page_id": 103867
-    }
-  ],
-  "statements": [
-    {
-      "conceptId": "Q1",
-      "propertyId": "P1036",
-      "propertyName": "Dewey Decimal Classification",
-      "valueType": "string",
-      "value": "113"
+      "rawName": "force field",
+      "offsetStart": 513,
+      "offsetEnd": 524,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P1036",
-      "propertyName": "Dewey Decimal Classification",
-      "valueType": "string",
-      "value": "113"
+      "rawName": "motor memory",
+      "offsetStart": 571,
+      "offsetEnd": 583,
+      "nerd_score": 1.0009,
+      "nerd_selection_score": 0.9264,
+      "wikipediaExternalRef": 487908,
+      "wikidataId": "Q852461",
+      "domains": [
+        "Biology"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P1245",
-      "propertyName": "OmegaWiki Defined Meaning",
-      "valueType": "external-id",
-      "value": "8506"
+      "rawName": "force field",
+      "offsetStart": 620,
+      "offsetEnd": 631,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P793",
-      "propertyName": "significant event",
-      "valueType": "wikibase-item",
-      "value": "Q323",
-      "valueName": "Big Bang"
+      "rawName": "force field",
+      "offsetStart": 657,
+      "offsetEnd": 668,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P793",
-      "propertyName": "significant event",
-      "valueType": "wikibase-item",
-      "value": "Q837317",
-      "valueName": "Big Bang nucleosynthesis"
+      "rawName": "35",
+      "type": "MEASURE",
+      "offsetStart": 690,
+      "offsetEnd": 692,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P793",
-      "propertyName": "significant event",
-      "valueType": "wikibase-item",
-      "value": "Q1208634",
-      "valueName": "Quark epoch"
+      "rawName": "46",
+      "type": "MEASURE",
+      "offsetStart": 765,
+      "offsetEnd": 767,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P793",
-      "propertyName": "significant event",
-      "valueType": "wikibase-item",
-      "value": "Q1079826",
-      "valueName": "Lepton epoch"
+      "rawName": "control groups",
+      "offsetStart": 900,
+      "offsetEnd": 914,
+      "nerd_score": 1.0007,
+      "nerd_selection_score": 0.4133,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P793",
-      "propertyName": "significant event",
-      "valueType": "wikibase-item",
-      "value": "Q273508",
-      "valueName": "Inflation (cosmology)"
+      "rawName": "force field",
+      "offsetStart": 923,
+      "offsetEnd": 934,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P793",
-      "propertyName": "significant event",
-      "valueType": "wikibase-item",
-      "value": "Q1079806",
-      "valueName": "Photon epoch"
+      "rawName": "1",
+      "type": "MEASURE",
+      "offsetStart": 944,
+      "offsetEnd": 945,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P793",
-      "propertyName": "significant event",
-      "valueType": "wikibase-item",
-      "value": "Q3491753",
-      "valueName": "Hadron epoch"
+      "rawName": "force field",
+      "offsetStart": 976,
+      "offsetEnd": 987,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P31",
-      "propertyName": "instance of",
-      "valueType": "wikibase-item",
-      "value": "Q36906466"
+      "rawName": "3",
+      "type": "MEASURE",
+      "offsetStart": 995,
+      "offsetEnd": 996,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P227",
-      "propertyName": "GND ID",
-      "valueType": "external-id",
-      "value": "4079154-3"
+      "rawName": "AA",
+      "type": "ORGANISATION",
+      "offsetStart": 998,
+      "offsetEnd": 1000,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P227",
-      "propertyName": "GND ID",
-      "valueType": "external-id",
-      "value": "4079154-3"
+      "rawName": "force field",
+      "offsetStart": 1055,
+      "offsetEnd": 1066,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P373",
-      "propertyName": "Commons category",
-      "valueType": "string",
-      "value": "Universe"
+      "rawName": "2",
+      "type": "MEASURE",
+      "offsetStart": 1083,
+      "offsetEnd": 1084,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P508",
-      "propertyName": "BNCF Thesaurus",
-      "valueType": "external-id",
-      "value": "7239"
+      "rawName": "ABA",
+      "type": "ORGANISATION",
+      "offsetStart": 1086,
+      "offsetEnd": 1089,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P910",
-      "propertyName": "topic\u0027s main category",
-      "valueType": "wikibase-item",
-      "value": "Q5551050",
-      "valueName": "Physical universe"
+      "rawName": "test and control groups",
+      "offsetStart": 1123,
+      "offsetEnd": 1146,
+      "nerd_score": 1,
+      "nerd_selection_score": 0.9386,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P349",
-      "propertyName": "NDL Auth ID",
-      "valueType": "external-id",
-      "value": "00574074"
+      "rawName": "0%",
+      "type": "MEASURE",
+      "offsetStart": 1179,
+      "offsetEnd": 1181,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P580",
-      "propertyName": "start time",
-      "valueType": "time",
-      "value": {
-        "time": "-13798000000-00-00T00:00:00Z",
-        "timezone": 0,
-        "before": 0,
-        "after": 0,
-        "precision": 3,
-        "calendarmodel": "http://www.wikidata.org/entity/Q1985727"
-      }
+      "rawName": "19%",
+      "type": "MEASURE",
+      "offsetStart": 1196,
+      "offsetEnd": 1199,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P1051",
-      "propertyName": "PSH ID",
-      "valueType": "external-id",
-      "value": "517"
+      "rawName": "force field",
+      "offsetStart": 1231,
+      "offsetEnd": 1242,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P527",
-      "propertyName": "has part",
-      "valueType": "wikibase-item",
-      "value": "Q28732711"
+      "rawName": "force field",
+      "offsetStart": 1304,
+      "offsetEnd": 1315,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P527",
-      "propertyName": "has part",
-      "valueType": "wikibase-item",
-      "value": "Q185674",
-      "valueName": "Field (physics)"
+      "rawName": "3",
+      "type": "MEASURE",
+      "offsetStart": 1325,
+      "offsetEnd": 1326,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P527",
-      "propertyName": "has part",
-      "valueType": "wikibase-item",
-      "value": "Q133327",
-      "valueName": "Spacetime"
+      "rawName": "control groups",
+      "offsetStart": 1336,
+      "offsetEnd": 1350,
+      "nerd_score": 1.0007,
+      "nerd_selection_score": 0.4133,
+      "wikipediaExternalRef": 1640288,
+      "wikidataId": "Q367359",
+      "domains": [
+        "Computer_Science",
+        "Pedagogy"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P527",
-      "propertyName": "has part",
-      "valueType": "wikibase-item",
-      "value": "Q4169",
-      "valueName": "Outer space"
+      "rawName": "force field",
+      "offsetStart": 1391,
+      "offsetEnd": 1402,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P646",
-      "propertyName": "Freebase ID",
-      "valueType": "external-id",
-      "value": "/m/07v7c"
+      "rawName": "19%",
+      "type": "MEASURE",
+      "offsetStart": 1406,
+      "offsetEnd": 1409,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P2612",
-      "propertyName": "TED topic ID",
-      "valueType": "external-id",
-      "value": "universe"
+      "rawName": "3",
+      "type": "MEASURE",
+      "offsetStart": 1459,
+      "offsetEnd": 1460,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P2670",
-      "propertyName": "has parts of the class",
-      "valueType": "wikibase-item",
-      "value": "Q6999",
-      "valueName": "Astronomical object"
+      "rawName": "0%",
+      "type": "MEASURE",
+      "offsetStart": 1462,
+      "offsetEnd": 1464,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P2670",
-      "propertyName": "has parts of the class",
-      "valueType": "wikibase-item",
-      "value": "Q18343",
-      "valueName": "Dark energy"
+      "rawName": "3",
+      "type": "MEASURE",
+      "offsetStart": 1587,
+      "offsetEnd": 1588,
+      "nerd_score": 0.8,
+      "nerd_selection_score": 0
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P2670",
-      "propertyName": "has parts of the class",
-      "valueType": "wikibase-item",
-      "value": "Q79925",
-      "valueName": "Dark matter"
+      "rawName": "force field",
+      "offsetStart": 1679,
+      "offsetEnd": 1690,
+      "nerd_score": 0.995,
+      "nerd_selection_score": 0.533,
+      "wikipediaExternalRef": 286106,
+      "wikidataId": "Q1341441",
+      "domains": [
+        "Physics"
+      ]
     },
     {
-      "conceptId": "Q1",
-      "propertyId": "P2670",
-      "propertyName": "has parts of the class",
-      "valueType": "wikibase-item",
-      "value": "Q28530079"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P1417",
-      "propertyName": "Encyclopædia Britannica Online ID",
-      "valueType": "external-id",
-      "value": "topic/universe"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P1417",
-      "propertyName": "Encyclopædia Britannica Online ID",
-      "valueType": "external-id",
-      "value": "topic/universe"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P2959",
-      "propertyName": "permanent duplicated item",
-      "valueType": "wikibase-item",
-      "value": "Q22924128"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P18",
-      "propertyName": "image",
-      "valueType": "commonsMedia",
-      "value": "Hubble ultra deep field.jpg"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P18",
-      "propertyName": "image",
-      "valueType": "commonsMedia",
-      "value": "Hubble ultra deep field.jpg"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P361",
-      "propertyName": "part of",
-      "valueType": "wikibase-item",
-      "value": "Q3327819",
-      "valueName": "Multiverse"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P1419",
-      "propertyName": "shape",
-      "valueType": "wikibase-item",
-      "value": "Q1647152",
-      "valueName": "Shape of the universe"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P2184",
-      "propertyName": "history of topic",
-      "valueType": "wikibase-item",
-      "value": "Q136407",
-      "valueName": "Chronology of the universe"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P2184",
-      "propertyName": "history of topic",
-      "valueType": "wikibase-item",
-      "value": "Q21653100"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P3222",
-      "propertyName": "NE.se ID",
-      "valueType": "external-id",
-      "value": "universum"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P3219",
-      "propertyName": "Encyclopædia Universalis Online ID",
-      "valueType": "external-id",
-      "value": "univers"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P1552",
-      "propertyName": "has quality",
-      "valueType": "wikibase-item",
-      "value": "Q11412",
-      "valueName": "Gravity"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P3417",
-      "propertyName": "Quora topic ID",
-      "valueType": "external-id",
-      "value": "The-Universe"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P1296",
-      "propertyName": "Gran Enciclopèdia Catalana ID",
-      "valueType": "external-id",
-      "value": "0216407"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P2386",
-      "propertyName": "diameter",
-      "valueType": "quantity",
-      "value": {
-        "amount": "+880000000000000000000000",
-        "unit": "http://www.wikidata.org/entity/Q828224"
-      }
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P3569",
-      "propertyName": "Cultureel Woordenboek identifier",
-      "valueType": "external-id",
-      "value": "natuurkunde-scheikunde-en-sterrenkunde/heelal"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P398",
-      "propertyName": "child astronomical body",
-      "valueType": "wikibase-item",
-      "value": "Q1133705",
-      "valueName": "Galaxy filament"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P398",
-      "propertyName": "child astronomical body",
-      "valueType": "wikibase-item",
-      "value": "Q497745",
-      "valueName": "Sloan Great Wall"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P398",
-      "propertyName": "child astronomical body",
-      "valueType": "wikibase-item",
-      "value": "Q1139177",
-      "valueName": "CfA2 Great Wall"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P398",
-      "propertyName": "child astronomical body",
-      "valueType": "wikibase-item",
-      "value": "Q7439451",
-      "valueName": "Sculptor Wall"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P398",
-      "propertyName": "child astronomical body",
-      "valueType": "wikibase-item",
-      "value": "Q15241043",
-      "valueName": "Hercules–Corona Borealis Great Wall"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P398",
-      "propertyName": "child astronomical body",
-      "valueType": "wikibase-item",
-      "value": "Q23054687",
-      "valueName": "BOSS Great Wall"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P972",
-      "propertyName": "catalog",
-      "valueType": "wikibase-item",
-      "value": "Q5460604",
-      "valueName": "Invalid id or excluded via caching"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P2924",
-      "propertyName": "Great Russian Encyclopedia Online ID",
-      "valueType": "external-id",
-      "value": "2334183"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P1343",
-      "propertyName": "described by source",
-      "valueType": "wikibase-item",
-      "value": "Q602358",
-      "valueName": "Brockhaus and Efron Encyclopedic Dictionary"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P397",
-      "propertyName": "parent astronomical body",
-      "valueType": "wikibase-item",
-      "value": "Q3327819",
-      "valueName": "Multiverse"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P461",
-      "propertyName": "opposite of",
-      "valueType": "wikibase-item",
-      "value": "Q2051667"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P2581",
-      "propertyName": "BabelNet id",
-      "valueType": "external-id",
-      "value": "00022991n"
-    },
-    {
-      "conceptId": "Q1",
-      "propertyId": "P3916",
-      "propertyName": "UNESCO Thesaurus ID",
-      "valueType": "external-id",
-      "value": "concept3230"
+      "rawName": "viscosity",
+      "offsetStart": 1691,
+      "offsetEnd": 1700,
+      "nerd_score": 1.0265,
+      "nerd_selection_score": 0.6758,
+      "wikipediaExternalRef": 18963754,
+      "wikidataId": "Q128709",
+      "domains": [
+        "Physics",
+        "Engineering"
+      ]
     }
   ]
 }
