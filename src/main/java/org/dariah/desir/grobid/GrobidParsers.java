@@ -1,6 +1,7 @@
 package org.dariah.desir.grobid;
 
 import org.springframework.core.io.ClassPathResource;
+import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -19,6 +20,8 @@ import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Map;
 
+
+@Service
 public class GrobidParsers {
 
     public void parseDocument(InputStream is) {
