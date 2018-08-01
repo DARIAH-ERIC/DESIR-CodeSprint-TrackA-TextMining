@@ -82,7 +82,7 @@ public class GrobidClient {
             LOGGER.error(e.getMessage(), e.getCause());
             try {
                 Thread.sleep(20000);
-                getHeader(inputStream.toString());
+                processFulltextDocument(inputStream);
             } catch (InterruptedException ex) {
             }
         } catch (SocketTimeoutException e) {
@@ -101,6 +101,6 @@ public class GrobidClient {
         } catch (FileNotFoundException e) {
            // throw new DataException("File " + filepath + " not found ", e);
         }
-        return getHeader(inputStream.toString());
+        return processFulltextDocument(inputStream);
     }
 }
