@@ -59,7 +59,7 @@ public class EntityFishingService {
 
     private RestTemplate restTemplate = new RestTemplate();
 
-    private  static org.springframework.http.HttpEntity<String> entity;
+    private static org.springframework.http.HttpEntity<String> entity;
 
     public EntityFishingService() {
 
@@ -74,7 +74,7 @@ public class EntityFishingService {
         PORT = PORT;
     }
 
-    public String termDisambiguate(Map<String, Double> listOfTerm, String language){
+    public String termDisambiguate(Map<String, Double> listOfTerm, String language) {
 
         String result = null, term = null;
         double score = 0.0;
@@ -90,16 +90,16 @@ public class EntityFishingService {
 
             ArrayNode termsNode = mapper.createArrayNode();
 
-            for(Map.Entry<String, Double> list : listOfTerm.entrySet()){
+            for (Map.Entry<String, Double> list : listOfTerm.entrySet()) {
                 term = list.getKey();
-                score= list.getValue();
+                score = list.getValue();
                 ObjectNode termNode = mapper.createObjectNode();
-                termNode.put("term",term);
-                termNode.put("score",score);
+                termNode.put("term", term);
+                termNode.put("score", score);
                 termsNode.add(termNode);
             }
 
-            node.set("termVector",termsNode);
+            node.set("termVector", termsNode);
 
             if (language != null) {
                 ObjectNode dataNode = mapper.createObjectNode();
@@ -121,15 +121,15 @@ public class EntityFishingService {
 
         } catch (URISyntaxException e) {
             e.printStackTrace();
-        }catch (UnsupportedEncodingException e){
+        } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         return result;
     }
 
-    public String textDisambiguate(String text, String language)  {
+    public String textDisambiguate(String text, String language) {
         String result = null;
         try {
             final URI uri = new URIBuilder()
@@ -160,18 +160,18 @@ public class EntityFishingService {
 
         } catch (URISyntaxException e) {
             e.printStackTrace();
-        }catch (UnsupportedEncodingException e){
+        } catch (UnsupportedEncodingException e) {
             e.printStackTrace();
-        }catch (ClientProtocolException e){
+        } catch (ClientProtocolException e) {
             e.printStackTrace();
-        }catch (IOException e){
+        } catch (IOException e) {
             e.printStackTrace();
         }
 
         return result;
     }
 
-    public String rawAbstractProcessing(String text)  {
+    public String rawAbstractProcessing(String text) {
 
         /*
         curl 'http://cloud.science-miner.com/nerd/service/disambiguate'
@@ -181,10 +181,10 @@ public class EntityFishingService {
         String result = null;
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(org.springframework.http.MediaType.APPLICATION_JSON_UTF8);
-        JsonObject requestBody =new JsonObject();
+        JsonObject requestBody = new JsonObject();
         requestBody.addProperty("text", text);
-        entity = new org.springframework.http.HttpEntity<String>(requestBody.toString(),  headers);
-        ResponseEntity<String> response = this.restTemplate.exchange( this.HOST+ DISAMBIGUATE_SERVICE,  HttpMethod.POST, entity, String.class);
+        entity = new org.springframework.http.HttpEntity<String>(requestBody.toString(), headers);
+        ResponseEntity<String> response = this.restTemplate.exchange(this.HOST + DISAMBIGUATE_SERVICE, HttpMethod.POST, entity, String.class);
         if (response.getStatusCode().is2xxSuccessful()) {
             result = response.getBody().toString();
         }
@@ -193,32 +193,31 @@ public class EntityFishingService {
     }
 
 
-
-    public String pdfProcessing( MultipartFile pdf){
+    public String pdfProcessing(InputStream pdf) {
         /*
-        * curl 'http://cloud.science-miner.com/nerd/service/disambiguate'
-        * -X POST
-        * -F
-        * "query={ 'entities': [], 'nbest': false, 'sentence': false, 'customisation': 'generic'}"
-        * -F"file=@11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf"
-        *
-        * */
+         * curl 'http://cloud.science-miner.com/nerd/service/disambiguate'
+         * -X POST
+         * -F
+         * "query={ 'entities': [], 'nbest': false, 'sentence': false, 'customisation': 'generic'}"
+         * -F"file=@11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf"
+         *
+         * */
         String result = null;
 
-        MultiValueMap<String, Object > bodyMap = new LinkedMultiValueMap<>();
+        MultiValueMap<String, Object> bodyMap = new LinkedMultiValueMap<>();
 
         try {
-            bodyMap.add("file", pdf.getBytes());
+            bodyMap.add("file", IOUtils.toByteArray(pdf));
             bodyMap.add("query", this.jsonParser.parse("{ 'entities': [], 'nbest': false, 'sentence': false, 'customisation': 'generic'}").getAsJsonObject().toString());
 
 
-        HttpHeaders headers = new HttpHeaders();
-        headers.setContentType(org.springframework.http.MediaType.MULTIPART_FORM_DATA);
-        org.springframework.http.HttpEntity<MultiValueMap<String, Object >> entity = new org.springframework.http.HttpEntity<>(bodyMap,  headers);
-        ResponseEntity<String> response = this.restTemplate.exchange( this.HOST+ DISAMBIGUATE_SERVICE,  HttpMethod.POST, entity, String.class);
-        if (response.getStatusCode().is2xxSuccessful()) {
-            result = response.getBody().toString();
-        }
+            HttpHeaders headers = new HttpHeaders();
+            headers.setContentType(org.springframework.http.MediaType.MULTIPART_FORM_DATA);
+            org.springframework.http.HttpEntity<MultiValueMap<String, Object>> entity = new org.springframework.http.HttpEntity<>(bodyMap, headers);
+            ResponseEntity<String> response = this.restTemplate.exchange(this.HOST + DISAMBIGUATE_SERVICE, HttpMethod.POST, entity, String.class);
+            if (response.getStatusCode().is2xxSuccessful()) {
+                result = response.getBody().toString();
+            }
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -229,10 +228,10 @@ public class EntityFishingService {
     }
 
 
-    public String getConcept(String id)  {
+    public String getConcept(String id) {
         String response = null;
-        String urlNerd =  "http://"+ this.HOST + CONCEPT_SERVICE + "/" + id;
-        if ((id != null) || (id.startsWith("Q") || (id.startsWith("P")))){
+        String urlNerd = "http://" + this.HOST + CONCEPT_SERVICE + "/" + id;
+        if ((id != null) || (id.startsWith("Q") || (id.startsWith("P")))) {
             try {
                 HttpClient client = HttpClientBuilder.create().build();
 
@@ -244,10 +243,10 @@ public class EntityFishingService {
                 if (responseId == HttpStatus.SC_OK) {
                     response = IOUtils.toString(entity.getContent(), StandardCharsets.UTF_8);
                     return response;
-                }else {
+                } else {
                     return response;
                 }
-            }catch (IOException e){
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
@@ -255,7 +254,7 @@ public class EntityFishingService {
         return response;
     }
 
-    public String toJson(String jsonString){
+    public String toJson(String jsonString) {
         JsonParser parser = new JsonParser();
         JsonObject jsonObject = parser.parse(jsonString).getAsJsonObject();
 
@@ -265,7 +264,7 @@ public class EntityFishingService {
     }
 
     public void saveToFile(String resultToSave) {
-        String outputFile ="data/json/resultEntityFishing.json";
+        String outputFile = "data/json/resultEntityFishing.json";
         try {
             File fl = new File(outputFile);
 
