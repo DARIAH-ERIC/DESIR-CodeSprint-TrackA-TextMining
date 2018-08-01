@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.io.InputStream;
+import java.nio.charset.StandardCharsets;
 
 import static org.junit.Assert.*;
 

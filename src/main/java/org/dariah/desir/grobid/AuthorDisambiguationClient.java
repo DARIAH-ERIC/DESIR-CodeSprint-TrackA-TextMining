@@ -12,9 +12,11 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
+import org.springframework.http.converter.ByteArrayHttpMessageConverter;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.HttpMessageConverterExtractor;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.*;
@@ -28,7 +30,9 @@ import java.util.Arrays;
 @Service
 public class AuthorDisambiguationClient {
 
-    private String apiUrL = "http://traces1.inria.fr/cooking";
+//    private String apiUrL = "http://traces1.inria.fr/cooking";
+    private String apiUrL = "http://localhost:8091";
+
 
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthorDisambiguationClient.class);
 
@@ -56,21 +60,29 @@ public class AuthorDisambiguationClient {
         }
     }
 
-    public String disambiguate(byte[] inputStream) {
+    public String disambiguate(InputStream inputStream) {
 
         String result = null;
 
         MultiValueMap<String, Object> bodyMap = new LinkedMultiValueMap<>();
-
         bodyMap.add("file", inputStream);
+
+        ByteArrayHttpMessageConverter byteArrayHttpMessageConverter = new ByteArrayHttpMessageConverter();
+        restTemplate.getMessageConverters().add(byteArrayHttpMessageConverter);
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(org.springframework.http.MediaType.MULTIPART_FORM_DATA);
-        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON_UTF8));
-        org.springframework.http.HttpEntity<MultiValueMap<String, Object>> entity = new org.springframework.http.HttpEntity<>(bodyMap, headers);
+        headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
+
+        org.springframework.http.HttpEntity<MultiValueMap<String, Object>> entity =
+                new org.springframework.http.HttpEntity<>(bodyMap, headers);
+
+        final HttpMessageConverterExtractor<String> responseExtractor =
+                new HttpMessageConverterExtractor<String>(String.class, restTemplate.getMessageConverters());
 
         ResponseEntity<String> response = this.restTemplate.exchange(apiUrL + "/disambiguate",
                 HttpMethod.POST, entity, String.class);
+
 
 
         if (response.getStatusCode().is2xxSuccessful()) {
