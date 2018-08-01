@@ -26,7 +26,7 @@ import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
-import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.mock.web.*;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
@@ -277,7 +277,7 @@ public class EntityFishingService {
         }
     }
 
-    public static void main(String[] args) throws Exception{
+/*    public static void main(String[] args) throws Exception{
         String result, text = null;
         String lang = "en";
         String fileInputXML = "11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf.tei.xml";
@@ -297,15 +297,16 @@ public class EntityFishingService {
             //result = entityFishingService.termDisambiguate(keywordList, lang);
 
             //pdf processing
-            File file = new File(fileInputPdf);
-            Path path = Paths.get(file.getAbsolutePath());
-            String name = file.getName();
-            String originalFileName = file.getName();
-            String contentType = "text/plain";
-            byte[] content = Files.readAllBytes(path);
-
-            MultipartFile multipartFile = new MockMultipartFile(name, originalFileName, contentType, content);
-            result = entityFishingService.pdfProcessing(multipartFile);
+//            File file = new File(fileInputPdf);
+//            Path path = Paths.get(file.getAbsolutePath());
+//            String name = file.getName();
+//            String originalFileName = file.getName();
+//            String contentType = "text/plain";
+//            byte[] content = Files.readAllBytes(path);
+//
+//            MultipartFile multipartFile = new MockMultipartFile(name, originalFileName, contentType, content);
+            InputStream stream = new ByteArrayInputStream(fileInputPdf.getBytes(StandardCharsets.UTF_8));
+            result = entityFishingService.pdfProcessing(stream);
 
             //kb concept
             //result = entityFishingService.getConcept("Q1");
@@ -318,5 +319,5 @@ public class EntityFishingService {
         } catch (IOException e){
             e.printStackTrace();
         }
-    }
+    }*/
 }
