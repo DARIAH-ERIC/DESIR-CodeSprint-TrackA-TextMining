@@ -3,7 +3,10 @@ package org.dariah.desir.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.google.gson.*;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -18,8 +21,6 @@ import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.impl.client.HttpClients;
-import org.dariah.desir.grobid.GrobidParsers;
-import org.springframework.core.io.ClassPathResource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
 import org.springframework.http.ResponseEntity;
@@ -27,15 +28,11 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.StandardCharsets;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Map;
 
 import static org.apache.http.entity.ContentType.APPLICATION_JSON;
@@ -46,7 +43,7 @@ import static org.apache.http.entity.ContentType.APPLICATION_JSON;
  */
 @Service
 public class EntityFishingService {
-    private String HOST = "http://cloud.science-miner.com/nerd/service";
+    private String HOST = "nerd.huma-num.fr/nerd";
     private String DISAMBIGUATE_SERVICE = "/disambiguate";
     private String CONCEPT_SERVICE = "/kb/concept";
     private JsonParser jsonParser = new JsonParser();

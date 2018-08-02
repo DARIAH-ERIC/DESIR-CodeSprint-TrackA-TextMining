@@ -144,8 +144,10 @@ public class GrobidParsers {
                 Node author = authors.item(i);
                 NodeList child = author.getChildNodes();
                 Node persName = (Node) xPath.compile("persName").evaluate(child, XPathConstants.NODE);
-                String coordinates = persName.getAttributes().getNamedItem("coords").getTextContent();
-                authorOutput.setCoordinates(coordinates);
+                Node nodeCoordinates = persName.getAttributes().getNamedItem("coords");
+                if (nodeCoordinates != null) {
+                    authorOutput.setCoordinates(nodeCoordinates.getTextContent());
+                }
 
                 Node idno = (Node) xPath.compile("idno").evaluate(persName, XPathConstants.NODE);
 
