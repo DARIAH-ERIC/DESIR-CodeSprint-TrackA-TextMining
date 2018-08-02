@@ -2,8 +2,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     var measurementMap = new Array();
 
     $scope.uploadFile = function () {
-        $scope.pdfLoaded = true;
-        console.log($scope.pdfLoaded)
+
         $scope.jsonResponse = "";
         $scope.quantity = 4;
         
@@ -34,6 +33,10 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             );
     }
 
+   /*
+
+    This is for entities fishing
+
     function setupAnnotations(response) {
 
         var json = response ;
@@ -46,13 +49,13 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         console.log(entities[0])
         if (entities) {
             // hey bro, this must be asynchronous to avoid blocking the brother ;)
-            entities.forEach(function (entity, n) {
-                var entityDomain = entity.domains;
-                measurementMap[n] = entity;
-                //var theId = entity.type;
+            entities.forEach(function (author, n) {
+                var entityDomain = author.domains;
+                measurementMap[n] = author;
+                //var theId = author.type;
                 var theUrl = null;
                 //var theUrl = annotation.url;
-                var pos = entity.pos;
+                var pos = author.pos;
                 if ((pos != null) && (pos.length > 0)) {
                     pos.forEach(function (thePos, m) {
                         // get page information for the annotation
@@ -68,7 +71,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         }
     }
 
-    function annotateEntity(thePos, theUrl, page_height, page_width, measurementIndex, positionIndex) {
+
+     function annotateEntity(thePos, theUrl, page_height, page_width, measurementIndex, positionIndex) {
         var page = thePos.p;
         var pageDiv = $('#the-canvas');
         pageDiv.innerHTML = ""
@@ -111,7 +115,68 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $('a[page != "1"]').hide();
         pageDiv.height(canvasHeight);
         pageDiv.width(canvasWidth);
+    }*/
+
+
+    function setupAnnotations(response) {
+
+        var json = response ;
+
+        var page_height = response.pageDimention.height;
+        var page_width = response.pageDimention.width;;
+        var authors = response.authors;
+        console.log(authors)
+        if (authors) {
+            // hey bro, this must be asynchronous to avoid blocking the brother ;)
+            authors.forEach(function (author, n) {
+                var coordinates = author.coordinates;
+                if(coordinates.indexOf(';') !== -1){
+                    coordinates = coordinates.split(";")[1].split(",");
+                }
+                else{
+                    coordinates = coordinates.split(",");
+                }
+                annotateAuthors(coordinates, author.id, page_width,  page_height)
+            });
+        }
     }
+
+    function annotateAuthors(coordinates, id, page_width,  page_height){
+        var page = coordinates[0]
+        var pageDiv = $('#the-canvas');
+        var canvas = $('#the-canvas');
+        pageDiv.innerHTML = ""
+
+        var canvasHeight = canvas.height();
+        var canvasWidth = canvas.width();
+
+        var scale_x = canvasHeight / page_height ;
+        var scale_y = canvasWidth / page_width;
+        var x = coordinates[1] * scale_x //  -1
+        var y = coordinates[2] * scale_y //-1
+        var width = coordinates[3] * scale_x //+ 10
+        var height = coordinates[4] * scale_y //+ 5
+        theId = "value";
+        var element = document.createElement("a");
+        var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
+            y + "px; left:" + x + "px;";
+        element.setAttribute("style", attributes + "border:2px solid; border-color: red");
+        element.setAttribute("class", theId);
+        element.setAttribute("id", 'annot-' + id);
+        element.setAttribute("page", page);
+        element.setAttribute("target", "_blank");
+        element.setAttribute("href", "https://aurehal.archives-ouvertes.fr/author/read/id/" + id);
+
+        $('#pdf').append(element);
+        //$('#pdf').on("hover", '#annot-' + id, viewQuantityPDF);
+        //$('#pdf').on("click", '#annot-' + id, viewQuantityPDF);
+        $('a[page != "1"]').hide();
+        pageDiv.height(canvasHeight);
+        pageDiv.width(canvasWidth);
+
+    }
+
+
 
 
     function viewQuantityPDF() {

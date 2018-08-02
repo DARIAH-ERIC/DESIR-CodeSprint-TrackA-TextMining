@@ -17,7 +17,7 @@ angular.module('org.dariah.desir.ui')
                     element.bind('change', function () {
                         scope.$apply(function () {
                             modelSetter(scope, element[0].files[0]);
-
+                            $('a[page = "1"]').remove()
                             var pdfDoc = null,
                                 pageNum = 1,
                                 pageRendering = false,
@@ -36,6 +36,8 @@ angular.module('org.dariah.desir.ui')
                                 // Using promise to fetch the page
                                 pdfDoc.getPage(num).then(function(page) {
                                     var viewport = page.getViewport(scale);
+                                    scope.pdfPageHeight = viewport.height
+                                    scope.pdfPageWidth = viewport.width
                                     canvas.height = viewport.height;
                                     canvas.width = viewport.width;
 
