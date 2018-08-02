@@ -1,6 +1,11 @@
 angular.module('org.dariah.desir.ui').controller('uploadController', function ($scope, $http) {
     var measurementMap = new Array();
 
+    var pageDiv = $('#the-canvas');
+    var canvas = $('#the-canvas');
+    var scale_x ;
+    var scale_y ;
+
     $scope.uploadFile = function () {
 
         $scope.jsonResponse = "";
@@ -112,7 +117,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $('#pdf').append(element);
         $('#pdf').on("hover", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
         $('#pdf').on("click", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
-        $('a[page != "1"]').hide();
+
         pageDiv.height(canvasHeight);
         pageDiv.width(canvasWidth);
     }*/
@@ -125,7 +130,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         var page_height = response.pageDimention.height;
         var page_width = response.pageDimention.width;;
         var authors = response.authors;
-        console.log(authors)
+        var citations = response.citations;
         if (authors) {
             // hey bro, this must be asynchronous to avoid blocking the brother ;)
             authors.forEach(function (author, n) {
@@ -139,23 +144,59 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                 annotateAuthors(coordinates, author.id, page_width,  page_height)
             });
         }
+
+        if (citations ) {
+            // hey bro, this must be asynchronous to avoid blocking the brother ;)
+            citations.forEach(function (citation, n) {
+                var coordinates = citation.coordinates;
+                if(coordinates.indexOf(';') !== -1){
+                    coordinates = coordinates.split(";")[1].split(",");
+                }
+                else{
+                    coordinates = coordinates.split(",");
+                }
+                annotateCitations(coordinates, citation.wikidataID, citation.doi , page_width,  page_height)
+            });
+        }
+    }
+
+    function annotateCitations (coordinates, wikidataID, doi, page_width,  page_height){
+        var page = coordinates[0]
+        var x = coordinates[1] * scale_x
+        var y = coordinates[2] * scale_y
+        var width = coordinates[3] * scale_x
+        var height = coordinates[4] * scale_y
+        theId = "value";
+        var element = document.createElement("a");
+        var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
+            y + "px; left:" + x + "px;";
+        element.setAttribute("style", attributes + "border:2px solid; border-color: green");
+        element.setAttribute("class", theId);
+        //element.setAttribute("id", 'annot-' + id);
+        element.setAttribute("page", page);
+        element.setAttribute("target", "_blank");
+        var currentPage = $('#page_num').text();
+        console.log(currentPage)
+        $('#pdf').append(element);
+        $('a[page = currentPage]').show()
+        $('a[page != currentPage]').hide()
+        //element.setAttribute("href", "https://aurehal.archives-ouvertes.fr/author/read/id/" + id);
     }
 
     function annotateAuthors(coordinates, id, page_width,  page_height){
+
         var page = coordinates[0]
-        var pageDiv = $('#the-canvas');
-        var canvas = $('#the-canvas');
         pageDiv.innerHTML = ""
 
         var canvasHeight = canvas.height();
         var canvasWidth = canvas.width();
 
-        var scale_x = canvasHeight / page_height ;
-        var scale_y = canvasWidth / page_width;
-        var x = coordinates[1] * scale_x //  -1
-        var y = coordinates[2] * scale_y //-1
-        var width = coordinates[3] * scale_x //+ 10
-        var height = coordinates[4] * scale_y //+ 5
+         scale_x = canvasHeight / page_height ;
+         scale_y = canvasWidth / page_width;
+        var x = coordinates[1] * scale_x
+        var y = coordinates[2] * scale_y
+        var width = coordinates[3] * scale_x
+        var height = coordinates[4] * scale_y
         theId = "value";
         var element = document.createElement("a");
         var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +

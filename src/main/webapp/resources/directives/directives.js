@@ -17,7 +17,7 @@ angular.module('org.dariah.desir.ui')
                     element.bind('change', function () {
                         scope.$apply(function () {
                             modelSetter(scope, element[0].files[0]);
-                            $('a[page = "1"]').remove()
+
                             var pdfDoc = null,
                                 pageNum = 1,
                                 pageRendering = false,
@@ -32,6 +32,12 @@ angular.module('org.dariah.desir.ui')
                              * @param num Page number.
                              */
                             function renderPage(num) {
+                                if(num !==1) {
+                                    $('a[page = "1"]').hide()
+                                }
+                                else{
+                                    $('a[page = "1"]').show();
+                                }
                                 pageRendering = true;
                                 // Using promise to fetch the page
                                 pdfDoc.getPage(num).then(function(page) {
