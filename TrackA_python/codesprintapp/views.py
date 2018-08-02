@@ -23,13 +23,14 @@ def process_fulltext():
 	r = requests.post(url, files=files)
 	return render_template('process_fulltext.html', r=r.text)
 
-
+# takes a string and removes xml element inside
 def clean(text):
-	text = re.sub("<[^>]+>","",text)
-	text = re.sub("^\s+|\s+$","",text)
+	text = re.sub("<[^>]+>","", text)
+	text = re.sub("^\s+|\s+$","", text)
 	return text
 
 
+#parses the tei document and creates list of dictionaries out of tei elements
 def parse_tei(xml):
 	#data = open(xml)
 	data = xml.split('\n')
@@ -88,6 +89,7 @@ def parse_tei(xml):
 	return refs
 
 
+# sends request to grobid api to process the pdf and returns data in dataframe to template view
 @app.route('/process_references', methods = ['GET', 'POST'])
 
 def process_references():
@@ -96,14 +98,15 @@ def process_references():
 	files = dict(input=upload, teiCoordinates="biblStruct")
 	r = requests.post(url, files=files)
 	tei_list = parse_tei(r.text)
+	# increase the column width of pd (standard is only 50px)
 	pd.set_option('display.max_colwidth', -1)
 	df1 = pd.DataFrame(tei_list)
+	# removing year_pub column
 	df1 = df1.drop('year_pub', axis=1)
 	df2 = df1.to_json()
 	df1 = df1.to_html()
+	# changing css class in html for dataframe output
 	df1 = re.sub("dataframe", "myTable", df1)
-	
-
 	return render_template('process_fulltext.html', df1=df1, df2=df2)
 	
 
