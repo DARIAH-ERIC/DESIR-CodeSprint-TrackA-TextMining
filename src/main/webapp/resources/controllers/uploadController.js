@@ -170,11 +170,22 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         var element = document.createElement("a");
         var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
             y + "px; left:" + x + "px;";
-        element.setAttribute("style", attributes + "border:2px solid; border-color: green");
+        
+        if(wikidataID !== null) {
+            element.setAttribute("style", attributes + "border:2px solid; border-color: green");
+            element.setAttribute("target", "_blank");
+            element.setAttribute("href", "https://www.wikidata.org/wiki/" + id);
+        } else if (doi !== null) {
+            element.setAttribute("style", attributes + "border:2px solid; border-color: red");
+            element.setAttribute("target", "_blank");
+            element.setAttribute("href", "https://dx.doi.org/" + id);
+        } else {
+            element.setAttribute("style", attributes + "border:2px solid; border-color: gray");
+        }
         element.setAttribute("class", theId);
         //element.setAttribute("id", 'annot-' + id);
         element.setAttribute("page", page);
-        element.setAttribute("target", "_blank");
+
         var currentPage = $('#page_num').text();
         console.log(currentPage)
         $('#pdf').append(element);
