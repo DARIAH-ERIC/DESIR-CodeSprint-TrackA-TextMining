@@ -4,6 +4,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.dariah.desir.data.DisambiguatedAuthor;
 import org.dariah.desir.data.OverlayResponse;
+import org.dariah.desir.data.Page;
 import org.dariah.desir.data.ResolvedCitation;
 import org.dariah.desir.grobid.AuthorDisambiguationClient;
 import org.dariah.desir.grobid.GrobidClient;
@@ -65,9 +66,12 @@ public class SampleController {
             System.out.println("Author disambiguation");
             String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
 
+            final Page pageDimension = grobidClient.getPageDimension(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
+
             final List<DisambiguatedAuthor> disambiguatedAuthors = grobidParsers.processAffiliations(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
             final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
             response = new OverlayResponse(disambiguatedAuthors, resolvedCitations);
+            response.setPageDimention(pageDimension);
 
         } catch (Exception e) {
             e.printStackTrace();

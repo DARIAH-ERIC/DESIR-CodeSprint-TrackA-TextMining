@@ -5,6 +5,7 @@ public class ResolvedCitation {
     private String wikidataID;
     private String doi;
     private String coordinates;
+    private String title;
 
 
     public String getWikidataID() {
@@ -29,5 +30,13 @@ public class ResolvedCitation {
 
     public void setCoordinates(String coordinates) {
         this.coordinates = coordinates;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
     }
 }

@@ -45,6 +45,7 @@ import static org.apache.http.entity.ContentType.APPLICATION_JSON;
 @Service
 public class EntityFishingService {
     private String HOST = "nerd.huma-num.fr/nerd/service";
+//    private String HOST = "localhost:8090/service";
     private String DISAMBIGUATE_SERVICE = "/disambiguate";
     private String CONCEPT_SERVICE = "/kb/concept";
     private String CONCEPT_DOI = "/kb/doi";
@@ -250,25 +251,46 @@ public class EntityFishingService {
 
     public String lookupWikidataByDoi(String doi) throws UnsupportedEncodingException {
         String response = null;
-        String urlNerd = "http://" + this.HOST + CONCEPT_DOI + "/" + URLEncoder.encode(doi, "utf-8");
+        String urlNerdBase = "http://" + this.HOST + CONCEPT_DOI + "/";
         try {
             HttpClient client = HttpClientBuilder.create().build();
+
+            //original
+            String urlNerd = urlNerdBase+ URLEncoder.encode(doi, "utf-8");
 
             HttpGet request = new HttpGet(urlNerd);
             HttpResponse httpResponse = client.execute(request);
             HttpEntity entity = httpResponse.getEntity();
 
             int responseId = httpResponse.getStatusLine().getStatusCode();
-            if (responseId == HttpStatus.SC_OK) {
+//            if (responseId != HttpStatus.SC_OK) {
+//                //lowercase
+//                urlNerd = urlNerdBase + URLEncoder.encode(doi.toUpperCase(), "utf-8");
+//                request = new HttpGet(urlNerd);
+//                httpResponse = client.execute(request);
+//                entity = httpResponse.getEntity();
+//
+//                responseId = httpResponse.getStatusLine().getStatusCode();
+//
+//                if(responseId != HttpStatus.SC_OK) {
+//                    //uppercase
+//                    urlNerd = urlNerdBase + URLEncoder.encode(doi.toLowerCase(), "utf-8");
+//                    request = new HttpGet(urlNerd);
+//                    httpResponse = client.execute(request);
+//                    entity = httpResponse.getEntity();
+//                }
+//            }
+
+            if(responseId == HttpStatus.SC_OK) {
                 response = IOUtils.toString(entity.getContent(), StandardCharsets.UTF_8);
 
                 JsonParser parser = new JsonParser();
                 JsonObject root = (JsonObject) parser.parse(response);
                 response = root.get("wikidataID").getAsString();
-                return response;
-            } else {
-                return response;
             }
+
+            return response;
+
         } catch (IOException e) {
             e.printStackTrace();
         }

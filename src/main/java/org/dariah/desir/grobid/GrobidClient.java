@@ -1,11 +1,15 @@
 package org.dariah.desir.grobid;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.InputStreamBody;
 import org.apache.http.entity.mime.content.StringBody;
+import org.dariah.desir.data.Page;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -19,7 +23,7 @@ import java.net.*;
 
 @Service
 public class GrobidClient {
-    
+
     private String grobidAPI = "http://traces1.inria.fr/grobid/api";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidClient.class);
@@ -43,6 +47,57 @@ public class GrobidClient {
         } catch (IOException e) {
             throw new RuntimeException("Error while connecting to GROBID service", e);
         }
+    }
+
+    public Page getPageDimension(InputStream inputStream) {
+
+        String json = null;
+        Page page = new Page();
+        try {
+            URL url = new URL(this.grobidAPI + "/referenceAnnotations");
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            conn.setDoOutput(true);
+            conn.setRequestMethod("POST");
+            InputStreamBody inputStreamBody = new InputStreamBody(inputStream, "input");
+            HttpEntity entity = MultipartEntityBuilder.create().setMode(HttpMultipartMode.STRICT)
+                    .addPart("input", inputStreamBody)
+                    .build();
+            conn.setRequestProperty("Content-Type", entity.getContentType().getValue());
+            try (OutputStream out = conn.getOutputStream()) {
+                entity.writeTo(out);
+            }
+
+            if (conn.getResponseCode() == HttpURLConnection.HTTP_UNAVAILABLE) {
+                throw new HttpRetryException("Failed : HTTP error code : "
+                        + conn.getResponseCode(), conn.getResponseCode());
+            }
+
+            if (conn.getResponseCode() != HttpURLConnection.HTTP_OK) {
+                throw new RuntimeException("Failed : HTTP error code : "
+                        + conn.getResponseCode() + " " + IOUtils.toString(conn.getErrorStream(), "UTF-8"));
+            }
+
+            InputStream in = conn.getInputStream();
+            json = IOUtils.toString(in, "UTF-8");
+            IOUtils.closeQuietly(in);
+            conn.disconnect();
+
+            JsonParser parser = new JsonParser();
+            JsonObject root = (JsonObject) parser.parse(json);
+            JsonArray arrayPages = (JsonArray) root.get("pages");
+
+            final JsonObject firstElement = (JsonObject) arrayPages.get(0);
+            String width = firstElement.get("page_width").getAsString();
+            String height = firstElement.get("page_height").getAsString();
+
+            page.setHeight(Double.parseDouble(height));
+            page.setWidth(Double.parseDouble(width));
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return page;
     }
 
     public String processFulltextDocument(InputStream inputStream) {
@@ -104,7 +159,7 @@ public class GrobidClient {
         try {
             inputStream = new FileInputStream(filepath);
         } catch (FileNotFoundException e) {
-           // throw new DataException("File " + filepath + " not found ", e);
+            // throw new DataException("File " + filepath + " not found ", e);
         }
         return processFulltextDocument(inputStream);
     }

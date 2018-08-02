@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OverlayResponse {
+    private Page pageDimention;
     private List<DisambiguatedAuthor> authors = new ArrayList<>();
     private List<ResolvedCitation> citations = new ArrayList<>();
 
@@ -26,5 +27,13 @@ public class OverlayResponse {
 
     public void setCitations(List<ResolvedCitation> citations) {
         this.citations = citations;
+    }
+
+    public Page getPageDimention() {
+        return pageDimention;
+    }
+
+    public void setPageDimention(Page pageDimention) {
+        this.pageDimention = pageDimention;
     }
 }

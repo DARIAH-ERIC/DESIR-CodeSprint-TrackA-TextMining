@@ -202,8 +202,15 @@ public class GrobidParsers {
                 String coordinates = reference.getAttributes().getNamedItem("coords").getTextContent();
                 citation.setCoordinates(coordinates);
 
-                Node doiNode = ((Node) xPath.compile("analytic/idno[@type=\"doi\"]").evaluate(reference,XPathConstants.NODE));
-                if(doiNode != null) {
+                Node titleNode = ((Node) xPath.compile("analytic/title").evaluate(reference, XPathConstants.NODE));
+                if (titleNode != null) {
+                    String title = titleNode.getTextContent();
+                    citation.setTitle(title);
+                }
+
+
+                Node doiNode = ((Node) xPath.compile("analytic/idno[@type=\"doi\"]").evaluate(reference, XPathConstants.NODE));
+                if (doiNode != null) {
                     String doi = doiNode.getTextContent();
                     citation.setDoi(doi);
                     try {
