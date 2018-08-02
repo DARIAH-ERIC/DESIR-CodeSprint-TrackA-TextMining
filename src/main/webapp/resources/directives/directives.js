@@ -33,11 +33,15 @@ angular.module('org.dariah.desir.ui')
                              */
                             function renderPage(num) {
                                 if(num !==1) {
-                                    $('a[page = "1"]').hide()
+                                    $('a[page ="1"]').hide()
+
                                 }
                                 else{
-                                    $('a[page = "1"]').show();
+                                    $('a[page ="1"]').show();
                                 }
+
+
+                                scope.updateContent(num)
                                 pageRendering = true;
                                 // Using promise to fetch the page
                                 pdfDoc.getPage(num).then(function(page) {
@@ -67,6 +71,7 @@ angular.module('org.dariah.desir.ui')
 
                                 // Update page counters
                                 document.getElementById('page_num').textContent = num;
+                                scope.page_num = num;
                             }
 
                             /**

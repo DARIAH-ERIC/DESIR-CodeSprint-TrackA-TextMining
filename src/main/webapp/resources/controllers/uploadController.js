@@ -1,6 +1,6 @@
 angular.module('org.dariah.desir.ui').controller('uploadController', function ($scope, $http) {
     var measurementMap = new Array();
-
+    $scope.page_num = ""
     var pageDiv = $('#the-canvas');
     var canvas = $('#the-canvas');
     var scale_x ;
@@ -168,18 +168,21 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         var height = coordinates[4] * scale_y
         theId = "value";
         var element = document.createElement("a");
-        var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
+        var attributes = "margin-top : 205px; margin-left: 155;  width:" + width + "px; height:" + height + "px; position:absolute; top:" +
             y + "px; left:" + x + "px;";
         element.setAttribute("style", attributes + "border:2px solid; border-color: green");
-        element.setAttribute("class", theId);
+        element.setAttribute("class", "citation");
+        //element.setAttribute("display", );
         //element.setAttribute("id", 'annot-' + id);
         element.setAttribute("page", page);
         element.setAttribute("target", "_blank");
-        var currentPage = $('#page_num').text();
-        console.log(currentPage)
+
+
         $('#pdf').append(element);
-        $('a[page = currentPage]').show()
-        $('a[page != currentPage]').hide()
+        console.log($scope.page_num)
+        //$('a[class="citation"],[page = '+ $scope.page_num +']').hide()
+
+        //$scope.updateContent(currentPage)
         //element.setAttribute("href", "https://aurehal.archives-ouvertes.fr/author/read/id/" + id);
     }
 
@@ -197,12 +200,12 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         var y = coordinates[2] * scale_y
         var width = coordinates[3] * scale_x
         var height = coordinates[4] * scale_y
-        theId = "value";
+        theId = "citation";
         var element = document.createElement("a");
         var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
             y + "px; left:" + x + "px;";
         element.setAttribute("style", attributes + "border:2px solid; border-color: red");
-        element.setAttribute("class", theId);
+        element.setAttribute("class", 'author');
         element.setAttribute("id", 'annot-' + id);
         element.setAttribute("page", page);
         element.setAttribute("target", "_blank");
@@ -211,6 +214,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $('#pdf').append(element);
         //$('#pdf').on("hover", '#annot-' + id, viewQuantityPDF);
         //$('#pdf').on("click", '#annot-' + id, viewQuantityPDF);
+       // $('a[class="author"],a[page ="1"]').show()
         $('a[page != "1"]').hide();
         pageDiv.height(canvasHeight);
         pageDiv.width(canvasWidth);
@@ -255,6 +259,14 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $('#detailed_quantity-' + pageIndex).show();
     }
 
+    $scope.updateContent = function(currentPage){
 
+        //if(currentPage == $('a[class="citation"],[page = '+currentPage+']') )
+
+         var citations = $('a[class="citation"],[page = '+currentPage+']').hide();
+        $('a[class="citation"],[page = '+currentPage+']').hide();
+        console.log(citations)
+        //$('a[page = currentPage]').show();
+    }
 
 });
