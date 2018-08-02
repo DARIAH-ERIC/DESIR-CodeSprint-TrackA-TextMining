@@ -27,6 +27,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
 
 import java.io.*;
@@ -45,7 +46,7 @@ import static org.apache.http.entity.ContentType.APPLICATION_JSON;
 @Service
 public class EntityFishingService {
     private String HOST = "nerd.huma-num.fr/nerd/service";
-//    private String HOST = "localhost:8090/service";
+    //    private String HOST = "localhost:8090/service";
     private String DISAMBIGUATE_SERVICE = "/disambiguate";
     private String CONCEPT_SERVICE = "/kb/concept";
     private String CONCEPT_DOI = "/kb/doi";
@@ -252,48 +253,50 @@ public class EntityFishingService {
     public String lookupWikidataByDoi(String doi) throws UnsupportedEncodingException {
         String response = null;
         String urlNerdBase = "http://" + this.HOST + CONCEPT_DOI + "/";
+
+        //original
+        String urlNerd = urlNerdBase + URLEncoder.encode(doi, "utf-8");
+        org.springframework.http.HttpStatus statusCode = null;
+        ResponseEntity<String> forEntity = null;
         try {
-            HttpClient client = HttpClientBuilder.create().build();
+            forEntity = restTemplate.getForEntity(urlNerd, String.class);
+            statusCode = forEntity.getStatusCode();
+        } catch (HttpClientErrorException e) {
 
-            //original
-            String urlNerd = urlNerdBase+ URLEncoder.encode(doi, "utf-8");
+        }
 
-            HttpGet request = new HttpGet(urlNerd);
-            HttpResponse httpResponse = client.execute(request);
-            HttpEntity entity = httpResponse.getEntity();
 
-            int responseId = httpResponse.getStatusLine().getStatusCode();
-//            if (responseId != HttpStatus.SC_OK) {
-//                //lowercase
-//                urlNerd = urlNerdBase + URLEncoder.encode(doi.toUpperCase(), "utf-8");
-//                request = new HttpGet(urlNerd);
-//                httpResponse = client.execute(request);
-//                entity = httpResponse.getEntity();
-//
-//                responseId = httpResponse.getStatusLine().getStatusCode();
-//
-//                if(responseId != HttpStatus.SC_OK) {
-//                    //uppercase
-//                    urlNerd = urlNerdBase + URLEncoder.encode(doi.toLowerCase(), "utf-8");
-//                    request = new HttpGet(urlNerd);
-//                    httpResponse = client.execute(request);
-//                    entity = httpResponse.getEntity();
-//                }
-//            }
+        if (!org.springframework.http.HttpStatus.OK.equals(statusCode)) {
+            //lowercase
+            urlNerd = urlNerdBase + URLEncoder.encode(doi.toUpperCase(), "utf-8");
+            try {
+                forEntity = restTemplate.getForEntity(urlNerd, String.class);
+                statusCode = forEntity.getStatusCode();
+            } catch (HttpClientErrorException e) {
 
-            if(responseId == HttpStatus.SC_OK) {
-                response = IOUtils.toString(entity.getContent(), StandardCharsets.UTF_8);
-
-                JsonParser parser = new JsonParser();
-                JsonObject root = (JsonObject) parser.parse(response);
-                response = root.get("wikidataID").getAsString();
             }
 
-            return response;
 
-        } catch (IOException e) {
-            e.printStackTrace();
+            if (!org.springframework.http.HttpStatus.OK.equals(statusCode)) {
+                //uppercase
+                urlNerd = urlNerdBase + URLEncoder.encode(doi.toLowerCase(), "utf-8");
+                try {
+                    restTemplate.getForEntity(urlNerd, String.class);
+                    statusCode = forEntity.getStatusCode();
+                } catch (HttpClientErrorException e) {
+
+                }
+            }
         }
+
+        if (org.springframework.http.HttpStatus.OK.equals(statusCode)) {
+            response = entity.toString();
+
+            JsonParser parser = new JsonParser();
+            JsonObject root = (JsonObject) parser.parse(response);
+            response = root.get("wikidataID").getAsString();
+        }
+
         return response;
     }
 
