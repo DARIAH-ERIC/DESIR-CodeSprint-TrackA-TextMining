@@ -7,18 +7,20 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/ju/dt-1.10.18/b-1.5.2/b-flash-1.5.2/b-html5-1.5.2/r-2.2.2/sl-1.2.6/datatables.min.css"/>
 
     <title>Hello, world!</title>
   </head>
   <body>
     <div class="container">
     <h1>Hello, This is Code sprint in +36 C</h1>
+    <h1>Track A-Text Mining</h1>
 
 
 
     <div class="form-group">
     <h4>Import your pdf</h4>
-      <form action="/process_fulltext" method="post" enctype="multipart/form-data">
+      <form action="/process_references" method="post" enctype="multipart/form-data">
            <div class="form-group">
                <input type="file" name="file"/>
            </div>
@@ -27,20 +29,86 @@
            </div>
       </form>
     </div>
-  </div>
+  
 
 
-  {% if r %}
-  <div style="padding: 30px;">
-  <p>done</p>
-  <pre>{{r}}</pre>
+  {% if df1 %}
+  <div style="padding: 0px;">
+  <h4>Results</h4>
+  {{df1|safe}}
 </div>
   {% endif %}
+
+
+{% if df2 %}
+  <p>
+  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    JSON
+  </button>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    {{df2|safe}}
+  </div>
+</div>
+  {% endif %}
+
+
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/pdfmake.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.36/vfs_fonts.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/v/bs4-4.1.1/jq-3.3.1/jszip-2.5.0/dt-1.10.18/af-2.3.0/b-1.5.2/b-flash-1.5.2/b-html5-1.5.2/b-print-1.5.2/r-2.2.2/sc-1.5.0/sl-1.2.6/datatables.min.js"></script>
+
+
+<script type="text/javascript">
+
+//   $(document).ready( function () {
+//     $('.myTable').DataTable();
+// } );
+  
+$(document).ready(function() {
+    $('.myTable').DataTable( {
+//check dom and buttons options
+        dom: 'Bfrtip',
+        buttons: [
+        'copy',
+//options for excel export
+        {
+            extend: 'excel',
+            // exportOptions: {
+            //     columns: [1, 2, 3, 4]
+            // }, 
+            // filename: 'export'
+        },
+//////////////////////////
+        'pdf'
+
+        ],
+        // select: true,
+        // columnDefs: [ {
+        //     orderable: false,
+        //     className: 'select-checkbox',
+        //     targets:   0
+        // } ],
+        // select: {
+        //     style:    'multi',
+        //     selector: 'td:first-child'
+        // },
+        order: [[ 1, 'asc' ]],
+
+    } );
+
+} );
+
+
+
+</script>
   </body>
 </html>
