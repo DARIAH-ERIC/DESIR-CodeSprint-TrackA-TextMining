@@ -56,7 +56,12 @@ public class GrobidClient {
             InputStreamBody inputStreamBody = new InputStreamBody(inputStream, "input");
             HttpEntity entity = MultipartEntityBuilder.create().setMode(HttpMultipartMode.STRICT)
                     .addPart("input", inputStreamBody)
-                    .addPart("teiCoordinates", new StringBody("persName")).build();
+                    .addPart("teiCoordinates", new StringBody("persName"))
+                    .addPart("teiCoordinates", new StringBody("ref"))
+                    .addPart("teiCoordinates", new StringBody("biblStruct"))
+                    .addPart("consolidateHeader", new StringBody("1"))
+                    .addPart("consolidateCitations", new StringBody("1"))
+                    .build();
             conn.setRequestProperty("Content-Type", entity.getContentType().getValue());
             try (OutputStream out = conn.getOutputStream()) {
                 entity.writeTo(out);

@@ -2,6 +2,9 @@ package org.dariah.desir.service;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
+import org.dariah.desir.data.DisambiguatedAuthor;
+import org.dariah.desir.data.OverlayResponse;
+import org.dariah.desir.data.ResolvedCitation;
 import org.dariah.desir.grobid.AuthorDisambiguationClient;
 import org.dariah.desir.grobid.GrobidClient;
 import org.dariah.desir.grobid.GrobidParsers;
@@ -14,6 +17,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.*;
 import java.nio.charset.StandardCharsets;
+import java.util.List;
 
 @RestController
 public class SampleController {
@@ -39,8 +43,9 @@ public class SampleController {
 
 
     @RequestMapping(value = "/process", method = RequestMethod.POST, produces = "application/json")
-    public String processPdf(@RequestParam(value = "file") MultipartFile pdf) {
+    public OverlayResponse processPdf(@RequestParam(value = "file") MultipartFile pdf) {
 
+        OverlayResponse response = null;
         String resultEntityFishing = null;
         try {
             InputStream input = pdf.getInputStream();
@@ -50,19 +55,25 @@ public class SampleController {
 
             FileUtils.copyToFile(input, tempFile);
 
-            resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
+//            System.out.println("entity-fishing");
+//            resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
 
+            System.out.println("Grobid");
             String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
             System.out.println(resultGrobid);
 
-//            String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
-//            System.out.println(resultDisambiguation);
+            System.out.println("Author disambiguation");
+            String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
+
+            final List<DisambiguatedAuthor> disambiguatedAuthors = grobidParsers.processAffiliations(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
+            final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
+            response = new OverlayResponse(disambiguatedAuthors, resolvedCitations);
 
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return resultEntityFishing;
+        return response;
     }
 
     @RequestMapping(value = "/entity_fishing", method = RequestMethod.POST, produces = "application/json")

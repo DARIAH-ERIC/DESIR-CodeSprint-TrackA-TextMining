@@ -3,10 +3,7 @@ package org.dariah.desir.service;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
+import com.google.gson.*;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;
@@ -249,7 +246,33 @@ public class EntityFishingService {
                 e.printStackTrace();
             }
         }
+        return response;
+    }
 
+    public String lookupWikidataByDoi(String doi) {
+        String response = null;
+        String urlNerd = "http://" + this.HOST + doi + "/" + doi;
+        try {
+            HttpClient client = HttpClientBuilder.create().build();
+
+            HttpGet request = new HttpGet(urlNerd);
+            HttpResponse httpResponse = client.execute(request);
+            HttpEntity entity = httpResponse.getEntity();
+
+            int responseId = httpResponse.getStatusLine().getStatusCode();
+            if (responseId == HttpStatus.SC_OK) {
+                response = IOUtils.toString(entity.getContent(), StandardCharsets.UTF_8);
+
+                JsonParser parser = new JsonParser();
+                JsonObject root = (JsonObject) parser.parse(response);
+                response = root.get("wikidataID").getAsString();
+                return response;
+            } else {
+                return response;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         return response;
     }
 
