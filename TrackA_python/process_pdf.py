@@ -10,7 +10,8 @@ import pandas as pd
 import numpy as np
 from collections import Counter
 import matplotlib.pyplot as plt
-from scipy.interpolate import spline
+import subprocess
+import time
 
 parser = argparse.ArgumentParser(description='Process some pdfs.')
 
@@ -19,7 +20,14 @@ parser.add_argument('-input', metavar='N', type=str,
 parser.add_argument('-output', type=str,
                     help='folder to write tei-xml')
 
+parser.add_argument('-jsonfile', type=str,
+                    help='file to write json')
+
+parser.add_argument('-grobiddir', type=str,
+                    help='path to grobid installation')
+
 args = parser.parse_args()
+
 
 
 def get_pdf_paths(infolder,end):
@@ -171,11 +179,13 @@ def plot_citation_history(frame):
 
 files = get_pdf_paths(args.input,"pdf")
 refs_all = []
-
+subprocess.Popen("cd "+args.grobiddir+" && ./gradlew run", shell=True)
+print("server up")
+time.sleep(30)
 for filename in files:
 	print("processing: "+filename)
-	#xml = get_grobid_output(filename)
-	#write_xml(xml,re.sub(".*\/",args.output+"/",filename))
+	xml = get_grobid_output(filename)
+	write_xml(xml,re.sub(".*\/",args.output+"/",filename))
 
 files = get_pdf_paths(args.output,"xml")
 
@@ -187,6 +197,6 @@ for filename in files:
 refs_all = [x for y in refs_all for x in y]
 frame = pd.DataFrame(refs_all).drop_duplicates("title")
 
-frame.to_json("example.json")
+frame.to_json(args.jsonfile)
 plot_citation_history(frame)
 
