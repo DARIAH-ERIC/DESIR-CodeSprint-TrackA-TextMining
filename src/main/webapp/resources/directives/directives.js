@@ -26,6 +26,7 @@ angular.module('org.dariah.desir.ui')
                                 canvas = document.getElementById('the-canvas'),
                                 ctx = canvas.getContext('2d');
 
+
                             /**
                              * Get page info from document, resize canvas accordingly, and render page.
                              * @param num Page number.
@@ -102,11 +103,14 @@ angular.module('org.dariah.desir.ui')
                             var loadingTask = scope.pdfjsLib.getDocument(window.URL.createObjectURL(element[0].files[0]));
                             loadingTask.promise.then(function(pdf) {
                                 pdfDoc = pdf;
+                                console.log(pdfDoc)
                                 document.getElementById('page_count').textContent = pdfDoc.numPages;
-                                scope.pdfLoaded = true;
                                 // Initial/first page rendering
                                 renderPage(pageNum);
                             });
+
+
+
                         });
 
                     });
@@ -115,5 +119,5 @@ angular.module('org.dariah.desir.ui')
         }]
     );
 
-// angular.module("org.dariah.desir.ui")
-//     .directive('pdfFile', )
+
+

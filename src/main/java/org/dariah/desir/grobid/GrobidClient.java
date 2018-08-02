@@ -45,7 +45,7 @@ public class GrobidClient {
         }
     }
 
-    public String getHeader(InputStream inputStream) {
+    public String processFulltextDocument(InputStream inputStream) {
 
         String tei = null;
         try {
@@ -56,7 +56,12 @@ public class GrobidClient {
             InputStreamBody inputStreamBody = new InputStreamBody(inputStream, "input");
             HttpEntity entity = MultipartEntityBuilder.create().setMode(HttpMultipartMode.STRICT)
                     .addPart("input", inputStreamBody)
-                    .addPart("teiCoordinates", new StringBody("persName")).build();
+                    .addPart("teiCoordinates", new StringBody("persName"))
+                    .addPart("teiCoordinates", new StringBody("ref"))
+                    .addPart("teiCoordinates", new StringBody("biblStruct"))
+                    .addPart("consolidateHeader", new StringBody("1"))
+                    .addPart("consolidateCitations", new StringBody("1"))
+                    .build();
             conn.setRequestProperty("Content-Type", entity.getContentType().getValue());
             try (OutputStream out = conn.getOutputStream()) {
                 entity.writeTo(out);
@@ -82,7 +87,7 @@ public class GrobidClient {
             LOGGER.error(e.getMessage(), e.getCause());
             try {
                 Thread.sleep(20000);
-                getHeader(inputStream);
+                processFulltextDocument(inputStream);
             } catch (InterruptedException ex) {
             }
         } catch (SocketTimeoutException e) {
@@ -101,6 +106,6 @@ public class GrobidClient {
         } catch (FileNotFoundException e) {
            // throw new DataException("File " + filepath + " not found ", e);
         }
-        return getHeader(inputStream);
+        return processFulltextDocument(inputStream);
     }
 }

@@ -8,22 +8,16 @@ from bottle import route, request, run, static_file, response
 # Configuration
 from nerd.nerd import NerdClient
 
-
 nerdClient = NerdClient()
 
 @route('/<filename:path>')
 def server_static(filename):
     return static_file(filename, root='webapp')
 
-def checkIfCountry(location):
-    if 'sense' in location and 'fineSense' in location['sense']:
-        if 'country' in location['sense']['fineSense']:
-            return True
-
-    return False
-
 @route('/process', method="POST")
-def process():
+def process(file):
+
+    print(file)
 
     return {'result': 'bao'}
 

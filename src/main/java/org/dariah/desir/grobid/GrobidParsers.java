@@ -1,5 +1,8 @@
 package org.dariah.desir.grobid;
 
+import org.dariah.desir.data.DisambiguatedAuthor;
+import org.dariah.desir.data.ResolvedCitation;
+import org.dariah.desir.service.EntityFishingService;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 import org.w3c.dom.Document;
@@ -17,7 +20,9 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 
@@ -76,7 +81,7 @@ public class GrobidParsers {
             System.out.println(title);
 
             // get the authors
-            for (int i =0; i< authors.getLength(); i++) {
+            for (int i = 0; i < authors.getLength(); i++) {
                 Element authorElement = null;
                 if (teiHeader.getElementsByTagName("persName") != null) {
                     authorElement = (Element) teiHeader.getElementsByTagName("persName").item(0);
@@ -111,7 +116,109 @@ public class GrobidParsers {
 
     }
 
-    public String processAbstract(InputStream is){
+    public List<DisambiguatedAuthor> processAffiliations(InputStream is) {
+        XPath xPath = XPathFactory.newInstance().newXPath();
+
+        List<DisambiguatedAuthor> output = new ArrayList<>();
+
+        Document teiDoc = null;
+
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        docFactory.setValidating(false);
+        //docFactory.setNamespaceAware(true);
+        DocumentBuilder docBuilder = null;
+        try {
+            docBuilder = docFactory.newDocumentBuilder();
+            teiDoc = docBuilder.parse(is);
+        } catch (SAXException | IOException | ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            NodeList authors = (NodeList) xPath.compile(TeiPaths.FulltextTeiHeaderAuthors).evaluate(teiDoc, XPathConstants.NODESET);
+
+            // get the authors
+            for (int i = 0; i < authors.getLength(); i++) {
+                DisambiguatedAuthor authorOutput = new DisambiguatedAuthor();
+
+                Node author = authors.item(i);
+                NodeList child = author.getChildNodes();
+                Node persName = (Node) xPath.compile("persName").evaluate(child, XPathConstants.NODE);
+                String coordinates = persName.getAttributes().getNamedItem("coords").getTextContent();
+                authorOutput.setCoordinates(coordinates);
+
+                Node idno = (Node) xPath.compile("idno").evaluate(persName, XPathConstants.NODE);
+
+                if (idno != null) {
+                    String id = String.valueOf(idno.getTextContent());
+                    authorOutput.setId(id);
+                    String type = idno.getAttributes().getNamedItem("type").getTextContent();
+                    authorOutput.setIdType(type);
+                    String cert = idno.getAttributes().getNamedItem("cert").getTextContent();
+                    authorOutput.setConfidence(cert);
+
+                    output.add(authorOutput);
+                }
+
+            }
+
+
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+
+        return output;
+
+    }
+
+    public List<ResolvedCitation> processCitations(InputStream is) {
+        XPath xPath = XPathFactory.newInstance().newXPath();
+
+        List<ResolvedCitation> resolvedCitations = new ArrayList<>();
+
+        Document teiDoc = null;
+
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        docFactory.setValidating(false);
+        //docFactory.setNamespaceAware(true);
+        DocumentBuilder docBuilder = null;
+        try {
+            docBuilder = docFactory.newDocumentBuilder();
+            teiDoc = docBuilder.parse(is);
+        } catch (SAXException | IOException | ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            NodeList references = (NodeList) xPath.compile("/TEI/text/back/div/listBibl/biblStruct").evaluate(teiDoc, XPathConstants.NODESET);
+
+            for (int i = 0; i < references.getLength(); i++) {
+                Node reference = references.item(i);
+
+                ResolvedCitation citation = new ResolvedCitation();
+                String coordinates = reference.getAttributes().getNamedItem("coords").getTextContent();
+                citation.setCoordinates(coordinates);
+
+                Node doiNode = ((Node) xPath.compile("analytic/idno[@type=\"doi\"]").evaluate(reference,XPathConstants.NODE));
+                if(doiNode != null) {
+                    String doi = doiNode.getTextContent();
+                    citation.setDoi(doi);
+                    citation.setWikidataID(new EntityFishingService().lookupWikidataByDoi(doi));
+                }
+                resolvedCitations.add(citation);
+
+            }
+
+
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+
+        return resolvedCitations;
+
+    }
+
+    public String processAbstract(InputStream is) {
         String abstractContent = null;
         XPath xPath = XPathFactory.newInstance().newXPath();
 
@@ -145,13 +252,13 @@ public class GrobidParsers {
 
             return abstractContent;
 
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return abstractContent;
     }
 
-    public Map<String, Double> processKeyword(InputStream is){
+    public Map<String, Double> processKeyword(InputStream is) {
 
         Map<String, Double> listOfKeywords = new HashMap<>();
 
@@ -182,26 +289,26 @@ public class GrobidParsers {
             if (teiHeader.getElementsByTagName("keywords") != null) {
                 keywordKeyElement = (Element) teiHeader.getElementsByTagName("keywords").item(0);
                 NodeList nodeListOfKeyword = keywordKeyElement.getElementsByTagName("term");
-                for (int i=0;i<nodeListOfKeyword.getLength();i++){
+                for (int i = 0; i < nodeListOfKeyword.getLength(); i++) {
                     Node nodeOfKeyword = nodeListOfKeyword.item(i);
-                    if (nodeOfKeyword.getNodeType()==Node.ELEMENT_NODE){
+                    if (nodeOfKeyword.getNodeType() == Node.ELEMENT_NODE) {
                         String keyword = nodeOfKeyword.getTextContent();
-                        listOfKeywords.put(keyword,0.0); // the score of the term can be changed later on
+                        listOfKeywords.put(keyword, 0.0); // the score of the term can be changed later on
                     }
                 }
             }
             return listOfKeywords;
-        }catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
         return listOfKeywords;
     }
 
-    public static void main(String[] args) throws Exception{
+    public static void main(String[] args) throws Exception {
         String fileInput = "11_Anne FOCKE_The influence of catch trials on the consolidation of motor memory in force field adaptation tasks.pdf.tei.xml";
         GrobidParsers grobidParsers = new GrobidParsers();
         ClassPathResource resource = new ClassPathResource(fileInput);
-        InputStream inputStream =resource.getInputStream();
+        InputStream inputStream = resource.getInputStream();
         grobidParsers.processKeyword(inputStream);
     }
 
