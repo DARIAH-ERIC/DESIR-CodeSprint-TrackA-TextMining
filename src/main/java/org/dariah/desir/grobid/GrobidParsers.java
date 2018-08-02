@@ -20,6 +20,7 @@ import javax.xml.xpath.XPathExpressionException;
 import javax.xml.xpath.XPathFactory;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -205,7 +206,11 @@ public class GrobidParsers {
                 if(doiNode != null) {
                     String doi = doiNode.getTextContent();
                     citation.setDoi(doi);
-                    citation.setWikidataID(new EntityFishingService().lookupWikidataByDoi(doi));
+                    try {
+                        citation.setWikidataID(new EntityFishingService().lookupWikidataByDoi(doi));
+                    } catch (UnsupportedEncodingException e) {
+                        e.printStackTrace();
+                    }
                 }
                 resolvedCitations.add(citation);
 

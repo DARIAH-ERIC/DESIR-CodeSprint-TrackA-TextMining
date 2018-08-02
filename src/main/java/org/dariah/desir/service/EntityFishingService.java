@@ -32,6 +32,7 @@ import org.springframework.web.client.RestTemplate;
 import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
@@ -43,9 +44,10 @@ import static org.apache.http.entity.ContentType.APPLICATION_JSON;
  */
 @Service
 public class EntityFishingService {
-    private String HOST = "nerd.huma-num.fr/nerd";
+    private String HOST = "nerd.huma-num.fr/nerd/service";
     private String DISAMBIGUATE_SERVICE = "/disambiguate";
     private String CONCEPT_SERVICE = "/kb/concept";
+    private String CONCEPT_DOI = "/kb/doi";
     private JsonParser jsonParser = new JsonParser();
 
     private int PORT = -1;
@@ -246,9 +248,9 @@ public class EntityFishingService {
         return response;
     }
 
-    public String lookupWikidataByDoi(String doi) {
+    public String lookupWikidataByDoi(String doi) throws UnsupportedEncodingException {
         String response = null;
-        String urlNerd = "http://" + this.HOST + doi + "/" + doi;
+        String urlNerd = "http://" + this.HOST + CONCEPT_DOI + "/" + URLEncoder.encode(doi, "utf-8");
         try {
             HttpClient client = HttpClientBuilder.create().build();
 
