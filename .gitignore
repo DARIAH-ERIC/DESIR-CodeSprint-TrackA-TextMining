@@ -9,3 +9,4 @@ target
 .gradle
 __pycache__
 out
+bin

@@ -1,8 +1,8 @@
 angular.module('org.dariah.desir.ui').controller('uploadController', function ($scope, $http) {
     var measurementMap = new Array();
 
-    var pageDiv = $('#the-canvas');
-    var canvas = $('#the-canvas');
+    var pdfViewer = $('#pdf-viewer');
+    //var canvas = $('#the-canvas');
     var scale_x ;
     var scale_y ;
 
@@ -10,7 +10,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
         $scope.jsonResponse = "";
         $scope.quantity = 4;
-        
+
         var formData = new FormData();
         $scope.responseJson = "";
         formData.append("file", $scope.myFile);
@@ -38,89 +38,89 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             );
     }
 
-   /*
+    /*
 
-    This is for entities fishing
+     This is for entities fishing
 
-    function setupAnnotations(response) {
+     function setupAnnotations(response) {
 
-        var json = response ;
+         var json = response ;
 
-        var pageInfo = response.pages;
-        console.log(pageInfo)
-        var page_height = 0.0;
-        var page_width = 0.0;
-        var entities = response.entities;
-        console.log(entities[0])
-        if (entities) {
-            // hey bro, this must be asynchronous to avoid blocking the brother ;)
-            entities.forEach(function (author, n) {
-                var entityDomain = author.domains;
-                measurementMap[n] = author;
-                //var theId = author.type;
-                var theUrl = null;
-                //var theUrl = annotation.url;
-                var pos = author.pos;
-                if ((pos != null) && (pos.length > 0)) {
-                    pos.forEach(function (thePos, m) {
-                        // get page information for the annotation
-                        var pageNumber = thePos.p;
-                        if (pageInfo[pageNumber - 1]) {
-                            page_height = pageInfo[pageNumber - 1].page_height;
-                            page_width = pageInfo[pageNumber - 1].page_width;
-                        }
-                        annotateEntity(thePos, theUrl, page_height, page_width, n, m);
-                    });
-                }
-            });
-        }
-    }
-
-
-     function annotateEntity(thePos, theUrl, page_height, page_width, measurementIndex, positionIndex) {
-        var page = thePos.p;
-        var pageDiv = $('#the-canvas');
-        pageDiv.innerHTML = ""
-        var canvas = $('#the-canvas');
-        //var canvas = pageDiv.find('canvas').eq(0);;
-
-        var canvasHeight = canvas.height();
-        var canvasWidth = canvas.width();
-        var scale_x = canvasHeight / page_height;
-        var scale_y = canvasWidth / page_width;
-        console.log(scale_x)
-        console.log(scale_y)
+         var pageInfo = response.pages;
+         console.log(pageInfo)
+         var page_height = 0.0;
+         var page_width = 0.0;
+         var entities = response.entities;
+         console.log(entities[0])
+         if (entities) {
+             // hey bro, this must be asynchronous to avoid blocking the brother ;)
+             entities.forEach(function (author, n) {
+                 var entityDomain = author.domains;
+                 measurementMap[n] = author;
+                 //var theId = author.type;
+                 var theUrl = null;
+                 //var theUrl = annotation.url;
+                 var pos = author.pos;
+                 if ((pos != null) && (pos.length > 0)) {
+                     pos.forEach(function (thePos, m) {
+                         // get page information for the annotation
+                         var pageNumber = thePos.p;
+                         if (pageInfo[pageNumber - 1]) {
+                             page_height = pageInfo[pageNumber - 1].page_height;
+                             page_width = pageInfo[pageNumber - 1].page_width;
+                         }
+                         annotateEntity(thePos, theUrl, page_height, page_width, n, m);
+                     });
+                 }
+             });
+         }
+     }
 
 
-        var x = thePos.x * scale_x //- 1;
-        var y = thePos.y * scale_y //- 1;
+      function annotateEntity(thePos, theUrl, page_height, page_width, measurementIndex, positionIndex) {
+         var page = thePos.p;
+         var pageDiv = $('#the-canvas');
+         pageDiv.innerHTML = ""
+         var canvas = $('#the-canvas');
+         //var canvas = pageDiv.find('canvas').eq(0);;
 
-        console.log(x)
-        console.log(y)
+         var canvasHeight = canvas.height();
+         var canvasWidth = canvas.width();
+         var scale_x = canvasHeight / page_height;
+         var scale_y = canvasWidth / page_width;
+         console.log(scale_x)
+         console.log(scale_y)
 
-        var width = thePos.w * scale_x //+ 1;
-        var height = thePos.h * scale_y //+ 1;
 
-        //make clickable the area
-        theId = "value";
-     //  if (theId)
-        //    theId = theId.replace(" ", "_");
-        var element = document.createElement("a");
-        var attributes = "margin-top : 205px; margin-left: 155px; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
-            y + "px; left:" + x + "px;";
-        element.setAttribute("style", attributes + "border:2px solid; border-color: red");
-        //element.setAttribute("style", attributes + "border:2px solid;");
-        element.setAttribute("class", theId);
-        element.setAttribute("id", 'annot-' + measurementIndex + '-' + positionIndex);
-        element.setAttribute("page", page);
+         var x = thePos.x * scale_x //- 1;
+         var y = thePos.y * scale_y //- 1;
 
-        $('#pdf').append(element);
-        $('#pdf').on("hover", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
-        $('#pdf').on("click", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
+         console.log(x)
+         console.log(y)
 
-        pageDiv.height(canvasHeight);
-        pageDiv.width(canvasWidth);
-    }*/
+         var width = thePos.w * scale_x //+ 1;
+         var height = thePos.h * scale_y //+ 1;
+
+         //make clickable the area
+         theId = "value";
+      //  if (theId)
+         //    theId = theId.replace(" ", "_");
+         var element = document.createElement("a");
+         var attributes = "margin-top : 205px; margin-left: 155px; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
+             y + "px; left:" + x + "px;";
+         element.setAttribute("style", attributes + "border:2px solid; border-color: red");
+         //element.setAttribute("style", attributes + "border:2px solid;");
+         element.setAttribute("class", theId);
+         element.setAttribute("id", 'annot-' + measurementIndex + '-' + positionIndex);
+         element.setAttribute("page", page);
+
+         $('#pdf').append(element);
+         $('#pdf').on("hover", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
+         $('#pdf').on("click", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
+
+         pageDiv.height(canvasHeight);
+         pageDiv.width(canvasWidth);
+     }*/
 
 
     function setupAnnotations(response) {
@@ -141,7 +141,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                 else{
                     coordinates = coordinates.split(",");
                 }
-                annotateAuthors(coordinates, author.id, page_width,  page_height)
+                annotateAuthors(coordinates, author, page_width,  page_height)
             });
         }
 
@@ -161,70 +161,66 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     }
 
     function annotateCitations (coordinates, wikidataID, doi, page_width,  page_height){
+        console.log(wikidataID)
         var page = coordinates[0]
+        var pageDiv = $('#page-' + page);
+        var canvas = pageDiv.children('canvas').eq(0);
+        var canvasHeight = canvas.height()
+        var canvasWidth = canvas.width()
+
+        scale_x = canvasHeight / page_height ;
+        scale_y = canvasWidth / page_width;
         var x = coordinates[1] * scale_x
         var y = coordinates[2] * scale_y
         var width = coordinates[3] * scale_x
         var height = coordinates[4] * scale_y
+
         theId = "value";
         var element = document.createElement("a");
-        var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
+        var attributes = "display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
             y + "px; left:" + x + "px;";
 
         if(wikidataID !== null) {
             element.setAttribute("style", attributes + "border:2px solid; border-color: green");
             element.setAttribute("target", "_blank");
-            element.setAttribute("href", "https://www.wikidata.org/wiki/" + id);
+            element.setAttribute("href", "https://www.wikidata.org/wiki/" + wikidataID);
         } else if (doi !== null) {
             element.setAttribute("style", attributes + "border:2px solid; border-color: red");
             element.setAttribute("target", "_blank");
-            element.setAttribute("href", "https://dx.doi.org/" + id);
+            element.setAttribute("href", "https://dx.doi.org/" + doi);
         } else {
             element.setAttribute("style", attributes + "border:2px solid; border-color: gray");
         }
         element.setAttribute("class", "citation");
-        //element.setAttribute("display", );
-        //element.setAttribute("id", 'annot-' + id);
         element.setAttribute("page", page);
-
-
-        $('#pdf').append(element);
-        $('a[page = currentPage]').show()
-        $('a[page != currentPage]').hide()
-        //element.setAttribute("href", "https://aurehal.archives-ouvertes.fr/author/read/id/" + id);
+        pageDiv.append(element);
     }
 
-    function annotateAuthors(coordinates, id, page_width,  page_height){
+    function annotateAuthors(coordinates, author, page_width,  page_height){
 
         var page = coordinates[0]
-        pageDiv.innerHTML = ""
+        var pageDiv = $('#page-' + page);
+        var canvas = pageDiv.children('canvas').eq(0);
+        var canvasHeight = canvas.height()
+        var canvasWidth = canvas.width()
 
-        var canvasHeight = canvas.height();
-        var canvasWidth = canvas.width();
-
-         scale_x = canvasHeight / page_height ;
-         scale_y = canvasWidth / page_width;
+        scale_x = canvasHeight / page_height ;
+        scale_y = canvasWidth / page_width;
         var x = coordinates[1] * scale_x
         var y = coordinates[2] * scale_y
         var width = coordinates[3] * scale_x
         var height = coordinates[4] * scale_y
         theId = "value";
         var element = document.createElement("a");
-        var attributes = "margin-top : 205px; margin-left: 155; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
+        var attributes = "display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
             y + "px; left:" + x + "px;";
         element.setAttribute("style", attributes + "border:2px solid; border-color: red");
         element.setAttribute("class", theId);
-        element.setAttribute("id", 'annot-' + id);
+        element.setAttribute("id", 'annot-' + author.id);
         element.setAttribute("page", page);
         element.setAttribute("target", "_blank");
-        element.setAttribute("href", "https://aurehal.archives-ouvertes.fr/author/read/id/" + id);
-
-        $('#pdf').append(element);
-        //$('#pdf').on("hover", '#annot-' + id, viewQuantityPDF);
-        //$('#pdf').on("click", '#annot-' + id, viewQuantityPDF);
-        $('a[page != "1"]').hide();
-        pageDiv.height(canvasHeight);
-        pageDiv.width(canvasWidth);
+        element.setAttribute("href", "https://aurehal.archives-ouvertes.fr/author/read/id/" + author.id);
+        pageDiv.append(element);
 
     }
 

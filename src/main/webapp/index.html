@@ -74,20 +74,15 @@
                             <div class="col-xs-12" ng-if="jsonResponse">
                                 <div class="pull-right">Processed</div>
                                 <!--<div class="pull-right">-->
-                                    <!--Total runtime: <strong>{{ jsonResponse.totalRuntime }}</strong> ms |-->
-                                    <!--Grobid runtime:<strong> {{ jsonResponse.grobidRuntime }}</strong> ms |-->
-                                    <!--Entity runtime:<strong> {{ jsonResponse.efRuntime }}</strong> ms |-->
-                                    <!--Author resolution runtime:<strong> {{ jsonResponse.ecRuntime }}</strong> ms-->
+                                <!--Total runtime: <strong>{{ jsonResponse.totalRuntime }}</strong> ms |-->
+                                <!--Grobid runtime:<strong> {{ jsonResponse.grobidRuntime }}</strong> ms |-->
+                                <!--Entity runtime:<strong> {{ jsonResponse.efRuntime }}</strong> ms |-->
+                                <!--Author resolution runtime:<strong> {{ jsonResponse.ecRuntime }}</strong> ms-->
                                 <!--</div>-->
                             </div>
-                            <div >
-                                <button id="prev">Previous</button>
-                                <button id="next">Next</button>
-                                &nbsp; &nbsp;
-                                <span>Page: <span id="page_num" ng-model="page_num"></span>  /  <span id="page_count"></span></span>
-                            </div>
+
                             <div id="pdf">
-                                <canvas id="the-canvas"> </canvas>
+                                <div id="pdf-viewer"> </div>
                             </div>
 
                             <div class="col-xs-12" id="requestResult" ng-if="jsonResponse">
@@ -96,11 +91,11 @@
 
 
                                     <!--<div class="col-xs-12" ng-controller="linkController">-->
-                                        <!--<div class="jumbotron" ng-repeat="entity in jsonResponse.entities">-->
-                                            <!--&lt;!&ndash;<div class="row" ng-repeat="entity in jsonResponse.entities track by $index" ng-if="$index%4==0">&ndash;&gt;-->
-                                            <!--&lt;!&ndash;track by entity.id&ndash;&gt;-->
-                                            <!--<entity class="col-xs-height"></entity>-->
-                                        <!--</div>-->
+                                    <!--<div class="jumbotron" ng-repeat="entity in jsonResponse.entities">-->
+                                    <!--&lt;!&ndash;<div class="row" ng-repeat="entity in jsonResponse.entities track by $index" ng-if="$index%4==0">&ndash;&gt;-->
+                                    <!--&lt;!&ndash;track by entity.id&ndash;&gt;-->
+                                    <!--<entity class="col-xs-height"></entity>-->
+                                    <!--</div>-->
                                     <!--</div>-->
                                 </div>
                             </div>

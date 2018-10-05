@@ -17,112 +17,43 @@ angular.module('org.dariah.desir.ui')
                     element.bind('change', function () {
                         scope.$apply(function () {
                             modelSetter(scope, element[0].files[0]);
-
-                            var pdfDoc = null,
-                                pageNum = 1,
-                                pageRendering = false,
-                                pageNumPending = null,
-                                scale = 1.5,
-                                canvas = document.getElementById('the-canvas'),
-                                ctx = canvas.getContext('2d');
-
-
-                            /**
-                             * Get page info from document, resize canvas accordingly, and render page.
-                             * @param num Page number.
-                             */
-                            function renderPage(num) {
-                                if(num !==1) {
-                                    $('a[page ="1"]').hide()
-
-                                }
-                                else{
-                                    $('a[page ="1"]').show();
-                                }
-
-
-                                scope.updateContent(num)
-                                pageRendering = true;
-                                // Using promise to fetch the page
-                                pdfDoc.getPage(num).then(function(page) {
-                                    var viewport = page.getViewport(scale);
-                                    scope.pdfPageHeight = viewport.height
-                                    scope.pdfPageWidth = viewport.width
-                                    canvas.height = viewport.height;
-                                    canvas.width = viewport.width;
-
-                                    // Render PDF page into canvas context
-                                    var renderContext = {
-                                        canvasContext: ctx,
-                                        viewport: viewport
-                                    };
-                                    var renderTask = page.render(renderContext);
-
-                                    // Wait for rendering to finish
-                                    renderTask.promise.then(function() {
-                                        pageRendering = false;
-                                        if (pageNumPending !== null) {
-                                            // New page rendering is pending
-                                            renderPage(pageNumPending);
-                                            pageNumPending = null;
-                                        }
-                                    });
-                                });
-
-                                // Update page counters
-                                document.getElementById('page_num').textContent = num;
-                                scope.page_num = num;
-                            }
-
-                            /**
-                             * If another page rendering in progress, waits until the rendering is
-                             * finised. Otherwise, executes rendering immediately.
-                             */
-                            function queueRenderPage(num) {
-                                if (pageRendering) {
-                                    pageNumPending = num;
-                                } else {
-                                    renderPage(num);
-                                }
-                            }
-
-                            /**
-                             * Displays previous page.
-                             */
-                            function onPrevPage() {
-                                if (pageNum <= 1) {
-                                    return;
-                                }
-                                pageNum--;
-                                queueRenderPage(pageNum);
-                            }
-                            document.getElementById('prev').addEventListener('click', onPrevPage);
-
-                            /**
-                             * Displays next page.
-                             */
-                            function onNextPage() {
-                                if (pageNum >= pdfDoc.numPages) {
-                                    return;
-                                }
-                                pageNum++;
-                                queueRenderPage(pageNum);
-                            }
-                            document.getElementById('next').addEventListener('click', onNextPage);
-
                             /**
                              * Asynchronously downloads PDF.
                              */
                             var loadingTask = scope.pdfjsLib.getDocument(window.URL.createObjectURL(element[0].files[0]));
+                            var viewer = document.getElementById('pdf-viewer');
+                            var scale = 1.5;
+                            var thePdf ;
                             loadingTask.promise.then(function(pdf) {
-                                pdfDoc = pdf;
-                                console.log(pdfDoc)
-                                document.getElementById('page_count').textContent = pdfDoc.numPages;
-                                // Initial/first page rendering
-                                renderPage(pageNum);
+                                thePdf = pdf;
+
+                                for(page = 1; page <= pdf.numPages; page++) {
+                                    var canvas = document.createElement("canvas");
+                                    canvas.setAttribute("id", 'pdf-page-canvas-' + page);
+                                    var div = document.createElement("div");
+
+                                    // Set id attribute with page-#{pdf_page_number} format
+                                    div.setAttribute("id", "page-" + (page ));
+
+                                    // This will keep positions of child elements as per our needs, and add a light border
+                                    div.setAttribute("style", "position: relative; ");
+                                    div.appendChild(canvas);
+
+                                    viewer.appendChild(div);
+                                    renderPage(page,canvas )
+                                }
+                            }, function (reason) {
+                                // PDF loading error
+                                console.error(reason);
                             });
-
-
+                            function renderPage(pageNumber, canvas) {
+                                thePdf.getPage(pageNumber).then(function(page) {
+                                    viewport = page.getViewport(scale);
+                                    canvas.height = viewport.height;
+                                    canvas.width = viewport.width;
+                                    page.render({canvasContext: canvas.getContext('2d'), viewport: viewport});
+                                });
+                            }
 
                         });
 
