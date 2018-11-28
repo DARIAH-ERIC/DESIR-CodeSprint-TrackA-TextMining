@@ -26,7 +26,7 @@ import java.util.Collections;
 @Service
 public class AuthorDisambiguationClient {
 
-        private String apiUrL = "http://traces1.inria.fr/cooking";
+        private String apiUrL = "https://traces1.inria.fr/cooking";
 //    private String apiUrL = "http://localhost:8091";
 
 

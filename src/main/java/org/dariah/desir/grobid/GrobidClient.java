@@ -24,7 +24,7 @@ import java.net.*;
 @Service
 public class GrobidClient {
 
-    private String grobidAPI = "http://traces1.inria.fr/grobid/api";
+    private String grobidAPI = "https://traces1.inria.fr/grobid/api";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidClient.class);
 
