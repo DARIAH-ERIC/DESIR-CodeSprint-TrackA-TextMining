@@ -117,7 +117,7 @@ public class GrobidParsers {
 
     }
 
-    public List<DisambiguatedAuthor> processAffiliations(InputStream is) {
+    public List<DisambiguatedAuthor> processAuthorNames(InputStream is) {
         XPath xPath = XPathFactory.newInstance().newXPath();
 
         List<DisambiguatedAuthor> output = new ArrayList<>();
@@ -145,25 +145,26 @@ public class GrobidParsers {
                 Node author = authors.item(i);
                 NodeList child = author.getChildNodes();
                 Node persName = (Node) xPath.compile("persName").evaluate(child, XPathConstants.NODE);
-                Node nodeCoordinates = persName.getAttributes().getNamedItem("coords");
-                if (nodeCoordinates != null) {
-                    authorOutput.setCoordinates(nodeCoordinates.getTextContent());
-                }
+                if (persName != null && persName.getNodeType() == Node.ELEMENT_NODE){
+                    Node nodeCoordinates = persName.getAttributes().getNamedItem("coords");
+                    if (nodeCoordinates != null) {
+                        authorOutput.setCoordinates(nodeCoordinates.getTextContent());
+                    }
+                    Node idno = (Node) xPath.compile("idno").evaluate(persName, XPathConstants.NODE);
 
-                Node idno = (Node) xPath.compile("idno").evaluate(persName, XPathConstants.NODE);
+                    if (idno != null && idno.getNodeType() == Node.ELEMENT_NODE) {
+                        Element idElement = (Element)idno;
+                        String id = String.valueOf(idElement.getTextContent());
+                        authorOutput.setId(id);
+                        String type = idElement.getAttribute("type");
+                        authorOutput.setIdType(type);
+                        String cert = idElement.getAttribute("cert");
+                        authorOutput.setConfidence(cert);
 
-                if (idno != null) {
-                    String id = String.valueOf(idno.getTextContent());
-                    authorOutput.setId(id);
-                    String type = idno.getAttributes().getNamedItem("type").getTextContent();
-                    authorOutput.setIdType(type);
-                    String cert = idno.getAttributes().getNamedItem("cert").getTextContent();
-                    authorOutput.setConfidence(cert);
-
-                    output.add(authorOutput);
-                }
-
+                        output.add(authorOutput);
+                    }
             }
+        }
 
 
         } catch (XPathExpressionException e) {
@@ -199,28 +200,30 @@ public class GrobidParsers {
                 Node reference = references.item(i);
 
                 ResolvedCitation citation = new ResolvedCitation();
-                String coordinates = reference.getAttributes().getNamedItem("coords").getTextContent();
-                citation.setCoordinates(coordinates);
+                if (reference.getNodeType() == Node.ELEMENT_NODE) {
+                    Element referenceElement = (Element)reference;
+                    String coordinates = referenceElement.getAttribute("coords");
+                    citation.setCoordinates(coordinates);
 
-                Node titleNode = ((Node) xPath.compile("analytic/title").evaluate(reference, XPathConstants.NODE));
-                if (titleNode != null) {
-                    String title = titleNode.getTextContent();
-                    citation.setTitle(title);
-                }
-
-
-                Node doiNode = ((Node) xPath.compile("analytic/idno[@type=\"doi\"]").evaluate(reference, XPathConstants.NODE));
-                if (doiNode != null) {
-                    String doi = doiNode.getTextContent();
-                    citation.setDoi(doi);
-                    try {
-                        citation.setWikidataID(new EntityFishingService().lookupWikidataByDoi(doi));
-                    } catch (UnsupportedEncodingException e) {
-                        e.printStackTrace();
+                    Node titleNode = ((Node) xPath.compile("analytic/title").evaluate(reference, XPathConstants.NODE));
+                    if (titleNode != null && titleNode.getNodeType() == Node.ELEMENT_NODE) {
+                        String title = titleNode.getTextContent();
+                        citation.setTitle(title);
                     }
-                }
-                resolvedCitations.add(citation);
 
+
+                    Node doiNode = ((Node) xPath.compile("analytic/idno[@type=\"doi\"]").evaluate(reference, XPathConstants.NODE));
+                    if (doiNode != null  && doiNode.getNodeType() == Node.ELEMENT_NODE) {
+                        String doi = doiNode.getTextContent();
+                        citation.setDoi(doi);
+                        try {
+                            citation.setWikidataID(new EntityFishingService().lookupWikidataByDoi(doi));
+                        } catch (UnsupportedEncodingException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    resolvedCitations.add(citation);
+                }
             }
 
 
