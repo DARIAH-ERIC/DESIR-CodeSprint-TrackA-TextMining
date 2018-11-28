@@ -39,6 +39,8 @@ dependencies {
     compile("org.codehaus.woodstox:woodstox-core-asl:4.4.0")
     compile("org.apache.commons:commons-lang3:3.5")
 
+    //pdf reader
+    compile group: 'com.itextpdf', name: 'itextpdf', version: '5.0.6'
 
     // Apache HTTP
     compile ("org.apache.httpcomponents:httpcore:4.4.1")

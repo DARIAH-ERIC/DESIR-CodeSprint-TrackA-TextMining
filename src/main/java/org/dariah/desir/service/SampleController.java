@@ -1,5 +1,6 @@
 package org.dariah.desir.service;
 
+import com.itextpdf.text.pdf.PdfReader;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.dariah.desir.data.DisambiguatedAuthor;
@@ -66,11 +67,11 @@ public class SampleController {
             System.out.println("Author disambiguation");
             String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
 
-            final Page pageDimension = grobidClient.getPageDimension(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
-
-            final List<DisambiguatedAuthor> disambiguatedAuthors = grobidParsers.processAffiliations(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
+            final List<DisambiguatedAuthor> disambiguatedAuthors = grobidParsers.processAuthorNames(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
             final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
             response = new OverlayResponse(disambiguatedAuthors, resolvedCitations);
+
+            final Page pageDimension = Page.getPageDimension(tempFile);
             response.setPageDimention(pageDimension);
 
         } catch (Exception e) {
