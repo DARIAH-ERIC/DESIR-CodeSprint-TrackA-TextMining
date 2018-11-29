@@ -6,6 +6,15 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     var scale_x ;
     var scale_y ;
 
+
+    $scope.clear = function () {
+        angular.element("div[id='pdf-viewer']").empty();
+        angular.element("input[type='file']").val(null);
+    };
+
+
+
+
     $scope.uploadFile = function () {
 
         $scope.jsonResponse = "";
@@ -146,23 +155,44 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         }
 
         if (citations ) {
+
             // hey bro, this must be asynchronous to avoid blocking the brother ;)
             citations.forEach(function (citation, n) {
                 var coordinates = citation.coordinates;
+                var coords = []; var coordinatesTem=[]; var page = 0;
                 if(coordinates.indexOf(';') !== -1){
-                    coordinates = coordinates.split(";")[1].split(",");
+                    coordinates = coordinates.split(";")
+                    coordinates_0 = coordinates;
+                    page =  coordinates_0[0];
+
+                    for(var j = 0; j < coordinates.length; j++) {
+                        coordinatesTem = coordinates[j].split(',');
+                        if(j === 0){
+                            coords[0] = coordinatesTem[1];
+                            coords[1] = coordinatesTem[2];
+                            coords[2] = coordinatesTem[3];
+                            coords[3] = parseFloat(coordinatesTem[4]);
+                        }
+                        else{
+                            if(parseInt(coords[2]) < parseInt(coordinatesTem[3])) {
+                                coords[2] = coordinatesTem[3];
+                            }
+
+
+                            coords[3] += parseFloat(coordinatesTem[4]);
+                        }
+                    }
                 }
                 else{
                     coordinates = coordinates.split(",");
+                    console.log(coordinates)
                 }
-                annotateCitations(coordinates, citation.wikidataID, citation.doi , page_width,  page_height)
+                annotateCitations(page, coords, citation.wikidataID, citation.doi , page_width,  page_height)
             });
         }
     }
 
-    function annotateCitations (coordinates, wikidataID, doi, page_width,  page_height){
-        console.log(wikidataID)
-        var page = coordinates[0]
+    function annotateCitations (page, coordinates, wikidataID, doi, page_width,  page_height){
         var pageDiv = $('#page-' + page);
         var canvas = pageDiv.children('canvas').eq(0);
         var canvasHeight = canvas.height()
@@ -170,10 +200,10 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
         scale_x = canvasHeight / page_height ;
         scale_y = canvasWidth / page_width;
-        var x = coordinates[1] * scale_x
-        var y = coordinates[2] * scale_y
-        var width = coordinates[3] * scale_x
-        var height = coordinates[4] * scale_y
+        var x = coordinates[0] * scale_x
+        var y = coordinates[1] * scale_y
+        var width = coordinates[2] * scale_x
+        var height = coordinates[3] * scale_y;
 
         theId = "value";
         var element = document.createElement("a");
@@ -185,7 +215,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             element.setAttribute("target", "_blank");
             element.setAttribute("href", "https://www.wikidata.org/wiki/" + wikidataID);
         } else if (doi !== null) {
-            element.setAttribute("style", attributes + "border:2px solid; border-color: red");
+            element.setAttribute("style", attributes + "border:2px solid; border-color: green");
             element.setAttribute("target", "_blank");
             element.setAttribute("href", "https://dx.doi.org/" + doi);
         } else {
