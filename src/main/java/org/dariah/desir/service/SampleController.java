@@ -1,15 +1,15 @@
 package org.dariah.desir.service;
 
-import com.itextpdf.text.pdf.PdfReader;
+import com.scienceminer.nerd.client.NerdClient;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.dariah.desir.data.DisambiguatedAuthor;
 import org.dariah.desir.data.OverlayResponse;
 import org.dariah.desir.data.Page;
 import org.dariah.desir.data.ResolvedCitation;
-import org.dariah.desir.grobid.AuthorDisambiguationClient;
-import org.dariah.desir.grobid.GrobidClient;
-import org.dariah.desir.grobid.GrobidParsers;
+import org.dariah.desir.client.CookingClient;
+import org.dariah.desir.client.GrobidClient;
+import org.dariah.desir.client.GrobidParsers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -39,7 +39,7 @@ public class SampleController {
     private EntityFishingService entityFishingService;
 
     @Autowired
-    private AuthorDisambiguationClient authorDisambiguationClient;
+    private CookingClient authorDisambiguationClient;
 
 
     @RequestMapping(value = "/process", method = RequestMethod.POST, produces = "application/json")

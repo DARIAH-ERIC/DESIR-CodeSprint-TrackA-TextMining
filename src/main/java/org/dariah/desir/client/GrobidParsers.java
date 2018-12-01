@@ -1,4 +1,4 @@
-package org.dariah.desir.grobid;
+package org.dariah.desir.client;
 
 import org.dariah.desir.data.DisambiguatedAuthor;
 import org.dariah.desir.data.ResolvedCitation;

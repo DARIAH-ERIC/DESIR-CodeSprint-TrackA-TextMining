@@ -3,11 +3,17 @@ buildscript {
         mavenLocal()
         mavenCentral()
         jcenter()
-
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:2.0.3.RELEASE")
     }
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    jcenter()
+    maven { url "https://dl.bintray.com/rookies/maven" }
 }
 
 apply plugin: 'java'
@@ -33,6 +39,8 @@ sourceSets.main.resources {
 }
 
 dependencies {
+    compile('com.scienceminer.nerd:entity-fishing-client:0.0.2')
+
     compile("org.springframework.boot:spring-boot-starter-web")
 //    compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.25'
 //    compile("org.codehaus.woodstox:stax2-api:3.14")
@@ -65,5 +73,4 @@ dependencies {
 
     testCompile("junit:junit:4.12")
     testCompile("org.hamcrest:hamcrest-all:1.3")
-
 }

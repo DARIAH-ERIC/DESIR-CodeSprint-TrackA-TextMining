@@ -1,4 +1,4 @@
-package org.dariah.desir.grobid;
+package org.dariah.desir.client;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -7,12 +7,12 @@ import java.io.InputStream;
 
 public class AuthorDisambiguationClientTest {
 
-    AuthorDisambiguationClient target;
+    CookingClient target;
 
     @Before
     public void setUp() throws Exception {
 
-        target = new AuthorDisambiguationClient();
+        target = new CookingClient();
 
     }
 

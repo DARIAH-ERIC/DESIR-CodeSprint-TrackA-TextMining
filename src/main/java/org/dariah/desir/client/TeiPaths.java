@@ -1,5 +1,5 @@
 
-package org.dariah.desir.grobid;
+package org.dariah.desir.client;
 
 /**
  *

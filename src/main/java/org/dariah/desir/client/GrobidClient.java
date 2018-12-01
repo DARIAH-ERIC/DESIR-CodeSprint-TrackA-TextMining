@@ -1,21 +1,20 @@
-package org.dariah.desir.grobid;
+package org.dariah.desir.client;
 
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import org.apache.commons.io.IOUtils;
 import org.apache.http.HttpEntity;
+import org.apache.http.entity.ContentType;
 import org.apache.http.entity.mime.HttpMultipartMode;
 import org.apache.http.entity.mime.MultipartEntityBuilder;
 import org.apache.http.entity.mime.content.InputStreamBody;
 import org.apache.http.entity.mime.content.StringBody;
-import org.dariah.desir.data.Page;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.io.*;
 import java.net.*;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
  * Created by lfoppiano on 17/08/16.
@@ -60,11 +59,11 @@ public class GrobidClient {
             InputStreamBody inputStreamBody = new InputStreamBody(inputStream, "input");
             HttpEntity entity = MultipartEntityBuilder.create().setMode(HttpMultipartMode.STRICT)
                     .addPart("input", inputStreamBody)
-                    .addPart("teiCoordinates", new StringBody("persName"))
-                    .addPart("teiCoordinates", new StringBody("ref"))
-                    .addPart("teiCoordinates", new StringBody("biblStruct"))
-                    .addPart("consolidateHeader", new StringBody("1"))
-                    .addPart("consolidateCitations", new StringBody("1"))
+                    .addPart("teiCoordinates", new StringBody("persName", ContentType.TEXT_PLAIN))
+                    .addPart("teiCoordinates", new StringBody("ref", ContentType.TEXT_PLAIN))
+                    .addPart("teiCoordinates", new StringBody("biblStruct", ContentType.TEXT_PLAIN))
+                    .addPart("consolidateHeader", new StringBody("1", ContentType.TEXT_PLAIN))
+                    .addPart("consolidateCitations", new StringBody("1", ContentType.TEXT_PLAIN))
                     .build();
             conn.setRequestProperty("Content-Type", entity.getContentType().getValue());
             try (OutputStream out = conn.getOutputStream()) {
@@ -81,9 +80,9 @@ public class GrobidClient {
                         + conn.getResponseCode() + " " + IOUtils.toString(conn.getErrorStream(), "UTF-8"));
             }
 
-            InputStream in = conn.getInputStream();
-            tei = IOUtils.toString(in, "UTF-8");
-            IOUtils.closeQuietly(in);
+            try(InputStream in = conn.getInputStream()) {
+                tei = IOUtils.toString(in, "UTF-8");
+            }
 
             conn.disconnect();
 

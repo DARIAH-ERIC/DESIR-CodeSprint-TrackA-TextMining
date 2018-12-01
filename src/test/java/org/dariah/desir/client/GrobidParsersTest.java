@@ -1,13 +1,7 @@
-package org.dariah.desir.grobid;
+package org.dariah.desir.client;
 
-import com.fasterxml.jackson.databind.JsonMappingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.google.gson.JsonParseException;
-import org.dariah.desir.service.EntityFishingService;
 import org.junit.Before;
 import org.junit.Test;
-
-import java.io.IOException;
 
 public class GrobidParsersTest {
 
