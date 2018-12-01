@@ -24,8 +24,6 @@ import java.util.List;
 @RestController
 public class SampleController {
 
-    private static final String template = "Hello, %s!";
-
     @RequestMapping("/version")
     public String getVersion() {
         return "0.1.0";
