@@ -24,6 +24,7 @@ public class EntityFishingService {
     NerdClient client;
 
     public EntityFishingService() {
+        this("http://nerd.huma-num.fr/nerd/service");
 
     }
 

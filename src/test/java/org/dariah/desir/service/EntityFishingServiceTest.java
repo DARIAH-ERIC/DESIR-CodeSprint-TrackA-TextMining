@@ -40,7 +40,7 @@ public class EntityFishingServiceTest {
 
     @Before
     public void setUp(){
-        entityFishingService = new EntityFishingService("cloud.science-miner.com/nerd/service");
+        entityFishingService = new EntityFishingService("http://cloud.science-miner.com/nerd/service");
     }
 
     @Test
