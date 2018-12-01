@@ -79,7 +79,7 @@ public class GrobidParsers {
             Element monogr = (Element) xPath.compile(TeiPaths.MonogrElement).evaluate(teiDoc, XPathConstants.NODE);
             NodeList ids = (NodeList) xPath.compile(TeiPaths.IdnoElement).evaluate(teiDoc, XPathConstants.NODESET);
 
-            System.out.println(title);
+//            System.out.println(title);
 
             // get the authors
             for (int i = 0; i < authors.getLength(); i++) {
@@ -95,7 +95,7 @@ public class GrobidParsers {
             }
 
             // for some pub types we just keep the submission date.
-            if (submission_date != null) {
+            /*if (submission_date != null) {
                 System.out.println("Submission date: " + submission_date.getTextContent());
                 System.out.println("Printed date " + submission_date.getTextContent());
             }
@@ -105,7 +105,7 @@ public class GrobidParsers {
 
             if (language != null) {
                 System.out.println("Language: " + language.getTextContent());
-            }
+            }*/
 //        processMonogr(monogr, pub);
 
 //        processPersons(authors, "author", pub, teiDoc, authorsFromfulltextTeiHeader);

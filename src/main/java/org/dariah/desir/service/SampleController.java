@@ -60,7 +60,7 @@ public class SampleController {
 
             System.out.println("Grobid");
             String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
-            System.out.println(resultGrobid);
+//            System.out.println(resultGrobid);
 
             System.out.println("Author disambiguation");
             String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
