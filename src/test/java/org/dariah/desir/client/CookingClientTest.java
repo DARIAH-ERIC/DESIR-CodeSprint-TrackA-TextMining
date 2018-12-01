@@ -1,11 +1,13 @@
 package org.dariah.desir.client;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.io.InputStream;
 
-public class AuthorDisambiguationClientTest {
+@Ignore("Integration test")
+public class CookingClientTest {
 
     CookingClient target;
 
