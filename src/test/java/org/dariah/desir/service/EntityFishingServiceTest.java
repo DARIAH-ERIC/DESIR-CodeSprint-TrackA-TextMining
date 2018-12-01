@@ -1,6 +1,7 @@
 package org.dariah.desir.service;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
 import java.util.HashMap;
@@ -8,6 +9,7 @@ import java.util.Map;
 
 import static org.junit.Assert.*;
 
+@Ignore("Integration tests")
 public class EntityFishingServiceTest {
     String text = "In computational neuroscience it is generally accepted that human " +
             "motor memory contains neural representations of the physics of the musculoskeletal system " +
