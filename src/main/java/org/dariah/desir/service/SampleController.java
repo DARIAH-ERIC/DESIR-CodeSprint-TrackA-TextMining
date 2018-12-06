@@ -42,7 +42,7 @@ public class SampleController {
     private CookingClient authorDisambiguationClient;
 
 
-    @RequestMapping(value = "/process", method = RequestMethod.POST, produces = "application/json")
+    @RequestMapping(value = "/processAuthor", method = RequestMethod.POST, produces = "application/json")
     public OverlayResponse processPdf(@RequestParam(value = "file") MultipartFile pdf) {
 
         OverlayResponse response = null;
@@ -66,12 +66,59 @@ public class SampleController {
             String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
 
             final List<DisambiguatedAuthor> disambiguatedAuthors = grobidParsers.processAuthorNames(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
-            final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
-            response = new OverlayResponse(disambiguatedAuthors, resolvedCitations);
+            response = new OverlayResponse<DisambiguatedAuthor>(disambiguatedAuthors);
 
             final Page pageDimension = Page.getPageDimension(tempFile);
             response.setPageDimention(pageDimension);
 
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return response;
+    }
+
+    @RequestMapping(value = "/processCitation", method = RequestMethod.POST, produces = "application/json")
+    public OverlayResponse processCitation(@RequestParam(value = "file") MultipartFile pdf) {
+
+        OverlayResponse response = null;
+        String resultEntityFishing = null;
+        try {
+            InputStream input = pdf.getInputStream();
+
+            final File tempFile = File.createTempFile("prefix", "suffix");
+            tempFile.deleteOnExit();
+
+            FileUtils.copyToFile(input, tempFile);
+
+//            System.out.println("entity-fishing");
+//            resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
+
+            System.out.println("Grobid");
+            String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
+//            System.out.println(resultGrobid);
+            
+            final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
+            response = new OverlayResponse<ResolvedCitation>(resolvedCitations);
+
+            final Page pageDimension = Page.getPageDimension(tempFile);
+            response.setPageDimention(pageDimension);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return response;
+    }
+
+    @RequestMapping(value = "/processNamedEntities", method = RequestMethod.POST, produces = "application/json")
+    public OverlayResponse processNamedEntities(@RequestParam(value = "file") MultipartFile pdf) {
+
+        OverlayResponse response = null;
+        String resultEntityFishing = null;
+        try {
+
+            //TBD
         } catch (Exception e) {
             e.printStackTrace();
         }
