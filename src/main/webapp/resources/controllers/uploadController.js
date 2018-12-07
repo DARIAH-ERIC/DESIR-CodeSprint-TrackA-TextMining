@@ -1,6 +1,9 @@
 angular.module('org.dariah.desir.ui').controller('uploadController', function ($scope, $http) {
     var measurementMap = new Array();
-
+    $scope.jsonResponse = null;
+    $scope.processingAuthors = 'Authors';
+    $scope.processingCitations = 'Citations';
+    $scope.processingEntities = 'Named entities';
     var pdfViewer = $('#pdf-viewer');
     //var canvas = $('#the-canvas');
     var scale_x ;
@@ -8,15 +11,19 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
 
     $scope.clear = function () {
+        $scope.myFile = null;
+        $scope.processingAuthors = 'Authors';
+        $scope.processingCitations = 'Citations';
+        $scope.processingEntities = 'Named entities';
         angular.element("div[id='pdf-viewer']").empty();
         angular.element("input[type='file']").val(null);
+        $scope.jsonResponse = null;
+        $scope.errorMessage = null;
+        $scope.requestError = null;
     };
 
-
-
-
-    $scope.uploadFile = function () {
-
+    $scope.uploadFile = function (type) {
+        var urlPath =""
         $scope.jsonResponse = "";
         $scope.quantity = 4;
 
@@ -24,9 +31,24 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $scope.responseJson = "";
         formData.append("file", $scope.myFile);
 
+        switch (type){
+            case 'authors':
+                urlPath = '/processAuthor';
+                $scope.processingAuthors = 'Processing...'
+            break;
+            case 'citations':
+                urlPath = '/processCitation';
+                $scope.processingCitations = 'Processing...';
+            break;
+            case 'entities':
+                urlPath = '/processNamedEntities';
+                $scope.processingEntities = 'Processing...';
+            break;
+        }
+
         var request = {
             method: 'POST',
-            url: window.location.href + '/process',
+            url: window.location.href + urlPath,
             data: formData,
             headers: {
                 'Content-Type': undefined
@@ -38,13 +60,28 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             .then(
                 function (d) {  //success
                     $scope.jsonResponse = d.data;
-                    setupAnnotations($scope.jsonResponse)
+                    setupAnnotations($scope.jsonResponse, type)
+                    $scope.updateButton(type);
                 },
                 function (e) {  //error
                     $scope.jsonResponse = undefined;
-                    $scope.errorMessage = e;
+                    $scope.requestError = e;
                 }
             );
+    }
+
+    $scope.updateButton = function(type){
+        switch (type){
+            case 'authors':
+                $scope.processingAuthors = 'Authors';
+                break;
+            case 'citations':
+                $scope.processingCitations = 'Citations';
+                break;
+            case 'entities':
+                $scope.processingEntities = 'Named entities';
+                break;
+        }
     }
 
     /*
@@ -132,32 +169,47 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
      }*/
 
 
-    function setupAnnotations(response) {
-
+    function setupAnnotations(response, type) {
         var json = response ;
-
         var page_height = response.pageDimention.height;
         var page_width = response.pageDimention.width;;
-        var authors = response.authors;
-        var citations = response.citations;
-        if (authors) {
+        var result = response.results;
+        if (type === 'authors') {
+            var process = true;
+            var count = 0;
             // hey bro, this must be asynchronous to avoid blocking the brother ;)
-            authors.forEach(function (author, n) {
-                var coordinates = author.coordinates;
-                if(coordinates.indexOf(';') !== -1){
-                    coordinates = coordinates.split(";")[1].split(",");
+            result.forEach(function (author, n) {
+                count++;
+                if(author['coordinates'] === null){
+                    process = process && false;
+                    console.log(process)
                 }
                 else{
-                    coordinates = coordinates.split(",");
+                    process = process && true;
+                    var coordinates = author.coordinates;
+                    if(coordinates.indexOf(';') !== -1){
+                        coordinates = coordinates.split(";")[1].split(",");
+                    }
+                    else{
+                        coordinates = coordinates.split(",");
+                    }
+                    annotateAuthors(coordinates, author, page_width,  page_height)
                 }
-                annotateAuthors(coordinates, author, page_width,  page_height)
+                if(count === result.length ) {
+                    if(process === false){
+                        $scope.errorMessage = 'Something went wrong server side for some authors!!!';
+                        $scope.jsonResponse = null;
+                    }
+                    $(document).ready(function(){
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                }
             });
         }
 
-        if (citations ) {
-
+        if ( type === 'citations' ) {
             // hey bro, this must be asynchronous to avoid blocking the brother ;)
-            citations.forEach(function (citation, n) {
+            result.forEach(function (citation, n) {
                 var coordinates = citation.coordinates;
                 var coords = []; var coordinatesTem=[]; var page = 0;
                 if(coordinates.indexOf(';') !== -1){
@@ -246,6 +298,9 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             y + "px; left:" + x + "px;";
         element.setAttribute("style", attributes + "border:2px solid; border-color: red");
         element.setAttribute("class", theId);
+        element.setAttribute("data-toggle", 'tooltip');
+        element.setAttribute("data-placement", 'top');
+        element.setAttribute("data-title", 'Confidence score: '+ author.confidence);
         element.setAttribute("id", 'annot-' + author.id);
         element.setAttribute("page", page);
         element.setAttribute("target", "_blank");

@@ -1,6 +1,6 @@
 package org.dariah.desir.service;
 
-import com.scienceminer.nerd.client.NerdClient;
+//import com.scienceminer.nerd.client.NerdClient;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.dariah.desir.data.DisambiguatedAuthor;

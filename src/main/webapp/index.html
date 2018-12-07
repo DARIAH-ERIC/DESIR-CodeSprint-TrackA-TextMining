@@ -50,36 +50,85 @@
 <body>
 <div class="container">
     <div ng-controller="tabsController">
-        <div class="page-header">
-            <h3><span>DESIR Code Sprint Track A - Text Mining</span></h3>
-            <span>Experimenting integration in the DARIAH infrastructure: Text Mining</span>
+        <div class="row mb">
+            <div class="col-md-3">
+                <img src="resources/desir.png" class="img-responsive" alt="Responsive image">
+            </div>
+            <div class="col-md-6">
+                <div class="page-header">
+                    <h2><span>DESIR Code Sprint Track A - Text Mining</span></h2>
+                    <span>Experimenting integration in the DARIAH infrastructure: Text Mining</span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <img src="resources/inria.png" class="img-responsive" alt="Responsive image">
+            </div>
         </div>
+
 
         <uib-tabset active="activeForm">
             <uib-tab index="0" heading="Services">
                 <div class="tabContent">
                     <ng-form name="nestedForm" class="form-inline">
                         <div class="row" ng-controller="uploadController">
-                            <div class="col-xs-12">
-                                <div class="col-xs-6 form-group">
+                            <div class="col-xs-12 mb">
+                                <!--<div class="col-xs-6 form-group">
                                     <div class="input-group pull-left">
                                             <span class="input-group-btn">
                                                 <button class="btn btn-default" type="button" button
                                                         ng-click="uploadFile()">Submit</button>
                                             </span>
-                                        <input class="form-inline" file-model="myFile" name="input" type="file" id="fileSelected" ng-click="clear()"/>
+                                        <!--
+                                       <input class="form-inline" file-model="myFile" name="input" type="file" id="filelSelected" ng-click="clear()"/>
+</span>
+                                    </div>-->
+                                    <div class="input-group">
+                                        <label class="input-group-btn">
+                                            <span class="btn btn-primary ">
+                                                Load PDF... <input type="file" file-model="myFile" style="display: none;" multiple  ng-click="clear()">
+                                            </span>
+                                        </label>
+                                        <input type="text" ng-show="myFile" class="form-control col-md-2"  ng-value="myFile.name" id="fileSelected" readonly>
                                     </div>
+
+                            </div>
+                            <div class="col-xs-12 mb" ng-show="myFile">
+                                <div class="col-xs-6">
+                                    <span class="help-block" >Process the PDF for : </span>
+                                    <button type="button" class="btn btn-default " ng-click="uploadFile('authors')">
+                                        <span ng-show="processingAuthors == 'Processing...'"><i class="glyphicon glyphicon-refresh spinning"></i></span>
+                                        {{ processingAuthors }}
+                                    </button>
+                                    <button type="button" class="btn btn-default " ng-click="uploadFile('citations')">
+                                        <span ng-show="processingCitations == 'Processing...'"><i class="glyphicon glyphicon-refresh spinning"></i></span>
+                                        {{ processingCitations }}
+                                    </button>
+                                    <button type="button" class="btn btn-default " ng-click="uploadFile('entities')">
+                                        <span ng-show="processingEntities == 'Processing...'"><i class="glyphicon glyphicon-refresh spinning"></i></span>
+                                        {{ processingEntities }}
+                                    </button>
+                                </div>
+                                <!--<div class="col"  ng-if="jsonResponse"> <h3><strong class="pull-left alert-success">Processed</strong></h3></div>-->
+
+                                <div  ng-if="jsonResponse" class="col-xs-6 alert alert-success fade in">
+                                    <strong>Processed</strong>
+                                </div>
+                                <div  ng-if="requestError" class="col-xs-6 alert alert-danger fade in">
+                                    <strong>Server error when processing PDF!!!</strong>
+                                </div>
+                                <div  ng-if="errorMessage" class="col-xs-6 alert alert-warning fade in">
+                                    <strong>{{errorMessage}}</strong>
                                 </div>
                             </div>
-                            <div class="col-xs-12" ng-if="jsonResponse">
-                                <div class="pull-right">Processed</div>
-                                <!--<div class="pull-right">-->
+                            <!-- <div class="col-xs-12" ng-if="jsonResponse">
+
+                                 <div class="pull-right">-->
                                 <!--Total runtime: <strong>{{ jsonResponse.totalRuntime }}</strong> ms |-->
                                 <!--Grobid runtime:<strong> {{ jsonResponse.grobidRuntime }}</strong> ms |-->
                                 <!--Entity runtime:<strong> {{ jsonResponse.efRuntime }}</strong> ms |-->
                                 <!--Author resolution runtime:<strong> {{ jsonResponse.ecRuntime }}</strong> ms-->
-                                <!--</div>-->
-                            </div>
+                                <!--</div>
+                            </div>-->
                             <div class="col-xs-12" id="pdf-viewer" ></div>
                             <div class="col-xs-12" id="requestResult" ng-if="jsonResponse">
                                 <hr/>
@@ -126,4 +175,9 @@
     </footer>
 </div>
 </body>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
 </html>
