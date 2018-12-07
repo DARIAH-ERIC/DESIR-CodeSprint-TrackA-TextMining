@@ -74,12 +74,15 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         switch (type){
             case 'authors':
                 $scope.processingAuthors = 'Authors';
+                $scope.processed = "Authors processed !!!"
                 break;
             case 'citations':
                 $scope.processingCitations = 'Citations';
+                $scope.processed = "Citations processed !!!"
                 break;
             case 'entities':
                 $scope.processingEntities = 'Named entities';
+                $scope.processed = "Named entities processed !!!"
                 break;
         }
     }
