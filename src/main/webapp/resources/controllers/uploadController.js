@@ -4,6 +4,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     $scope.processingAuthors = 'Authors';
     $scope.processingCitations = 'Citations';
     $scope.processingEntities = 'Named entities';
+
+    var entity_fishing_host = "http://nerd.huma-num.fr/nerd/service";
     var pdfViewer = $('#pdf-viewer');
     //var canvas = $('#the-canvas');
     var scale_x ;
@@ -42,7 +44,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                 $scope.processingCitations = 'Processing...';
             break;
             case 'entities':
-                urlPath = 'http://nerd.huma-num.fr/nerd/service/disambiguate'; // Nerd API
+                //urlPath = entity_fishing_host+ '/disambiguate'; // Nerd API
+                urlPath ='/processNamedEntities'; // call to build entity fishing query
                 $scope.processingEntities = 'Processing...';
             break;
         }
@@ -177,8 +180,6 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     var entityMap = new Object();
 // for complete concept information, resulting of additional calls to the knowledge base service
     var conceptMap = new Object();
-
-    var entity_fishing_host = "http://nerd.huma-num.fr/nerd/service";
     function setupAnnotations(response, type) {
 
 
