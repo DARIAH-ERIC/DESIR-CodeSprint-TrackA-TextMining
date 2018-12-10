@@ -23,7 +23,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     };
 
     $scope.uploadFile = function (type) {
-        var urlPath =""
+        var urlPath = window.location.href;
+        console.log(urlPath)
         $scope.jsonResponse = "";
         $scope.quantity = 4;
 
@@ -33,22 +34,23 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
         switch (type){
             case 'authors':
-                urlPath = '/processAuthor';
+                urlPath = urlPath + 'processAuthor';
                 $scope.processingAuthors = 'Processing...'
             break;
             case 'citations':
-                urlPath = '/processCitation';
+                urlPath = urlPath + 'processCitation';
                 $scope.processingCitations = 'Processing...';
             break;
             case 'entities':
-                urlPath = '/processNamedEntities';
+                urlPath = 'http://nerd.huma-num.fr/nerd/service/disambiguate'; // Nerd API
                 $scope.processingEntities = 'Processing...';
             break;
         }
 
+
         var request = {
             method: 'POST',
-            url: window.location.href + urlPath,
+            url: urlPath,
             data: formData,
             headers: {
                 'Content-Type': undefined
