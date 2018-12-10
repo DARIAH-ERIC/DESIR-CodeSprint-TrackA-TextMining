@@ -28,6 +28,17 @@ angular.module('org.dariah.desir.ui')
                                 thePdf = pdf;
 
                                 for(page = 1; page <= pdf.numPages; page++) {
+
+                                    var table = document.createElement("table");
+                                    table.setAttribute('style', 'table-layout: fixed; width: 100%;')
+                                    var tr = document.createElement("tr");
+                                    var td1 = document.createElement("td");
+                                    var td2 = document.createElement("td");
+
+                                    tr.appendChild(td1);
+                                    tr.appendChild(td2);
+                                    table.appendChild(tr);
+
                                     var canvas = document.createElement("canvas");
                                     canvas.setAttribute("id", 'pdf-page-canvas-' + page);
                                     var div = document.createElement("div");
@@ -38,8 +49,17 @@ angular.module('org.dariah.desir.ui')
                                     // This will keep positions of child elements as per our needs, and add a light border
                                     div.setAttribute("style", "position: relative; ");
                                     div.appendChild(canvas);
+                                    // Append div within div#container
+                                    td1.setAttribute('style', 'width:70%;');
+                                    td1.appendChild(div);
 
-                                    viewer.appendChild(div);
+                                    var annot = document.createElement("div");
+                                    annot.setAttribute('style', 'vertical-align:top;');
+                                    annot.setAttribute('id', 'detailed_annot-' + (page));
+                                    td2.setAttribute('style', 'vertical-align:top;width:30%;');
+                                    td2.appendChild(annot);
+
+                                    viewer.appendChild(table);
                                     renderPage(page,canvas )
                                 }
                             }, function (reason) {

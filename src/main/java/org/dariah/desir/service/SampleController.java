@@ -1,12 +1,8 @@
 package org.dariah.desir.service;
 
-//import com.scienceminer.nerd.client.NerdClient;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
-import org.dariah.desir.data.DisambiguatedAuthor;
-import org.dariah.desir.data.OverlayResponse;
-import org.dariah.desir.data.Page;
-import org.dariah.desir.data.ResolvedCitation;
+import org.dariah.desir.data.*;
 import org.dariah.desir.client.CookingClient;
 import org.dariah.desir.client.GrobidClient;
 import org.dariah.desir.client.GrobidParsers;
@@ -46,7 +42,6 @@ public class SampleController {
     public OverlayResponse processPdf(@RequestParam(value = "file") MultipartFile pdf) {
 
         OverlayResponse response = null;
-        String resultEntityFishing = null;
         try {
             InputStream input = pdf.getInputStream();
 
@@ -82,7 +77,6 @@ public class SampleController {
     public OverlayResponse processCitation(@RequestParam(value = "file") MultipartFile pdf) {
 
         OverlayResponse response = null;
-        String resultEntityFishing = null;
         try {
             InputStream input = pdf.getInputStream();
 
@@ -97,7 +91,7 @@ public class SampleController {
             System.out.println("Grobid");
             String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
 //            System.out.println(resultGrobid);
-            
+
             final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
             response = new OverlayResponse<ResolvedCitation>(resolvedCitations);
 
@@ -112,34 +106,25 @@ public class SampleController {
     }
 
     @RequestMapping(value = "/processNamedEntities", method = RequestMethod.POST, produces = "application/json")
-    public OverlayResponse processNamedEntities(@RequestParam(value = "file") MultipartFile pdf) {
+    public String processNamedEntities(@RequestParam(value = "file") MultipartFile pdf) {
 
-        OverlayResponse response = null;
+        //OverlayResponse response = null;
         String resultEntityFishing = null;
         try {
+            InputStream input = pdf.getInputStream();
 
-            //TBD
+            final File tempFile = File.createTempFile("prefix", "suffix");
+            tempFile.deleteOnExit();
+
+            FileUtils.copyToFile(input, tempFile);
+            System.out.println("Entity fishing");
+            resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
+            //final List<NamedEntity> resolvedEntities = grobidParsers.processNamedEntities(resultEntityFishing);
+            //response = new OverlayResponse<NamedEntity>(resolvedEntities);
         } catch (Exception e) {
             e.printStackTrace();
         }
 
-        return response;
-    }
-
-    @RequestMapping(value = "/entity_fishing", method = RequestMethod.POST, produces = "application/json")
-    public String getEntityFishingResult(@RequestParam(value = "file") MultipartFile pdf) {
-
-        String result = null;
-        try {
-            result = this.grobidClient.processFulltextDocument(pdf.getInputStream());
-
-            result = this.grobidParsers.processAbstract(new ByteArrayInputStream(result.getBytes(StandardCharsets.UTF_8)));
-            result = this.entityFishingService.rawAbstractProcessing(result);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return "{\"result\":" + result + "}";
+        return resultEntityFishing;
     }
 }

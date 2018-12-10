@@ -20,6 +20,9 @@
     <script src="resources/js/pdfjs-1.9.426-dist/build/pdf.js"></script>
     <script src="resources/js/pdfjs-1.9.426-dist/build/pdf.worker.js"></script>
 
+    <!-- PDF.js -->
+    <script src="resources/js/wiki2html.js"></script>
+
     <!-- Copy From  anHALytics-frontend for visualization-->
     <link type="text/css" href="resources/js/pdf.js/web/text_layer_builder.css" rel="stylesheet"/>
     <link type="text/css" href="resources/js/pdf.js/web/annotation_layer_builder.css" rel="stylesheet"/>
@@ -28,6 +31,8 @@
     <script type="text/javascript" src="resources/js/pdf.js/web/annotation_layer_builder.js"></script>
     <script type="text/javascript" src="resources/js/pdf.js/build/pdf.js"></script>
     <script type="text/javascript" src="resources/js/pdf.js/build/pdf.js"></script>
+
+    <link type="text/css" href="resources/style.css" rel="stylesheet"/>
 
 
 
@@ -129,33 +134,8 @@
                                 <!--Author resolution runtime:<strong> {{ jsonResponse.ecRuntime }}</strong> ms-->
                                 <!--</div>
                             </div>-->
-                            <div class="col-xs-12" id="pdf-viewer" ></div>
-                            <div class="col-xs-12" id="requestResult" ng-if="jsonResponse">
-                                <hr/>
-                                <div class="row">
-                                    <!--<div class="col-xs-12" ng-controller="linkController">-->
-                                    <!--<div class="jumbotron" ng-repeat="entity in jsonResponse.entities">-->
-                                    <!--&lt;!&ndash;<div class="row" ng-repeat="entity in jsonResponse.entities track by $index" ng-if="$index%4==0">&ndash;&gt;-->
-                                    <!--&lt;!&ndash;track by entity.id&ndash;&gt;-->
-                                    <!--<entity class="col-xs-height"></entity>-->
-                                    <!--</div>-->
-                                    <!--</div>-->
-                                </div>
-                            </div>
-                            <div id="errorResponse" ng-if="errorMessage">
-                                <hr/>
-                                <div ng-if="errorMessage.status">
-                                    <strong>Status</strong>: {{errorMessage.status}}<br/>
-                                    <strong>Message</strong>: {{errorMessage.data.message}}<br/>
-                                    <strong>Error</strong>: {{errorMessage.data.error}}<br/>
-                                </div>
-                                <div>
-                                    <strong>Raw response</strong>
-                                    <p>
-                                        {{errorMessage}}
-                                    </p>
-                                </div>
-                            </div>
+                            <div class="col-xs-16" id="pdf-viewer" ></div>
+
                         </div>
                     </ng-form>
                 </div>
