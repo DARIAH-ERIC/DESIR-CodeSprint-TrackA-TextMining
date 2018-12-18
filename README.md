@@ -52,6 +52,14 @@ The participants for this track will involved themselves in several steps:
    * Visualisation of the data extracted from the first step in the Pdf  
    * Data enrichment of affiliation, abstract and title data using other services
    
+# Demonstrator 
+For testing purposes, a demonstrator is available at the following address: [Demonstrator Track A](https://destracka.herokuapp.com/).
+It's possible as well to run the demonstrator locally on the default port `8080` by running ApplicationTrackA main class.
+Since the demonstrator uses GROBID which has a particular focus on technical and scientific publications, with this reason, in order to use this demonstrator, Pdf files in scientific format are a must.
+The user can then simply click the buttons available to process the Pdf files by accessing some other external services according to the needs (e.g. author, citation or named-entity processing).
+
+![TrackADemonstrator](doc/images/TrackADemonstratorResult.png)
+
 
 ## Contact
 For more information, do not hesitate to contact us: 
