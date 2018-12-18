@@ -182,19 +182,19 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     var conceptMap = new Object();
     function setupAnnotations(response, type) {
 
-
-
         var json = response ;
         var page_height;
         var page_width;
         var result;
         if(type != "entities") {
+            $scope.errorMessage = null;
             page_height = response.pageDimention.height;
             page_width = response.pageDimention.width;
             result = response.results;
         }
 
         if (type === 'authors') {
+            $scope.errorMessage = null;
             var process = true;
             var count = 0;
             // hey bro, this must be asynchronous to avoid blocking the brother ;)
@@ -228,6 +228,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         }
 
         if ( type === 'citations' ) {
+            $scope.errorMessage = null;
             // hey bro, this must be asynchronous to avoid blocking the brother ;)
             result.forEach(function (citation, n) {
                 var coordinates = citation.coordinates;
@@ -262,6 +263,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                 annotateCitations(page, coords, citation.wikidataID, citation.doi , page_width,  page_height)
             });
         } if(type == "entities"){
+            $scope.errorMessage = null;
             if(count === response.length ) {
                 if(process === false){
                     $scope.errorMessage = 'Error encountered while receiving the server\'s answer: response is empty.!!!';

@@ -50,14 +50,10 @@ public class SampleController {
 
             FileUtils.copyToFile(input, tempFile);
 
-//            System.out.println("entity-fishing");
-//            resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
-
-            System.out.println("Grobid");
+            System.out.println("Grobid extraction process...");
             String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
-//            System.out.println(resultGrobid);
 
-            System.out.println("Author disambiguation");
+            System.out.println("Author disambiguation...");
             String resultDisambiguation = authorDisambiguationClient.disambiguate(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8), "filename.xml");
 
             final List<DisambiguatedAuthor> disambiguatedAuthors = grobidParsers.processAuthorNames(IOUtils.toInputStream(resultDisambiguation, StandardCharsets.UTF_8));
@@ -85,12 +81,8 @@ public class SampleController {
 
             FileUtils.copyToFile(input, tempFile);
 
-//            System.out.println("entity-fishing");
-//            resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
-
-            System.out.println("Grobid");
+            System.out.println("Grobid extraction process...");
             String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
-//            System.out.println(resultGrobid);
 
             final List<ResolvedCitation> resolvedCitations = grobidParsers.processCitations(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
             response = new OverlayResponse<ResolvedCitation>(resolvedCitations);
@@ -108,7 +100,6 @@ public class SampleController {
     @RequestMapping(value = "/processNamedEntities", method = RequestMethod.POST, produces = "application/json")
     public String processNamedEntities(@RequestParam(value = "file") MultipartFile pdf) {
 
-        //OverlayResponse response = null;
         String resultEntityFishing = null;
         try {
             InputStream input = pdf.getInputStream();
@@ -119,8 +110,6 @@ public class SampleController {
             FileUtils.copyToFile(input, tempFile);
             System.out.println("Entity fishing");
             resultEntityFishing = this.entityFishingService.pdfProcessing(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
-            //final List<NamedEntity> resolvedEntities = grobidParsers.processNamedEntities(resultEntityFishing);
-            //response = new OverlayResponse<NamedEntity>(resolvedEntities);
         } catch (Exception e) {
             e.printStackTrace();
         }
