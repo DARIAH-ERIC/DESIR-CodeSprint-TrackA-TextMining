@@ -369,8 +369,9 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             string += "><h6 style='color:#FFF;padding-left:10px;'>" + content.toUpperCase() +
                 "</h6>";
             string += "<div class='container-fluid' style='background-color:#F9F9F9;color:#70695C;padding:5px;margin-top:5px;'>" +
-                "<font size='3' face='Courier New'>"+
+                "<font size='3' face='Courier New';>"+
                 "<table style='width:100%;background-color:#fff;border:0px'><tr style='background-color:#fff;border:0px;'><td style='background-color:#fff;border:0px;'>";
+
             string += "<font size='2'>";
 
             if (type)
@@ -409,10 +410,9 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             string += "</td><td style='align:right;bgcolor:#fff'>";
             string += '<span id="img-' + wikipedia + '"><script type="text/javascript">lookupWikiMediaImage("' + wikipedia + '", "' + lang + '")</script></span>';
 
-            string += "</td></tr></table>";
+            string += "</td></tr></font></table>";
 
             string += "<font size='2'>";
-
             // definition
             if ((definitions != null) && (definitions.length > 0)) {
                 var localHtml = wiki2html(definitions[0]['definition'], lang);
@@ -436,6 +436,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                 }
                 string += '</p>';
             }
+
+            string += "</font>";
 
             string += "</div></div>";
         }
