@@ -91,90 +91,6 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         }
     }
 
-    /*
-
-     This is for entities fishing
-
-     function setupAnnotations(response) {
-
-         var json = response ;
-
-         var pageInfo = response.pages;
-         console.log(pageInfo)
-         var page_height = 0.0;
-         var page_width = 0.0;
-         var entities = response.entities;
-         console.log(entities[0])
-         if (entities) {
-             // hey bro, this must be asynchronous to avoid blocking the brother ;)
-             entities.forEach(function (author, n) {
-                 var entityDomain = author.domains;
-                 measurementMap[n] = author;
-                 //var theId = author.type;
-                 var theUrl = null;
-                 //var theUrl = annotation.url;
-                 var pos = author.pos;
-                 if ((pos != null) && (pos.length > 0)) {
-                     pos.forEach(function (thePos, m) {
-                         // get page information for the annotation
-                         var pageNumber = thePos.p;
-                         if (pageInfo[pageNumber - 1]) {
-                             page_height = pageInfo[pageNumber - 1].page_height;
-                             page_width = pageInfo[pageNumber - 1].page_width;
-                         }
-                         annotateEntity(thePos, theUrl, page_height, page_width, n, m);
-                     });
-                 }
-             });
-         }
-     }
-
-
-      function annotateEntity(thePos, theUrl, page_height, page_width, measurementIndex, positionIndex) {
-         var page = thePos.p;
-         var pageDiv = $('#the-canvas');
-         pageDiv.innerHTML = ""
-         var canvas = $('#the-canvas');
-         //var canvas = pageDiv.find('canvas').eq(0);;
-
-         var canvasHeight = canvas.height();
-         var canvasWidth = canvas.width();
-         var scale_x = canvasHeight / page_height;
-         var scale_y = canvasWidth / page_width;
-         console.log(scale_x)
-         console.log(scale_y)
-
-
-         var x = thePos.x * scale_x //- 1;
-         var y = thePos.y * scale_y //- 1;
-
-         console.log(x)
-         console.log(y)
-
-         var width = thePos.w * scale_x //+ 1;
-         var height = thePos.h * scale_y //+ 1;
-
-         //make clickable the area
-         theId = "value";
-      //  if (theId)
-         //    theId = theId.replace(" ", "_");
-         var element = document.createElement("a");
-         var attributes = "margin-top : 205px; margin-left: 155px; display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
-             y + "px; left:" + x + "px;";
-         element.setAttribute("style", attributes + "border:2px solid; border-color: red");
-         //element.setAttribute("style", attributes + "border:2px solid;");
-         element.setAttribute("class", theId);
-         element.setAttribute("id", 'annot-' + measurementIndex + '-' + positionIndex);
-         element.setAttribute("page", page);
-
-         $('#pdf').append(element);
-         $('#pdf').on("hover", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
-         $('#pdf').on("click", '#annot-' + measurementIndex + '-' + positionIndex, viewQuantityPDF);
-
-         pageDiv.height(canvasHeight);
-         pageDiv.width(canvasWidth);
-     }*/
-
 // for associating several entities to an annotation position (to support nbest mode visualisation)
     var entityMap = new Object();
 // for complete concept information, resulting of additional calls to the knowledge base service
@@ -324,7 +240,6 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         }
     }
 
-
     function fetchConcept(identifier, lang, successFunction) {
         $.ajax({
             type: 'GET',
@@ -365,7 +280,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
         pageDiv.append(element);
 
-        $('#annot-' + entityIndex + '-' + positionIndex).bind('hover', viewEntityPDF);
+        //$('#annot-' + entityIndex + '-' + positionIndex).bind('hover', viewEntityPDF);
         $('#annot-' + entityIndex + '-' + positionIndex).bind('click', viewEntityPDF);
     }
 
@@ -385,6 +300,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             return null;
     }
 
+    // for visualizing named-entity results
     function viewEntityPDF() {
         var pageIndex = $(this).attr('page');
         var localID = $(this).attr('id');
@@ -448,12 +364,14 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
             string += "<div class='info-sense-box " + colorLabel + "'";
             if (topPos != -1)
-                string += " style='vertical-align:top; position:relative; top:" + topPos + "'";
+                string += " style='vertical-align:top; margin-left:50px;border:0px; padding:1px;position:relative; top:" + topPos + "'";
 
-            string += "><h3 style='color:#FFF;padding-left:10px;'>" + content.toUpperCase() +
-                "</h3>";
-            string += "<div class='container-fluid' style='background-color:#F9F9F9;color:#70695C;border:padding:5px;margin-top:5px;'>" +
+            string += "><h6 style='color:#FFF;padding-left:10px;'>" + content.toUpperCase() +
+                "</h6>";
+            string += "<div class='container-fluid' style='background-color:#F9F9F9;color:#70695C;padding:5px;margin-top:5px;'>" +
+                "<font size='3' face='Courier New'>"+
                 "<table style='width:100%;background-color:#fff;border:0px'><tr style='background-color:#fff;border:0px;'><td style='background-color:#fff;border:0px;'>";
+            string += "<font size='2'>";
 
             if (type)
                 string += "<p>Type: <b>" + type + "</b></p>";
@@ -486,42 +404,20 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             }
 
             string += "<p>conf: <i>" + conf + "</i></p>";
+
+            // for the wikimedia image
             string += "</td><td style='align:right;bgcolor:#fff'>";
             string += '<span id="img-' + wikipedia + '"><script type="text/javascript">lookupWikiMediaImage("' + wikipedia + '", "' + lang + '")</script></span>';
 
             string += "</td></tr></table>";
+
+            string += "<font size='2'>";
 
             // definition
             if ((definitions != null) && (definitions.length > 0)) {
                 var localHtml = wiki2html(definitions[0]['definition'], lang);
                 string += "<p><div class='wiky_preview_area2'>" + localHtml + "</div></p>";
             }
-            //
-            // // statements
-            // var statements = getStatements(wikipedia);
-            // if ((statements != null) && (statements.length > 0)) {
-            //     var localHtml = "";
-            //     for (var i in statements) {
-            //         var statement = statements[i];
-            //         localHtml += displayStatement(statement);
-            //     }
-            //     //string += "<p><div><table class='statements' style='width:100%;border-color:#fff;border:1px'>" + localHtml + "</table></div></p>";
-            //
-            //     // make the statements information collapsible
-            //     string += "<p><div class='panel-group' id='accordionParent'>";
-            //     string += "<div class='panel panel-default'>";
-            //     string += "<div class='panel-heading' style='background-color:#F9F9F9;color:#70695C;border:padding:0px;font-size:small;'>";
-            //     // accordion-toggle collapsed: put the chevron icon down when starting the page; accordion-toggle : put the chevron icon up; show elements for every page
-            //     string += "<a class='accordion-toggle collapsed' data-toggle='collapse' data-parent='#accordionParent' href='#collapseElement"+ pageIndex+ "' style='outline:0;'>";
-            //     string += "<h5 class='panel-title' style='font-weight:normal;'>Wikidata statements</h5>";
-            //     string += "</a>";
-            //     string += "</div>";
-            //     // panel-collapse collapse: hide the content of statemes when starting the page; panel-collapse collapse in: show it
-            //     string += "<div id='collapseElement"+ pageIndex +"' class='panel-collapse collapse'>";
-            //     string += "<div class='panel-body'>";
-            //     string += "<table class='statements' style='width:100%;background-color:#fff;border:1px'>" + localHtml + "</table>";
-            //     string += "</div></div></div></div></p>";
-            // }
 
             // reference of Wikipedia/Wikidata
             if ((wikipedia != null) || (wikidataId != null)) {
@@ -547,9 +443,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $('#detailed_annot-' + pageIndex).show();
     }
 
-
     const wikimediaURL_prefix = 'https://';
-    const wikimediaURL_suffix = '.wikipedia.org/w/api.php?action=query&prop=pageimages&format=json&pithumbsize=200&pageids=';
+    const wikimediaURL_suffix = '.wikipedia.org/w/api.php?action=query&prop=pageimages&format=json&pithumbsize=100&pageids=';
 
     var supportedLanguages = ["en", "es", "it", "fr", "de"];
     wikimediaUrls = {};
@@ -565,7 +460,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             var imgUrl = imgCache[lang + wikipedia];
             var document = (window.content) ? window.content.document : window.document;
             var spanNode = document.getElementById("img-" + wikipedia);
-            spanNode.innerHTML = '<img src="' + imgUrl + '"/>';
+            spanNode.innerHTML = '<img src="' + imgUrl + '" />';
         } else {
             // otherwise call the wikipedia API
             var theUrl = wikimediaUrls[lang] + wikipedia;
@@ -584,7 +479,7 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                         if (response.query.pages[wikipedia]) {
                             if (response.query.pages[wikipedia].thumbnail) {
                                 var imgUrl = response.query.pages[wikipedia].thumbnail.source;
-                                spanNode.innerHTML = '<img src="' + imgUrl + '"/>';
+                                spanNode.innerHTML = '<img src="' + imgUrl + '" />';
                                 // add to local cache for next time
                                 imgCache[lang + wikipedia] = imgUrl;
                             }
@@ -661,8 +556,6 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     }
 
 
-
-
     function viewQuantityPDF() {
         var pageIndex = $(this).attr('pdf');
         var localID = $(this).attr('id');
@@ -697,7 +590,5 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $('#detailed_quantity-' + pageIndex).html(string);
         $('#detailed_quantity-' + pageIndex).show();
     }
-
-
 
 });
