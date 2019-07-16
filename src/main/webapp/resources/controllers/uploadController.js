@@ -282,6 +282,9 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
 
         //$('#annot-' + entityIndex + '-' + positionIndex).bind('hover', viewEntityPDF);
         $('#annot-' + entityIndex + '-' + positionIndex).bind('click', viewEntityPDF);
+
+        $('#annot-' + entityIndex + '-' + positionIndex).bind('hover', viewEntityPDF);
+                $('#annot-' + entityIndex + '-' + positionIndex).bind('click', viewEntityPDF);
     }
 
     function getDefinitions(identifier) {
