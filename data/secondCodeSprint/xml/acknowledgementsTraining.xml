@@ -1,0 +1,1695 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<acknowledgments>
+    <p>
+        <fundingAgency>the Deutsche Forschungsgemeinschaft</fundingAgency>
+        <projectName>the SFB 649 "Economic Risk"</projectName>
+    </p>
+    <p>
+        <individual>Dr. G.D. Niswender</individual>
+        <affiliation>Animal Reproduction and Biotechnology Laboratory, Colorado State University, Fort Collins, CO, U.S.A.</affiliation>
+    </p>
+    <p>
+        <affiliation>UTSW Microarray Core</affiliation>
+        <individual>Janet Young</individual>
+        <individual>Thomas Südhof</individual>
+        <individual>Katsuhiko Tabuchi</individual>
+        <fundingAgency>the Hereditary Disease Foundation</fundingAgency>
+        <fundingAgency>NINDS R01 NS38082</fundingAgency>
+        <fundingAgency>R01 NS056224 (IB)</fundingAgency>
+        <fundingAgency>NINDS R01 NS043466 (SZ)</fundingAgency>
+        <fundingAgency>the NIH GM59419 (GH)</fundingAgency>
+        <fundingAgency>the Ara Parseghian Medical Research Foundation (JR)</fundingAgency>
+    </p>
+    <p>
+        <individual>Ewa Latkowska</individual>
+        <fundingAgency>the Polish Ministry of Science and Higher Education</fundingAgency>
+        <grantNumber>2670/B/P01/2008/34</grantNumber>
+        <grantNumber>0757/B/P01/2009/37</grantNumber>
+    </p>
+    <p>
+        <individual>Dr. Chunhua Weng</individual>
+        <affiliation>Columbia University</affiliation>
+        <individual>Dr. Cui Tao</individual>
+        <affiliation>Mayo Clinic</affiliation>
+        <individual>Mr. Craig Stancl</individual>
+        <affiliation>Mayo Clinic</affiliation>
+        <projectName>the SHARP Area 4: Secondary Use of EHR Data (90TR000201)</projectName>
+    </p>
+    <p>
+        <fundingAgency>the National Center for  Toxicological</fundingAgency>
+        <individual>Henrietta Lacks</individual>
+        <individual>Henrietta Lacks</individual>
+    </p>
+    <p>
+        <researchInstitution>the National Disease Research Interchange</researchInstitution>
+        <individual>Christine Monfort</individual>
+    </p>
+    <p>
+        <individual>Dr Marize Miagostovich</individual>
+        <individual>Ms Eliana Saraiva</individual>
+        <individual>Ms Mariana Lopes</individual>
+        <individual>Ms Maryrose Lavatori</individual>
+        <individual>Dr Joseli Lannes-Vieira</individual>
+        <affiliation>Department of Immunology</affiliation>
+        <individual>Fiocruz</individual>
+        <individual>Dr Ricardo Galler</individual>
+    </p>
+    <p>
+        <individual>Drs. Rajiv Sarkar</individual>
+        <individual>Deepthi Kattula</individual>
+        <researchInstitution>the Division of Gastrointestinal Sciences, Christian Medical College, Vellore</researchInstitution>
+    </p>
+    <p>
+        <fundingAgency>the European Community</fundingAgency>
+        <grantNumber>the Sixth RTD Framework Programme Contract No. 016181 (FOOD)</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>Carl Tryggers Stiftelse for Vetenskaplig Forskning and Stiftelsen Samariten</fundingAgency>
+    </p>
+    <p>
+        <individual>B. Zeppenfeld</individual>
+        <individual>A. Daniel</individual>
+        <individual>J. W. de Gier</individual>
+        <affiliation>Department of Biochemistry and Biophysics, the Arrhenius Laboratory for Natural Sciences, Stockholm University, Stockholm, Sweden</affiliation>
+        <fundingAgency>the Deutsche Forschungsgemeinschaft, Sonderforschungsbereich TR-1</fundingAgency>
+        <fundingAgency>Fonds der Chemischen Industrie</fundingAgency>
+    </p>
+    <p>
+        <affiliation>the Icelandic Heart Preventive Clinic (Hjartavernd)</affiliation>
+        <fundingAgency>The Medical Faculty and the Research Fund of the University of Iceland</fundingAgency>
+        <fundingAgency>the Icelandic Research Council</fundingAgency>
+    </p>
+    <p>
+        <individual>Michel Cantou</individual>
+        <individual>Enric Saiz</individual>
+        <individual>Rosa Maria Borrat Padrosa</individual>
+        <individual>Maximillien Cuny</individual>
+        <individual>Benoît Moirod</individual>
+        <individual>Maëva Robert</individual>
+        <individual>Emmanuelle Omnes</individual>
+        <projectName>the GELAMED</projectName>
+        <fundingAgency>the MEEDDM (Ministère de l"Ecologie, de l"Energie, du Développement Durable et de la Mer, France)</fundingAgency>
+        <fundingAgency>the Total foundation, France</fundingAgency>
+        <grantNumber>Programme 189 -« Recherche » 18902 C</grantNumber>
+    </p>
+    <p>
+        <affiliation>l'Institut national de la Recherche Halieutique Morocco</affiliation>
+    </p>
+    <p>
+        <fundingAgency>the Australian Research Council (DE120101549)</fundingAgency>
+        <researchInstitution>the services of Metabolomics Australia</researchInstitution>
+    </p>
+    <p>
+        <grantNumber>IGA NT 11062-5/2010</grantNumber>
+        <grantNumber>MSM6198959205</grantNumber>
+    </p>
+    <p>
+        <individual>R. Duran</individual>
+        <individual>J.L. Martinez</individual>
+        <individual>B. McKown</individual>
+        <individual>R. Romero</individual>
+        <individual>D. Powell</individual>
+        <affiliation>Portage, Inc.</affiliation>
+        <individual>E. Pulliam</individual>
+        <affiliation>TPMC, Inc.</affiliation>
+    </p>
+    <p>
+        <individual>D. Cicuzza</individual>
+        <individual>W. Hoffmann</individual>
+        <individual>T.R. Wentworth</individual>
+        <individual>D. Gamble</individual>
+        <affiliation>UNCW</affiliation>
+        <otherInstitution>The North Carolina State Parks</otherInstitution>
+        <otherInstitution>The North Carolina Wildlife Resources Commission</otherInstitution>
+        <individual>Glenn</individual>
+        <individual>Carol Lewis</individual>
+        <individual>Dr. Clemuel Johnson</individual>
+        <individual>Stephen Clark</individual>
+        <individual>Dr. Clemuel Johnson</individual>
+        <individual>Gaddy</individual>
+        <individual>Mr. Gaddy</individual>
+        <individual>Garrett German</individual>
+        <individual>Rob Richardson</individual>
+        <individual>Justin Nawrocki</individual>
+        <affiliation>NCSU</affiliation>
+    </p>
+    <p>
+        <fundingAgency>the Competitive State</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>NASA</fundingAgency>
+        <grantNumber>SSERVI NNA14AB01A</grantNumber>
+        <fundingAgency>Jackson School of Geosciences Postdoctoral Fellowship</fundingAgency>
+        <fundingAgency>Peking University</fundingAgency>
+        <fundingAgency>Center for Computation and Visualization at Brown University</fundingAgency>
+        <fundingAgency>the Australian Government</fundingAgency>
+        <fundingAgency>he Government of Western Australia</fundingAgency>
+        <individual>Andrew Dombard</individual>
+        <individual>Walter Kiefer</individual>
+    </p>
+    <p>
+        <individual>Profs. Ye.B. Stadnik</individual>
+        <individual>I.S. Guliyev</individual>
+        <individual>F.G. Dadashev</individual>
+        <individual>I.Ya. Skyarenko</individual>
+    </p>
+    <p>
+        <fundingAgency>NSERC (Natural Sciences and Engineering Research Council of Canada</fundingAgency>
+    </p>
+    <p>
+        <individual>Maria Eugenia Gómez</individual>
+        <projectName>The DENIS project</projectName>
+        <fundingAgency>the SCIENCE and the Human Capital and Mobility plans of the European Commission</fundingAgency>
+        <grantNumber>CT920791</grantNumber>
+        <grantNumber>CT940627</grantNumber>
+        <fundingAgency>the French Institut National des Sciences de l'Univers, the Ministère de l'Éducation Nationale </fundingAgency>
+        <fundingAgency>the Centre National de la Recherche Scientifique, in Germany</fundingAgency>
+        <fundingAgency>the State of Baden-Würtemberg, in Spain</fundingAgency>
+        <fundingAgency>the DGICYT, in Italy</fundingAgency>
+        <fundingAgency>the Consiglio Nazionale delle Ricerche</fundingAgency>
+        <fundingAgency>the Austrian Fonds zur Förderung der wissenschaftlichen Forschung und</fundingAgency>
+    </p>
+    <p>
+        <individual>Michael Heinz</individual>
+        <individual>Paul Cliften</individual>
+        <affiliation>the Genome Technology Access Center (GTAC) in the Department of Genetics</affiliation>
+    </p>
+    <p>
+        <individual>Julia Stockinger</individual>
+        <individual>David Schwarzenbacher</individual>
+        <individual>Johannes A Mayr</individual>
+    </p>
+    <p>
+        <individual>Leonice Lourenço Poyares</individual>
+        <affiliation>Institute of Biomedical Sciences, University of São Paulo, Brazil</affiliation>
+        <fundingAgency>FAPESP</fundingAgency>
+        <fundingAgency>FAPESP</fundingAgency>
+        <grantNumber>#08/56446-9</grantNumber>
+        <fundingAgency>CNPq</fundingAgency>
+    </p>
+    <p>
+        <individual>D Sabatini</individual>
+        <affiliation>Whitehead Institute</affiliation>
+        <individual>V Amarnath</individual>
+        <affiliation>Vanderbilt University</affiliation>
+        <individual>V Vijayan</individual>
+        <individual>K Amarnath</individual>
+        <individual>T Peterson</individual>
+        <researchInstitution>O'Shea lab</researchInstitution>
+        <individual>A Darnell</individual>
+    </p>
+    <p>
+        <fundingAgency>the French National Research Agency</fundingAgency>
+        <grantNumber>ANR-11-BS09-0008</grantNumber>
+    </p>
+    <p>
+        <individual>Michael Dunford</individual>
+        <individual>Richard Skeates</individual>
+    </p>
+    <p>
+        <otherInstitution>Phillip Island Nature Parks</otherInstitution>
+        <individual>Y.Afán</individual>
+        <individual>B. Raymond</individual>
+        <individual>C. Bulman</individual>
+        <individual>B. Fulton</individual>
+        <individual>S. Connie</individual>
+        <individual>D. Oro</individual>
+        <individual>M. Genovart</individual>
+        <individual>A. Sanz</individual>
+        <individual>M. Louzao</individual>
+        <individual>Sara Maxwell</individual>
+    </p>
+    <p>
+        <individual>C. Clayton</individual>
+        <individual>T. Hobman</individual>
+        <individual>Y. Nagamine</individual>
+        <individual>C. Ender</individual>
+        <individual>R. Pillai</individual>
+        <individual>C. Artus</individual>
+        <individual>E. Bertrand</individual>
+        <fundingAgency>HFSP</fundingAgency>
+        <fundingAgency>the Novartis Research Foundation</fundingAgency>
+        <researchInstitution>The Friedrich Miescher Institute</researchInstitution>
+    </p>
+    <p>
+        <otherInstitution>the ParkLands Foundation</otherInstitution>
+        <individual>Victoria A. Borowicz</individual>
+        <individual>Scott K. Sakaluk</individual>
+    </p>
+    <p>
+        <individual>Ms Mieko Imai</individual>
+        <individual>Ms Tomoko Yamabe</individual>
+        <individual>Dr Haruhiko Fukuda</individual>
+        <projectName>Grants-in-Aid for Cancer Research and for the Second-Term Comprehensive 10-Year Strategy for Cancer Control</projectName>
+        <fundingAgency>the Ministry of Health, Labour, and Welfare (Tokyo)</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>GE Healthcare</fundingAgency>
+        <fundingAgency>NIH</fundingAgency>
+        <grantNumber>1R01 AR062581-01A1</grantNumber>
+        <grantNumber>1R21 AR063894-01A1</grantNumber>
+        <fundingAgency>the VA Clinical Science Research and Development Service</fundingAgency>
+        <grantNumber>1IK2CX000749</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>Telethon</fundingAgency>
+        <grantNumber>GGP13213</grantNumber>
+        <fundingAgency>U.S. National Institute of Health</fundingAgency>
+        <grantNumber>AR059646</grantNumber>
+        <grantNumber>AR053349</grantNumber>
+        <fundingAgency>Ministero dell' Istruzione, dell' Università e della Ricerca, Fondo Innovazione in Ricerca</fundingAgency>
+        <fundingAgency>Telethon</fundingAgency>
+        <grantNumber>GGP13213</grantNumber>
+        <fundingAgency>U.S. National Institute of Health</fundingAgency>
+        <grantNumber>AR059646</grantNumber>
+        <grantNumber>AR053349</grantNumber>
+        <fundingAgency>MIUR-FIR</fundingAgency>
+        <otherInstitution>The EuroBioBank and Telethon Network of Genetic Biobanks</otherInstitution>
+        <individual>Dr. Rosanna Asselta</individual>
+        <affiliation>University of Milan</affiliation>
+    </p>
+    <p>
+        <fundingAgency>Republic of China (Taiwan)</fundingAgency>
+        <fundingAgency>UK aid</fundingAgency>
+        <fundingAgency>United States Agency for International Development (USAID)</fundingAgency>
+        <fundingAgency>Australian Centre for International Agricultural Research (ACIAR)</fundingAgency>
+        <fundingAgency>Germany</fundingAgency>
+        <fundingAgency>Thailand</fundingAgency>
+        <fundingAgency>Philippines</fundingAgency>
+        <fundingAgency>Korea</fundingAgency>
+        <fundingAgency>Japan</fundingAgency>
+        <otherInstitution>Global Crop Diversity Trust</otherInstitution>
+    </p>
+    <p>
+        <individual>Dr. Michael W. Hess</individual>
+        <affiliation>Division of Histology and Embryology, Medical University of Innsbruck, Austria</affiliation>
+    </p>
+    <p>
+        <fundingAgency>the National Science Foundation</fundingAgency>
+        <grantNumber>MCB 1412611</grantNumber>
+        <fundingAgency>Ohio State University Center for RNA Biology Fellowship</fundingAgency>
+        <fundingAgency>NIH Training Grants</fundingAgency>
+        <grantNumber>T32 GM008512</grantNumber>
+        <grantNumber>GM086252</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the Polish Ministry of Higher Education</fundingAgency>
+        <grantNumber>15.11.170.576</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>Italian MIUR</fundingAgency>
+        <grantNumber>FIRB RBAP10Z7FS_002</grantNumber>
+        <fundingAgency>University of Ferrara (Italy)</fundingAgency>
+        <individual>Mr. Cosmo Rossi</individual>
+    </p>
+    <p>
+        <fundingAgency>the Ministry of Higher Education Malaysia</fundingAgency>
+        <fundingAgency>the Japan Society for the Promotion of Science (JSPS) Asian CORE Program</fundingAgency>
+        <projectName>Establishment of research and education network on coastal marine science in Southeast Asia</projectName>
+        <individual>Dr. Norio Nagao</individual>
+        <individual>Mr. Hideyuki Takatsuji</individual>
+        <individual>Mr. Zainuddin Ibrahim</individual>
+        <individual>Mr. Husdy Salleh</individual>
+        <individual>Mr. Soed Mokhtar</individual>
+        <individual>Dr. Htay Aung</individual>
+        <individual>Dr. Azman Abdul Rahim</individual>
+        <individual>Mr. Zuhaimi Samad</individual>
+        <individual>Miss Fatin Zahidah Zainal</individual>
+        <individual>Dr. Shuhei Nishida</individual>
+    </p>
+    <p>
+        <fundingAgency>The Netherlands Organization for Health Research and Development</fundingAgency>
+        <grantNumber>300020012</grantNumber>
+    </p>
+    <p>
+        <affiliation>the University of Adelaide</affiliation>
+        <researchInstitution>the Australian Centre for Plant Functional Genomics</researchInstitution>
+        <grantNumber>DP120100900</grantNumber>
+        <grantNumber>LP120100201</grantNumber>
+        <fundingAgency>the Australian Research Council</fundingAgency>
+    </p>
+    <p>
+        <projectName>Modelling of selected indicators and processes in drinking water supplies</projectName>
+        <projectName>Influence of hydraulic conditions in the water supply network on selected indicators of drinking water quality</projectName>
+        <fundingAgency>the Brno University of Technology</fundingAgency>
+    </p>
+    <p>
+        <researchInstitution>the Diamond Light Source</researchInstitution>
+        <fundingAgency>the BBSRC</fundingAgency>
+        <grantNumber>BB/ L02022X/1</grantNumber>
+        <fundingAgency>the University of Glasgow</fundingAgency>
+        <fundingAgency>Sir Henry Wellcome Fellowship</fundingAgency>
+        <grantNumber>106077/Z/14/Z</grantNumber>
+        <fundingAgency>the Wellcome Trust</fundingAgency>
+        <grantNumber>093592/Z/10/Z</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the NHMRC Biomedical Fellowship</fundingAgency>
+        <fundingAgency>the ARC Future Fellowship</fundingAgency>
+        <fundingAgency>NHMRC Project Grants</fundingAgency>
+    </p>
+    <p>
+        <individual>Eva Polk</individual>
+        <fundingAgency>Celgene Corporation</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the County of Västra Götaland, Sweden</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the National Institute of Mental Health</fundingAgency>
+        <fundingAgency>NIMH</fundingAgency>
+        <grantNumber>1 R01 MH0820-54</grantNumber>
+    </p>
+    <p>
+        <individual>John F. Kern</individual>
+        <affiliation>Winnetka</affiliation>
+        <individual>Bob Buchanan</individual>
+        <individual>Dee Benson</individual>
+        <individual>Carole Mayo</individual>
+        <individual>Govindjee</individual>
+    </p>
+    <p>
+        <fundingAgency>the EC funded project Swan-iCare</fundingAgency>
+        <grantNumber>FP7-ICT</grantNumber>
+        <projectName>TEAChER: TEach AdvanCEd Reconfigurable architectures and tools</projectName>
+        <fundingAgency>DAAD</fundingAgency>
+    </p>
+    <p>
+        <individual>Professor Peter P. Eggleton</individual>
+        <fundingAgency>the National Natural Science Foundation of China</fundingAgency>
+        <grantNumber>11463002</grantNumber>
+        <grantNumber>11373020</grantNumber>
+        <fundingAgency>the Open Foundation of key Laboratory for the Structure and evolution of Celestial Objects, Chinese Academy of Science</fundingAgency>
+        <grantNumber>OP201405</grantNumber>
+        <grantNumber>OP201404(B615015)</grantNumber>
+        <fundingAgency>the Science Foundation of Jimei University</fundingAgency>
+        <grantNumber>C613030</grantNumber>
+        <fundingAgency>Science and Technology Foundation of Guizhou Province</fundingAgency>
+        <grantNumber>LKK[2013]  No. 20</grantNumber>
+    </p>
+    <p>
+        <projectName>the international AGAGE research program</projectName>
+        <fundingAgency>the NASA Upper Atmospheric Research Program</fundingAgency>
+        <grantNumber>NNX07AE89G</grantNumber>
+        <grantNumber>NNX07AF09G</grantNumber>
+        <grantNumber>NNX07AE87G</grantNumber>
+        <fundingAgency>Defra</fundingAgency>
+        <fundingAgency>NOAA</fundingAgency>
+        <fundingAgency>CSIRO</fundingAgency>
+        <fundingAgency>the Australian Government Bureau of Meteorology in Australia</fundingAgency>
+        <individual>J. P. Severinghaus</individual>
+        <affiliation>SIO</affiliation>
+        <individual>J. E. Shields </individual>
+        <affiliation>SIO</affiliation>
+        <individual>V. V. Petrenko</individual>
+        <individual>J. P. Severinghaus</individual>
+        <affiliation>SIO</affiliation>
+        <individual>E. J. Dlugokencky</individual>
+        <individual>J. W. Elkins</individual>
+        <individual>B. D.Hall</individual>
+        <individual>S. A. Montzka</individual>
+        <affiliation>NOAA</affiliation>
+        <affiliation>GMD</affiliation>
+        <individual>C. D. Keeling</individual>
+        <individual>R. F. Keeling</individual>
+        <affiliation>SIO</affiliation>
+        <individual>N. Schmidbauer</individual>
+        <individual>O. Hermansen</individual>
+        <individual>C. R. Lunder</individual>
+        <affiliation>NILU</affiliation>
+        <individual>R. C. Rhew</individual>
+        <affiliation>UCB</affiliation>
+        <individual>R. A. Rasmussen</individual>
+        <researchInstitution>the Oregon Graduate Institute (OGI)</researchInstitution>
+        <researchInstitution>NOAA</researchInstitution>
+        <researchInstitution>GMD</researchInstitution>
+        <researchInstitution>NILU</researchInstitution>
+        <researchInstitution>CSIRO</researchInstitution>
+        <otherInstitution>AGAGE</otherInstitution>
+        <individual>G. Spain</individual>
+        <individual>R. Dickau</individual>
+        <individual>J. Mühle</individual>
+        <affiliation>Mace Head</affiliation>
+        <affiliation>Trinidad Head</affiliation>
+        <individual>P. Sealy</individual>
+        <affiliation>Ragged Point</affiliation>
+        <individual>M. C. Cunningham</individual>
+        <affiliation>Cape Matatula</affiliation>
+        <individual>C. G. Rickard</individual>
+        <individual>J. Z. Ward </individual>
+        <affiliation>Cape Grim</affiliation>
+        <individual>M. Leist</individual>
+        <affiliation>CSIRO</affiliation>
+        <individual>R. Knapp</individual>
+        <individual>J. Marks</individual>
+        <individual>C. Bayliss</individual>
+        <affiliation>International Aluminium Institute, IAI</affiliation>
+        <individual>M. Ison</individual>
+        <affiliation>Australian Aluminium Council, AAC</affiliation>
+    </p>
+    <p>
+        <fundingAgency>the National Cancer Institute</fundingAgency>
+        <grantNumber>P01 CA018029</grantNumber>
+        <grantNumber>CA033084</grantNumber>
+        <fundingAgency>the Leukemia and Lymphoma Society SCOR program</fundingAgency>
+        <grantNumber>LLS-7008-09</grantNumber>
+        <fundingAgency>Walker Fellowship Award</fundingAgency>
+        <fundingAgency>Leukemia Lymphoma Society Special Fellow Award</fundingAgency>
+        <grantNumber>4442-09</grantNumber>
+    </p>
+    <p>
+        <individual>Marian Boguñá</individual>
+        <individual>Alessandro Flammini</individual>
+        <individual>Romualdo Pastor-Satorras</individual>
+    </p>
+    <p>
+        <individual>Drs P. Husby</individual>
+        <individual>I. Romslo</individual>
+        <individual>Mrs A. Iden</individual>
+        <fundingAgency>the Norwegian Research Council for Science and the Humanities</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>Cooperative Research Program for Agriculture Science  &amp;  Technology Development</fundingAgency>
+        <grantNumber>PJ010156022014</grantNumber>
+        <fundingAgency>Rural Development Administration, Republic of Korea</fundingAgency>
+        <affiliation>the National Center for InterUniversity Research Facilities (Seoul National University)</affiliation>
+    </p>
+    <p>
+        <otherInstitution>the SL Division</otherInstitution>
+        <otherInstitution>CEA</otherInstitution>
+        <otherInstitution>DAPNIA/SPP</otherInstitution>
+        <otherInstitution>CE-Saclay</otherInstitution>
+    </p>
+    <p>
+        <fundingAgency>the National Natural Science Foundation of China</fundingAgency>
+        <grantNumber>81472390/ H1619</grantNumber>
+        <grantNumber>81472762/H1609</grantNumber>
+        <fundingAgency>The National Funds for developing local colleges and universities</fundingAgency>
+        <grantNumber>B16056001</grantNumber>
+        <fundingAgency>General Project</fundingAgency>
+        <grantNumber>1201410188</grantNumber>
+        <otherInstitution>Guangdong Provincial Key Laboratory of Malignant Tumor Epigenetics and Gene Regulation</otherInstitution>
+        <otherInstitution>Sun Yat-Sen Memorial Hospital</otherInstitution>
+        <otherInstitution>Sun Yat-Sen University</otherInstitution>
+    </p>
+    <p>
+        <projectName>the CONACyT projects</projectName>
+        <fundingAgency>the DGAPA-UNAM</fundingAgency>
+    </p>
+    <p>
+        <individual>Steven Kalb,</individual>
+        <individual>Yankai Li</individual>
+        <individual>Tim Cummings</individual>
+        <individual>Bryan Hammons</individual>
+        <individual>Deborah Farr</individual>
+        <individual>Justin Carter</individual>
+    </p>
+    <p>
+        <researchInstitution>Werfen/Instrumentation Laboratory</researchInstitution>
+    </p>
+    <p>
+        <individual>Petra Laspe</individual>
+        <individual>Antje Apel</individual>
+        <fundingAgency>the German Cancer Aid (Deutsche Krebshilfe)</fundingAgency>
+        <fundingAgency>the Deutsche Forschungsgemeinschaft DFG </fundingAgency>
+        <grantNumber>GRK1034</grantNumber>
+    </p>
+    <p>
+        <individual>Dr. Rick G. Pleijhuis</individual>
+    </p>
+    <p>
+        <fundingAgency>the Spanish government project</fundingAgency>
+        <grantNumber>TEC2010-20224-C02-01</grantNumber>
+        <fundingAgency>the European project ECOAL-MGT -SUDOE Program</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr. Robert C. Drewes</individual>
+        <individual>Eng</individual>
+    </p>
+    <p>
+        <fundingAgency>the Key International Cooperation Program of the National Natural Science Foundation of China</fundingAgency>
+        <grantNumber>31110103916</grantNumber>
+        <fundingAgency>the Agricultural Science and Technology Innovation Program</fundingAgency>
+        <grantNumber>ASTIP-IAS08</grantNumber>
+        <fundingAgency>the China Agriculture Research System</fundingAgency>
+        <grantNumber>CARS-42</grantNumber>
+    </p>
+    <p>
+        <otherInstitution>George Banks</otherInstitution>
+        <otherInstitution>Menu Development</otherInstitution>
+        <otherInstitution>British Airways, London</otherInstitution>
+        <individual>Scott Chapman</individual>
+        <otherInstitution>Medical Litigation</otherInstitution>
+        <otherInstitution>Tress, Cox and Maddox, Sydney, Australia</otherInstitution>
+    </p>
+    <p>
+        <grantNumber>USDA-ARS Specific Cooperative Agreements 58-5320-9-382 and 58-5320-4-018</grantNumber>
+        <fundingAgency>the University of Hawaii's College of Tropical Agriculture and Human Resources (UH-CTAHR)</fundingAgency>
+        <fundingAgency>Farm Bill funding</fundingAgency>
+        <grantNumber>3.0251</grantNumber>
+        <projectName>Cooperative Agreement between USDA and UH-CTAHR</projectName>
+        <projectName>USDA-NIFA Hatch projects</projectName>
+        <individual>Anthony R. Clarke</individual>
+        <individual>Richard A.I. Drew</individual>
+        <individual>David L. Hancock</individual>
+        <individual>Desley Tree</individual>
+        <individual>Justin Bartlett</individual>
+    </p>
+    <p>
+        <fundingAgency>the CLL Global Research Foundation</fundingAgency>
+        <projectName>the EUCAAD 200755 project</projectName>
+        <fundingAgency>the EU Seventh Framework Programme</fundingAgency>
+        <fundingAgency>the Cancer and Allergy Foundation</fundingAgency>
+        <fundingAgency>the Swedish Research Council/SIDA/ SAREC</fundingAgency>
+        <fundingAgency>the Iranian Ministry of Health and Medical Education</fundingAgency>
+        <fundingAgency>he Swedish Cancer Society</fundingAgency>
+        <fundingAgency>the Cancer Society in Stockholm</fundingAgency>
+        <fundingAgency>the King Gustaf Vth Jubilee Fund</fundingAgency>
+        <fundingAgency>Vinnova</fundingAgency>
+        <fundingAgency>the Karolinska Institutet Foundations</fundingAgency>
+        <fundingAgency>the Stockholm County Council</fundingAgency>
+    </p>
+    <p>
+        <otherInstitution>the Career Training Interexchange program</otherInstitution>
+        <fundingAgency>Cantabria Campus International Augusto Gonzalez Linares Program</fundingAgency>
+        <individual>Giovanni Coco</individual>
+        <individual>John C. Warner</individual>
+        <individual>Falk Feddersen</individual>
+        <fundingAgency>ONR</fundingAgency>
+        <grantNumber>N00014-13-1-0368</grantNumber>
+        <individual>Sergio Fagherazzi</individual>
+        <individual>Xavier Bertin</individual>
+    </p>
+    <p>
+        <projectName>the Red Wolf Recovery Program</projectName>
+        <individual>Rebecca Bartel</individual>
+        <individual>Art Beyer</individual>
+        <individual>Chris Lucash</individual>
+        <individual>Ford Mauney</individual>
+        <individual>Michael Morse</individual>
+        <individual>Ryan Nordsven</individual>
+        <individual>Kristin Brzeski</individual>
+        <otherInstitution>the U.S. Fish and Wildlife Service</otherInstitution>
+    </p>
+    <p>
+        <individual>Hilde Van Esch</individual>
+        <individual>Yi Mu</individual>
+        <researchInstitution>UC Davis Department of Public Health Sciences</researchInstitution>
+    </p>
+    <p>
+        <otherInstitution>the Marine Products Export Development Authority (MPEDA, Kochi)</otherInstitution>
+        <individual>Hyderabad</individual>
+        <affiliation>National Fisheries Development Board</affiliation>
+        <individual>Dr.R.Jaya Kumar</individual>
+        <researchInstitution>CMFRI Mandapam</researchInstitution>
+        <individual>Sri. Rama Sankar Naik</individual>
+        <affiliation>IAS, Commissioner of Fisheries, Andhra Pradesh, India</affiliation>
+    </p>
+    <p>
+        <fundingAgency>the National Cancer Institute</fundingAgency>
+        <grantNumber>R37-CA-057030</grantNumber>
+    </p>
+    <p>
+        <grantNumber>OH 03970</grantNumber>
+        <fundingAgency>CDC-NIOSH</fundingAgency>
+        <grantNumber>AR051212</grantNumber>
+        <fundingAgency>NIAMS</fundingAgency>
+        <fundingAgency>the Sandler Foundation</fundingAgency>
+        <fundingAgency>NIH</fundingAgency>
+        <grantNumber>NS-10414</grantNumber>
+        <fundingAgency>Centre National de la Recherche Scientifique (CNRS, in destruction process)</fundingAgency>
+        <fundingAgency>Ministère de l'Enseignement Supérieur et de la Recherche</fundingAgency>
+        <fundingAgency>Fondation NRJ -Institut de France</fundingAgency>
+        <fundingAgency>HFSP</fundingAgency>
+        <grantNumber>LT 00743/1998-B</grantNumber>
+    </p>
+    <p>
+        <researchInstitution>the Medical Research Center of Peking University Third Hospital</researchInstitution>
+        <individual>Wei Zhang</individual>
+        <affiliation>the Institute of Zoology, Chinese Academy of Science</affiliation>
+    </p>
+    <p>
+        <individual>Simone Duis</individual>
+        <individual>Natalia Pavlova</individual>
+        <individual>Laetitia Baud</individual>
+        <individual>Quentin Barraud</individual>
+        <individual>Julie Kreider</individual>
+        <individual>Samuel Gex</individual>
+    </p>
+    <p>
+        <individual>M. T. Mponda</individual>
+        <individual>D. E. C. Mughogho</individual>
+    </p>
+    <p>
+        <individual>Mrs L.K. Frymovich</individual>
+    </p>
+    <p>
+        <individual>Graeme Chamberlin</individual>
+        <individual>Barry Williams</individual>
+        <individual>Chris Davies</individual>
+    </p>
+    <p>
+        <individual>Professor Anders Lund</individual>
+        <educationalInstitution>the EPR lab at IFM-Chemical Physics, Linköping University</educationalInstitution>
+        <individual>Professor Sandra S. Eaton</individual>
+        <affiliation>University of Denver</affiliation>
+        <individual>Professor Mikael Lindgren</individual>
+        <individual>Dr. Malin Persson</individual>
+        <individual>Dr. Christian Altenbach</individual>
+        <affiliation>University of California, Los Angeles</affiliation>
+        <fundingAgency>the Swedish Foundation for Strategic Research (PH)</fundingAgency>
+        <fundingAgency>the Swedish Research Council (BHJ, PH, and UC)</fundingAgency>
+        <fundingAgency>the Knut and Alice Wallenberg Foundation (BHJ, PH, and UC)</fundingAgency>
+        <fundingAgency>the Knut and Alice Wallenberg Foundation</fundingAgency>
+    </p>
+    <p>
+        <individual>Ronald L. Jacobs</individual>
+    </p>
+    <p>
+        <individual>Dr. Aiping Lin</individual>
+        <researchInstitution>the Yale W.M. Keck Biostatistics Resource</researchInstitution>
+        <fundingAgency>the National Institutes of Health</fundingAgency>
+    </p>
+    <p>
+        <individual>Michael Obermayer</individual>
+        <affiliation>GKM Gesellschaft für Therapieforschung mbH, Munich</affiliation>
+    </p>
+    <p>
+        <fundingAgency>the Research Council of University of Tehran</fundingAgency>
+        <fundingAgency>the Iran National Science Foundation (IN SF )</fundingAgency>
+        <individual>Professor Ian Thompson</individual>
+    </p>
+    <p>
+        <fundingAgency>VHS Medical Center Research Grant, Republic of Korea</fundingAgency>
+        <grantNumber>VHSMC 15012</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the National Institutes of Health</fundingAgency>
+        <grantNumber>NHLBI R01 HL64794</grantNumber>
+    </p>
+    <p>
+        <individual>Mrs Nicolette Budden</individual>
+        <individual>Mrs Stella Oates</individual>
+        <individual>Mrs Catherine Wright</individual>
+        <individual>Professor A. Hewish FRS</individual>
+        <individual>Sir Maurice Wilkes FRS</individual>
+        <individual>Professor K. Suchy</individual>
+        <individual>Dr R. P. Mercier</individual>
+        <individual>Dr A. J. M. Garrett</individual>
+        <individual>Dr M. Rycroft</individual>
+        <otherInstitution>the Society's referee</otherInstitution>
+        <educationalInstitution>St John's College, Cambridge</educationalInstitution>
+        <educationalInstitution>Churchill College, Cambridge</educationalInstitution>
+        <individual>Kenneth Budden</individual>
+    </p>
+    <p>
+        <individual>Barbara Mikecs</individual>
+        <individual>Júlia Németh</individual>
+        <individual>Péter Csányi</individual>
+        <individual>Adél Ruszin</individual>
+        <fundingAgency>the Research Fund of the Faculty of Dentistry, Semmelweis University, Hungary</fundingAgency>
+        <grantNumber>4030511599</grantNumber>
+        <grantNumber>5111141075</grantNumber>
+        <fundingAgency>the Hungarian Scientific Research Fund</fundingAgency>
+        <grantNumber>OTKA K112364</grantNumber>
+        <grantNumber>K-112964</grantNumber>
+        <fundingAgency>Geistlich Pharma AG, Switzerland</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>INSS (Japan)</fundingAgency>
+        <fundingAgency>EDF (France)</fundingAgency>
+        <fundingAgency>Areva (France)</fundingAgency>
+        <fundingAgency>EPRI (US)</fundingAgency>
+        <projectName>SCC-related research</projectName>
+    </p>
+    <p>
+        <otherInstitution>AstraZeneca</otherInstitution>
+        <individual>Mark Smith</individual>
+        <affiliation>Imperial College, London</affiliation>
+        <individual>Yuchio Yanagawa</individual>
+        <affiliation>Gunma University, Maebashi</affiliation>
+        <fundingAgency>Medical Research Council</fundingAgency>
+        <grantNumber>MR/K003291/1</grantNumber>
+        <fundingAgency>Diabetes UK</fundingAgency>
+        <grantNumber>12/0004458</grantNumber>
+        <fundingAgency>British Heart Foundation</fundingAgency>
+        <grantNumber>PG/15/44/31574</grantNumber>
+        <fundingAgency>Biotechnology and Biological Sciences Research Council CASE</fundingAgency>
+        <fundingAgency>AstraZeneca</fundingAgency>
+        <grantNumber>BB/I015663/1</grantNumber>
+        <fundingAgency>the Wellcome Trust</fundingAgency>
+        <grantNumber>WT098012</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>Conselho Nacional de Desenvolvimento Científico e Tecnológico (CNPq)</fundingAgency>
+        <fundingAgency>Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP)</fundingAgency>
+        <grantNumber>Proc. 95/3636-3</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>Roche</fundingAgency>
+    </p>
+    <p>
+        <individual>Ada Tam</individual>
+        <individual>Hao Zhang</individual>
+        <individual>Lee Blosser</individual>
+        <affiliation>the Johns Hopkins Core Flow Cytometry</affiliation>
+    </p>
+    <p>
+        <fundingAgency>University of Udine, Italy</fundingAgency>
+        <fundingAgency>Associazione "Mi Fido di Te" ONLUS</fundingAgency>
+        <fundingAgency>Fondazione Cassa di Risparmio di Città di Castello, Italy</fundingAgency>
+    </p>
+    <p>
+        <otherInstitution>the US Department of State (USDS) Humanitarian Information Unit</otherInstitution>
+        <affiliation>FAO-SWALIM</affiliation>
+        <individual>Dr Roberto Colombo</individual>
+        <affiliation>the University of Milan-Bicocca</affiliation>
+    </p>
+    <p>
+        <individual>Rick van Leeuwen</individual>
+        <individual>Wouter Verhesen</individual>
+        <individual>Kevin Custers</individual>
+        <individual>Hans Duimel</individual>
+    </p>
+    <p>
+        <fundingAgency>the Swedish Cancer Society</fundingAgency>
+        <fundingAgency>the Stockholm Cancer Society</fundingAgency>
+        <fundingAgency> the Swedish Research Foundation</fundingAgency>
+        <fundingAgency>the Swedish Childhood Cancer Foundation</fundingAgency>
+        <fundingAgency>the Swedish National Board of Health and Welfare</fundingAgency>
+        <fundingAgency>the Stockholm County Council</fundingAgency>
+        <fundingAgency>the Karolinska Institutet Research Fund and the European Union FP6 (Chemores)</fundingAgency>
+        <fundingAgency>FP7 (Apo-Sys)</fundingAgency>
+        <fundingAgency>the Swedish Institute</fundingAgency>
+        <fundingAgency>Karolinska Institutet</fundingAgency>
+        <fundingAgency>he Wenner-Gren Foundation</fundingAgency>
+    </p>
+    <p>
+        <individual>J. P. Brun</individual>
+    </p>
+    <p>
+        <fundingAgency>Medtronic Inc.</fundingAgency>
+    </p>
+    <p>
+        <individual>J. A. Hoyos</individual>
+        <fundingAgency>CNPq</fundingAgency>
+        <fundingAgency>FAPESP</fundingAgency>
+        <grantNumber>15/04451-2</grantNumber>
+        <grantNumber>307620/2015-8</grantNumber>
+    </p>
+    <p>
+        <individual>H. Dong</individual>
+        <individual>J. Guzman</individual>
+        <individual>I. Tice</individual>
+        <fundingAgency>NSFC</fundingAgency>
+        <grantNumber>10828103</grantNumber>
+        <fundingAgency>NSF</fundingAgency>
+        <grantNumber>DMS-0905255</grantNumber>
+        <fundingAgency>NSF</fundingAgency>
+        <grantNumber>DMS-1405728</grantNumber>
+    </p>
+    <p>
+        <individual>Christian Lafarge</individual>
+        <individual>Anne Diot</individual>
+        <individual>Corine Pouyet</individual>
+        <fundingAgency>the Proteus Bilateral Programme</fundingAgency>
+        <researchInstitution>Slovenian Research Agency</researchInstitution>
+        <otherInstitution>French Research Ministry</otherInstitution>
+    </p>
+    <p>
+        <fundingAgency>BAU-USDA Soybean Project</fundingAgency>
+    </p>
+    <p>
+        <individual>Changyu Fan</individual>
+        <individual>Yun Shen</individual>
+    </p>
+    <p>
+        <fundingAgency>the Qatar National Library</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the National Science Foundation</fundingAgency>
+        <grantNumber>BCS 9207007</grantNumber>
+        <fundingAgency>the Department of Orthopaedics</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the Portuguese Foundation for Science and</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the National High Technology Research and Development Program of China</fundingAgency>
+        <projectName>863 Program</projectName>
+        <grantNumber>2014AA093501</grantNumber>
+        <fundingAgency>National Natural Science Foundation of China</fundingAgency>
+        <grantNumber>30672742</grantNumber>
+        <grantNumber>30873353</grantNumber>
+        <grantNumber>30930113</grantNumber>
+        <individual>Dr. Ling Xu</individual>
+        <individual>Dr. Jin Yu</individual>
+    </p>
+    <p>
+        <fundingAgency>the National Institute of Biomedical Imaging and Bioengineering (NIBIB)</fundingAgency>
+        <grantNumber>R01-EB-002091 </grantNumber>
+        <projectName>NIBIB American Recovery and Reinvestment Act Administrative Supplement</projectName>
+    </p>
+    <p>
+        <individual>Charlie Perkins</individual>
+        <individual>Jim Solomon</individual>
+    </p>
+    <p>
+        <individual>Dr. Solomon S. Senok</individual>
+        <affiliation>Alfaisal University, Saudi Arabia</affiliation>
+    </p>
+    <p>
+        <individual>Dr. Wil Linkugel</individual>
+        <individual>Mr. Andrew Crick</individual>
+    </p>
+    <p>
+        <individual>Dr. Kohki Yoshimoto</individual>
+        <individual>Dr. Shinya Wada</individual>
+    </p>
+    <p>
+        <individual>Ms. Meehye Kim</individual>
+        <fundingAgency>The Korean Academy of Tuberculosis and Respiratory Diseases</fundingAgency>
+    </p>
+    <p>
+        <individual>Prof. A.A. Watson</individual>
+        <individual>J. Beaman</individual>
+        <individual>J. Lloyd-Evans</individual>
+        <individual>P. Ogden</individual>
+        <individual>M. Patel</individual>
+        <affiliation>the Leeds group</affiliation>
+        <affiliation>the Palermo group</affiliation>
+        <individual>Prof. L. Scarsi</individual>
+        <individual>Dr. J. Knapp</individual>
+        <individual>Dr. D. Heck</individual>
+    </p>
+    <p>
+        <individual>S Alonzo</individual>
+        <individual>KB Low</individual>
+        <individual>D Vasseur</individual>
+        <individual>GP Wagner</individual>
+        <individual>J Bull</individual>
+        <individual>S Wielgoss</individual>
+    </p>
+    <p>
+        <fundingAgency>ROC NSC</fundingAgency>
+        <grantNumber>NSC97-2221-E-128-005-MY3</grantNumber>
+        <individual>Prof Horng-Twu Liaw</individual>
+        <individual>Mr Shin-Han Wu</individual>
+        <affiliation>Shih-Hsin University</affiliation>
+        <individual>Mr Chih-Ta Yen</individual>
+        <affiliation>National Taiwan University of Science and Technology</affiliation>
+    </p>
+    <p>
+        <researchInstitution>the National Collaborative Research Infrastructure (NCRIS) of Australia</researchInstitution>
+        <fundingAgency>The Research Institute of Forestry, Chinese Academy of Forestry</fundingAgency>
+        <grantNumber>ZD200902</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the National Institute on Aging</fundingAgency>
+        <grantNumber>R01 AG023090</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the International Center for Advanced Renewable Energy and Sustainability at Washington University in St. Louis, Missouri</fundingAgency>
+        <fundingAgency>the Johns Hopkins Global Center on Childhood Obesity</fundingAgency>
+        <grantNumber>2001656847</grantNumber>
+        <individual>Leslie Duling</individual>
+        <individual>Nora Geary</individual>
+    </p>
+    <p>
+        <otherInstitution>Solvay Engineering Plastics</otherInstitution>
+        <fundingAgency>the French Minister for Research (ANRT)</fundingAgency>
+        <grantNumber>CNRS 079212: UM2 121532</grantNumber>
+        <projectName>the European DURAFIP project</projectName>
+        <fundingAgency>Oseo</fundingAgency>
+        <projectName>FUI project</projectName>
+    </p>
+    <p>
+        <educationalInstitution>the Centre jeunesse de Montréal Institut Universitaire</educationalInstitution>
+    </p>
+    <p>
+        <fundingAgency>PRGS</fundingAgency>
+        <grantNumber>GRS100323</grantNumber>
+        <affiliation>Universiti Malaysia Pahang, Malaysia</affiliation>
+    </p>
+    <p>
+        <individual>James Hicks</individual>
+    </p>
+    <p>
+        <fundingAgency>the Australian Partnership for Advanced Computing (APAC)</fundingAgency>
+        <fundingAgency>the South Australian Partnership for Advanced Computing (SAPAC)</fundingAgency>
+        <fundingAgency>the National Facility for Lattice Gauge Theory</fundingAgency>
+        <researchInstitution>Jefferson Lab</researchInstitution>
+        <fundingAgency>the Australian Research Council</fundingAgency>
+        <fundingAgency>DOE</fundingAgency>
+        <grantNumber>DE-AC05-84ER40150</grantNumber>
+    </p>
+    <p>
+        <individual>Kelli Hellenbrand</individual>
+        <individual>Sara Pladziewicz</individual>
+        <fundingAgency>NIH</fundingAgency>
+        <grantNumber>R01NS066982-01</grantNumber>
+        <grantNumber>R21EB009441-01</grantNumber>
+        <grantNumber>R01EB006882-01</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>NIH</fundingAgency>
+        <grantNumber>GM116381</grantNumber>
+        <grantNumber>HG008140</grantNumber>
+        <fundingAgency>the Howard Hughes Medical Institute</fundingAgency>
+        <individual>Jeffrey Spence</individual>
+        <individual>Yun S Song</individual>
+        <individual>Ziyue Gao</individual>
+        <individual>Arbel Harpak</individual>
+        <individual>Molly Przeworski</individual>
+        <individual>Joshua Schraiber</individual>
+        <individual>Aylwyn Scally</individual>
+    </p>
+    <p>
+        <fundingAgency>Leiden University</fundingAgency>
+        <fundingAgency>NWO BSIK/BRICKS</fundingAgency>
+        <grantNumber>t #642.066.603</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the South China Chinese Medicine Collaborative Innovation Center</fundingAgency>
+        <grantNumber>A1-AFD01514A05</grantNumber>
+        <fundingAgency>Characteristic Key Discipline Construction Fund of Chinese Internal Medicine of Guangzhou University of Chinese Medicine</fundingAgency>
+    </p>
+    <p>
+        <educationalInstitution>TecPes (Laboratorio de Tecnología Pesquera) at Pontificia Universidad Católica de Valparaíso</educationalInstitution>
+        <individual>T Melo</individual>
+        <individual>CF Hurtado</individual>
+        <individual>D Queirolo</individual>
+        <individual>E Gaete</individual>
+        <individual>I Montenegro</individual>
+        <individual>R Escobar</individual>
+        <affiliation>Programa de Conservación de Tiburones, Chile</affiliation>
+        <affiliation>ELASMOLAB</affiliation>
+        <affiliation>Universidad Austral de Chile</affiliation>
+        <individual>J Lamilla</individual>
+        <individual>F Concha</individual>
+        <individual>H Flores</individual>
+        <individual>Y Concha-Perez</individual>
+        <individual>A Isla</individual>
+    </p>
+    <p>
+        <individual>K. Wang</individual>
+        <individual>G. Seabold</individual>
+        <individual>E. Tytell</individual>
+        <individual>M. Yoshizawa</individual>
+        <individual>G. Ashida</individual>
+        <individual>K. Nakao</individual>
+        <individual>R. Renden</individual>
+    </p>
+    <p>
+        <individual>Oliver Rauhut</individual>
+        <affiliation>Bayerische Staatssammlung für Paläontologie und Geologie, München</affiliation>
+        <individual>Miriam Zelditch</individual>
+        <affiliation>University of Michigan</affiliation>
+        <individual>Johannes Knebel</individual>
+        <affiliation>Ludwig Maximilians University, München</affiliation>
+        <individual>Stefan Richter</individual>
+        <affiliation>University of Rostock</affiliation>
+        <individual>Walter Joyce</individual>
+        <individual>Eduardo Ascarrunz</individual>
+        <affiliation>University of Fribourg</affiliation>
+        <individual>Michel Laurin</individual>
+        <affiliation>Sorbonne Universités, Paris</affiliation>
+        <individual>Matthew Lamanna</individual>
+        <affiliation>Carnegie Museum of Natural History, Pittsburgh</affiliation>
+        <individual>Alex Downs</individual>
+        <affiliation>Ruth Hall Museum, Ghost Ranch</affiliation>
+        <individual>David Gillette</individual>
+        <affiliation>Museum of Northern Arizona, Flagstaff</affiliation>
+        <individual>Xu Xing </individual>
+        <affiliation>nstitute of Vertebrate Paleontology and Paleoanthropology, Beijing</affiliation>
+        <individual>Jesús Marugán-Lobón</individual>
+        <affiliation>Universidad Autónoma de Madrid</affiliation>
+    </p>
+    <p>
+        <individual>Y. Polyrakis</individual>
+        <otherInstitution>the Conference on Ordered Spaces and Applications</otherInstitution>
+    </p>
+    <p>
+        <otherInstitution>the Government of Pakistan</otherInstitution>
+        <otherInstitution>the united Nations</otherInstitution>
+        <otherInstitution>the united Nations Population Fund (UNFPA)</otherInstitution>
+        <otherInstitution>UNFPA</otherInstitution>
+    </p>
+    <p>
+        <fundingAgency>MCB RAS</fundingAgency>
+        <fundingAgency>the Russian Foundation for Basic Research</fundingAgency>
+        <grantNumber>14-04-00004</grantNumber>
+        <grantNumber>13-04-01878-a</grantNumber>
+        <otherInstitution>IBCH</otherInstitution>
+    </p>
+    <p>
+        <otherInstitution>ACCLAIM/COPD</otherInstitution>
+        <otherInstitution>Covance Inc.</otherInstitution>
+        <individual>Dr Sharon Gladwin</individual>
+        <fundingAgency>Almirall, S. A., Barcelona, Spain</fundingAgency>
+        <fundingAgency>Forest Laboratories, Inc, NY, USA</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>GSK</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>GSK</fundingAgency>
+        <fundingAgency>AstraZeneca</fundingAgency>
+        <fundingAgency>Novartis</fundingAgency>
+        <fundingAgency>Nycomed</fundingAgency>
+        <fundingAgency>AstraZeneca</fundingAgency>
+        <fundingAgency>Biomarck</fundingAgency>
+        <fundingAgency>Centocor</fundingAgency>
+        <fundingAgency>Mpex</fundingAgency>
+        <fundingAgency>Nabi</fundingAgency>
+        <fundingAgency>Novartis</fundingAgency>
+        <fundingAgency>Otsuka</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>GSK</fundingAgency>
+        <fundingAgency>AstraZeneca</fundingAgency>
+        <fundingAgency>Boehringer Ingelheim</fundingAgency>
+        <fundingAgency>Esteve</fundingAgency>
+        <fundingAgency>Chiesi</fundingAgency>
+        <fundingAgency>Centocor</fundingAgency>
+        <fundingAgency>AstraZeneca</fundingAgency>
+        <fundingAgency>Chiesi</fundingAgency>
+        <fundingAgency>GSK</fundingAgency>
+        <fundingAgency>Boehringer Ingelheim</fundingAgency>
+        <fundingAgency>Nycomed</fundingAgency>
+        <fundingAgency>Novartis</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>Schering Plough and Centocor</fundingAgency>
+        <fundingAgency>Nycomed</fundingAgency>
+        <fundingAgency>AstraZeneca</fundingAgency>
+        <fundingAgency>Boehringer Ingelheim</fundingAgency>
+        <fundingAgency>Chiesi</fundingAgency>
+        <fundingAgency>GSK</fundingAgency>
+        <fundingAgency>Merck Sharp  &amp;  Dohme</fundingAgency>
+        <fundingAgency>Novartis</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>Forest Laboratories</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>Forest Laboratories</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>Forest Laboratories</fundingAgency>
+        <fundingAgency>Almirall</fundingAgency>
+        <fundingAgency>Forest Laboratories</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr. Lyle Sensenbrenner</individual>
+    </p>
+    <p>
+        <fundingAgency>JSPS KAKENHI</fundingAgency>
+        <grantNumber>23500211</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>Deutsche Forschungsgemeinschaft, Sonderforschungsbereich 412, University of Stuttgart</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the Canadian Institutes of Health Research (CIHR)</fundingAgency>
+        <fundingAgency>the Canadian Foundation</fundingAgency>
+        <individual>A. Irwin</individual>
+        <fundingAgency>Canada Graduate Scholarship</fundingAgency>
+        <fundingAgency>Ontario Trillium fellowship</fundingAgency>
+    </p>
+    <p>
+        <individual>Jarle Brinchmann</individual>
+        <individual>David Sobral</individual>
+        <individual>Simone Weinmann</individual>
+        <fundingAgency>ERC</fundingAgency>
+        <grantNumber>227749</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health (NIH) career development award</fundingAgency>
+        <grantNumber>K23 HD052553</grantNumber>
+        <fundingAgency>the Children's Health Research Center at University of Utah and Primary Children's Foundation</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr M.C. Yadavannavar</individual>
+        <affiliation>BLDE University</affiliation>
+        <individual>Dr Veena Algur</individual>
+    </p>
+    <p>
+        <researchInstitution>the Unit of Support for Technical and Scientific Research (UATRS, CNRST)</researchInstitution>
+        <otherInstitution>the IUCr electronic archives</otherInstitution>
+    </p>
+    <p>
+        <educationalInstitution>the department of chemistry, Niger Delta University</educationalInstitution>
+        <otherInstitution>Wilberforce Island</otherInstitution>
+        <otherInstitution>Bayelsa State</otherInstitution>
+    </p>
+    <p>
+        <individual>W. Bode</individual>
+        <affiliation>Martinsried</affiliation>
+        <individual>M. Dumbsky</individual>
+        <individual>H. Hof</individual>
+        <affiliation>Mannheim</affiliation>
+    </p>
+    <p>
+        <otherInstitution>the Wildlife Conservation Society (Russia)</otherInstitution>
+        <individual>Eugenia Bragina</individual>
+        <individual>Irina Maslova</individual>
+        <individual>Yuri Petrunenko</individual>
+        <individual>Alexander Nikanorov</individual>
+    </p>
+    <p>
+        <individual>E. Navarro Raga</individual>
+        <individual>P. Gómez Garcia</individual>
+        <individual>M.T. Mínguez Hernández</individual>
+        <affiliation>SCSIE Electron Microscopy Unit at the University of Valencia</affiliation>
+        <individual>M. Palomo Navarro</individual>
+        <individual>Ramirez P</individual>
+        <individual>Menendez R</individual>
+    </p>
+    <p>
+        <fundingAgency>the College of Agriculture and Life Sciences</fundingAgency>
+        <fundingAgency>the Graduate School</fundingAgency>
+        <fundingAgency>the National Institutes of Health</fundingAgency>
+        <grantNumber>GM-21205</grantNumber>
+        <individual>Dr. T. Ishikawa</individual>
+        <individual>Dr. R. K. Littlewood</individual>
+        <individual>Ms. P. Riese</individual>
+    </p>
+    <p>
+        <fundingAgency>the University of California Office of the President's Office of Research and Graduate Studies</fundingAgency>
+        <otherInstitution>UC BRAID</otherInstitution>
+        <individual>Verónica Hoyo, Ph.D.</individual>
+        <affiliation>UCSD</affiliation>
+        <individual>John Heldens</individual>
+        <individual>Dan Redline</individual>
+        <affiliation>UCSF</affiliation>
+        <affiliation>UCD</affiliation>
+    </p>
+    <p>
+        <otherInstitution>the Centers for Disease Control (CDC)</otherInstitution>
+        <individual>Ron Fouchier</individual>
+        <affiliation>Erasmus University, Rotterdam, The Netherlands</affiliation>
+        <individual>Krisna Wells</individual>
+        <individual>Martha McGregor</individual>
+        <individual>Rebecca Moritz</individual>
+        <individual>Anthony Hanson</individual>
+        <individual>Hideaki Ishida</individual>
+        <individual>Hideaki Tsuchiya</individual>
+        <individual>Ryuzo Torii</individual>
+        <individual>Naoki Yamamoto</individual>
+        <individual>Kosuke Soda</individual>
+        <individual>Naoki Nomura</individual>
+        <individual>Hiromi Yoshida</individual>
+        <individual>Takashi Umemura</individual>
+        <individual>Yuji Sunden</individual>
+        <individual>Tomohisa Tanaka</individual>
+    </p>
+    <p>
+        <fundingAgency>the Korea Institute of Oriental Medicine</fundingAgency>
+        <grantNumber>K12130</grantNumber>
+        <fundingAgency>Michigan AgBioResearch</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr Ulrich Desselberger</individual>
+        <individual>Dr James Richards</individual>
+        <individual>Prof. Andrew Lever</individual>
+        <affiliation>University of Cambridge</affiliation>
+        <individual>Dr John Patton</individual>
+        <individual>Dr Ulrich Desselberger</individual>
+        <affiliation>University of Cambridge</affiliation>
+        <individual>Prof. Takeshi Kobayashi</individual>
+        <affiliation>University of Osaka</affiliation>
+        <individual>Dr John T. Patton</individual>
+        <affiliation>University of Maryland</affiliation>
+        <individual>Prof Peter Stockley</individual>
+        <individual>Dr Roman Tuma</individual>
+        <individual>Mr Jack Bravo</individual>
+        <affiliation>University of Leeds</affiliation>
+    </p>
+    <p>
+        <individual>Robert Austin</individual>
+        <individual>Martin Johanson</individual>
+        <individual>Sam MacAulay</individual>
+        <individual>Volker Mahnke</individual>
+        <individual>Ram Mudambi</individual>
+        <individual>Rajneesh Narula</individual>
+        <individual>Christos Pitelis</individual>
+        <individual>John Steen</individual>
+    </p>
+    <p>
+        <individual>Ms Chiori Fukuyama</individual>
+        <fundingAgency>Grants-in-Aid for Scientific Research on Priority Areas</fundingAgency>
+        <grantNumber>17016065</grantNumber>
+        <grantNumber>16062101</grantNumber>
+        <fundingAgency>the Ministry of Education, Culture, Science, Sports, and Technology, Japan</fundingAgency>
+        <fundingAgency>the Ministry of Health, Labor, and Welfare, Japan</fundingAgency>
+        <fundingAgency>Grants-in-Aid for Cancer Research</fundingAgency>
+        <grantNumber>17S-1</grantNumber>
+        <grantNumber>17-16</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>P.P.A.R.C. (U.K.)</fundingAgency>
+        <fundingAgency>Oriel College (Oxford)</fundingAgency>
+        <educationalInstitution>the Department of Physics, University of Newcastle (Newcastle-upon-Tyne)</educationalInstitution>
+        <otherInstitution>CERN Theory Division</otherInstitution>
+    </p>
+    <p>
+        <individual>Lucilla Scuto</individual>
+        <affiliation>Central Core Lab, EuroImaging, Rome</affiliation>
+        <individual>Dr Tarcisio Vago</individual>
+        <individual>Ospedale Luigi Sacco</individual>
+        <individual>Margareth Becker</individual>
+    </p>
+    <p>
+        <fundingAgency>National Institutes of Health Grants</fundingAgency>
+        <grantNumber>R03 CA108364 (L.E.W.)</grantNumber>
+        <grantNumber>P50 CA116199 (H.G.)</grantNumber>
+        <grantNumber>R01 ES011740</grantNumber>
+        <grantNumber>R01 CA131274 (Q.W.)</grantNumber>
+        <grantNumber>P30 CA016672</grantNumber>
+        <fundingAgency>M. D. Anderson Cancer Center</fundingAgency>
+        <individual>Margaret Lung</individual>
+        <individual>Yawei Qiao</individual>
+        <individual>Kejing Xu</individual>
+        <individual>Zhensheng Liu</individual>
+        <individual>Jianzhong He</individual>
+        <individual>Yinyan Li</individual>
+    </p>
+    <p>
+        <fundingAgency>Bulgarian Science Fund</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>Cancer Research UK</fundingAgency>
+        <grantNumber>C357/A12197</grantNumber>
+        <fundingAgency>The Christie NHS Foundation trust</fundingAgency>
+        <fundingAgency>the European Union FP6 Programme 'ATTACK'</fundingAgency>
+        <fundingAgency>Manchester Cancer Research Centre Biobank</fundingAgency>
+    </p>
+    <p>
+        <individual>Susanne Schwanz</individual>
+        <individual>Oliver Gould</individual>
+        <individual>Clemens Kunz</individual>
+        <affiliation>Friedrich-Schiller University Jena</affiliation>
+        <fundingAgency>the Helmholtz-Association</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr. Peter Hasselbacher</individual>
+        <individual>Dr. F. C. McDuffie</individual>
+    </p>
+    <p>
+        <individual>Conor Sally</individual>
+    </p>
+    <p>
+        <fundingAgency>the German Research Foundation (DFG)</fundingAgency>
+        <grantNumber>CH 943/2-1</grantNumber>
+        <individual>Wolfgang Dittus</individual>
+        <individual>Stefan Paetel</individual>
+        <affiliation>Zentrum für Sonnenenergie-und Wasserstoff-Forschung Baden-Württemberg</affiliation>
+    </p>
+    <p>
+        <individual>David Rand</individual>
+        <individual>Hugo Sequeira</individual>
+        <researchInstitution>LIAAD-INESC Porto LA</researchInstitution>
+        <educationalInstitution>Centro de Matemática da Universidade do Minho</educationalInstitution>
+        <otherInstitution>Fundação Calouste Gulbenkian</otherInstitution>
+        <otherInstitution>Fundação para a Ciência e a Tecnologia (FCT)</otherInstitution>
+        <otherInstitution>PRODYN-ESF</otherInstitution>
+        <individual>Jorge Carneiro</individual>
+        <individual>Jorge Zubelli</individual>
+        <fundingAgency>Programs POCTI</fundingAgency>
+        <fundingAgency>POSI by FCT and Ministério da Ciência</fundingAgency>
+        <fundingAgency>Tecnologia e do Ensino Superior</fundingAgency>
+        <fundingAgency>Calouste Gulbenkian Foundation</fundingAgency>
+        <fundingAgency>Centro de Matemática da Universidade do Minho (CMAT)</fundingAgency>
+        <fundingAgency>Centro de Matemática da Universidade do Porto (CMUP)</fundingAgency>
+        <projectName>PRODEP III</projectName>
+        <fundingAgency>FSE</fundingAgency>
+        <fundingAgency>EU</fundingAgency>
+        <fundingAgency>Fundação para a Ciência e a Tecnologia (FCT)</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr. F. Leal</individual>
+        <individual>N.S.D. Skinner</individual>
+    </p>
+    <p>
+        <individual>Nicky Wilkinson</individual>
+        <individual>Adrian Smith</individual>
+        <individual>Dr. Cesar Pichardo-Almarza</individual>
+        <individual>Drs. Pieter Groot</individual>
+        <individual>Charlotte Walden</individual>
+        <individual>Cesar Pichardo-Almarza</individual>
+        <projectName>The DISRUPT project</projectName>
+        <fundingAgency>BBSRC Industry Interchange Program</fundingAgency>
+        <grantNumber>IIP/ 0307/009</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the National Science Foundation</fundingAgency>
+        <grantNumber>OCE-0647667</grantNumber>
+        <grantNumber>OCE-1537890</grantNumber>
+        <grantNumber>AGS-1036062</grantNumber>
+        <grantNumber>AGS-1036006</grantNumber>
+        <grantNumber>AGS-1444294</grantNumber>
+        <fundingAgency>the National Oceanic and Atmospheric Administration</fundingAgency>
+        <grantNumber>NA07OAR4310094</grantNumber>
+        <fundingAgency>the Natural Environment Research Council</fundingAgency>
+        <grantNumber>NE/ J020893/1</grantNumber>
+        <otherInstitution>he R/V Knorr</otherInstitution>
+        <individual>Ronald H. Brown</individual>
+    </p>
+    <p>
+        <individual>Xiaoxiao Bai</individual>
+        <fundingAgency>The Patrick and Catherine Weldon Donaghue Medical Research Foundation</fundingAgency>
+        <fundingAgency>the Betsy and Jonathan Blattmachr family</fundingAgency>
+        <fundingAgency>the China Scholarship Council</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr. Behnam Baghianimoghadam</individual>
+    </p>
+    <p>
+        <individual>Ms. K. Arnold</individual>
+        <individual>Dr. Susan Potter-Perigo</individual>
+        <individual>Dr. Robert W. Mahley</individual>
+        <individual>Drs. Stanley C. Rall</individual>
+        <individual>Eva-Hurt Camejo</individual>
+        <individual>German Camejo</individual>
+        <individual>Karl H. Weisgraber</individual>
+        <individual>S. Ordway</individual>
+        <individual>G. Howard</individual>
+        <individual>J. Carroll</individual>
+        <individual>S. Gonzales</individual>
+        <fundingAgency>Howard Hughes Postdoctoral Fellowship for Physicians</fundingAgency>
+        <fundingAgency>National Heart, Lung, and Blood Institute</fundingAgency>
+        <grantNumber>HL-47660</grantNumber>
+        <grantNumber>HL-18645, DK-02456</grantNumber>
+        <grantNumber>HL-30086</grantNumber>
+    </p>
+    <p>
+        <individual>Rob Aalberse</individual>
+    </p>
+    <p>
+        <affiliation>the Jefferson Lab physics and accelerator divisions</affiliation>
+        <fundingAgency>the US Department of Energy</fundingAgency>
+        <grantNumber>DE-AC02-06CH11357</grantNumber>
+        <fundingAgency>the US National Science Foundation</fundingAgency>
+        <fundingAgency>the Israel Science Foundation</fundingAgency>
+        <fundingAgency>the Korea Science Foundation</fundingAgency>
+        <fundingAgency>the US-Israeli Bi-National Scientific Foundation</fundingAgency>
+        <fundingAgency>the Natural Sciences and Engineering Research Council of Canada</fundingAgency>
+        <fundingAgency>the Killam Trusts Fund</fundingAgency>
+        <fundingAgency>the Walter C. Sumner Foundation and the Deutsche Forschungsgemeinschaft</fundingAgency>
+        <fundingAgency>the Thomas Jefferson National Accelerator Facility</fundingAgency>
+        <grantNumber>DE-AC05-06OR23177</grantNumber>
+        <fundingAgency>the US National Science Foundation</fundingAgency>
+        <grantNumber>PHY 9213864</grantNumber>
+        <grantNumber>PHY 9213869</grantNumber>
+    </p>
+    <p>
+        <individual>Drs. M. L~ant</individual>
+        <individual>M.V.S. Raju</individual>
+        <individual>Dr.s, G. Marbaix</individual>
+        <individual>G. Huez</individual>
+        <individual>A. Buray ~s</individual>
+        <otherInstitution>CIBA-Geigy Corporation</otherInstitution>
+    </p>
+    <p>
+        <fundingAgency>the National Natural Science Foundation of China</fundingAgency>
+        <grantNumber>81630093</grantNumber>
+        <grantNumber>81874293</grantNumber>
+        <individual>Mr Hongbo Zheng</individual>
+        <individual>Ms Ke Xu</individual>
+        <individual>Ms Yanan Qiao</individual>
+        <individual>Dr Jiaozhen Zhang</individual>
+    </p>
+    <p>
+        <individual>Susan V. Castro, PhD</individual>
+    </p>
+    <p>
+        <individual>Dr J. Beard</individual>
+        <individual>Drs M. Jacquet</individual>
+        <individual>N. Affara</individual>
+        <individual>Christian Sahuquillo</individual>
+        <individual>Denise Baron</individual>
+        <fundingAgency>European Molecular Biology Organisation fellowship</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>National Institutes of Health Grants</fundingAgency>
+        <grantNumber>5P50CA127003</grantNumber>
+        <grantNumber>R01CA149222</grantNumber>
+        <grantNumber>R01CA118 553</grantNumber>
+        <fundingAgency>National Cancer Institute Cancer Center Support</fundingAgency>
+        <grantNumber>5P30CA06516</grantNumber>
+        <individual>Dana-Farber</individual>
+        <affiliation>Harvard Cancer Center in Boston, MA</affiliation>
+    </p>
+    <p>
+        <fundingAgency>NSF</fundingAgency>
+        <grantNumber>AGS-1261107</grantNumber>
+        <grantNumber>AFOSR FA9550-13-1-0095</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>the NASA Tropical Rainfall Measuring Mission (TRMM) Program</fundingAgency>
+        <individual>V. N. Bringi</individual>
+        <affiliation>Colorado State University</affiliation>
+        <individual>Bob Meneghini</individual>
+        <affiliation>NASA/GSFC</affiliation>
+    </p>
+    <p>
+        <individual>Connie Murla</individual>
+        <individual>Aimee Stewart</individual>
+        <researchInstitution>the Pennington Biomedical Research Center</researchInstitution>
+    </p>
+    <p>
+        <fundingAgency>National Institute on Alcohol Abuse and Alcoholism (NIAA)</fundingAgency>
+        <fundingAgency>NIH Metabolism Training Grant</fundingAgency>
+        <grantNumber>T32-DK007319 (DAD)</grantNumber>
+        <grantNumber>P20 AA017837 (LEN and CMC)</grantNumber>
+    </p>
+    <p>
+        <individual>Dr. Dilek Aktas</individual>
+        <fundingAgency>the National Institutes of Health/National Human Genome Research Institute</fundingAgency>
+        <grantNumber>1U54HG006542</grantNumber>
+        <fundingAgency>National Institutes of Health/National Human Genome Research Institute</fundingAgency>
+        <grantNumber>1U54HG006542</grantNumber>
+    </p>
+    <p>
+        <fundingAgency>MRC Milstein award</fundingAgency>
+        <grantNumber>G0801721</grantNumber>
+        <fundingAgency>NERC research grants</fundingAgency>
+        <grantNumber>NE/ J01074X/1</grantNumber>
+        <grantNumber>NE/M015033/1</grantNumber>
+        <fundingAgency>Norwich Research Park (NRP) Translational Award</fundingAgency>
+        <fundingAgency>BBSRC NPRONET</fundingAgency>
+        <grantNumber>BB/L013754/1</grantNumber>
+        <fundingAgency>Proof of Concept award</fundingAgency>
+        <fundingAgency>Norwich Research Park BBSRC Doctoral Training Program Studentship</fundingAgency>
+        <grantNumber>BB/M011216/1</grantNumber>
+        <fundingAgency>Institute Strategic Programme Grant</fundingAgency>
+        <grantNumber>BB/J004561/1</grantNumber>
+        <individual>Catherine Tremlett</individual>
+        <individual>Andrew Hart</individual>
+        <individual>Ashleigh Crane</individual>
+        <affiliation>the Norfolk and Norwich University Hospital</affiliation>
+        <individual>Justin O'Grady</individual>
+        <affiliation>the UEA Medical School</affiliation>
+        <individual>Dr Jioji Tabudravu</individual>
+        <affiliation>University of Aberdeen</affiliation>
+        <researchInstitution>the South African Centre for High Performance Computing</researchInstitution>
+    </p>
+    <p>
+        <individual>Drs H.Tanida</individual>
+        <individual>S.Y.Park</individual>
+        <individual>S.Adachi</individual>
+        <individual>T.Hikima </individual>
+        <projectName>Research for the Future</projectName>
+        <fundingAgency>the Japan Society for the Promotion of Science</fundingAgency>
+        <grantNumber>97L00501</grantNumber>
+        <projectName>the National Project on Protein Structural and Functional Analyses</projectName>
+        <fundingAgency>the Ministry of Education, Culture, Sports, Science and Technology</fundingAgency>
+    </p>
+    <p>
+        <individual>Dr. K. Shirley Smith</individual>
+        <otherInstitution>the London Chest Hospital</otherInstitution>
+        <individual>Mr. J. R. Belcher</individual>
+    </p>
+    <p>
+        <educationalInstitution>the Centre for Chemistry and Biotechnology and Deakin University, Australia</educationalInstitution>
+        <individual>Mr R Chaudhary</individual>
+        <individual>Dr R Kanwar</individual>
+        <individual>Prof J R Kanwar</individual>
+        <affiliation>Medical School, Deakin University</affiliation>
+        <individual>Prof TTsuzuki</individual>
+        <affiliation>University of Canberra</affiliation>
+        <otherInstitution>the Electron Microscopy</otherInstitution>
+        <educationalInstitution>the Institute for Frontier Materials (IFM), Deakin University, Australia</educationalInstitution>
+    </p>
+    <p>
+        <individual>Ms. Masayo Tada</individual>
+        <fundingAgency>Gifu City Subsidiary </fundingAgency>
+        <projectName>Industry-AcademicGovernment Cooperation Project Subsidiary</projectName>
+    </p>
+    <p>
+        <fundingAgency>Inha University</fundingAgency>
+        <grantNumber>53670</grantNumber>
+        <individual>Prof. Jin Min Kim</individual>
+    </p>
+    <p>
+        <researchInstitution>CSIR-National Botanical Research Institute (CSIR-NBRI)</researchInstitution>
+        <individual>Lucknow</individual>
+        <educationalInstitution>University Grant Commission, New Delhi, India</educationalInstitution>
+        <fundingAgency>CSIR, New Delhi</fundingAgency>
+        <grantName>the award of Junior/Senior Research Fellowship</grantName>
+        <educationalInstitution>Academy of Scientific and Innovative Research (AcSIR)</educationalInstitution>
+        <grantName>Fast Track Scientist</grantName>
+        <fundingAgency>DST</fundingAgency>
+        <grantName>Award of Emeritus scientist (CSIR) project</grantName>
+        <fundingAgency>the network projects (CSIR-INDEPTH), New Delhi, India</fundingAgency>
+    </p>
+    <p>
+        <individual>P. J. Zinke </individual>
+    </p>
+    <p>
+        <fundingAgency>National Science</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the German-Israeli Foundation</fundingAgency>
+        <fundingAgency>DFG</fundingAgency>
+        <grantNumber>SA1031/6</grantNumber>
+        <fundingAgency>Excellenzcluster QUEST</fundingAgency>
+    </p>
+    <p>
+        <individual>B Anderson</individual>
+        <individual>R Pantelic</individual>
+        <individual>K Goldie</individual>
+        <individual>M Chami </individual>
+        <individual>S A Müller</individual>
+        <individual>M Kuhn</individual>
+        <individual>K Namba</individual>
+        <individual>Martin Jacquot</individual>
+        <educationalInstitution>University of Basel</educationalInstitution>
+    </p>
+    <p>
+        <individual>Dr Steven J. Hamilton</individual>
+        <individual>Professor Charles</individual>
+        <otherInstitution>Southhampton General Hospital</otherInstitution>
+        <individual>Mr Gary</individual>
+    </p>
+    <p>
+        <individual>Ms. J. Sridevi</individual>
+        <researchInstitution>CSIR-Central Leather Research Institute</researchInstitution>
+        <individual>Chennai</individual>
+        <fundingAgency>CSIR</fundingAgency>
+        <fundingAgency>IISER-TVM</fundingAgency>
+        <individual>Abbey M. Philip</individual>
+    </p>
+    <p>
+        <fundingAgency>Istanbul University</fundingAgency>
+        <grantName>Scientific Research Project</grantName>
+        <grantNumber>33202</grantNumber>
+        <individual>Mr David F Chapman</individual>
+    </p>
+    <p>
+        <individual>Deniz</individual>
+        <educationalInstitution>Afyon Kocatepe University, Graduate School of Medical Sciences, Afyonkarahisar, Turkey</educationalInstitution>
+        <individual>Dr. Kürşat KAV</individual>
+        <educationalInstitution>the Microbiology Department of Veterinary Medical School of Selçuk University</educationalInstitution>
+    </p>
+    <p>
+        <fundingAgency>the US Agency for International Development</fundingAgency>
+        <otherInstitution>MEASURE Evaluation</otherInstitution>
+    </p>
+    <p>
+        <fundingAgency>NIMH</fundingAgency>
+        <grantNumber>5R01MH054636</grantNumber>
+        <fundingAgency>National Defense Science and Engineering Graduate Fellowship (NDSEG)</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the National Eye Institute</fundingAgency>
+        <grantNumber>EY03991</grantNumber>
+        <grantNumber>P30-EY012576</grantNumber>
+        <researchInstitution>Research to Prevent Blindness</researchInstitution>
+        <individual>Dr Serena Fabbrini</individual>
+    </p>
+    <p>
+        <educationalInstitution>The University of Colorado, Denver</educationalInstitution>
+        <otherInstitution>Actelion</otherInstitution>
+        <otherInstitution>Gilead</otherInstitution>
+        <otherInstitution>Pfi zer</otherInstitution>
+        <otherInstitution>United Therapeutics</otherInstitution>
+        <fundingAgency>Pfi zer</fundingAgency>
+    </p>
+    <p>
+        <grantName>the RECUPERA-2020</grantName>
+        <fundingAgency>CSIC</fundingAgency>
+        <fundingAgency>Spanish MINECO</fundingAgency>
+        <fundingAgency>EU-FEDER</fundingAgency>
+        <grantNumber>AGL2014-52465-C4-4-R</grantNumber>
+        <fundingAgency>MINECO</fundingAgency>
+        <fundingAgency>EU-FEDER</fundingAgency>
+        <fundingAgency>FPI</fundingAgency>
+        <fundingAgency>Ramon y Cajal Programs</fundingAgency>
+        <fundingAgency>Spanish Ministry of Economy and Competitiveness</fundingAgency>
+        <individual>Mr. Bernardo Crespo</individual>
+    </p>
+    <p>
+        <individual>Patric Jern</individual>
+        <individual>Ewa Lundgren</individual>
+        <individual>Anders Liss</individual>
+        <fundingAgency>the Academic Hospital, Uppsala, Sweden</fundingAgency>
+    </p>
+    <p>
+        <individual>Jacline Novato Ribeiro</individual>
+        <individual>Margareth de Araújo Silva</individual>
+        <individual>Michele Aparecida Ferreira Moreira de Oliveira</individual>
+        <individual>Fátima Peres Lima Dantas</individual>
+        <individual>Felipe Maia Maquieira da Silva</individual>
+        <individual>Dr. Sandro Javier BedoyaPacheco</individual>
+        <fundingAgency>PAPES-FIOCRUZ</fundingAgency>
+        <fundingAgency>National Council for Scientific and Technological Development (CNPq)</fundingAgency>
+        <fundingAgency>Carlos Chagas Filho Foundation for Research Support in the State of Rio de Janeiro (FAPERJ)</fundingAgency>
+    </p>
+    <p>
+        <individual>Professor L. Ernster</individual>
+        <individual>Dr P. Gellerfors</individual>
+        <individual>Miss B. Persson</individual>
+        <fundingAgency>the Swedish Cancer Society</fundingAgency>
+        <grantName>EMBO short-term fellowship</grantName>
+    </p>
+    <p>
+        <individual>Professor G. F. Azzone</individual>
+        <individual>Mr Luciano</individual>
+    </p>
+    <p>
+        <individual>Prof. F. Klinkhamer</individual>
+        <individual>Prof. E. M. C. Abreu</individual>
+        <individual>Prof. U.Tirnakli</individual>
+    </p>
+    <p>
+        <fundingAgency>the Henan Administration of Science and Technology</fundingAgency>
+        <grantNumber>0111030700</grantNumber>
+    </p>
+    <p>
+        <individual>Brian Brush</individual>
+        <grantName>the College of Business Administration Miles Research Grant</grantName>
+        <fundingAgency>Marquette University</fundingAgency>
+    </p>
+    <p>
+        <fundingAgency>the Swiss National Science Foundation</fundingAgency>
+        <grantNumber>137630</grantNumber>
+        <grantNumber>160055</grantNumber>
+        <researchInstitution>the Geneva and Zurich research groups</researchInstitution>
+        <individual>Peter Hochuli</individual>
+        <affiliation>University of Zurich</affiliation>
+        <individual>Jean Guex</individual>
+        <individual>Torsten Vennemann</individual>
+        <affiliation>University of Lausanne</affiliation>
+        <individual>Helmut Weissert</individual>
+        <individual>Stefano Bernasconi</individual>
+        <affiliation>ETH Zurich</affiliation>
+    </p>
+    <p>
+        <individual>Prof. Dr. Ronald H. W. Hoppe</individual>
+        <individual> Prof. Dr. H.-J. Bungartz</individual>
+        <individual>Ryuta Suzuki</individual>
+    </p>
+    <p>
+        <individual>George Lowther</individual>
+        <individual>Michael Greinecker</individual>
+    </p>
+    <p>
+        <individual>Pr André Dufour</individual>
+    </p>
+</acknowledgments>
