@@ -13,12 +13,15 @@ import javax.xml.transform.Transformer;
 import javax.xml.transform.TransformerFactory;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
-import java.io.*;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 
-public class DataExtractorForDelft {
+public class DataExtractorForGrobid {
     public enum acknoledgmentLabel {
         unknown(0, "unknown"),
         educationalInstitution(2, "educationalInstitution"),
@@ -31,13 +34,13 @@ public class DataExtractorForDelft {
         affiliation(9, "affiliation"),
         grantName(10, "grantName");
 
-        private static HashMap<Integer, DataExtractorForDelft.acknoledgmentLabel> enumById = new HashMap<>();
+        private static HashMap<Integer, DataExtractorForGrobid.acknoledgmentLabel> enumById = new HashMap<>();
 
         static {
             Arrays.stream(values()).forEach(e -> enumById.put(e.getId(), e));
         }
 
-        public static DataExtractorForDelft.acknoledgmentLabel getById(int id) {
+        public static DataExtractorForGrobid.acknoledgmentLabel getById(int id) {
             return enumById.getOrDefault(id, unknown);
         }
 
@@ -75,7 +78,7 @@ public class DataExtractorForDelft {
     The solution: the source file needs to be fixed manually first
     */
     public void readJsonFileSource(String file) throws IOException {
-        String pathOutputFile = "data/secondCodeSprint/xml/acknowledgementsAnnotatedFormattedForDelft.xml";
+        String pathOutputFile = "data/secondCodeSprint/xml/acknowledgementsAnnotatedFormattedForGrobid.xml";
 
         StringBuilder sb = new StringBuilder();
         ArrayList<RawText> rawTexts = new ArrayList<>();
@@ -136,7 +139,7 @@ public class DataExtractorForDelft {
                         // get label number
                         int label = Integer.parseInt(String.valueOf(objectLabel.get("label")));
                         // get label text
-                        String textOfLabel = String.valueOf(DataExtractorForDelft.acknoledgmentLabel.getById(label));
+                        String textOfLabel = String.valueOf(DataExtractorForGrobid.acknoledgmentLabel.getById(label));
                         // get offsets
                         int start_offset = Integer.parseInt(String.valueOf(objectLabel.get("start_offset")));
                         int end_offset = Integer.parseInt(String.valueOf(objectLabel.get("end_offset")));
@@ -166,7 +169,7 @@ public class DataExtractorForDelft {
 
                         //System.out.println("offset rest : " + beginPointer + " - " + acknowledgmentPerAnnotation.get(i).getStart_offset());
                         //System.out.println("offset sub text : " + acknowledgmentPerAnnotation.get(i).getStart_offset() + " - " + acknowledgmentPerAnnotation.get(i).getEnd_offset());
-                        combinedText += beginText + "<rs type=\"" + StringEscapeUtils.escapeXml(acknowledgmentPerAnnotation.get(i).getLabel()) + "\">" + StringEscapeUtils.escapeXml(acknowledgmentPerAnnotation.get(i).getText()) + "</rs>";
+                        combinedText += beginText + "<" + StringEscapeUtils.escapeXml(acknowledgmentPerAnnotation.get(i).getLabel()) + ">" + StringEscapeUtils.escapeXml(acknowledgmentPerAnnotation.get(i).getText()) + "</" + StringEscapeUtils.escapeXml(acknowledgmentPerAnnotation.get(i).getLabel()) + ">" ;
 
                         beginPointer = (acknowledgmentPerAnnotation.get(i).getEnd_offset());
                         endPointer = acknowledgmentPerAnnotation.get(i).getEnd_offset();
@@ -203,7 +206,7 @@ public class DataExtractorForDelft {
     public static void main(String[] args) throws IOException {
         String inputFile = "data/secondCodeSprint/json/annotated/acknowledgementAnnotatedLabelInNumber.json";
 
-        DataExtractorForDelft dataExtractorForDelft = new DataExtractorForDelft();
+        DataExtractorForGrobid dataExtractorForDelft = new DataExtractorForGrobid();
         dataExtractorForDelft.readJsonFileSource(inputFile);
 
     }

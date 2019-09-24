@@ -1,5 +1,5 @@
 {
-    "model_name": "desirSecondCodeSprint",
+    "model_name": "acknowledgment",
     "model_type": "BidLSTM_CRF",
     "embeddings_name": "glove-840B",
     "char_vocab_size": 111,
