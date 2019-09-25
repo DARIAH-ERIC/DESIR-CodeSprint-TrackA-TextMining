@@ -1,0 +1,42 @@
+* Save the model
+* Done
+Model for Ack created in 1645389 ms
+sourcePathLabel: /home/hynek/CodeSprint/grobid/grobid-trainer/../grobid-home/../grobid-trainer/resources/dataset/Ack/evaluation
+outputPath for training data: /home/hynek/CodeSprint/grobid/grobid-home/tmp/Ack321361701563933910.test
+1 tei files
+Sep 25, 2019 5:23:48 PM org.grobid.core.jni.WapitiModel init
+INFORMATION: Loading model: /home/hynek/CodeSprint/grobid/grobid-trainer/../grobid-home/models/Ack/model.wapiti (size: 1151119)
+[Wapiti] Loading model: "/home/hynek/CodeSprint/grobid/grobid-trainer/../grobid-home/models/Ack/model.wapiti"
+Model path: /home/hynek/CodeSprint/grobid/grobid-trainer/../grobid-home/models/Ack/model.wapiti
+Labeling took: 101 ms
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+<affiliation>        97.16        35.29        54.55        42.86        11     
+<educationalInstitution> 98.58        0            0            0            8      
+<fundingAgency>      87.94        34.62        34.62        34.62        52     
+<grantName>          98.76        0            0            0            7      
+<grantNumber>        96.45        73.68        48.28        58.33        29     
+<individual>         94.5         78.22        89.77        83.6         88     
+<otherInstitution>   97.34        12.5         11.11        11.76        9      
+<projectName>        99.11        0            0            0            3      
+
+all (micro avg.)     96.23        59.3         57           58.13        207    
+all (macro avg.)     96.23        29.29        29.79        28.9         207    
+
+===== Instance-level results =====
+
+Total expected instances:   1
+Correct instances:          0
+Instance-level recall:      0
+
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 6.0.
+Use '--warning-mode all' to show the individual deprecation warnings.
+See https://docs.gradle.org/5.4.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 27m 27s
+6 actionable tasks: 1 executed, 5 up-to-date
+
