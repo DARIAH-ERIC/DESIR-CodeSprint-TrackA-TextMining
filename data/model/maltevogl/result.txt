@@ -1,0 +1,27 @@
+INFORMATION: Loading model: /home/mvogl/Dokumente/gwdgGitlab/grobid/grobid/grobid-trainer/../grobid-home/models/acknowledgement/model.wapiti (size: 589412)
+[Wapiti] Loading model: "/home/mvogl/Dokumente/gwdgGitlab/grobid/grobid/grobid-trainer/../grobid-home/models/acknowledgement/model.wapiti"
+Model path: /home/mvogl/Dokumente/gwdgGitlab/grobid/grobid/grobid-trainer/../grobid-home/models/acknowledgement/model.wapiti
+Labeling took: 93 ms
+
+===== Field-level results =====
+
+label                accuracy     precision    recall       f1           support
+
+<affiliation>        100          100          100          100          11     
+<fundingAgency>      99.52        98.08        98.08        98.08        52     
+<grantName>          100          100          100          100          7      
+<grantNumber>        100          100          100          100          29     
+<individual>         99.52        98.86        98.86        98.86        88     
+<otherInstitution>   99.76        100          88.89        94.12        9      
+<projectName>        100          100          100          100          3      
+<researchInstitution> 100          100          100          100          6      
+
+all (micro avg.)     99.85        99.02        98.54        98.78        205    
+all (macro avg.)     99.85        99.62        98.23        98.88        205    
+
+===== Instance-level results =====
+
+Total expected instances:   1
+Correct instances:          0
+Instance-level recall:      0
+
