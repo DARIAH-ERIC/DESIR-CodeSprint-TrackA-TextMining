@@ -35,9 +35,6 @@
     <link type="text/css" href="resources/style.css" rel="stylesheet"/>
 
 
-
-
-
     <!-- my custom stuff -->
     <script src="resources/controllers/tabsController.js"></script>
     <script src="resources/controllers/uploadController.js"></script>
@@ -98,7 +95,7 @@
                             </div>
                             <div class="col-xs-12 mb" ng-show="myFile">
                                 <div class="col-xs-6">
-                                    <span class="help-block" >Process the PDF for : </span>
+                                    <span class="help-block" >Process type : </span>
                                     <button type="button" class="btn btn-default " ng-click="uploadFile('authors')">
                                         <span ng-show="processingAuthors == 'Processing Authors...'"><i class="glyphicon glyphicon-refresh spinning"></i></span>
                                         {{ processingAuthors }}
@@ -110,6 +107,10 @@
                                     <button type="button" class="btn btn-default " ng-click="uploadFile('entities')">
                                         <span ng-show="processingEntities == 'Processing Named-Entities...'"><i class="glyphicon glyphicon-refresh spinning"></i></span>
                                         {{ processingEntities }}
+                                    </button>
+                                    <button type="button" class="btn btn-default " ng-click="uploadFile('acknowledgments')">
+                                        <span ng-show="processingAcknowledgments == 'Processing Acknowledgments...'"><i class="glyphicon glyphicon-refresh spinning"></i></span>
+                                        {{ processingAcknowledgments }}
                                     </button>
                                 </div>
                                 <!--<div class="col"  ng-if="jsonResponse"> <h3><strong class="pull-left alert-success">Processed</strong></h3></div>-->

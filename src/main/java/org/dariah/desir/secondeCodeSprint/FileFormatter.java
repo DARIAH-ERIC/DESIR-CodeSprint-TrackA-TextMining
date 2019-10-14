@@ -36,7 +36,7 @@ public class FileFormatter {
     }
 
     public void writeFileJson(StringBuilder content){
-        String outputFile = "data/secondCodeSprint/json/annotated/acknowledgmentsAnnotatedExampleFormatted.json";
+        String outputFile = "data/secondCodeSprint/json/annotated/acknowledgementAnnotated_malte_version2Formmated.json";
         BufferedWriter writer = null;
         try{
             File file = new File(outputFile);
@@ -49,7 +49,7 @@ public class FileFormatter {
     }
 
     public static void main(String[] args) {
-        String inputFile = "data/secondCodeSprint/json/annotated/acknowledgmentsAnnotatedExample.json";
+        String inputFile = "data/secondCodeSprint/json/annotated/acknowledgementAnnotated_malte_version2.json";
 
         FileFormatter fileFormatter = new FileFormatter();
         fileFormatter.formatAnnotatedFile(inputFile);

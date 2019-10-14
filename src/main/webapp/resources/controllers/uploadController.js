@@ -3,7 +3,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
     $scope.jsonResponse = null;
     $scope.processingAuthors = 'Authors';
     $scope.processingCitations = 'Citations';
-    $scope.processingEntities = 'Named entities';
+    $scope.processingEntities = 'NER';
+    $scope.processingAcknowledgments = 'Acknowledgments';
 
     var entity_fishing_host = "http://nerd.huma-num.fr/nerd/service";
     var pdfViewer = $('#pdf-viewer');
@@ -16,7 +17,8 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         $scope.myFile = null;
         $scope.processingAuthors = 'Authors';
         $scope.processingCitations = 'Citations';
-        $scope.processingEntities = 'Named entities';
+        $scope.processingEntities = 'NER';
+        $scope.processingAcknowledgments = 'Acknowledgments';
         angular.element("div[id='pdf-viewer']").empty();
         angular.element("input[type='file']").val(null);
         $scope.jsonResponse = null;
@@ -46,6 +48,10 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             case 'entities':
                 urlPath ='/processNamedEntities'; // call to build entity fishing query
                 $scope.processingEntities = 'Processing...';
+            break;
+            case 'acknowledgments':
+                urlPath = urlPath + 'processAcknowledgment';
+                $scope.processingAcknowledgments = 'Processing...';
             break;
         }
 
@@ -85,8 +91,12 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                 $scope.processed = "Citations processed !!!"
                 break;
             case 'entities':
-                $scope.processingEntities = 'Named entities';
-                $scope.processed = "Named entities processed !!!"
+                $scope.processingEntities = 'NER';
+                $scope.processed = "NER processed !!!"
+                break;
+            case 'acknowledgments':
+                $scope.processingAcknowledgments = 'Acknowledgments';
+                $scope.processed = "Acknowledgment processed !!!"
                 break;
         }
     }
@@ -176,7 +186,9 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
                 }
                 annotateCitations(page, coords, citation.wikidataID, citation.doi , page_width,  page_height)
             });
-        } if(type == "entities"){
+        }
+
+        if(type == "entities"){
             if(count === response.length ) {
                 if(process === false){
                     $scope.errorMessage = 'Error encountered while receiving the server\'s answer: response is empty.!!!';
@@ -238,6 +250,39 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
             }
 
         }
+
+        if ( type === 'acknowledgments' ) {
+            var process = true;
+            var count = 0;
+            result.forEach(function (acknowledgment, n) {
+                count++;
+                if(acknowledgment['coords'] === null){
+                    process = process && false;
+                    console.log(process)
+                }
+                else{
+                    process = process && true;
+                    var coordinates = acknowledgment.coords;
+                    if(coordinates.indexOf(';') !== -1){
+                        coordinates = coordinates.split(";")[1].split(",");
+                    }
+                    else{
+                        coordinates = coordinates.split(",");
+                    }
+                    annotateAcknowledgments(coordinates, acknowledgment, page_width,  page_height)
+                }
+                if(count === result.length ) {
+                    if(process === false){
+                        $scope.errorMessage = 'Something went wrong server side for some acknowledgment!!!';
+                        $scope.jsonResponse = null;
+                    }
+                    $(document).ready(function(){
+                        $('[data-toggle="tooltip"]').tooltip();
+                    });
+                }
+            });
+        }
+
     }
 
     function fetchConcept(identifier, lang, successFunction) {
@@ -543,10 +588,12 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         var y = coordinates[2] * scale_y
         var width = coordinates[3] * scale_x
         var height = coordinates[4] * scale_y
+
         theId = "value";
         var element = document.createElement("a");
         var attributes = "display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
             y + "px; left:" + x + "px;";
+
         element.setAttribute("style", attributes + "border:2px solid; border-color: red");
         element.setAttribute("class", theId);
         element.setAttribute("data-toggle", 'tooltip');
@@ -559,6 +606,33 @@ angular.module('org.dariah.desir.ui').controller('uploadController', function ($
         pageDiv.append(element);
 
     }
+
+    function annotateAcknowledgments (coordinates, acknowledgment, page_width,  page_height){
+            var page = coordinates[0]
+            var pageDiv = $('#page-' + page);
+            var canvas = pageDiv.children('canvas').eq(0);
+            var canvasHeight = canvas.height()
+            var canvasWidth = canvas.width()
+
+            scale_x = canvasHeight / page_height ;
+            scale_y = canvasWidth / page_width;
+            var x = coordinates[1] * scale_x
+            var y = coordinates[2] * scale_y
+            var width = coordinates[3] * scale_x
+            var height = coordinates[4] * scale_y
+
+            theId = "value";
+            var element = document.createElement("a");
+            var attributes = "display:block; width:" + width + "px; height:" + height + "px; position:absolute; top:" +
+                y + "px; left:" + x + "px;";
+
+            element.setAttribute("style", attributes + "border:2px solid; border-color: red");
+            element.setAttribute("class", theId);
+            element.setAttribute("data-toggle", 'tooltip');
+            element.setAttribute("data-placement", 'top');
+            element.setAttribute("data-title", 'Acknowledgment type: '+ acknowledgment.label);
+            pageDiv.append(element);
+        }
 
 
     function viewQuantityPDF() {

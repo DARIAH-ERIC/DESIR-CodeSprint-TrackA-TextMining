@@ -97,6 +97,39 @@ public class SampleController {
         return response;
     }
 
+    @RequestMapping(value = "/processAcknowledgment", method = RequestMethod.POST, produces = "application/json")
+    public OverlayResponse processAcknowledment(@RequestParam(value = "file") MultipartFile pdf) {
+
+        OverlayResponse response = null;
+        try {
+            InputStream input = pdf.getInputStream();
+
+            final File tempFile = File.createTempFile("prefix", "suffix");
+            tempFile.deleteOnExit();
+
+            FileUtils.copyToFile(input, tempFile);
+
+            System.out.println("Grobid extraction process...");
+            String resultGrobid = grobidClient.processFulltextDocument(IOUtils.toBufferedInputStream(new FileInputStream(tempFile)));
+
+            System.out.println("Acknowledgment extraction process...");
+            final List<ResolvedAcknowledgment> resolvedAcknowledgments = grobidParsers.processAcknowledgments(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
+            /* for (ResolvedAcknowledgment ack : resolvedAcknowledgments){
+                System.out.println(ack.getText() + "; ");
+            }*/
+            response = new OverlayResponse<ResolvedAcknowledgment>(resolvedAcknowledgments);
+
+            final Page pageDimension = Page.getPageDimension(tempFile);
+            response.setPageDimention(pageDimension);
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return response;
+    }
+
     @RequestMapping(value = "/processNamedEntities", method = RequestMethod.POST, produces = "application/json")
     public String processNamedEntities(@RequestParam(value = "file") MultipartFile pdf) {
 

@@ -1,24 +1,14 @@
 package org.dariah.desir.secondeCodeSprint;
 
-import de.tudarmstadt.ukp.dkpro.statistics.agreement.unitizing.KrippendorffAlphaUnitizingAgreement;
-import de.tudarmstadt.ukp.dkpro.statistics.agreement.unitizing.UnitizingAnnotationStudy;
-import org.apache.commons.lang.StringEscapeUtils;
+import org.dkpro.statistics.agreement.unitizing.KrippendorffAlphaUnitizingAgreement;
+import org.dkpro.statistics.agreement.unitizing.UnitizingAnnotationStudy;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
-import org.w3c.dom.Document;
-import org.xml.sax.InputSource;
 
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.transform.Transformer;
-import javax.xml.transform.TransformerFactory;
-import javax.xml.transform.dom.DOMSource;
-import javax.xml.transform.stream.StreamResult;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.StringReader;
 import java.util.*;
 
 public class DataExtractorForIAA {

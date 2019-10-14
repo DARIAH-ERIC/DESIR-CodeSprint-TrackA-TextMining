@@ -22,7 +22,7 @@ public class CookingClient {
 
     //private String apiUrL = "https://traces1.inria.fr/cooking/service";
     private String apiUrL = "http://traces1.inria.fr/cooking";
-//    private String apiUrL = "http://localhost:8091";
+    //private String apiUrL = "http://localhost:8091";
 
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CookingClient.class);

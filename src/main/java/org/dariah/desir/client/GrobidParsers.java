@@ -1,6 +1,7 @@
 package org.dariah.desir.client;
 
 import org.dariah.desir.data.DisambiguatedAuthor;
+import org.dariah.desir.data.ResolvedAcknowledgment;
 import org.dariah.desir.data.ResolvedCitation;
 import org.dariah.desir.service.EntityFishingService;
 import org.springframework.core.io.ClassPathResource;
@@ -49,7 +50,6 @@ public class GrobidParsers {
         } catch (ParserConfigurationException e) {
             e.printStackTrace();
         }
-
 
         String title = "no title";
         String author = "";
@@ -145,7 +145,7 @@ public class GrobidParsers {
                 Node author = authors.item(i);
                 NodeList child = author.getChildNodes();
                 Node persName = (Node) xPath.compile("persName").evaluate(child, XPathConstants.NODE);
-                if (persName != null && persName.getNodeType() == Node.ELEMENT_NODE){
+                if (persName != null && persName.getNodeType() == Node.ELEMENT_NODE) {
                     Node nodeCoordinates = persName.getAttributes().getNamedItem("coords");
                     if (nodeCoordinates != null) {
                         authorOutput.setCoordinates(nodeCoordinates.getTextContent());
@@ -153,7 +153,7 @@ public class GrobidParsers {
                     Node idno = (Node) xPath.compile("idno").evaluate(persName, XPathConstants.NODE);
 
                     if (idno != null && idno.getNodeType() == Node.ELEMENT_NODE) {
-                        Element idElement = (Element)idno;
+                        Element idElement = (Element) idno;
                         String id = String.valueOf(idElement.getTextContent());
                         authorOutput.setId(id);
                         String type = idElement.getAttribute("type");
@@ -163,8 +163,8 @@ public class GrobidParsers {
 
                         output.add(authorOutput);
                     }
+                }
             }
-        }
 
 
         } catch (XPathExpressionException e) {
@@ -201,7 +201,7 @@ public class GrobidParsers {
 
                 ResolvedCitation citation = new ResolvedCitation();
                 if (reference.getNodeType() == Node.ELEMENT_NODE) {
-                    Element referenceElement = (Element)reference;
+                    Element referenceElement = (Element) reference;
                     String coordinates = referenceElement.getAttribute("coords");
                     citation.setCoordinates(coordinates);
 
@@ -213,7 +213,7 @@ public class GrobidParsers {
 
 
                     Node doiNode = ((Node) xPath.compile("analytic/idno[@type=\"doi\"]").evaluate(reference, XPathConstants.NODE));
-                    if (doiNode != null  && doiNode.getNodeType() == Node.ELEMENT_NODE) {
+                    if (doiNode != null && doiNode.getNodeType() == Node.ELEMENT_NODE) {
                         String doi = doiNode.getTextContent();
                         citation.setDoi(doi);
                         try {
@@ -232,6 +232,46 @@ public class GrobidParsers {
         }
 
         return resolvedCitations;
+
+    }
+
+    public List<ResolvedAcknowledgment> processAcknowledgments(InputStream is) {
+        XPath xPath = XPathFactory.newInstance().newXPath();
+        List<ResolvedAcknowledgment> resolvedAcknowledgments = new ArrayList<>();
+        Document teiDoc = null;
+        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+        docFactory.setValidating(false);
+        DocumentBuilder docBuilder = null;
+        try {
+            docBuilder = docFactory.newDocumentBuilder();
+            teiDoc = docBuilder.parse(is);
+        } catch (SAXException | IOException | ParserConfigurationException e) {
+            e.printStackTrace();
+        }
+
+        try {
+            NodeList acknowledmentList = (NodeList) xPath.compile("/TEI/text/back/div/div/p/rs").evaluate(teiDoc, XPathConstants.NODESET);
+
+            for (int i = 0; i < acknowledmentList.getLength(); i++) {
+                Node acknowledgment = acknowledmentList.item(i);
+
+                ResolvedAcknowledgment resolvedAcknowledgment = new ResolvedAcknowledgment();
+                if (acknowledgment.getNodeType() == Node.ELEMENT_NODE) {
+                    Element acknowledgmentElement = (Element) acknowledgment;
+                    String coordinatesAcknowledgment = acknowledgmentElement.getAttribute("coords");
+                    String labelAcknowledgment = acknowledgmentElement.getAttribute("type");
+                    String textAcknowledgment = acknowledgmentElement.getTextContent();
+                    resolvedAcknowledgment.setCoords(coordinatesAcknowledgment);
+                    resolvedAcknowledgment.setLabel(labelAcknowledgment);
+                    resolvedAcknowledgment.setText(textAcknowledgment);
+                    resolvedAcknowledgments.add(resolvedAcknowledgment);
+                }
+            }
+        } catch (XPathExpressionException e) {
+            e.printStackTrace();
+        }
+
+        return resolvedAcknowledgments;
 
     }
 

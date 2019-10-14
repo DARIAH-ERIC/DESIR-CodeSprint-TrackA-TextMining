@@ -23,7 +23,8 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 @Service
 public class GrobidClient {
 
-    private String grobidAPI = "https://traces1.inria.fr/grobid/api";
+    //private String grobidAPI = "https://traces1.inria.fr/grobid/api";
+    private String grobidAPI = "http://localhost:8070/api";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidClient.class);
 
@@ -62,6 +63,7 @@ public class GrobidClient {
                     .addPart("teiCoordinates", new StringBody("persName", ContentType.TEXT_PLAIN))
                     .addPart("teiCoordinates", new StringBody("ref", ContentType.TEXT_PLAIN))
                     .addPart("teiCoordinates", new StringBody("biblStruct", ContentType.TEXT_PLAIN))
+                    //.addPart("teiCoordinates", new StringBody("back", ContentType.TEXT_PLAIN))
                     .addPart("consolidateHeader", new StringBody("1", ContentType.TEXT_PLAIN))
                     .addPart("consolidateCitations", new StringBody("1", ContentType.TEXT_PLAIN))
                     .build();
