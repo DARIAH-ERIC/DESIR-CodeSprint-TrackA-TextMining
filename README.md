@@ -96,11 +96,13 @@ The results of the demonstrator of the 2nd code sprint :
 
 # Demonstrator 
 ### Run Locally
-It's possible to run the demonstrator locally on the default port `8080` (http://localhost:8080/) by running ApplicationTrackA main class.
+It's possible to run the demonstrator locally on the default port `8080` by running ApplicationTrackA main class.
 1) After cloning this repository `$ git clone https://github.com/DARIAH-ERIC/DESIR-CodeSprint-TrackA-TextMining`
 2) Then, run the Java main class`src/main/java/org/dariah/desir/ApplicationTrackA.java`
-
+    or run the gradle `$ ./gradlew run`
 Since the demonstrator uses GROBID which has a particular focus on technical and scientific publications, with this reason, in order to use this demonstrator, Pdf files in scientific format are a must.
+
+3) The application is available on the `http://localhost:8080/`
 
 Users can then simply click the buttons available to process the Pdf files according to their needs (author, citation, named-entity recognition, acknowledgment processing).
 

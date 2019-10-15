@@ -81,3 +81,13 @@ dependencies {
 configurations {
     compile.exclude group: "org.slf4j", module: "slf4j-log4j12"
 }
+
+
+task run(type: JavaExec) {
+    group = 'Run'
+    description = 'Run the Application of Track A'
+
+    classpath sourceSets.main.runtimeClasspath
+    main = "org.dariah.desir.ApplicationTrackA"
+    args "arg1", "arg2"
+}
