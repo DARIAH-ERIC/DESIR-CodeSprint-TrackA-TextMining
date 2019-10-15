@@ -1,11 +1,7 @@
-/*
 package org.dariah.desir.secondeCodeSprint;
 
-import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import jdk.nashorn.internal.parser.JSONParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -16,14 +12,12 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-*/
 /* in order a json file can be read by doccano (https://github.com/chakki-works/doccano), it should contain a JSON object with a text key
     and other information as meta data, thus a source file should be converted first
     some conditions:
     1. remove the square brackets [] at the start and end of the file
     2. remove comma (,) after each record
-* *//*
-
+* */
 
 public class DataExtractorForDoccano {
 
@@ -34,10 +28,10 @@ public class DataExtractorForDoccano {
         ArrayList<RawText> listRawText = new ArrayList<>();
         try {
             Object object = parser.parse(new FileReader(file));
-            JsonArray textArray = (JsonArray) object;
+            JSONArray textArray = (JSONArray) object;
 
             for (Object obj : textArray) {
-                JSONPObject textObject = (JSONPObject) obj;
+                JSONObject textObject = (JSONObject) obj;
                 String identifier = (String) textObject.get("identifier");
                 String title = (String) textObject.get("title");
                 String text = (String) textObject.get("text");
@@ -116,4 +110,3 @@ public class DataExtractorForDoccano {
         dataExtractor.writeJsonFile(textList, outputFile);
     }
 }
-*/
