@@ -8,7 +8,7 @@ Under the same main topic *Bibliographical metadata: Citations and References* f
 
 
 # Goal
-### First Code Sprint
+### The First Code Sprint
 The goals of the first code sprints were : 
 1) to explore and to improve the usability of Grobid as a tool for extracting Pdf files, particularly scientific articles; 
 
@@ -22,7 +22,7 @@ The goals of the first code sprints were :
 
 ![SecondCodeDemonstratorResult](doc/images/FirstCodeSprint.jpg)
 
-### Second Code Sprint
+### The Second Code Sprint
 The goals of the second code sprints were : 
 1) to annotate a new corpus containing **acknowledgment** *sections* of ~ 3500 scientific articles in Open Access;
 
@@ -47,12 +47,12 @@ The library is integrated today in various commercial and public scientific serv
 # Preparation before the track
 Track A was prepared to suit the skills available among the participants and was also prepared to a number of frameworks and programming languages (e.g., Java, Python). Participants were asked to prepare their machines before the activities. 
 
-2) For participants who use Java 
+1) For participants who use Java 
    * IDE (e.g. Intellij) 
    * Java 8 (openjdk latest update)
    * Gradle, to build `./gradlew build` 
 
-3) For participants who use Python
+2) For participants who use Python
    * IDE (e.g. PyCharm)
    * Python 3
    * [Virtualenv](https://virtualenv.pypa.io/en/stable/)
@@ -60,10 +60,10 @@ Track A was prepared to suit the skills available among the participants and was
    * The bottle service can be started at `python src/main/python/RootPage.py 8080` 
    * Pip to install dependencies
 
-4) Access to Github services.
+3) Access to Github services.
 
 # Steps
-### First Code Sprint
+### The First Code Sprint
 Steps for the first code sprint :
 1) Data extraction by using Grobid (the data contains about 30 science articles in 5 languages and in Pdf format are already prepared. They can be found in `/Pdf Source Files/`)
    * Pdf files extraction into XML-TEI data format
@@ -76,7 +76,7 @@ Steps for the first code sprint :
 The results of the demonstrator of the 1st code sprint :
 ![FirstCodeDemonstratorResult](doc/images/FirstCodeSprintDemonstratorResult.jpg)
 
-### Second Code Sprint
+### The Second Code Sprint
 Steps for the second code sprint :
 1) Manual annotation of the corpus file using [Doccano](https://github.com/chakki-works/doccano) 
 
