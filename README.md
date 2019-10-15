@@ -106,6 +106,9 @@ Since the demonstrator uses GROBID which has a particular focus on technical and
 
 Users can then simply click the buttons available to process the Pdf files according to their needs (author, citation, named-entity recognition, acknowledgment processing).
 
+## Notes:
+Until this last update, the new acknowledgment process is still in the  middle of integration stage with Grobid and if it's possible, it will be integrated with the new release 0.5.6 of Grobid. Therefore, for a while, the Acknowledgment button will not function.
+
 ### Testing
 For testing purposes, a demonstrator is available at the following address: [Demonstrator Track A](https://destracka.herokuapp.com/).
 
