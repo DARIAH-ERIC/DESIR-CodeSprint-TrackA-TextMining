@@ -23,8 +23,8 @@ import static java.nio.charset.StandardCharsets.UTF_8;
 @Service
 public class GrobidClient {
 
-    //private String grobidAPI = "https://traces1.inria.fr/grobid/api";
-    private String grobidAPI = "http://localhost:8070/api";
+    private String grobidAPI = "https://traces1.inria.fr/grobid/api";
+    //private String grobidAPI = "http://localhost:8070/api";
 
     private static final Logger LOGGER = LoggerFactory.getLogger(GrobidClient.class);
 
