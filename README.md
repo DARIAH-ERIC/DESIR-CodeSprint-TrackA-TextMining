@@ -1,5 +1,5 @@
-#  Track A 
-## Processing of bibliographical data and citations from PDF using GROBID and external DARIAH services :notebook_with_decorative_cover:
+#  Track A  :books:
+## Processing of bibliographical data and citations from PDF using GROBID and external DARIAH services 
 This repository contains a workspace and a demonstrator resulting from two code sprints organized by the DESIR project. In order to promote [DARIAH](https://www.dariah.eu/activities/projects-and-affiliations/desir/) tools, services, and initiative collaborations, DESIR organised a series of dissemination events, one of them was the code sprint. The purpose of the [code sprint 2018 & 2019](https://desircodesprint.sciencesconf.org/) was to bring in together developers and affiliates who come not only from the DARIAH community.
 
 The first code sprint took place in Berlin from July 31st to August 2nd 2018 while the second one was held from 24 to 26 September 2019, still in the same city.
