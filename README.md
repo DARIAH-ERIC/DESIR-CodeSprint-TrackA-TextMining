@@ -110,7 +110,8 @@ Users can then simply click the buttons available to process the Pdf files accor
 Until this last update, the new acknowledgment process is still in the  middle of integration stage with Grobid and if it's possible, it will be integrated with the new release 0.5.6 of Grobid. 
 
 If the button doesn't work (yet) because of this reason, it is possible to see the results of the acknowledgment parser locally by following these steps :
-A. Grobid
+
+**A. Grobid**
 1. Clone the the Grobid repository 
 
     `$ git clone https://github.com/kermitt2/grobid.git`
@@ -120,7 +121,7 @@ A. Grobid
     
 3. Run the Grobid application `$ ./gradlew run`
 
-B. This demonstrator 
+**B. This demonstrator** 
 1. Change the URL for GrobidClient in `src/main/java/org/dariah/desir/client/GrobidClient.java` class to localhost with the default port on 8070:
     
     `String grobidAPI = "http: // localhost: 8070 / api";`
