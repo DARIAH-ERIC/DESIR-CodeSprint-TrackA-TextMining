@@ -124,7 +124,7 @@ If the button doesn't work (yet) because of this reason, it is possible to see t
 **B. This demonstrator** 
 1. Change the URL for GrobidClient in `src/main/java/org/dariah/desir/client/GrobidClient.java` class to localhost with the default port on 8070:
     
-    `String grobidAPI = "http: // localhost: 8070 / api";`
+    `private String grobidAPI = "http://localhost:8070/api;`
 2. Run this demonstrator locally
 
 ### Testing
