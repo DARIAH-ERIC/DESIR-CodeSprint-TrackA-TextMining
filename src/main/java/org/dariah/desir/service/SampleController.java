@@ -114,9 +114,9 @@ public class SampleController {
 
             System.out.println("Acknowledgment extraction process...");
             final List<ResolvedAcknowledgment> resolvedAcknowledgments = grobidParsers.processAcknowledgments(IOUtils.toInputStream(resultGrobid, StandardCharsets.UTF_8));
-            /* for (ResolvedAcknowledgment ack : resolvedAcknowledgments){
+             for (ResolvedAcknowledgment ack : resolvedAcknowledgments){
                 System.out.println(ack.getText() + "; ");
-            }*/
+            }
             response = new OverlayResponse<ResolvedAcknowledgment>(resolvedAcknowledgments);
 
             final Page pageDimension = Page.getPageDimension(tempFile);

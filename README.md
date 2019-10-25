@@ -106,7 +106,7 @@ Since the demonstrator uses GROBID which has a particular focus on technical and
 
 Users can then simply click the buttons available to process the Pdf files according to their needs (author, citation, named-entity recognition, acknowledgment processing).
 
-## Notes:
+### Notes:
 Until this last update, the new acknowledgment process is still in the  middle of integration stage with Grobid and if it's possible, it will be integrated with the new release 0.5.6 of Grobid. 
 
 If the button doesn't work (yet) because of this reason, it is possible to see the results of the acknowledgment parser locally by following these steps :
@@ -119,13 +119,16 @@ If the button doesn't work (yet) because of this reason, it is possible to see t
 
     `$ git checkout AcknowledgmentParser_Desir2ndCodeSprint`
     
-3. Run the Grobid application `$ ./gradlew run`
+3. Run the Grobid application `$ ./gradlew run`, by default, the local server run on the port **8070**.
 
 **B. This demonstrator** 
-1. Change the URL for GrobidClient in `src/main/java/org/dariah/desir/client/GrobidClient.java` class to localhost with the default port on 8070:
+1. Since Grobid runs locally the port **8070**, therefore, the url in the GrobidCLient class needs to be directed to this address.
+    
+    Change the URL in `src/main/java/org/dariah/desir/client/GrobidClient.java` class to localhost with the default port on 8070:
     
     `private String grobidAPI = "http://localhost:8070/api;`
-2. Run this demonstrator locally
+    
+2. Then, run the demonstrator of ApplicationTrackA locally as explained in the [Demonstrator : Run Locally](#run-locally)
 
 ### Testing
 For testing purposes, a demonstrator is available at the following address: [Demonstrator Track A](https://destracka.herokuapp.com/).
